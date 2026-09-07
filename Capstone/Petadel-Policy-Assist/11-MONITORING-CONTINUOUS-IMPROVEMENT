@@ -1,0 +1,848 @@
+# 11: Monitoring & Continuous Improvement Plan
+
+## 1. Purpose
+
+This document defines how Petadel PolicyAssist AI will be monitored after release and how the project team will identify, prioritize, and implement improvements.
+
+The objective is to ensure PolicyAssist continues to provide accurate, grounded, secure, useful, and reliable policy assistance after deployment.
+
+Monitoring is not limited to system availability. AI projects must also monitor model behavior, policy knowledge, retrieval quality, citations, hallucinations, user feedback, security, performance, and business outcomes.
+
+---
+
+## 2. Monitoring Objective
+
+The monitoring objective is to detect problems early, determine their impact, assign ownership, and trigger appropriate corrective action.
+
+PolicyAssist monitoring should answer:
+
+* Is the system available?
+* Is it responding within the required time?
+* Is retrieval still accurate?
+* Are answers still accurate?
+* Are responses grounded in policy evidence?
+* Are citations correct?
+* Are hallucinations increasing?
+* Are unsupported questions being handled safely?
+* Are users experiencing problems?
+* Are policy changes affecting results?
+* Have model changes affected quality?
+* Are security incidents occurring?
+* Are business outcomes being achieved?
+
+---
+
+## 3. Monitoring Vs. Evaluation
+
+Monitoring and evaluation are related but serve different purposes.
+
+### Evaluation
+
+Evaluation is structured testing performed to determine whether the AI meets defined quality criteria.
+
+Example:
+
+> A 30-question evaluation dataset is used to measure retrieval accuracy, answer accuracy, hallucination, citation correctness, and refusal behavior.
+
+### Monitoring
+
+Monitoring observes the system during ongoing use.
+
+Example:
+
+> Production monitoring identifies an increase in incorrect citations or response times.
+
+### PM Principle
+
+> Evaluation proves readiness. Monitoring protects continued performance.
+
+---
+
+## 4. Monitoring Categories
+
+PolicyAssist should monitor the following categories:
+
+| Category          | What Is Monitored                                             |
+| ----------------- | ------------------------------------------------------------- |
+| Availability      | Whether the application is operational.                       |
+| Performance       | Response latency and system performance.                      |
+| Retrieval         | Quality and relevance of retrieved policy evidence.           |
+| AI Quality        | Accuracy, grounding, hallucination, and refusal behavior.     |
+| Citations         | Whether displayed sources correctly support responses.        |
+| Data              | Policy status, authority, versions, and knowledge changes.    |
+| Security          | Unauthorized access, data leakage, and security incidents.    |
+| User Experience   | User feedback, satisfaction, and usability issues.            |
+| Defects           | Production defects and recurring problems.                    |
+| Business Outcomes | Whether the system is achieving intended business value.      |
+| Model             | Model version and behavior changes.                           |
+| Governance        | Material decisions, exceptions, and policy governance issues. |
+
+---
+
+## 5. Key Production Metrics
+
+The following metrics should be tracked after release.
+
+### AI Quality Metrics
+
+| Metric                       | Target |
+| ---------------------------- | -----: |
+| Retrieval Accuracy           |   ≥90% |
+| Answer Accuracy              |   ≥90% |
+| Hallucination Rate           |    <2% |
+| Citation Correctness         |   100% |
+| Unsupported-Question Refusal |   100% |
+
+### Performance Metrics
+
+| Metric                     | Target |
+| -------------------------- | -----: |
+| Requests Within 10 Seconds |   ≥95% |
+| Requests Within 15 Seconds |   100% |
+
+### User Metrics
+
+| Metric            | Target |
+| ----------------- | -----: |
+| User Satisfaction |   ≥85% |
+
+### Security Metrics
+
+| Metric                         | Target |
+| ------------------------------ | -----: |
+| Critical Security Incidents    |      0 |
+| Unauthorized Policy Access     |      0 |
+| Critical Data Leakage Findings |      0 |
+
+These targets should remain aligned with the approved evaluation and release criteria.
+
+---
+
+## 6. Monitoring Thresholds
+
+Monitoring requires defined thresholds rather than subjective judgments.
+
+Example:
+
+| Metric                      |       Target | Alert Condition     | PM Action                                     |
+| --------------------------- | -----------: | ------------------- | --------------------------------------------- |
+| Retrieval Accuracy          |         ≥90% | Below 90%           | Investigate retrieval/data issue.             |
+| Answer Accuracy             |         ≥90% | Below 90%           | Investigate AI quality.                       |
+| Hallucination               |          <2% | ≥2%                 | Investigate immediately.                      |
+| Citation Correctness        |         100% | Any failure         | Investigate and assess release/rollback risk. |
+| Unsupported Refusal         |         100% | Any unsafe response | Investigate immediately.                      |
+| Response Time               | ≥95% ≤10 sec | Below target        | Investigate performance.                      |
+| User Satisfaction           |         ≥85% | Below target        | Analyze feedback and usability.               |
+| Critical Security Incidents |            0 | Any incident        | Activate security response.                   |
+
+---
+
+## 7. Alerts
+
+Alerts should identify conditions that require investigation or action.
+
+### Alert Levels
+
+#### Informational
+
+No immediate action required.
+
+Examples:
+
+* Normal traffic changes.
+* Minor usage variation.
+* Routine policy updates.
+
+#### Warning
+
+Investigation is required.
+
+Examples:
+
+* Performance approaching threshold.
+* Increase in user complaints.
+* Declining retrieval quality.
+* Increasing refusal rate.
+
+#### Critical
+
+Immediate action is required.
+
+Examples:
+
+* Unauthorized policy access.
+* Data leakage.
+* Fabricated policy response.
+* Significant hallucination increase.
+* Citation failure affecting trust or compliance.
+* Critical production defect.
+
+### PM Responsibility
+
+The PM ensures alerts have:
+
+* Defined thresholds.
+* Assigned owners.
+* Response expectations.
+* Escalation paths.
+* Documented outcomes.
+
+---
+
+## 8. AI Drift
+
+AI behavior may change over time even when the application itself has not been intentionally changed.
+
+Possible causes include:
+
+* Model changes.
+* Prompt changes.
+* Knowledge-base changes.
+* Changes in user questions.
+* Changes in retrieval behavior.
+* Changes in data quality.
+
+### Drift Indicators
+
+Potential indicators include:
+
+* Declining answer accuracy.
+* Increasing hallucinations.
+* Declining retrieval accuracy.
+* Increasing citation errors.
+* Increased refusal failures.
+* Changes in response patterns.
+* Increased user complaints.
+
+### PM Response
+
+When meaningful drift is detected:
+
+**Detect → Investigate → Assess Impact → Identify Root Cause → Correct → Evaluate → UAT If Required → Approve → Release → Monitor**
+
+---
+
+## 9. Data Drift
+
+Data drift occurs when the characteristics or content of the information being used by the AI change.
+
+For PolicyAssist, examples include:
+
+* New policies.
+* Revised policies.
+* Retired policies.
+* New policy versions.
+* Missing metadata.
+* Duplicate documents.
+* Conflicting policy information.
+
+The PM must ensure that policy changes do not automatically become active retrieval sources without appropriate validation.
+
+---
+
+## 10. Knowledge Changes
+
+PolicyAssist depends on policy knowledge being accurate and governed.
+
+Every material policy change should be assessed for:
+
+* Policy authority.
+* Version.
+* Effective date.
+* Status.
+* Owner.
+* Approval.
+* Impact on retrieval.
+* Impact on existing answers.
+* Impact on evaluation.
+* Impact on UAT.
+
+### Authority Rule
+
+Only authoritative, active, approved policy information should be available for active retrieval.
+
+If authority cannot be established:
+
+**Hold the conflicting information and escalate for human resolution.**
+
+---
+
+## 11. Model Changes
+
+Model changes can materially affect system behavior.
+
+A model change may affect:
+
+* Answer accuracy.
+* Hallucination.
+* Retrieval-to-answer behavior.
+* Grounding.
+* Citation behavior.
+* Response time.
+* User experience.
+* Security.
+
+### Model Change Process
+
+**Identify Change → Assess Impact → Evaluate → Test → UAT If Required → Approve → Release → Monitor**
+
+A model should not be changed in production solely because a newer model is available.
+
+The PM must require evidence that the change improves or maintains the required outcomes.
+
+---
+
+## 12. User Feedback
+
+User feedback provides important evidence about real-world performance.
+
+Feedback may identify:
+
+* Incorrect answers.
+* Missing policies.
+* Incorrect citations.
+* Confusing responses.
+* Poor refusal behavior.
+* Performance issues.
+* Usability problems.
+* Missing functionality.
+
+Feedback should be categorized and routed to the appropriate owner.
+
+### Feedback Categories
+
+| Category    | Example                                              |
+| ----------- | ---------------------------------------------------- |
+| AI Quality  | "The answer is incorrect."                           |
+| Citation    | "The source does not support the answer."            |
+| Data        | "This policy appears outdated."                      |
+| Security    | "I can see information I should not access."         |
+| UX          | "I cannot understand the response."                  |
+| Performance | "The response takes too long."                       |
+| Enhancement | "The system should support another policy category." |
+
+---
+
+## 13. Feedback Vs. Defects
+
+Not every feedback item is a defect.
+
+### Feedback
+
+A user suggestion, observation, or request that may not represent system failure.
+
+Example:
+
+> "It would be helpful if PolicyAssist showed the policy owner."
+
+### Defect
+
+Behavior that violates an approved requirement or acceptance criterion.
+
+Example:
+
+> PolicyAssist cites a policy that does not support the answer.
+
+### PM Decision
+
+The PM should determine whether the item becomes:
+
+* Backlog item.
+* Defect.
+* Risk.
+* Incident.
+* Data-quality issue.
+* Security issue.
+* Enhancement.
+
+---
+
+## 14. Incident Management
+
+An incident is an event that requires immediate or structured response because it may affect users, security, availability, quality, or business operations.
+
+### Incident Process
+
+**Detect → Log → Assess → Classify → Assign → Contain → Investigate → Correct → Validate → Close → Review**
+
+### AI-Specific Incidents
+
+Examples include:
+
+* Fabricated policy response.
+* Incorrect policy version used.
+* Unauthorized policy access.
+* Data leakage.
+* Severe citation failure.
+* Significant hallucination increase.
+* Major performance degradation.
+
+Critical incidents should be escalated immediately.
+
+---
+
+## 15. Root Cause Analysis
+
+Fixing symptoms without understanding the cause can allow problems to return.
+
+Root cause analysis should consider:
+
+* Application defect.
+* Retrieval configuration.
+* Policy data quality.
+* Metadata problem.
+* Authority problem.
+* Model behavior.
+* Prompt behavior.
+* Security configuration.
+* User workflow.
+* Environment issue.
+
+### PM Questions
+
+* What happened?
+* What should have happened?
+* Why did the failure occur?
+* Why was it not detected earlier?
+* What control failed?
+* What corrective action is required?
+* How will recurrence be prevented?
+* Does regression testing need to be updated?
+
+---
+
+## 16. Continuous Improvement
+
+Continuous improvement turns production evidence into controlled product improvement.
+
+### Improvement Loop
+
+**Monitor → Identify Problem → Create Backlog Item → Prioritize → Develop → Test → Evaluate → UAT → Release → Monitor**
+
+This loop ensures that improvements are controlled rather than introduced informally.
+
+---
+
+## 17. Backlog Prioritization
+
+Monitoring may generate many improvement requests.
+
+The PM should prioritize using factors such as:
+
+* Business value.
+* User impact.
+* Risk.
+* Security.
+* Compliance.
+* Frequency.
+* Severity.
+* Cost.
+* Dependencies.
+* Technical effort.
+* Strategic importance.
+
+### Priority Rule
+
+Security, safety, governance, and material AI-quality failures generally receive higher priority than cosmetic improvements.
+
+---
+
+## 18. Technical Debt
+
+Technical debt occurs when a short-term technical decision creates future maintenance, reliability, security, or scalability problems.
+
+Examples include:
+
+* Temporary workarounds.
+* Manual processes.
+* Incomplete monitoring.
+* Poor documentation.
+* Hard-coded configuration.
+* Unvalidated deployment processes.
+* Insufficient regression coverage.
+
+Technical debt should be visible in the backlog and managed intentionally.
+
+---
+
+## 19. Performance Monitoring
+
+Performance must continue to be monitored after release.
+
+Key measurements include:
+
+* Average response time.
+* Median response time.
+* 95th percentile response time.
+* Maximum response time.
+* Requests exceeding 10 seconds.
+* Requests exceeding 15 seconds.
+* Error rates.
+* Availability.
+
+### Performance Rule
+
+> A system that was fast during testing is not automatically fast in production.
+
+Performance degradation should trigger investigation and appropriate corrective action.
+
+---
+
+## 20. Cost Monitoring
+
+AI projects may create costs through:
+
+* Model usage.
+* Infrastructure.
+* Storage.
+* Data processing.
+* Monitoring.
+* Support.
+* Third-party services.
+
+The PM should monitor costs against approved expectations.
+
+For local or development environments, cost may be minimal, but production architecture may introduce additional operational costs.
+
+Cost increases should be assessed for:
+
+* Business impact.
+* Root cause.
+* Forecast impact.
+* Optimization opportunities.
+* Scope implications.
+
+---
+
+## 21. Business Outcome Monitoring
+
+Technical performance does not automatically prove business value.
+
+PolicyAssist business outcomes may include:
+
+* Reduced policy search time.
+* Improved employee access to policy information.
+* Reduced repeated policy questions.
+* Improved consistency of policy information.
+* Increased confidence in policy retrieval.
+* Improved employee satisfaction.
+
+The PM should compare actual outcomes against approved business objectives.
+
+---
+
+## 22. Monitoring Ownership
+
+Each monitoring area must have a responsible owner.
+
+| Monitoring Area                 | Example Owner                     |
+| ------------------------------- | --------------------------------- |
+| Application Availability        | Technical/Operations Team         |
+| Performance                     | Technical Lead                    |
+| AI Quality                      | AI/ML Lead                        |
+| Policy Data                     | Data/Knowledge Owner              |
+| Policy Authority                | Policy Owner/Governance Authority |
+| Security                        | Security Lead                     |
+| User Feedback                   | Product/Business Owner            |
+| Defects                         | Project/Product Team              |
+| Governance                      | Governance Authority              |
+| Business Outcomes               | Product/Business Owner            |
+| Overall Monitoring Coordination | Project/Product Manager           |
+
+The PM is responsible for ensuring ownership exists, even when the PM does not directly perform the monitoring.
+
+---
+
+## 23. Production Review
+
+A recurring production review should evaluate:
+
+* AI quality.
+* Retrieval performance.
+* Citation quality.
+* Hallucinations.
+* Unsupported questions.
+* Security.
+* Performance.
+* User feedback.
+* Defects.
+* Policy changes.
+* Model changes.
+* Business outcomes.
+* Open risks.
+* Improvement backlog.
+
+### Production Review Questions
+
+1. Are quality targets still being met?
+2. Have any critical incidents occurred?
+3. Are users reporting incorrect answers?
+4. Are citations still accurate?
+5. Have policies changed?
+6. Has the model changed?
+7. Has performance degraded?
+8. Are security controls still effective?
+9. Are new risks emerging?
+10. What should be improved next?
+
+---
+
+## 24. Change Triggers
+
+Certain events should automatically trigger additional evaluation or review.
+
+Examples include:
+
+* Model change.
+* Major prompt change.
+* Policy knowledge-base change.
+* Authority conflict.
+* Significant retrieval change.
+* Significant performance degradation.
+* Critical defect.
+* Security incident.
+* Material user complaint trend.
+* Major architecture change.
+* Governance requirement change.
+
+### PM Rule
+
+> Material change should trigger appropriate validation before the changed system is treated as equivalent to the approved version.
+
+---
+
+## 25. Monitoring Acceptance Criteria
+
+PolicyAssist monitoring must demonstrate:
+
+| Acceptance Measure                     | Target |
+| -------------------------------------- | -----: |
+| Required Monitoring Categories Defined |   100% |
+| Monitoring Ownership Assigned          |   100% |
+| Critical AI Quality Metrics Monitored  |   100% |
+| Security Monitoring Coverage           |   100% |
+| Policy Change Monitoring               |   100% |
+| Model Change Monitoring                |   100% |
+| Critical/High Issue Tracking           |   100% |
+| Material Governance Decisions Logged   |   100% |
+| Required Alert Thresholds Defined      |   100% |
+| Critical Incidents Escalated           |   100% |
+
+Monitoring must also support the established quality targets:
+
+* Retrieval Accuracy ≥90%.
+* Answer Accuracy ≥90%.
+* Hallucination Rate <2%.
+* Citation Correctness 100%.
+* Unsupported-Question Refusal 100%.
+* At least 95% of requests within 10 seconds.
+* 100% within 15 seconds.
+* User Satisfaction ≥85%.
+* Critical Security Incidents = 0.
+
+---
+
+## 26. Monitoring Gate
+
+Monitoring readiness should be evaluated before production release.
+
+### Monitoring GO
+
+Monitoring may be approved when:
+
+* Required metrics are defined.
+* Thresholds are documented.
+* Owners are assigned.
+* Alerts are configured where required.
+* Escalation paths exist.
+* Security monitoring is ready.
+* Policy and model changes can be identified.
+* Production issues can be logged and tracked.
+
+### Monitoring HOLD
+
+Monitoring should be held when:
+
+* Important metrics cannot be measured.
+* Critical ownership is missing.
+* Alert thresholds are undefined.
+* Escalation paths are incomplete.
+* Material policy or model changes cannot be tracked.
+
+### Monitoring NO-GO
+
+Production should not proceed when monitoring gaps create unacceptable risk, particularly where:
+
+* Critical security events cannot be detected.
+* Unauthorized access cannot be identified.
+* Critical AI-quality failures cannot be detected.
+* Material policy changes cannot be controlled.
+
+---
+
+## 27. Practical Exercise 11: Build An AI Monitoring & Continuous Improvement Plan
+
+### Scenario
+
+PolicyAssist has been in production for three months.
+
+The monitoring report shows:
+
+| Metric                      | Target |      Current |
+| --------------------------- | -----: | -----------: |
+| Retrieval Accuracy          |   ≥90% |          89% |
+| Answer Accuracy             |   ≥90% |          91% |
+| Hallucination Rate          |    <2% |         2.3% |
+| Citation Correctness        |   100% |          99% |
+| Requests Within 10 Seconds  |   ≥95% |          93% |
+| User Satisfaction           |   ≥85% |          82% |
+| Critical Security Incidents |      0 |            0 |
+| Policy Authority Conflicts  |      0 | 1 unresolved |
+| User Complaints             |      — |   Increasing |
+
+Leadership wants to continue operating the system without interruption.
+
+### Your Task
+
+As Project Manager:
+
+1. Identify which metrics have failed their targets.
+2. Determine which issues require immediate escalation.
+3. Identify potential root causes.
+4. Determine which stakeholders should be involved.
+5. Decide whether the system requires corrective action, enhanced monitoring, or rollback consideration.
+6. Determine whether the unresolved policy authority conflict should affect active retrieval.
+7. Create backlog items for improvement.
+8. Prioritize the improvement items.
+9. Define the evidence required before closing the issues.
+10. Recommend the next PM action.
+
+---
+
+## 28. Artifact / Output
+
+Complete an **AI Monitoring & Continuous Improvement Plan** containing:
+
+* Monitoring categories.
+* Production metrics.
+* Targets.
+* Alert thresholds.
+* Monitoring owners.
+* Escalation paths.
+* Incident process.
+* AI drift process.
+* Data drift process.
+* Model change process.
+* Policy change process.
+* User feedback process.
+* Continuous improvement process.
+* Backlog prioritization approach.
+* Production review process.
+* Monitoring acceptance criteria.
+* Open monitoring risks.
+* Improvement backlog.
+* PM decision framework.
+
+---
+
+## 29. PM Decision
+
+Before approving continued operation, ask:
+
+* Is PolicyAssist still meeting its approved quality targets?
+* Are hallucinations within the approved threshold?
+* Are citations still correct?
+* Is retrieval still accurate?
+* Is performance within target?
+* Are users satisfied?
+* Are security controls working?
+* Are policy authority conflicts controlled?
+* Have model or knowledge changes occurred?
+* Are production issues being detected?
+* Are corrective actions being tracked?
+* Does any issue require escalation, suspension, or rollback?
+
+The PM should not treat declining AI quality as normal system behavior simply because the application remains available.
+
+---
+
+## 30. Decision / Reflection
+
+Explain:
+
+1. Why is monitoring different from evaluation?
+2. Why should AI quality be monitored after release?
+3. What can cause AI drift?
+4. Why are policy changes a monitoring concern?
+5. Why should model changes trigger evaluation?
+6. How should user feedback be converted into actionable work?
+7. When should a monitoring issue become a defect?
+8. When should a production issue trigger rollback consideration?
+9. Why is business-outcome monitoring important?
+10. How does monitoring support continuous improvement?
+
+---
+
+## Competency Check
+
+You should be able to:
+
+* Define an AI monitoring strategy.
+* Identify production AI quality metrics.
+* Define measurable monitoring thresholds.
+* Explain AI drift and data drift.
+* Monitor model and knowledge changes.
+* Distinguish feedback from defects.
+* Define incident-management processes.
+* Perform PM-level root cause analysis.
+* Build a continuous-improvement loop.
+* Prioritize production improvement work.
+* Assign monitoring ownership.
+* Define monitoring acceptance criteria.
+* Determine when monitoring failures require escalation.
+* Use evidence to make continued-operation decisions.
+
+### Competency Standard
+
+You should be able to determine whether an AI product remains safe, accurate, useful, and operational after release and recommend appropriate corrective action when performance changes.
+
+---
+
+## Key Takeaways
+
+* Monitoring protects AI performance after release.
+* Evaluation and monitoring serve different purposes.
+* AI quality can change after deployment.
+* Policy and model changes require controlled validation.
+* User feedback is an important source of production evidence.
+* Not every feedback item is a defect.
+* Critical AI and security issues require immediate escalation.
+* Continuous improvement should follow a controlled lifecycle.
+* Production metrics must have measurable thresholds and owners.
+* Business outcomes matter as much as technical performance.
+* Monitoring evidence should drive PM decisions.
+* The Project Manager ensures problems become controlled actions rather than recurring issues.
+
+---
+
+## Connection To Capstone
+
+Monitoring completes the operational lifecycle of Petadel PolicyAssist AI.
+
+The full lifecycle is:
+
+**Initiation → Discovery → Requirements → Planning → Architecture → Data → Evaluation → Risk & Security → Testing → UAT → Release → Monitoring → Continuous Improvement**
+
+PolicyAssist is not considered successful simply because it launches.
+
+It must continue to demonstrate:
+
+**Accuracy + Grounding + Citation Quality + Security + Performance + User Value + Governance**
+
+The continuous-improvement loop remains:
+
+**Monitor → Identify Problem → Create Backlog Item → Prioritize → Develop → Test → Evaluate → UAT → Release → Monitor**
+
+The governing principle remains:
+
+> **No Evidence = Not Yet Accepted.**
