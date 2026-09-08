@@ -8,11 +8,9 @@ The course focuses on project management rather than programming.
 
 The goal is to help Project Managers understand enough about AI, data, architecture, evaluation, security, governance, testing, deployment, and monitoring to make informed project decisions and lead cross-functional teams.
 
----
-
 ## Course Structure
 
-The course contains **13 modules** covering the complete project lifecycle.
+The course contains 13 modules covering the complete project lifecycle.
 
 The learning approach includes:
 
@@ -23,23 +21,21 @@ The learning approach includes:
 
 The course includes both:
 
-**PM Track**
+### PM Track
 
 Project management concepts, decisions, frameworks, requirements, planning, governance, risk, testing, release, and monitoring.
 
-**Build Track**
+### Build Track
 
 Hands-on exposure to the working Petadel PolicyAssist AI project.
 
 The Build Track is designed to provide practical understanding without turning the course into a programming course.
 
----
-
 ## Capstone Project
 
 ### Petadel PolicyAssist AI
 
-The course capstone is an AI-powered policy assistance solution for **Petadel Technology Services (PTS)**.
+The course capstone is an AI-powered policy assistance solution for Petadel Technology Services (PTS).
 
 The business problem is that employees may have difficulty locating and understanding authoritative company policies.
 
@@ -63,9 +59,7 @@ The project addresses:
 * Monitoring
 * Continuous improvement
 
-The capstone is introduced during the course and fully executed in **Module 12**.
-
----
+The capstone is introduced during the course and fully executed in Module 12.
 
 ## Capstone Lifecycle
 
@@ -74,8 +68,6 @@ The project follows the complete project lifecycle:
 **Initiation → Discovery → Requirements → Planning → Architecture → Build → Evaluation → Security and Governance → UAT → Release → Monitoring → Continuous Improvement**
 
 This lifecycle connects the concepts taught throughout the course.
-
----
 
 ## Templates Library
 
@@ -108,8 +100,6 @@ The library includes:
 
 These templates can be reused for real-world technology and AI projects.
 
----
-
 ## Course Repository Structure
 
 ```text
@@ -121,19 +111,6 @@ AI-Project-Management-Course/
 ├── 03-GLOSSARY.md
 │
 ├── Modules/
-│   ├── 01-AI-PM-Foundations/
-│   ├── 02-Problem-Discovery-Stakeholders/
-│   ├── 03-Business-Analysis-Requirements/
-│   ├── 04-Agile-Product-Planning/
-│   ├── 05-AI-Technology-Fundamentals/
-│   ├── 06-AI-Data-Knowledge-Management/
-│   ├── 07-AI-Evaluation-Quality/
-│   ├── 08-AI-Risk-Security-Governance/
-│   ├── 09-Testing-UAT-Pilot/
-│   ├── 10-Release-Deployment/
-│   ├── 11-Monitoring-Continuous-Improvement/
-│   ├── 12-Capstone-Portfolio/
-│   └── 13-Final-Assessment/
 │
 ├── Templates/
 │
@@ -144,8 +121,6 @@ AI-Project-Management-Course/
 │
 └── PolicyAssist-App/
 ```
-
----
 
 ## Working Application
 
@@ -163,9 +138,9 @@ The application uses:
 * Ollama
 * Llama 3.2 3B
 
-The deployed configuration uses Gemini 2.5 Flash when the Gemini API key is available. Local development can use Ollama with Llama 3.2 3B as a fallback.
+The deployed configuration uses **Gemini 2.5 Flash** when the Gemini API key is available.
 
----
+Local development can use **Ollama with Llama 3.2 3B** as a fallback.
 
 ## Professional Outcome
 
@@ -188,8 +163,6 @@ By completing the course, the learner should be able to:
 * Make evidence-based Go, Hold, or No-Go decisions.
 * Communicate AI project information to technical and business stakeholders.
 
----
-
 ## Capstone Portfolio
 
 The Portfolio folder presents the strongest professional evidence from the Petadel PolicyAssist AI capstone.
@@ -197,8 +170,6 @@ The Portfolio folder presents the strongest professional evidence from the Petad
 The relationship is:
 
 **Course Learning → Capstone Application → Project Evidence → Professional Portfolio**
-
----
 
 ## Final Project Principle
 
