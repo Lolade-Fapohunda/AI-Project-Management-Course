@@ -1,4 +1,3 @@
-# AI-Project-Management-Course
 # AI Project Management Course
 
 ## Welcome
