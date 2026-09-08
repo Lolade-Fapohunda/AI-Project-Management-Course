@@ -1,348 +1,89 @@
-# 05: AI Architecture & Technology Assessment
+# Petadel PolicyAssist AI
 
-## Purpose
+# AI Architecture & Technology Assessment
 
-This document defines the proposed technical architecture for **Petadel PolicyAssist AI** and provides the Project Manager with a structured method for evaluating whether the architecture can support the project's:
+## 1. Purpose
 
-* Business objectives
-* Functional requirements
-* Non-functional requirements
-* MVP scope
-* AI quality targets
-* Data governance requirements
-* Security requirements
-* Testing and UAT requirements
-* Production readiness requirements
+This document defines the architecture for Petadel PolicyAssist AI and explains how the major application components support the business and project requirements.
 
-The Project Manager is not responsible for implementing the architecture. The Project Manager is responsible for understanding the architecture well enough to evaluate technical decisions, dependencies, risks, evidence, and readiness.
+The purpose is to provide the Project Manager with enough architectural understanding to manage dependencies, risks, quality, security, governance, testing, and release decisions.
+
+The Project Manager is not expected to implement the architecture but must understand the purpose and risk associated with each major component.
 
 ---
 
-## 1. Architecture Overview
+# 2. Business Problem
 
-Petadel PolicyAssist AI uses a **Retrieval-Augmented Generation (RAG)** architecture.
+Employees may have difficulty locating and interpreting the correct internal policy information.
 
-The core principle is:
+The project addresses:
 
-> **Retrieve authoritative evidence first. Generate the answer second.**
+* Policy discovery.
+* Multiple policy versions.
+* Outdated information.
+* Conflicting policy information.
+* Unclear policy authority.
+* Document search limitations.
+* Access-control concerns.
+* Dependence on human assistance.
 
-The Large Language Model (LLM) should not be treated as the company's policy database or source of truth.
+---
 
-### High-Level Architecture
+# 3. Architecture Objective
+
+The architecture must support a policy-assistance workflow in which the system:
+
+1. Receives a policy question.
+2. Identifies relevant policy information.
+3. Retrieves eligible policy evidence.
+4. Uses the retrieved evidence to generate a response.
+5. Provides an appropriate source.
+6. Refuses unsupported information rather than inventing an answer.
+7. Supports appropriate security and governance controls.
+
+---
+
+# 4. High-Level Architecture
 
 ```text
-                    ┌─────────────────────┐
-                    │   Policy Documents  │
-                    └──────────┬──────────┘
-                               ↓
-                    ┌─────────────────────┐
-                    │ Document Ingestion  │
-                    └──────────┬──────────┘
-                               ↓
-                    ┌─────────────────────┐
-                    │ Text Extraction     │
-                    │ & Chunking           │
-                    └──────────┬──────────┘
-                               ↓
-                    ┌─────────────────────┐
-                    │ Embedding Model     │
-                    │ all-MiniLM-L6-v2    │
-                    └──────────┬──────────┘
-                               ↓
-                    ┌─────────────────────┐
-                    │ ChromaDB            │
-                    │ Vector Database     │
-                    └──────────┬──────────┘
-                               ↑
-                               │
-┌───────────────┐     ┌────────┴──────────┐
-│ Authorized    │────→│ PolicyAssist      │
-│ Employee      │     │ Application       │
-└───────────────┘     └────────┬──────────┘
-                               ↓
-                    ┌─────────────────────┐
-                    │ Retrieval &         │
-                    │ Eligibility Checks  │
-                    └──────────┬──────────┘
-                               ↓
-                    ┌─────────────────────┐
-                    │ Retrieved Policy    │
-                    │ Evidence            │
-                    └──────────┬──────────┘
-                               ↓
-                    ┌─────────────────────┐
-                    │ Llama 3.2 3B        │
-                    │ Large Language Model│
-                    └──────────┬──────────┘
-                               ↓
-                    ┌─────────────────────┐
-                    │ Grounding &         │
-                    │ Response Controls   │
-                    └──────────┬──────────┘
-                               ↓
-                    ┌─────────────────────┐
-                    │ Answer + Citation   │
-                    │ or Appropriate      │
-                    │ Refusal             │
-                    └─────────────────────┘
-```
-
----
-
-## 2. Architecture Components
-
-| Component            | Technology / Approach          | Responsibility                                              |
-| -------------------- | ------------------------------ | ----------------------------------------------------------- |
-| Application Logic    | Python                         | Connects system components and applies business rules       |
-| User Interface       | Streamlit                      | Provides employee interaction                               |
-| Document Ingestion   | Python-based ingestion         | Loads and prepares policy documents                         |
-| Text Processing      | Extraction + chunking          | Converts documents into searchable sections                 |
-| Embedding Framework  | Sentence Transformers          | Converts text into semantic representations                 |
-| Embedding Model      | `all-MiniLM-L6-v2`             | Generates embeddings                                        |
-| Vector Database      | ChromaDB                       | Stores and retrieves policy embeddings                      |
-| AI Runtime           | Ollama                         | Runs the local LLM                                          |
-| Large Language Model | Llama 3.2 3B                   | Generates responses from retrieved evidence                 |
-| Governance Metadata  | Structured metadata            | Determines policy status, ownership, authority, and version |
-| Grounding Layer      | Application logic              | Controls what evidence can support a response               |
-| Evaluation Layer     | Evaluation dataset and metrics | Measures system quality                                     |
-| Monitoring Layer     | Metrics, logs, and feedback    | Supports operational monitoring                             |
-
----
-
-## 3. Technology Roles
-
-### Python
-
-Python is the programming language used to implement the application.
-
-The PM does not need to develop Python code but should understand that Python provides the application logic connecting the system components.
-
----
-
-### Streamlit
-
-Streamlit provides the user interface.
-
-It is responsible for:
-
-* Accepting user questions
-* Displaying responses
-* Displaying supporting policy evidence
-* Displaying appropriate refusals
-* Providing feedback functionality
-* Presenting system status where appropriate
-
----
-
-### Sentence Transformers
-
-Sentence Transformers provides the embedding framework.
-
-It converts text into numerical representations that allow the system to compare semantic meaning.
-
----
-
-### `all-MiniLM-L6-v2`
-
-`all-MiniLM-L6-v2` is the selected embedding model.
-
-It is used to generate embeddings for:
-
-* Policy content
-* Policy sections
-* User questions
-
-The PM should recognize the embedding model as a technical dependency because changes to the model can affect retrieval quality.
-
----
-
-### ChromaDB
-
-ChromaDB is the vector database.
-
-It stores:
-
-* Policy embeddings
-* Policy sections
-* Associated metadata
-
-It allows the application to retrieve policy content that is semantically relevant to a user's question.
-
----
-
-### Ollama
-
-Ollama is the local AI runtime.
-
-It allows the application to run the selected Large Language Model locally rather than requiring a paid external AI API.
-
----
-
-### Llama 3.2 3B
-
-Llama 3.2 3B is the selected Large Language Model.
-
-Its role is to generate a natural-language response using the policy evidence supplied by the application.
-
-The LLM must not independently determine:
-
-* Which policy is authoritative
-* Which version is current
-* Whether a document is approved
-* Whether conflicting documents should be trusted
-* Whether a user is authorized to access information
-
-Those decisions belong to application logic and governance controls.
-
----
-
-## 4. Architecture Layers
-
-The architecture can be understood as six major layers.
-
-### Layer 1: User Interface
-
-Responsible for:
-
-* User question submission
-* Response presentation
-* Source presentation
-* Feedback
-* Error/refusal messaging
-
----
-
-### Layer 2: Application Logic
-
-Responsible for:
-
-* Request handling
-* Policy eligibility checks
-* Retrieval logic
-* Prompt construction
-* Response handling
-* Citation handling
-* Business rules
-
----
-
-### Layer 3: Knowledge Layer
-
-Responsible for:
-
-* Policy documents
-* Document ingestion
-* Chunking
-* Embeddings
-* Vector storage
-* Metadata
-
----
-
-### Layer 4: AI Generation Layer
-
-Responsible for:
-
-* Receiving retrieved evidence
-* Generating a response
-* Following grounding instructions
-
----
-
-### Layer 5: Governance And Security Layer
-
-Responsible for:
-
-* Authentication
-* Authorization
-* Policy authority
-* Version control
-* Access restrictions
-* Auditability
-* Human oversight
-
----
-
-### Layer 6: Evaluation And Operations Layer
-
-Responsible for:
-
-* Evaluation
-* Testing
-* UAT
-* Monitoring
-* Feedback
-* Defect tracking
-* Continuous improvement
-
----
-
-## 5. End-To-End Data Flow
-
-### Policy Ingestion Flow
-
-```text
-Policy Document
-      ↓
-Document Validation
-      ↓
+Policy Documents
+       ↓
+Document Processing
+       ↓
 Metadata Validation
-      ↓
-Authority / Status Check
-      ↓
-Text Extraction
-      ↓
+       ↓
+Policy Eligibility Check
+       ↓
 Chunking
-      ↓
-Embedding Generation
-      ↓
-Vector Database
-```
-
-Only eligible policy content should enter the retrieval population.
-
-### User Question Flow
-
-```text
-User Question
-      ↓
-Authentication / Authorization
-      ↓
-Question Processing
-      ↓
+       ↓
+Embeddings
+       ↓
+ChromaDB
+       ↓
 Semantic Retrieval
-      ↓
-Policy Eligibility Validation
-      ↓
-Evidence Quality Check
-      ↓
-LLM
-      ↓
+       ↓
+Evidence Validation
+       ↓
+Response Generation
+       ↓
 Grounded Response
-      ↓
-Citation Validation
-      ↓
+       ↓
+Citation
+       ↓
+Streamlit Application
+       ↓
 User
 ```
 
-If sufficient evidence does not exist, the system should not proceed as though an answer is available.
-
 ---
 
-## 6. Policy Authority Architecture
+# 5. Architecture Components
 
-Policy authority is a core architectural control.
+## 5.1 Policy Documents
 
-### Eligible Policy
+Policy documents provide the source information used by the application.
 
-A policy is eligible for retrieval when it is:
-
-* Active
-* Authoritative
-* Approved
-* Complete with required metadata
-
-Required metadata includes:
+Policy documents must contain sufficient information to establish:
 
 * Policy ID
 * Policy name
@@ -350,420 +91,416 @@ Required metadata includes:
 * Status
 * Effective date
 * Policy owner
+* Approval information when available
 
-### Ineligible Policy
+---
 
-The system must not use policy content that is:
+## 5.2 Document Processing
 
-* Draft
-* Superseded
-* Unverified
-* Missing mandatory metadata
-* Conflicting with another authoritative source
+The application reads approved policy documents and extracts their contents.
 
-### Data Readiness Rule
+The document-processing stage prepares the information for validation, chunking, embedding, and retrieval.
+
+---
+
+## 5.3 Policy Eligibility
+
+A policy is eligible for retrieval when it meets the required conditions:
+
+**Active + Authoritative + Approved + Required Metadata Present = Eligible**
+
+The application validates required policy metadata and status before policy information is treated as eligible.
+
+---
+
+## 5.4 Chunking
+
+Policy documents are divided into smaller sections so that relevant portions can be retrieved when a user asks a question.
+
+The purpose of chunking is to improve the ability to locate relevant policy content.
+
+---
+
+## 5.5 Embeddings
+
+The application uses Sentence Transformers with:
+
+`all-MiniLM-L6-v2`
+
+The embedding model converts policy content and user questions into numerical representations that can be compared for semantic similarity.
+
+---
+
+## 5.6 Vector Database
+
+The application uses:
+
+**ChromaDB**
+
+ChromaDB stores the policy embeddings and associated metadata used during retrieval.
+
+---
+
+## 5.7 Semantic Retrieval
+
+The retrieval process compares the user's question with the stored policy information.
+
+The current prototype uses a maximum retrieval distance of:
+
+**1.20**
+
+This is a configuration value.
+
+It is not proof that retrieval accuracy is 90 percent or higher.
+
+Retrieval quality must be demonstrated through evaluation.
+
+---
+
+# 6. Response Generation
+
+The current application supports two response-generation configurations.
+
+## 6.1 Deployed Configuration
+
+When `GEMINI_API_KEY` is available, the application uses:
+
+**Google Gen AI**
+
+with:
+
+**Gemini 2.5 Flash**
+
+The current application configuration identifies `gemini-2.5-flash` as the Gemini model.
+
+---
+
+## 6.2 Local Development Configuration
+
+When the Gemini API key is not available, the application can use:
+
+**Ollama**
+
+with:
+
+**Llama 3.2 3B**
+
+The application identifies `llama3.2:3b` as the local model and uses Ollama for local response generation.
+
+---
+
+## 6.3 Runtime Decision
+
+The current runtime behavior is:
 
 ```text
-Active
-+
-Authoritative
-+
-Approved
-+
-Required Metadata Present
-=
-Eligible For Retrieval
+GEMINI_API_KEY Available
+        ↓
+Gemini 2.5 Flash
 ```
 
-A failure of any mandatory condition means the policy is not eligible.
-
----
-
-## 7. Authority Conflict Handling
-
-If multiple documents appear to represent the same policy but authority cannot be established, PolicyAssist must not automatically choose one.
-
-The system must:
-
-1. Identify the conflict.
-2. Prevent unresolved conflicting content from being treated as authoritative.
-3. Flag the conflict.
-4. Identify the appropriate policy owner or governance authority.
-5. Record the resolution.
-6. Revalidate the policy before making it eligible for retrieval.
-
-### Acceptance Criterion
-
-**100% of unresolved authority conflicts must be prevented from being used as authoritative response evidence.**
-
----
-
-## 8. Retrieval Architecture
-
-The retrieval process should:
-
-1. Receive the user's question.
-2. Convert the question into an embedding.
-3. Search the vector database.
-4. Retrieve candidate policy sections.
-5. Validate policy eligibility.
-6. Apply retrieval-quality thresholds.
-7. Select qualifying evidence.
-8. Pass qualifying evidence to the response-generation layer.
-
-The current prototype uses:
+If the key is not available:
 
 ```text
-Maximum Retrieval Distance = 1.20
+GEMINI_API_KEY Not Available
+        ↓
+Ollama
+        ↓
+Llama 3.2 3B
 ```
 
-This is a system configuration value, not a guaranteed accuracy threshold.
-
-It must be validated through evaluation.
-
-### PM Principle
-
-> A retrieval threshold must be validated by evidence; it should never be treated as proof of retrieval accuracy by itself.
+This allows the deployed application to use Gemini while retaining a local development option.
 
 ---
 
-## 9. Grounding Architecture
+# 7. Grounding
 
-Grounding connects the generated answer to retrieved policy evidence.
+The response-generation model receives the policy evidence selected by the application.
 
-### Supported Question
+The model is instructed to answer using the supplied policy evidence.
+
+The model is not treated as the source of company policy.
+
+The basic flow is:
+
+```text
+User Question
+       ↓
+Policy Retrieval
+       ↓
+Eligible Evidence
+       ↓
+Response Generation
+       ↓
+Grounded Response
+```
+
+---
+
+# 8. Unsupported Questions
+
+If sufficient authoritative evidence does not exist, the system should not present an unsupported answer as policy information.
+
+The expected behavior is:
 
 ```text
 Question
    ↓
-Relevant Authoritative Evidence
+Insufficient Evidence
    ↓
-LLM
+Limitation or Refusal
    ↓
-Grounded Answer
-   ↓
-Supporting Citation
+No Unsupported Policy Claim
 ```
-
-### Unsupported Question
-
-```text
-Question
-   ↓
-Insufficient Authoritative Evidence
-   ↓
-Refusal / Limitation Response
-   ↓
-No Unsupported Citation
-```
-
-The application, not the LLM, determines whether sufficient policy evidence exists.
 
 ---
 
-## 10. Citation Architecture
+# 9. Citation
 
-Citations must be evidence-based.
+Citations must correspond to the policy evidence supporting the response.
 
-### Citation Rule
+The application should not present a document as a supporting source merely because it was retrieved.
 
-If retrieved evidence substantively supports the answer:
+The project target is:
 
-**Answer + Supporting Citation**
+**Citation Correctness = 100%**
 
-If retrieved evidence does not support the answer:
-
-**Refusal / Limitation + No Unsupported Citation**
-
-The system must never display a retrieved document as a supporting source merely because it was retrieved.
-
-### Acceptance Criteria
-
-* Citation correctness = **100%**
-* Unsupported citations = **0**
-* Citations displayed without substantive supporting evidence = **0**
+Unsupported citations should be treated as a quality failure.
 
 ---
 
-## 11. Mixed-Question Handling
+# 10. Mixed Questions
 
-A user may ask multiple questions in a single request.
+Users may ask multiple questions in one request.
 
 Example:
 
-> "How much parental leave do I get, and how many vacation days do I receive?"
+> How much parental leave do I receive and how many vacation days do I receive?
 
-If authoritative evidence exists for parental leave but not vacation:
+If evidence supports only one part of the question, the system should:
 
-The system should:
-
-* Answer the supported parental-leave portion.
-* Identify the unsupported vacation portion.
-* Avoid inventing vacation information.
-* Cite the evidence supporting the parental-leave answer.
-
-### Acceptance Criterion
-
-**100% of unsupported portions of evaluated mixed questions must be prevented from being presented as authoritative policy information.**
+* Answer the supported portion.
+* Identify the unsupported portion.
+* Avoid inventing information.
+* Provide the supporting source for the supported answer.
 
 ---
 
-## 12. Security Architecture
+# 11. Policy Authority
 
-Security must be designed into the architecture.
+Policy authority is a core control.
 
-### Authentication
+Eligible policies should be:
 
-Users must be authenticated before accessing protected policy information.
+* Active.
+* Authoritative.
+* Approved.
+* Complete with required metadata.
 
-### Authorization
+The system should not automatically select one document when two authoritative documents conflict and the correct authority cannot be established.
 
-Users must only access information they are permitted to access.
-
-### Access Control
-
-Policy access should be controlled according to applicable employee or authority level.
-
-### Data Protection
-
-Sensitive information must not be unnecessarily exposed through:
-
-* Prompts
-* Responses
-* Logs
-* Error messages
-* Administrative interfaces
-
-### Logging
-
-Material security, governance, and system events should be logged for accountability and investigation.
-
-### Security Acceptance Criteria
-
-* Required authentication controls validated = **100%**
-* Required authorization controls validated = **100%**
-* Critical unauthorized-access findings = **0**
-* Critical security incidents before release = **0**
+The conflict should be referred for human resolution.
 
 ---
 
-## 13. Architecture Interfaces
+# 12. Security Architecture
 
-The PM should understand how major components interact.
+Security requirements include:
 
-| Interface                 | Input                      | Output             | Key Risk                  |
-| ------------------------- | -------------------------- | ------------------ | ------------------------- |
-| User → Application        | Question                   | Request            | Unauthorized access       |
-| Application → Vector DB   | Query embedding            | Policy sections    | Poor retrieval            |
-| Vector DB → Application   | Policy evidence + metadata | Candidate evidence | Incorrect/ineligible data |
-| Application → LLM         | Approved evidence + prompt | Generated response | Hallucination             |
-| LLM → Application         | Response                   | Candidate answer   | Unsupported claims        |
-| Application → User        | Answer + citation/refusal  | User experience    | Incorrect information     |
-| Policy Source → Ingestion | Policy document            | Indexed content    | Poor or outdated data     |
+* Authentication.
+* Authorization.
+* Access control.
+* Protection of sensitive information.
+* Appropriate logging.
+* Protection of policy information.
 
----
-
-## 14. Technical Dependencies
-
-| Dependency         | Potential Impact        | PM Control             |
-| ------------------ | ----------------------- | ---------------------- |
-| Policy documents   | Retrieval quality       | Data readiness         |
-| Policy metadata    | Authority determination | Metadata validation    |
-| Embedding model    | Retrieval quality       | Evaluation             |
-| Vector database    | Retrieval availability  | Reliability planning   |
-| LLM                | Response quality        | AI evaluation          |
-| Ollama runtime     | Model availability      | Environment validation |
-| Streamlit          | User experience         | Functional/UAT testing |
-| Authentication     | Security                | Security validation    |
-| Evaluation dataset | Quality measurement     | Dataset governance     |
-| Monitoring         | Operational visibility  | Monitoring readiness   |
-
-Dependencies should be tracked when their failure could affect:
-
-* Scope
-* Schedule
-* Cost
-* Quality
-* Security
-* Release readiness
+The production solution must ensure that users can access only information they are authorized to access.
 
 ---
 
-## 15. Technical Risks
+# 13. Architecture Interfaces
 
-| Risk                                     | Severity    | PM Response                           |
-| ---------------------------------------- | ----------- | ------------------------------------- |
-| Poor document quality                    | High        | Establish data-readiness gate         |
-| Incorrect policy metadata                | High        | Validate required metadata            |
-| Conflicting policies                     | High        | Hold for authority resolution         |
-| Poor retrieval accuracy                  | High        | Evaluate retrieval performance        |
-| Hallucinated answers                     | Critical    | Enforce grounding/refusal controls    |
-| Incorrect citations                      | High        | Validate citation correctness         |
-| Model limitations                        | Medium/High | Evaluate against approved dataset     |
-| Slow response time                       | Medium      | Measure latency                       |
-| Unauthorized access                      | Critical    | Validate authentication/authorization |
-| Vector database failure                  | Medium/High | Define recovery approach              |
-| Model/runtime failure                    | Medium      | Define recovery/fallback approach     |
-| Uncontrolled model change                | High        | Change control                        |
-| Knowledge-base change without validation | High        | Re-ingestion and evaluation controls  |
+| Interface                      | Input                        | Output                    | Key Risk                     |
+| ------------------------------ | ---------------------------- | ------------------------- | ---------------------------- |
+| User to Application            | Question                     | Request                   | Unauthorized access          |
+| Application to Embedding Model | Text                         | Embedding                 | Poor representation          |
+| Application to ChromaDB        | Query embedding              | Candidate policy sections | Poor retrieval               |
+| ChromaDB to Application        | Policy evidence and metadata | Candidate evidence        | Incorrect or ineligible data |
+| Application to Response Model  | Approved evidence and prompt | Candidate response        | Unsupported claims           |
+| Response Model to Application  | Generated response           | Candidate answer          | Hallucination                |
+| Application to User            | Answer and source            | User experience           | Incorrect information        |
+| Policy Source to Ingestion     | Policy document              | Indexed content           | Outdated or incomplete data  |
 
 ---
 
-## 16. MVP Architecture
+# 14. Technology Stack
 
-The MVP must support the minimum viable employee journey:
+| Technology            | Role                                           |
+| --------------------- | ---------------------------------------------- |
+| Python                | Programming language                           |
+| Streamlit             | Application and user interface                 |
+| Sentence Transformers | Embedding framework                            |
+| `all-MiniLM-L6-v2`    | Embedding model                                |
+| ChromaDB              | Vector database                                |
+| Google Gen AI         | Cloud model integration                        |
+| Gemini 2.5 Flash      | Response generation for deployed configuration |
+| Ollama                | Local model runtime                            |
+| Llama 3.2 3B          | Local response-generation fallback             |
+
+---
+
+# 15. Technical Dependencies
+
+Major dependencies include:
+
+* Policy documents.
+* Policy metadata.
+* Embedding model.
+* ChromaDB.
+* Response-generation model.
+* Streamlit.
+* Authentication and authorization.
+* Evaluation dataset.
+* Monitoring.
+* Application configuration.
+
+Dependencies should be tracked when failure could affect:
+
+* Scope.
+* Schedule.
+* Cost.
+* Quality.
+* Security.
+* Release readiness.
+
+---
+
+# 16. Technical Risks
+
+| Risk                      | Severity    | PM Response                            |
+| ------------------------- | ----------- | -------------------------------------- |
+| Poor document quality     | High        | Establish data-readiness controls      |
+| Incorrect policy metadata | High        | Validate required metadata             |
+| Conflicting policies      | High        | Hold for authority resolution          |
+| Poor retrieval accuracy   | High        | Evaluate retrieval performance         |
+| Unsupported responses     | Critical    | Enforce grounding and refusal controls |
+| Incorrect citations       | High        | Validate citation correctness          |
+| Model limitations         | Medium/High | Evaluate against approved dataset      |
+| Slow response time        | Medium      | Measure latency                        |
+| Unauthorized access       | Critical    | Validate access controls               |
+| Vector database failure   | Medium/High | Define recovery approach               |
+| Model or runtime failure  | Medium      | Maintain approved fallback approach    |
+| Uncontrolled model change | High        | Apply change control                   |
+| Knowledge-base changes    | High        | Revalidate changed policy information  |
+
+---
+
+# 17. MVP Architecture
+
+The MVP must support the minimum employee journey:
 
 ```text
 Authorized User
-      ↓
+       ↓
 Ask Policy Question
-      ↓
-Retrieve Authoritative Active Policy
-      ↓
+       ↓
+Retrieve Eligible Policy
+       ↓
 Generate Grounded Response
-      ↓
+       ↓
 Display Supporting Source
-      ↓
+       ↓
 User Can Provide Feedback
 ```
 
-### MVP Must Include
+The MVP should include:
 
-* Authorized access
-* Approved policy ingestion
-* Required policy metadata
-* Active/authoritative controls
-* Semantic retrieval
-* Grounded responses
-* Evidence-based citations
-* Unsupported-question refusal
-* Basic security controls
-* Basic human escalation/feedback
-* Core evaluation
-* Core functional testing
-* Core negative testing
-* MVP UAT
+* Approved policy ingestion.
+* Required policy metadata.
+* Active and authority controls.
+* Semantic retrieval.
+* Grounded responses.
+* Evidence-based citations.
+* Unsupported-question handling.
+* Basic security controls.
+* Basic feedback and escalation.
+* Core evaluation.
+* Core testing.
+* MVP UAT.
 
-### MVP Does Not Require Full Production Readiness
+---
 
-The MVP does not need to provide the full operational capability required for production.
+# 18. MVP Does Not Equal Production Readiness
+
+The MVP does not need to provide every operational capability required for production.
 
 Production readiness additionally requires:
 
-* Production-scale performance validation
-* Comprehensive monitoring
-* Advanced administration
-* Comprehensive governance operations
-* Full regression testing
-* Reliability validation
-* Tested rollback
-* Production deployment controls
-* Long-term continuous improvement processes
+* Production-scale performance validation.
+* Comprehensive monitoring.
+* Full security validation.
+* Complete governance controls.
+* Full regression testing.
+* Reliability validation.
+* Tested rollback.
+* Production deployment controls.
+* Long-term improvement processes.
 
 ---
 
-## 17. MVP Architecture Acceptance Gate
+# 19. Evaluation Acceptance Criteria
 
-The MVP architecture and implementation should not be considered accepted solely because the application runs.
+The project establishes the following targets:
 
-The following evidence must exist before MVP approval:
+| Measure                      |       Target |
+| ---------------------------- | -----------: |
+| Retrieval Accuracy           |        ≥ 90% |
+| Answer Accuracy              |        ≥ 90% |
+| Hallucination Rate           |         < 2% |
+| Citation Correctness         |         100% |
+| Unsupported-Question Refusal |         100% |
+| Response Latency             | ≤ 10 seconds |
+| Critical Security Findings   |            0 |
+| User Satisfaction            |        ≥ 85% |
 
-| Acceptance Measure                   | MVP Target |
-| ------------------------------------ | ---------: |
-| Retrieval Accuracy                   |       ≥90% |
-| Answer Accuracy                      |       ≥90% |
-| Hallucination Rate                   |        <2% |
-| Citation Correctness                 |       100% |
-| Unsupported-Question Refusal         |       100% |
-| Required Security Controls Validated |       100% |
-| Critical Security Findings           |          0 |
-| MVP UAT Completion                   |       100% |
-| Unresolved Critical Defects          |          0 |
+These are project targets.
 
----
-
-## 18. Response-Time Acceptance Criteria
-
-Response time must be measured objectively rather than described as "fast."
-
-### Measurement Definition
-
-Response time is measured from:
-
-> **The moment the user submits a policy question to the moment the complete PolicyAssist response is displayed to the user.**
-
-The measurement includes:
-
-* Question processing
-* Embedding generation
-* Vector retrieval
-* Policy eligibility validation
-* LLM response generation
-* Grounding and citation processing
-* Final response display
-
-### MVP Acceptance Criteria
-
-The MVP must demonstrate:
-
-1. **At least 95% of representative policy questions complete within 10 seconds.**
-2. **100% of representative policy questions complete within 15 seconds.**
-3. Performance testing must include a **minimum of 30 representative policy questions**.
-4. The test dataset must include:
-
-   * Direct policy questions
-   * Paraphrased questions
-   * Multi-policy questions
-   * Unsupported questions
-   * Questions requiring refusal
-5. Every request exceeding **15 seconds** is recorded as a performance failure.
-6. Performance results must be documented as evidence before MVP acceptance.
-
-### Production Acceptance Criteria
-
-Before production release:
-
-* At least **95% of measured production-equivalent requests must complete within 10 seconds**.
-* **100% must remain below the established maximum response-time threshold** unless an approved exception exists.
-* Performance results must be reviewed after representative load testing.
-* Performance failures must be logged, analyzed, and assigned an owner.
-* Material performance degradation must be evaluated through the project's defect and risk-management processes.
-
-### Performance Evidence
-
-The PM should require:
-
-| Evidence                      | Required    |
-| ----------------------------- | ----------- |
-| Test dataset                  | Yes         |
-| Number of requests tested     | Yes         |
-| Average response time         | Yes         |
-| Median response time          | Yes         |
-| 95th-percentile response time | Yes         |
-| Maximum response time         | Yes         |
-| Requests exceeding 10 seconds | Yes         |
-| Requests exceeding 15 seconds | Yes         |
-| Test environment              | Yes         |
-| Model/version used            | Yes         |
-| Performance result            | Pass / Fail |
-
-### PM Acceptance Rule
-
-> **A response-time target is not accepted because the application "feels fast." It is accepted only when measured test evidence demonstrates that the defined threshold has been met.**
-
-**No Evidence = Not Yet Accepted.**
+They must be supported by documented evidence before production acceptance.
 
 ---
 
-## 19. Production Architecture Considerations
+# 20. Performance
 
-The MVP architecture should be evaluated for its ability to evolve into production.
+Response time should be measured from:
+
+> **The moment the user submits a policy question to the moment the complete PolicyAssist response is displayed.**
+
+The measurement should include:
+
+* Question processing.
+* Embedding generation.
+* Vector retrieval.
+* Policy eligibility validation.
+* Response generation.
+* Grounding.
+* Citation processing.
+* Final response display.
+
+The project target is:
+
+**Response Latency ≤ 10 seconds**
+
+Performance must be measured rather than judged by user perception.
+
+---
+
+# 21. Production Architecture Considerations
 
 Production planning should address:
 
 ### Scalability
 
-Can the architecture support the expected number of users and policy documents?
+Can the system support the expected number of users and policy documents?
 
 ### Reliability
 
@@ -787,184 +524,142 @@ Can quality, security, performance, and business outcomes be monitored?
 
 ### Recovery
 
-Can the system be restored to a known approved state?
+Can the system be restored to an approved state?
 
 ### Change Management
 
-Can model, embedding, application, and knowledge-base changes be controlled?
+Can changes to the application, embedding model, response-generation model, and policy knowledge base be controlled?
 
 ---
 
-## 20. Architecture Decision Records
+# 22. Current Architecture Decisions
 
-Major architecture decisions should be documented.
+| Decision                | Current Selection                      | Reason                                          |
+| ----------------------- | -------------------------------------- | ----------------------------------------------- |
+| Architecture Pattern    | Retrieval-Augmented Generation         | Grounds responses in retrieved policy evidence  |
+| Embedding Model         | `all-MiniLM-L6-v2`                     | Supports semantic retrieval                     |
+| Vector Database         | ChromaDB                               | Supports vector retrieval                       |
+| Deployed Response Model | Gemini 2.5 Flash                       | Current cloud response-generation configuration |
+| Local Response Model    | Llama 3.2 3B through Ollama            | Supports local development                      |
+| UI                      | Streamlit                              | Supports the working prototype                  |
+| Policy Source of Truth  | Active, authoritative, approved policy | Prevents unsupported policy use                 |
+| Retrieval Threshold     | Maximum distance 1.20                  | Current prototype configuration                 |
+| Citation Control        | Application-controlled                 | Supports evidence-based citations               |
+| Response-Time Target    | ≤10 seconds                            | Provides measurable performance requirement     |
 
-### Decision Categories
-
-Examples include:
-
-* Local AI vs. cloud AI
-* Selected embedding model
-* Vector database selection
-* LLM selection
-* Retrieval threshold
-* Chunking strategy
-* Citation approach
-* Authority validation approach
-* Authentication approach
-* Monitoring approach
-* Performance threshold
-
-### Decision Record Structure
-
-| Field              | Description                          |
-| ------------------ | ------------------------------------ |
-| Decision ID        | Unique identifier                    |
-| Date               | Decision date                        |
-| Decision           | What was decided                     |
-| Options Considered | Alternatives evaluated               |
-| Selected Option    | Decision                             |
-| Rationale          | Why it was selected                  |
-| Business Impact    | Business effect                      |
-| Technical Impact   | Technical effect                     |
-| Risk Impact        | Risk effect                          |
-| Dependencies       | Related dependencies                 |
-| Approver           | Decision authority                   |
-| Evidence           | Supporting evidence                  |
-| Review Trigger     | When decision should be reconsidered |
-
----
-
-## 21. Current Architecture Decisions
-
-| Decision               | Current Selection                    | Reason                                                          |
-| ---------------------- | ------------------------------------ | --------------------------------------------------------------- |
-| Architecture Pattern   | Retrieval-Augmented Generation       | Grounds responses in policy evidence                            |
-| AI Runtime             | Ollama                               | Supports local model execution                                  |
-| LLM                    | Llama 3.2 3B                         | Selected local generation model                                 |
-| Embedding Model        | `all-MiniLM-L6-v2`                   | Selected semantic embedding model                               |
-| Vector Database        | ChromaDB                             | Supports local vector retrieval                                 |
-| UI                     | Streamlit                            | Supports rapid prototype interaction                            |
-| Policy Source Of Truth | Authoritative active approved policy | Prevents outdated/unverified policy use                         |
-| Retrieval Threshold    | Maximum distance 1.20                | Current prototype configuration; requires evaluation            |
-| Citation Control       | Application-controlled               | Prevents LLM from independently selecting unsupported citations |
-| Response-Time Target   | 95% ≤10 seconds; 100% ≤15 seconds    | Provides measurable MVP performance criteria                    |
+The application confirms the current Gemini and Ollama model configuration.
 
 These decisions remain subject to evaluation evidence and change control.
 
 ---
 
-## 22. Architecture Assumptions
+# 23. Architecture Assumptions
 
 Current assumptions include:
 
-1. Policy documents can be obtained from approved organizational sources.
-2. Policy owners can establish document authority.
+1. Approved policy documents can be obtained.
+2. Policy owners can establish authority.
 3. Required policy metadata can be maintained.
 4. Users can be authenticated.
 5. Authorization rules can be established.
-6. The selected local AI environment can support prototype requirements.
+6. The selected response-generation environment can support prototype requirements.
 7. Evaluation data can be created and maintained.
 8. Policy changes can be identified and controlled.
 9. Technical stakeholders can provide architecture evidence.
 10. Security requirements can be validated before production.
-11. Representative performance testing can be performed in a controlled environment.
+11. Representative performance testing can be performed.
 
 Each assumption should be validated before it becomes a production dependency.
 
 ---
 
-## 23. Architecture Constraints
+# 24. Architecture Constraints
 
 Known constraints include:
 
-* The prototype is designed for local execution.
-* The solution should not depend on a paid external AI API for the core prototype.
-* The Project Manager is not expected to implement advanced infrastructure or MLOps.
+* The current project is a prototype.
 * Production-scale infrastructure is outside the initial prototype scope.
-* Security testing is evaluated at the PM/design level within the course.
-* Advanced operational capabilities are addressed during production-readiness planning.
-* Performance results from a local prototype must not automatically be treated as proof of production-scale performance.
+* The Project Manager is not expected to implement advanced infrastructure or MLOps.
+* Security testing is evaluated at the Project Manager and design level within the course.
+* Production security and authorization require additional validation.
+* Performance results from a prototype must not automatically be treated as proof of production-scale performance.
+* Model selection may change based on evaluation, cost, availability, security, or project requirements.
 
 ---
 
-## 24. Architecture Traceability
+# 25. Architecture Traceability
 
-Architecture decisions must trace back to project requirements.
-
-| Requirement Area      | Architecture Response                            |
-| --------------------- | ------------------------------------------------ |
-| Policy retrieval      | Embeddings + ChromaDB                            |
-| Grounded answers      | Retrieved evidence + LLM                         |
-| Citation              | Application-controlled evidence mapping          |
-| Authority             | Policy metadata + eligibility validation         |
-| Versioning            | Policy metadata and status controls              |
-| Unsupported questions | Evidence sufficiency/refusal logic               |
-| Security              | Authentication + authorization + access controls |
-| Performance           | Response-time measurement and defined thresholds |
-| AI quality            | Evaluation dataset and defined metrics           |
-| UAT                   | Testable user journeys                           |
-| Monitoring            | Metrics, logs, alerts, feedback                  |
-| Rollback              | Controlled approved-state restoration            |
+| Requirement Area      | Architecture Response                              |
+| --------------------- | -------------------------------------------------- |
+| Policy retrieval      | Embeddings and ChromaDB                            |
+| Grounded responses    | Retrieved evidence and response-generation model   |
+| Citation              | Application-controlled evidence mapping            |
+| Authority             | Policy metadata and eligibility validation         |
+| Versioning            | Policy metadata and status controls                |
+| Unsupported questions | Evidence sufficiency and refusal logic             |
+| Security              | Authentication, authorization, and access controls |
+| Performance           | Response-time measurement                          |
+| Quality               | Evaluation dataset and defined metrics             |
+| UAT                   | Testable user journeys                             |
+| Monitoring            | Metrics, logs, alerts, and feedback                |
+| Rollback              | Controlled restoration to an approved state        |
 
 ---
 
-## 25. Architecture Change Control
+# 26. Architecture Change Control
 
 Architecture changes must be evaluated when they could affect:
 
-* Business requirements
-* Security
-* Data governance
-* AI quality
-* Performance
-* Cost
-* Schedule
-* Scope
-* Testing
-* UAT
-* Release readiness
+* Business requirements.
+* Security.
+* Data governance.
+* Quality.
+* Performance.
+* Cost.
+* Schedule.
+* Scope.
+* Testing.
+* UAT.
+* Release readiness.
 
 A material architecture change should trigger:
 
-1. Change request
-2. Impact assessment
-3. Risk assessment
-4. Stakeholder review
-5. Architecture decision update
-6. Documentation update
-7. Testing
-8. Approval
+1. Change request.
+2. Impact assessment.
+3. Risk assessment.
+4. Stakeholder review.
+5. Architecture decision update.
+6. Documentation update.
+7. Testing.
+8. Approval.
 
 ---
 
-## 26. Architecture Evidence
+# 27. Architecture Evidence
 
 Architecture approval must be evidence-based.
 
 Acceptable evidence includes:
 
-* Architecture diagrams
-* Technical design documentation
-* Evaluation results
-* Performance results
-* Security assessment
-* Data-readiness assessment
-* Test results
-* UAT results
-* Dependency analysis
-* Risk assessment
-* Architecture decision records
+* Architecture diagrams.
+* Technical design documentation.
+* Evaluation results.
+* Performance results.
+* Security assessment.
+* Data-readiness assessment.
+* Test results.
+* UAT results.
+* Dependency analysis.
+* Risk assessment.
+* Architecture decision records.
 
 ### PM Rule
 
 > **No Evidence = Not Yet Accepted.**
 
-Technical confidence, vendor claims, or verbal confirmation are not sufficient evidence by themselves.
-
 ---
 
-## 27. PM Architecture Review Questions
+# 28. PM Architecture Review Questions
 
 Before approving the architecture, the Project Manager should ask:
 
@@ -977,10 +672,10 @@ Before approving the architecture, the Project Manager should ask:
 7. How is retrieval quality measured?
 8. How does the system prevent unsupported answers?
 9. How are citations validated?
-10. What happens when the LLM produces an unsupported response?
+10. What happens if the response-generation model produces an unsupported response?
 11. What security controls protect policy information?
-12. What happens if the vector database fails?
-13. What happens if the LLM or AI runtime fails?
+12. What happens if ChromaDB becomes unavailable?
+13. What happens if the response-generation model becomes unavailable?
 14. What happens when policies change?
 15. What happens when the model changes?
 16. What evidence demonstrates that the architecture works?
@@ -993,107 +688,9 @@ Before approving the architecture, the Project Manager should ask:
 
 ---
 
-## 28. Practical Exercise 5: Evaluate An AI Architecture
+# 29. PM Decision
 
-### Scenario
-
-A vendor proposes an AI policy assistant using:
-
-* A Large Language Model
-* A vector database
-* Company policy documents
-* A web interface
-
-The vendor states:
-
-> "The AI will answer employee policy questions accurately because the model has been trained on the company's policies."
-
-The vendor provides no:
-
-* Evaluation results
-* Policy authority controls
-* Version-management approach
-* Citation design
-* Security architecture
-* Unsupported-question handling
-* UAT evidence
-* Performance test results
-
-### Your Task
-
-Evaluate the proposed architecture as the Project Manager.
-
-Identify:
-
-1. What is missing from the architecture?
-2. Which technical claim should be challenged?
-3. How should policy authority be controlled?
-4. How should unsupported questions be handled?
-5. What evidence should the vendor provide?
-6. What security controls should be reviewed?
-7. What technical dependencies should be tracked?
-8. What performance evidence should be required?
-9. What would be required before MVP approval?
-10. What would be required before production approval?
-
-### PM Decision
-
-Choose one:
-
-* **Proceed**
-* **Proceed With Conditions**
-* **Hold**
-
-Justify the decision using:
-
-* Business fit
-* Technical fit
-* AI quality
-* Data governance
-* Security
-* Performance
-* Risk
-* Evidence
-* Release readiness
-
----
-
-## 29. Artifact / Output
-
-Complete:
-
-**AI Architecture & Technology Assessment**
-
-Your assessment should contain:
-
-* Architecture summary
-* Architecture diagram
-* Component responsibilities
-* Technology roles
-* End-to-end data flow
-* Architecture layers
-* Interfaces
-* Technical dependencies
-* Architecture risks
-* Security considerations
-* Data governance considerations
-* AI quality considerations
-* MVP architecture assessment
-* Production architecture considerations
-* Performance acceptance criteria
-* Architecture decisions
-* Architecture assumptions
-* Architecture constraints
-* Architecture traceability
-* Acceptance criteria
-* Evidence requirements
-* PM recommendation
-
----
-
-## 30. PM Decision
-
-The architecture should proceed only when there is sufficient evidence that it can support the required business, technical, AI quality, security, performance, and governance objectives.
+The architecture should proceed only when sufficient evidence exists that it can support the required business, quality, security, performance, and governance objectives.
 
 Possible decisions:
 
@@ -1103,7 +700,7 @@ Architecture is sufficiently understood, risks are controlled, and required evid
 
 ### Proceed With Conditions
 
-Architecture is acceptable for the current phase but specific conditions must be completed before the next gate.
+Architecture is acceptable for the current phase, but specific conditions must be completed before the next gate.
 
 ### Hold
 
@@ -1111,53 +708,71 @@ Critical information, evidence, security controls, governance decisions, perform
 
 ---
 
-## 31. Decision / Reflection
+# 30. Final Architecture Position
 
-Before approving an AI architecture, ask:
+The current architecture supports a working prototype.
 
-> **"Can I explain how this architecture supports the business requirements, controls AI risk, protects information, meets measurable performance expectations, and provides evidence for release decisions?"**
+The current application uses:
 
-If not, additional discovery or technical review is required.
+**Python → Streamlit → Sentence Transformers → all-MiniLM-L6-v2 → ChromaDB → Semantic Retrieval → Gemini 2.5 Flash → Grounded Response → Citation**
+
+The application also supports:
+
+**Ollama → Llama 3.2 3B**
+
+as a local development fallback.
+
+The architecture should not be considered production-ready solely because the prototype works.
+
+Production acceptance requires documented evidence for:
+
+* Quality.
+* Security.
+* Performance.
+* UAT.
+* Governance.
+* Monitoring.
+* Rollback.
+* Reliability.
+* Final release approval.
+
+**Current Project Decision: HOLD**
 
 ---
 
-## Key Takeaways
+# 31. Key Takeaways
 
-* The PM does not need to be the engineer but must understand the architecture.
+* The Project Manager does not need to be the engineer but must understand the architecture.
 * Architecture decisions must connect to business requirements.
 * Retrieval should occur before response generation.
-* The LLM is not the policy source of truth.
-* Authority and versioning must be controlled outside the model.
+* The response-generation model is not the policy source of truth.
+* Policy authority and versioning must be controlled outside the model.
 * Unsupported questions must not produce fabricated policy information.
 * Citations must be evidence-based.
 * Security must be designed into the architecture.
-* Performance must be measured rather than described subjectively.
+* Performance must be measured.
 * MVP architecture and production architecture are not necessarily identical.
-* Technical dependencies and architecture risks must be actively managed.
+* Technical dependencies and risks must be actively managed.
 * Material architecture decisions should be documented.
 * Architecture must be traceable to requirements.
-* Technical claims must be validated with evidence.
-* Performance claims must be validated using representative testing.
+* Technical claims must be supported by evidence.
 * **No Evidence = Not Yet Accepted.**
 
 ---
 
-## Connection To Capstone
+# 32. Connection To Capstone
 
-This architecture assessment becomes the foundation for the remaining Petadel PolicyAssist AI capstone work.
+This architecture assessment supports the remaining Petadel PolicyAssist AI capstone work, including:
 
-It directly supports:
+* Requirements.
+* Product backlog.
+* Data governance.
+* Evaluation.
+* Risk and security.
+* Testing and UAT.
+* Release readiness.
+* Monitoring.
+* Decision management.
+* Requirements traceability.
 
-* `03-REQUIREMENTS.md`
-* `04-PRODUCT-BACKLOG.md`
-* `06-DATA-GOVERNANCE.md`
-* `07-EVALUATION-PLAN.md`
-* `08-RISK-SECURITY-GOVERNANCE.md`
-* `09-TEST-UAT-PILOT.md`
-* `10-RELEASE-DEPLOYMENT.md`
-* `11-MONITORING-CONTINUOUS-IMPROVEMENT.md`
-* `12-DECISION-LOG.md`
-* `14-TRACEABILITY.md`
-* `16-FINAL-GO-HOLD-NO-GO.md`
-
-The architecture is therefore not a standalone technical document. It is the technical foundation connecting requirements, implementation, quality, governance, testing, performance, and release decisions.
+The architecture is therefore a project-management artifact that connects the business requirements to the technical solution, quality controls, governance requirements, testing, and release decisions.
