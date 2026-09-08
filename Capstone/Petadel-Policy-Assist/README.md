@@ -1,79 +1,77 @@
 # Petadel PolicyAssist AI
 
-## Capstone Project
+## Capstone Overview
+
+**Project:** Petadel PolicyAssist AI
 
 **Organization:** Petadel Technology Services (PTS)
-**Project:** Petadel PolicyAssist AI
-**Project Type:** Generative AI Policy Assistant
+
+**Project Type:** Internal Generative AI Policy Knowledge Assistant
+
 **Course:** AI Project Management Course
 
----
-
-# 1. Project Overview
-
-Petadel PolicyAssist AI is a Generative AI solution designed to help employees quickly locate and understand company policies.
-
-The solution uses approved policy documents as its knowledge source and retrieves relevant policy information to generate grounded responses.
-
-The project demonstrates how an AI Project Manager manages an AI product from initiation through production monitoring and continuous improvement.
+**Primary Role:** AI Project Manager
 
 ---
 
-# 2. Business Problem
+## 1. Business Problem
 
-Employees currently spend significant time searching through policy documents to locate relevant information.
+Employees may have difficulty locating, identifying, and interpreting the correct internal policy information because organizational policies can exist across multiple documents, versions, repositories, and formats.
 
-Challenges include:
+The project addresses:
 
-* Large numbers of policy documents.
-* Difficult document search.
-* Outdated or superseded documents.
-* Duplicate policy information.
-* Conflicting versions.
+* Policy discovery.
+* Outdated policy versions.
+* Duplicate or conflicting information.
 * Unclear policy authority.
 * Scanned or difficult-to-search documents.
-* Difficulty determining which policy applies.
-* Risk of employees receiving incorrect or outdated information.
+* Access-control concerns.
+* Increased dependency on human assistance.
 
 ---
 
-# 3. Business Objective
+## 2. Business Objective
 
-The objective of PolicyAssist is to:
-
-* Reduce employee policy search time.
-* Improve access to relevant policy information.
-* Use authoritative and active policy sources.
-* Provide grounded responses.
-* Provide accurate source citations.
-* Prevent unsupported policy guidance.
-* Support appropriate access controls.
-* Establish measurable AI quality.
-* Provide monitoring and continuous improvement after release.
+The objective of PolicyAssist is to provide employees with a faster and more reliable way to locate approved internal policy information while maintaining appropriate governance, security, accuracy, and source traceability.
 
 ---
 
-# 4. Initial Success Targets
+## 3. Success Targets
 
-The project establishes the following initial targets:
+The project establishes the following targets:
 
 | Metric                       |       Target |
 | ---------------------------- | -----------: |
-| Policy search-time reduction |        ≥ 50% |
-| Retrieval accuracy           |        ≥ 90% |
-| Answer accuracy              |        ≥ 90% |
-| Hallucination rate           |         < 2% |
-| Citation correctness         |         100% |
-| Unsupported-question refusal |         100% |
-| Response latency             | ≤ 10 seconds |
-| User satisfaction            |        ≥ 85% |
-| Critical security incidents  |            0 |
+| Retrieval Accuracy           |        ≥ 90% |
+| Answer Accuracy              |        ≥ 90% |
+| Hallucination Rate           |         < 2% |
+| Citation Correctness         |         100% |
+| Unsupported-Question Refusal |         100% |
+| Response Latency             | ≤ 10 seconds |
+| User Satisfaction            |        ≥ 85% |
+| Critical Security Incidents  |            0 |
 
-These are project targets and must be validated through appropriate evaluation, testing, UAT, and production evidence.
+These targets require documented evaluation evidence before production acceptance.
 
 ---
 
-# 5. Core Governance Rule
+## 4. Core Product Principle
+
+PolicyAssist must use eligible policy information as the source for responses.
+
+The system follows:
+
+**Retrieve → Ground → Answer → Cite**
+
+When sufficient authoritative evidence does not exist:
+
+**Do Not Invent → Refuse or Escalate**
+
+The application must not treat the language model as an independent source of company policy.
+
+---
+
+## 5. Core Governance Rule
 
 PolicyAssist may use a policy as authoritative evidence only when the policy is:
 
@@ -85,224 +83,192 @@ The system must not automatically rely on:
 * Superseded policies.
 * Unverified policies.
 * Policies with missing required metadata.
-* Policies with unresolved authority conflicts.
-
-If authority cannot be established, the issue must be escalated for human resolution.
+* Unresolved conflicting policies.
 
 ---
 
-# 6. AI Response Principle
+## 6. Product Lifecycle
 
-PolicyAssist must ground responses in retrieved policy evidence.
+The capstone follows the complete project lifecycle:
 
-The AI model is not considered an independent source of company policy.
+**Initiation → Discovery → Requirements → Planning → Architecture → Build → Evaluation → Security and Governance → UAT → Release → Monitoring → Continuous Improvement**
 
-When sufficient evidence exists:
-
-**Retrieve → Ground → Answer → Cite**
-
-When sufficient authoritative evidence does not exist:
-
-**Do Not Invent → Refuse or Escalate**
-
-For mixed questions, supported and unsupported portions must be evaluated independently.
+The Project Manager maintains alignment between these phases.
 
 ---
 
-# 7. Product Lifecycle
-
-The capstone follows the complete AI project lifecycle:
-
-**Initiation → Discovery → Requirements → Planning → Architecture → Build → Evaluation → Security/Governance → UAT → Release → Monitoring → Continuous Improvement**
-
-The Project Manager is responsible for maintaining alignment between these phases.
-
----
-
-# 8. Product Backlog
+## 7. Product Backlog
 
 The PolicyAssist backlog contains:
 
-* **10 Epics**
-* **58 User Stories**
-* **3 Releases**
+**10 Epics**
+
+**58 User Stories**
+
+**3 Releases**
 
 ### Epics
 
 1. Security & Access
-2. Policy Knowledge Base/Ingestion
+2. Policy Knowledge Base and Ingestion
 3. Policy Retrieval
-4. AI Response/Grounding
+4. Response and Grounding
 5. User Experience
-6. Performance & Reliability
-7. Human Escalation & Feedback
-8. Administration/Governance
-9. Evaluation/Testing
-10. Monitoring/Continuous Improvement
+6. Performance and Reliability
+7. Human Escalation and Feedback
+8. Administration and Governance
+9. Evaluation and Testing
+10. Monitoring and Continuous Improvement
 
 ### Releases
 
-**Release 1 — Foundation**
+**Release 1: Foundation**
 
 Establish the secure and governed policy knowledge foundation.
 
-**Release 2 — MVP Product**
+**Release 2: MVP Product**
 
 Deliver the core employee policy-assistance experience.
 
-**Release 3 — Production Readiness**
+**Release 3: Production Readiness**
 
 Validate quality, security, governance, UAT, monitoring, reliability, and release readiness.
 
 ---
 
-# 9. Technical Architecture
+## 8. Technical Architecture
 
-The conceptual architecture is:
+The current prototype architecture is:
 
-**Policy Documents → Chunking → Embeddings → Vector Database → Retrieval → Large Language Model → Grounding/Citation → User Interface**
+**Policy Documents → Document Processing → Chunking → Embeddings → ChromaDB → Semantic Retrieval → Response Generation → Grounding and Citation → Streamlit Application**
+
+The current response-generation configuration supports two environments:
+
+**Deployed configuration:**
+
+**Google Gen AI → Gemini 2.5 Flash**
+
+**Local development fallback:**
+
+**Ollama → Llama 3.2 3B**
+
+The application checks for `GEMINI_API_KEY`. When the key is available, the application uses Gemini 2.5 Flash. When the key is not available, the application falls back to the local Ollama runtime and Llama 3.2 3B.
 
 ### Technology Roles
 
-| Technology            | Role                                     |
-| --------------------- | ---------------------------------------- |
-| Python                | Programming language                     |
-| Streamlit             | Application and user-interface framework |
-| Sentence Transformers | Embedding framework/library              |
-| all-MiniLM-L6-v2      | Embedding model                          |
-| ChromaDB              | Vector database                          |
-| Ollama                | Local AI runtime                         |
-| Llama 3.2 3B          | Large Language Model (LLM)               |
+| Technology            | Role                                                         |
+| --------------------- | ------------------------------------------------------------ |
+| Python                | Programming language                                         |
+| Streamlit             | Application and user interface                               |
+| Sentence Transformers | Embedding framework                                          |
+| `all-MiniLM-L6-v2`    | Embedding model                                              |
+| ChromaDB              | Vector database                                              |
+| Google Gen AI         | Cloud model integration                                      |
+| Gemini 2.5 Flash      | Primary response-generation model for deployed configuration |
+| Ollama                | Local model runtime                                          |
+| Llama 3.2 3B          | Local response-generation fallback                           |
 
-The Project Manager does not need to become an AI engineer but must understand what each component does, why it exists, and what risks or dependencies it introduces.
+The Project Manager does not need to become an AI engineer but must understand what each major component does and what dependencies and risks it introduces.
 
 ---
 
-# 10. Project Deliverables
+## 9. Project Deliverables
 
 The capstone produces the following project artifacts:
 
 1. Project Overview
 2. Project Charter
 3. Requirements Specification
-4. Product Backlog & Release Plan
-5. AI Architecture & Technology Assessment
-6. Data Readiness & Knowledge Governance Assessment
-7. AI Evaluation & Quality Plan
-8. AI Risk, Security & Governance Plan
-9. Testing, UAT & Pilot Plan
-10. Release & Deployment Plan
-11. Monitoring & Continuous Improvement Plan
+4. Product Backlog and Release Plan
+5. AI Architecture and Technology Assessment
+6. Data Readiness and Knowledge Governance Assessment
+7. AI Evaluation and Quality Plan
+8. AI Risk, Security and Governance Plan
+9. Testing, UAT and Pilot Plan
+10. Release and Deployment Plan
+11. Monitoring and Continuous Improvement Plan
 12. Decision Log
 13. Risk Register
 14. Requirements Traceability
 15. Executive Project Summary
-16. Final Go/Hold/No-Go Recommendation
+16. Final Go, Hold, or No-Go Recommendation
 17. Final Presentation
 
 ---
 
-# 11. Project Manager Responsibilities
+## 10. Project Manager Responsibilities
 
-The AI Project Manager is responsible for:
+The Project Manager is responsible for:
 
-* Defining and protecting the business objective.
-* Managing stakeholders.
-* Translating business needs into requirements.
-* Managing scope and priorities.
-* Coordinating technical teams.
-* Challenging unsupported technical claims.
-* Managing AI-specific risks.
-* Ensuring data readiness.
-* Establishing evaluation criteria.
-* Coordinating testing and UAT.
-* Managing release readiness.
-* Maintaining traceability.
-* Managing decisions and risks.
-* Monitoring production performance.
-* Driving continuous improvement.
-
-The Project Manager does not need to build every technical component personally.
-
-The PM's responsibility is to ensure the product is **valuable, controlled, measurable, secure, usable, and ready for release.**
+* Business alignment.
+* Requirements.
+* Scope.
+* Stakeholder management.
+* Product planning.
+* Risk management.
+* Data governance coordination.
+* Evaluation planning.
+* Security and governance coordination.
+* Testing and UAT.
+* Release readiness.
+* Monitoring.
+* Decision management.
+* Executive communication.
 
 ---
 
-# 12. Definition Of Success
+## 11. Production Readiness
 
-PolicyAssist is successful only when the project demonstrates more than a functioning AI application.
+A working prototype does not automatically qualify for production release.
 
-Success requires evidence that:
+Production readiness requires evidence covering:
 
-* The business problem is addressed.
-* Requirements are satisfied.
-* Policy data is ready.
-* Authoritative sources are controlled.
-* AI responses are grounded.
-* Citations are accurate.
-* Unsupported questions are handled appropriately.
-* Security requirements are satisfied.
-* Evaluation targets are measured.
-* Testing is complete.
-* UAT is successful.
-* Critical and high-severity issues are appropriately addressed.
-* Monitoring is ready.
-* Rollback is available.
-* Stakeholders support the release decision.
+* Requirements.
+* Data readiness.
+* Evaluation.
+* Security.
+* Governance.
+* Testing.
+* UAT.
+* Performance.
+* Monitoring.
+* Rollback.
+* Risk.
+* Defect status.
+* Stakeholder approval.
 
----
+The current project position is:
 
-# 13. Capstone Decision Framework
+**HOLD**
 
-The final release decision uses three possible outcomes:
-
-### GO
-
-The solution satisfies required release criteria and can proceed to production.
-
-### PROCEED WITH CONDITIONS
-
-The solution may proceed only when clearly defined conditions, controls, or follow-up actions are established and approved.
-
-### HOLD / NO-GO
-
-The solution must not proceed because required evidence, controls, quality, security, governance, or business acceptance is insufficient.
-
-The Project Manager must base the decision on evidence rather than schedule pressure or technical optimism.
+The prototype works, but additional production-readiness evidence is required before a production Go decision.
 
 ---
 
-# 14. Portfolio Purpose
+## 12. Project Management Principle
 
-The completed PolicyAssist project forms the practical portfolio component of the AI Project Management Course.
+The purpose of the capstone is not simply to demonstrate that an application can generate responses.
 
-The portfolio demonstrates the ability to manage an AI project across:
+The purpose is to demonstrate that a Project Manager can determine:
 
-**Business → People → Requirements → Technology → Data → AI Quality → Risk → Testing → Release → Operations**
-
-The goal is to demonstrate **AI Project Management capability**, not simply software development capability.
+* What should be built.
+* Why it should be built.
+* How requirements should be defined.
+* How success should be measured.
+* What risks must be controlled.
+* What evidence is required.
+* When the project is ready to proceed.
 
 ---
 
-# 15. Capstone Navigation
+## 13. Portfolio Relationship
 
-The numbered documents contain the detailed project artifacts:
+The Capstone contains the detailed project documentation.
 
-* `01-PROJECT-OVERVIEW.md`
-* `02-PROJECT-CHARTER.md`
-* `03-REQUIREMENTS.md`
-* `04-PRODUCT-BACKLOG.md`
-* `05-ARCHITECTURE.md`
-* `06-DATA-GOVERNANCE.md`
-* `07-EVALUATION-PLAN.md`
-* `08-RISK-SECURITY-GOVERNANCE.md`
-* `09-TEST-UAT-PILOT.md`
-* `10-RELEASE-DEPLOYMENT.md`
-* `11-MONITORING-CONTINUOUS-IMPROVEMENT.md`
-* `12-DECISION-LOG.md`
-* `13-RISK-REGISTER.md`
-* `14-TRACEABILITY.md`
-* `15-EXECUTIVE-SUMMARY.md`
-* `16-FINAL-GO-HOLD-NO-GO.md`
+The Portfolio presents the strongest evidence from the Capstone in a professional format.
 
-This README provides the overall context; the numbered documents provide the detailed project evidence.
+The Course Modules provide the concepts, frameworks, and templates used to complete the project.
+
+The relationship is:
+
+**Course Learning → Capstone Application → Project Evidence → Professional Portfolio**
