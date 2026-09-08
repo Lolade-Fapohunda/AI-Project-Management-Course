@@ -90,7 +90,7 @@ Evidence demonstrates the ability to:
 
 **Primary Evidence:**
 
-`02-Project-Charter.md`
+`01-Project-Case-Study.md`
 
 ---
 
@@ -111,7 +111,7 @@ Evidence demonstrates the ability to:
 
 **Primary Evidence:**
 
-`03-Requirements.md`
+`02-Requirements-Evidence.md`
 
 ---
 
@@ -138,17 +138,21 @@ The project backlog contains:
 
 **Primary Evidence:**
 
-`04-Product-Backlog.md`
+`03-Product-Planning-Evidence.md`
 
 ---
 
-### 4. AI Architecture & Technology
+### 4. Architecture & Technology
 
 Evidence demonstrates the ability to understand and manage an AI technology architecture without requiring the Project Manager to become an AI engineer.
 
 The PolicyAssist architecture includes:
 
-**Documents**
+**Policy Documents**
+
+↓
+
+**Document Processing**
 
 ↓
 
@@ -156,27 +160,33 @@ The PolicyAssist architecture includes:
 
 ↓
 
-**Embedding Model**
+**Embeddings**
 
 ↓
 
-**Vector Database**
+**ChromaDB**
 
 ↓
 
-**Retrieval**
+**Semantic Retrieval**
 
 ↓
 
-**Large Language Model**
+**Gemini 2.5 Flash**
 
 ↓
 
-**Grounding & Citation**
+**Grounded Response**
+
+↓
+
+**Citation**
 
 ↓
 
 **Streamlit Application**
+
+The application also supports Ollama with Llama 3.2 3B as a local development fallback.
 
 Key technologies include:
 
@@ -185,14 +195,16 @@ Key technologies include:
 * Sentence Transformers
 * `all-MiniLM-L6-v2`
 * ChromaDB
+* Google Gen AI
+* Gemini 2.5 Flash
 * Ollama
 * Llama 3.2 3B
 
-The portfolio demonstrates understanding of the role each technology plays within the overall system.
+The Project Manager does not need to become an AI engineer but must understand the role, dependency, and risk associated with each major component.
 
 **Primary Evidence:**
 
-`05-Architecture.md`
+`04-AI-Architecture-Decision.md`
 
 ---
 
@@ -221,7 +233,7 @@ If authority cannot be established, the information is held for human resolution
 
 **Primary Evidence:**
 
-`06-Data-Governance.md`
+`05-Data-Governance-Decision.md`
 
 ---
 
@@ -241,24 +253,24 @@ Evaluation covers:
 * Paraphrased questions.
 * Mixed questions.
 * Multi-policy questions.
-* Authority/version scenarios.
+* Authority and version scenarios.
 * Performance.
 
 A minimum structured evaluation dataset of **30 cases** was established.
 
-The project does not consider an AI system successful merely because the application produces responses.
+The project does not consider the system successful merely because the application produces responses.
 
 Acceptance requires measurable evidence.
 
 **Primary Evidence:**
 
-`07-Evaluation-Plan.md`
+`06-AI-Evaluation-Results.md`
 
 ---
 
 ### 7. Risk, Security & Governance
 
-The project treats security and governance as release considerations rather than optional technical enhancements.
+The project treats security and governance as release considerations.
 
 Key risks include:
 
@@ -278,7 +290,7 @@ Critical security failures are release blockers.
 
 **Primary Evidence:**
 
-`08-Risk-Security-Governance.md`
+`07-Risk-Security-Decision.md`
 
 ---
 
@@ -310,7 +322,7 @@ The UAT framework includes scenarios covering:
 
 **Primary Evidence:**
 
-`09-Testing-UAT-Pilot.md`
+`08-Testing-UAT-Evidence.md`
 
 ---
 
@@ -337,11 +349,11 @@ Release decisions consider:
 
 The deployment strategy uses a controlled pilot followed by phased expansion.
 
-Rollback is treated as a required production capability rather than an emergency idea created after failure.
+Rollback is treated as a required production capability.
 
 **Primary Evidence:**
 
-`10-Release-Deployment.md`
+`09-Release-Readiness-Decision.md`
 
 ---
 
@@ -399,14 +411,14 @@ Monitoring includes:
 * User satisfaction.
 * Security incidents.
 * Knowledge changes.
-* Data drift.
+* Data changes.
 * Model changes.
 * User feedback.
 * Business outcomes.
 
 **Primary Evidence:**
 
-`11-Monitoring-Continuous-Improvement.md`
+`10-Monitoring-Strategy.md`
 
 ---
 
@@ -422,7 +434,7 @@ Important project decisions include:
 * Application-controlled citations.
 * Unsupported-question refusal.
 * Independent evaluation of mixed questions.
-* Measurable AI quality thresholds.
+* Measurable quality thresholds.
 * Minimum evaluation dataset.
 * Response-time requirement.
 * Controlled pilot.
@@ -432,15 +444,17 @@ Important project decisions include:
 * UAT as a separate quality gate.
 * Evidence as an acceptance requirement.
 
+Detailed decision records remain part of the Capstone documentation.
+
 **Primary Evidence:**
 
-`12-Decision-Log.md`
+`11-Final-PM-Decision.md`
 
 ---
 
 ## Risk Management
 
-The project maintains a formal risk register covering:
+The project maintains a formal risk management process covering:
 
 * Data risks.
 * AI quality risks.
@@ -464,9 +478,11 @@ Risk management includes:
 * Residual risk.
 * Release implications.
 
+Detailed risk records remain part of the Capstone documentation.
+
 **Primary Evidence:**
 
-`13-Risk-Register.md`
+`07-Risk-Security-Decision.md`
 
 ---
 
@@ -482,7 +498,7 @@ This provides evidence that project decisions are connected to defined business 
 
 **Primary Evidence:**
 
-`14-Traceability.md`
+`02-Requirements-Evidence.md`
 
 ---
 
@@ -513,7 +529,7 @@ The project should proceed toward release only after the remaining mandatory gat
 
 **Primary Evidence:**
 
-`15-Final-Go-Hold-No-Go.md`
+`11-Final-PM-Decision.md`
 
 ---
 
@@ -527,7 +543,7 @@ Ability to determine whether an AI solution addresses a meaningful business prob
 
 ### Requirements Management
 
-Ability to convert business needs into measurable AI requirements.
+Ability to convert business needs into measurable project requirements.
 
 ### Agile Planning
 
@@ -539,7 +555,7 @@ Ability to understand AI architecture, dependencies, limitations, and technical 
 
 ### Data Governance
 
-Ability to determine whether information is fit for AI use.
+Ability to determine whether information is fit for use.
 
 ### AI Evaluation
 
@@ -547,7 +563,7 @@ Ability to define measurable quality criteria and interpret evaluation evidence.
 
 ### Risk & Security
 
-Ability to identify AI-specific risks and establish governance controls.
+Ability to identify project risks and establish appropriate controls.
 
 ### Testing & UAT
 
@@ -559,11 +575,11 @@ Ability to make evidence-based Go, Hold, or No-Go decisions.
 
 ### Monitoring
 
-Ability to manage AI products after release and establish continuous improvement.
+Ability to manage the product after release and establish continuous improvement.
 
 ### Executive Communication
 
-Ability to communicate complex AI project information in a business-oriented manner.
+Ability to communicate complex project information in a business-oriented manner.
 
 ---
 
@@ -583,9 +599,9 @@ The portfolio should prioritize demonstrated judgment over documentation volume.
 
 ## Relationship To Capstone Documentation
 
-The detailed capstone documentation remains the project's working source of truth.
+The detailed Capstone documentation remains the project's working source of truth.
 
-The portfolio serves as the professional presentation layer.
+The Portfolio serves as the professional presentation layer.
 
 ### Capstone
 
@@ -619,22 +635,22 @@ This creates the relationship:
 
 ## Portfolio Evidence Map
 
-| Competency            | Primary Evidence                    |
-| --------------------- | ----------------------------------- |
-| Project Initiation    | Project Charter                     |
-| Business Requirements | Requirements                        |
-| Agile Planning        | Product Backlog                     |
-| AI Technology         | Architecture                        |
-| Data Governance       | Data Governance                     |
-| AI Evaluation         | Evaluation Plan                     |
-| Risk & Security       | Risk, Security & Governance         |
-| Testing & UAT         | Test, UAT & Pilot                   |
-| Release Management    | Release & Deployment                |
-| Monitoring            | Monitoring & Continuous Improvement |
-| Decision Management   | Decision Log                        |
-| Risk Management       | Risk Register                       |
-| Traceability          | Traceability                        |
-| Executive Judgment    | Final Go / Hold / No-Go             |
+| Competency            | Primary Evidence           |
+| --------------------- | -------------------------- |
+| Project Initiation    | Project Case Study         |
+| Business Requirements | Requirements Evidence      |
+| Agile Planning        | Product Planning Evidence  |
+| Architecture          | AI Architecture Decision   |
+| Data Governance       | Data Governance Decision   |
+| AI Evaluation         | AI Evaluation Results      |
+| Risk & Security       | Risk & Security Decision   |
+| Testing & UAT         | Testing & UAT Evidence     |
+| Release Management    | Release Readiness Decision |
+| Monitoring            | Monitoring Strategy        |
+| Decision Management   | Final PM Decision          |
+| Risk Management       | Risk & Security Decision   |
+| Traceability          | Requirements Evidence      |
+| Executive Judgment    | Final PM Decision          |
 
 ---
 
@@ -644,7 +660,7 @@ Before the portfolio is considered complete, confirm that:
 
 * [ ] All major project-management competencies are represented.
 * [ ] Evidence is based on actual project work.
-* [ ] Portfolio artifacts are consistent with the capstone.
+* [ ] Portfolio artifacts are consistent with the Capstone.
 * [ ] Requirements match the backlog.
 * [ ] Backlog items are traceable to requirements.
 * [ ] Evaluation targets are consistent across artifacts.
@@ -657,8 +673,8 @@ Before the portfolio is considered complete, confirm that:
 * [ ] Risk records reflect the current project position.
 * [ ] The final release decision is supported by evidence.
 * [ ] No unsupported claims of production readiness are made.
-* [ ] No unnecessary duplication exists between portfolio and capstone documentation.
-* [ ] All portfolio artifacts are presentation-ready.
+* [ ] No unnecessary duplication exists between Portfolio and Capstone documentation.
+* [ ] All Portfolio artifacts are presentation-ready.
 
 ---
 
@@ -666,7 +682,7 @@ Before the portfolio is considered complete, confirm that:
 
 The portfolio should demonstrate that the Project Manager can manage an AI project using **evidence, structured decision-making, measurable requirements, governance, and business judgment**.
 
-The goal is not to demonstrate that the AI model works.
+The goal is not simply to demonstrate that the application works.
 
 The goal is to demonstrate that the Project Manager knows:
 
