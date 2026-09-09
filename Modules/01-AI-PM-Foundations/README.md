@@ -240,7 +240,7 @@ The project manager's responsibilities change throughout the lifecycle, but acco
 
 ## Course Project Introduction
 
-This course includes a fictional AI project that will later be used as the primary capstone application.
+This course includes a fictional AI project that will later be used as the reference project for the capstone application.
 
 The project is:
 
@@ -252,7 +252,7 @@ You are being introduced to the project at a high level.
 
 The detailed problem discovery, requirements, architecture, backlog, evaluation, testing, governance, and implementation work will be developed later in the course.
 
-The project will serve as the practical environment where you apply the concepts learned throughout the course.
+The project will serve as the practical reference environment where you apply the concepts learned throughout the course.
 
 ## Practical Exercise 1: Is AI Actually The Right Solution?
 
@@ -345,8 +345,10 @@ The PM begins with the business problem, validates the need, understands the sta
 
 ## Connection To Capstone
 
-Petadel PolicyAssist AI will eventually provide the hands-on application for the concepts taught in this course.
+Petadel PolicyAssist AI will serve as the course reference project for applying the concepts taught in this course.
+
+You may use the Petadel PolicyAssist AI reference project or apply the same Project Management process to your own AI product or use case.
 
 You will not begin solving the PolicyAssist problem yet.
 
-The next modules will teach the project-management skills required to analyze and manage an AI project before those skills are applied to the capstone.
+The next modules will teach the Project Management skills required to analyze and manage an AI project before those skills are applied to the capstone.
