@@ -284,7 +284,7 @@ A limited deployment used to validate a product, process, or solution with a con
 
 ### Precision
 
-A measurement of how many retrieved or identified results are relevant among all results identified as relevant.
+A measurement of how many retrieved results are relevant among all results retrieved.
 
 ### Prompt Injection
 
