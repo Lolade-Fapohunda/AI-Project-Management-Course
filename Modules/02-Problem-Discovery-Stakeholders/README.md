@@ -278,7 +278,7 @@ The better question is:
 
 ## Course Project Preview: Petadel PolicyAssist AI
 
-The course includes a fictional capstone project that will be used later to apply the AI project-management concepts taught throughout the course.
+The course includes a fictional AI project that serves as the reference project for applying the AI Project Management concepts taught throughout the course.
 
 The project is:
 
@@ -292,7 +292,9 @@ At this stage, you are **not** expected to design or build the solution.
 
 You are simply being introduced to the project so you understand the context that will appear later in the course.
 
-As you progress through the course, you will apply the PM concepts you learn to this project through clearly labeled **Connection To Capstone** sections.
+As you progress through the course, you will apply the PM concepts you learn to this reference project through clearly labeled **Connection To Capstone** sections.
+
+You may use the Petadel PolicyAssist AI reference project or apply the same Project Management process to your own AI product or use case.
 
 The detailed requirements, architecture, backlog, evaluation, testing, governance, and implementation work will be developed later.
 
@@ -395,5 +397,7 @@ Your deliverable should contain:
 ## Connection To Capstone
 
 Petadel PolicyAssist AI will later use the discovery and stakeholder-management techniques from this module.
+
+You may use the Petadel PolicyAssist AI reference project or apply the same Project Management process to your own AI product or use case.
 
 In the capstone, you will translate the project's business problem, stakeholders, current state, and desired outcomes into formal requirements and project decisions.
