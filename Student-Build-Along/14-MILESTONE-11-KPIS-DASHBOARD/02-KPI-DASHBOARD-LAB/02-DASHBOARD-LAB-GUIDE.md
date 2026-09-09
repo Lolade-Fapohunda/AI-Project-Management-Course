@@ -91,6 +91,64 @@ Add logic that classifies each KPI as:
 * **Needs Attention**
 * **Below Threshold**
 
+# KPI Decision Thresholds
+
+Use the following decision rules for the PolicyAssist reference dashboard.
+
+| KPI                          |      Target | On Target | Needs Attention | Below Threshold |
+| ---------------------------- | ----------: | --------- | --------------- | --------------- |
+| Policy Search-Time Reduction |        ≥50% | ≥50%      | 45%–49.9%       | <45%            |
+| Retrieval Accuracy           |        ≥90% | ≥90%      | 81%–89.9%       | <81%            |
+| Answer Accuracy              |        ≥90% | ≥90%      | 81%–89.9%       | <81%            |
+| Hallucination Rate           |         <2% | <2%       | 2%–2.49%        | ≥2.5%           |
+| Citation Correctness         |        100% | 100%      | 90%–99.9%       | <90%            |
+| Unsupported-Question Refusal |        100% | 100%      | 90%–99.9%       | <90%            |
+| Response Latency             | ≤10 seconds | ≤10 sec   | >10–12.5 sec    | >12.5 sec       |
+| User Satisfaction            |        ≥85% | ≥85%      | 76.5%–84.9%     | <76.5%          |
+| Critical Security Incidents  |           0 | 0         | 1               | ≥2              |
+
+## How to Apply the Thresholds
+
+### On Target
+
+The KPI meets or exceeds the required performance level.
+
+**PM action:** Continue monitoring.
+
+### Needs Attention
+
+The KPI is outside the target but has not reached the critical threshold.
+
+**PM action:** Investigate the cause, define corrective action, assign an owner, and monitor the KPI more closely.
+
+### Below Threshold
+
+The KPI has reached a level that represents significant product, business, safety, security, or user risk.
+
+**PM action:** Escalate the issue and determine whether the product should be improved, paused, rolled back, or reassessed.
+
+## Important Rule for AI Safety and Security
+
+For **Critical Security Incidents**, the normal performance logic does not apply.
+
+* **0 incidents:** On Target
+* **1 incident:** Needs Attention and immediate investigation
+* **2 or more incidents:** Below Threshold and escalation required
+
+For safety, security, governance, or compliance issues, the PM should not rely solely on the numerical KPI status. The severity and impact of the incident must also be assessed.
+
+## PM Decision Framework
+
+Use the KPI status together with business context:
+
+**On Target → Continue**
+
+**Needs Attention → Improve**
+
+**Below Threshold → Escalate / Reassess**
+
+The threshold tells the PM **when action is required**. The PM must still determine **what action is appropriate and why**.
+
 Remember that some KPIs are better when the value is **higher**, while others are better when the value is **lower**.
 
 ### PM Question
