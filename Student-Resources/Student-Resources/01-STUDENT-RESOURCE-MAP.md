@@ -2,37 +2,39 @@
 
 This resource map shows you where to find the materials used throughout the AI Project Management Course.
 
-## Start Here
+---
+
+# 1. Start Here
 
 ### Course Guide
 
-**Location:** `01-COURSE-GUIDE.md`
+[Open the Course Guide](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/01-COURSE-GUIDE.md)
 
 Use this to understand the course structure, learning path, expectations, and completion requirements.
 
-### Syllabus
+### Course Syllabus
 
-**Location:** `02-SYLLABUS.md`
+[Open the Syllabus](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/02-SYLLABUS.md)
 
-Use this to see the complete 13-module course sequence.
+Use this to follow the complete 13-module learning path.
 
 ### Glossary
 
-**Location:** `03-GLOSSARY.md`
+[Open the Glossary](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/03-GLOSSARY.md)
 
 Use this as a reference for AI, Project Management, and technical terminology.
 
 ---
 
-# Project Management Templates
+# 2. Project Management Templates
 
-**Location:** `Templates/`
+[Open the Templates Library](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/tree/main/Templates)
 
-The course provides reusable templates for major AI Project Management activities.
+The course includes 22 reusable Project Management and AI project templates.
 
-Use the templates as you progress through the modules rather than completing them all at once.
+Use the appropriate template as you progress through the course.
 
-Typical uses include:
+Templates support activities including:
 
 * Project initiation
 * Problem definition
@@ -41,24 +43,29 @@ Typical uses include:
 * Scope
 * Product backlog
 * Risk management
+* Data readiness
 * AI evaluation
 * Security and governance
-* Testing and User Acceptance Testing (UAT)
-* Release readiness
+* Testing
+* User Acceptance Testing (UAT)
+* Defect management
+* Pilot planning
+* Release planning
 * Go/No-Go decisions
 * Monitoring
 * Continuous improvement
+* Decision management
 * Executive communication
 
 ---
 
-# Student Build-Along
+# 3. Student Build-Along — Optional
 
-**Location:** `Student-Build-Along/`
+[Open the Student Build-Along](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/tree/main/Student-Build-Along)
 
-The Build-Along is optional.
+The Build-Along is optional and supports the core Project Management Track.
 
-You can either:
+You may choose:
 
 ### Option A — Petadel PolicyAssist
 
@@ -72,13 +79,13 @@ The Build-Along provides hands-on experience without requiring you to become an 
 
 ---
 
-# PolicyAssist AI Application
+# 4. PolicyAssist AI Application
 
-**Location:** `PolicyAssist-App/`
+[Open the PolicyAssist Application](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/tree/main/PolicyAssist-App)
 
-This is the working reference application used for the hands-on portion of the course.
+The course includes a working Petadel PolicyAssist AI application.
 
-Use it to understand how an AI product behaves from a Project Manager's perspective.
+Use it to understand an AI product from a Project Manager's perspective.
 
 Focus on:
 
@@ -87,27 +94,30 @@ Focus on:
 * Retrieval
 * AI evaluation
 * Security
+* Governance
 * Testing
 * Release
 * KPIs
 * Monitoring
-* Product improvement
+* Continuous improvement
+
+You are not expected to become an AI engineer or write production-level AI code.
 
 ---
 
-# Petadel PolicyAssist Capstone
+# 5. Petadel PolicyAssist Capstone
 
-**Location:** `Capstone/Petadel-Policy-Assist/`
+[Open the Petadel PolicyAssist Capstone](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/tree/main/Capstone/Petadel-Policy-Assist)
 
 Use this as the instructor's reference project and completed example.
 
-It demonstrates how the PM artifacts connect across the complete lifecycle.
+The capstone demonstrates how Project Management artifacts connect across the complete AI product lifecycle.
 
 ---
 
-# Portfolio Resources
+# 6. Portfolio Resources
 
-**Location:** `Portfolio/`
+[Open the Portfolio Resources](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/tree/main/Portfolio)
 
 Use these resources to turn your project work into professional portfolio evidence.
 
@@ -117,86 +127,97 @@ Your portfolio should demonstrate:
 
 ---
 
-# Final Assessment Path
+# 7. Final Assessment — All Students
 
-## All Students
+[Open the Final Assessment](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/tree/main/Modules/13-Final-Assessment)
 
-All students complete the course Final Assessment:
+**All students complete this assessment.**
 
-**Location:** `Modules/13-Final-Assessment/`
+It validates your ability to apply AI Project Management concepts to realistic project situations.
 
-This assessment validates your understanding and application of the AI Project Management lifecycle.
+You will demonstrate:
 
----
-
-## Build-Along Participants
-
-If you completed the optional Student Build-Along, you also complete:
-
-**Location:** `Student-Build-Along/16-MILESTONE-13-FINAL-ASSESSMENT/`
-
-This assessment validates your ability to apply AI Project Management concepts through the hands-on project experience.
-
-### Your Path
-
-**PM Track Only**
-
-Course Modules → Final Assessment
-
-**PM Track + Build-Along**
-
-Course Modules → Build-Along → Capstone → Build-Along Milestone 13 Assessment → Final Assessment
-
-The Build-Along assessment is **not required** for students who did not participate in the Build-Along.
+* AI Project Management knowledge
+* Evidence-based decision-making
+* Risk and governance judgment
+* Requirements and scope management
+* AI evaluation understanding
+* Testing and UAT judgment
+* Release readiness
+* KPI interpretation
+* Stakeholder communication
+* Continuous improvement thinking
 
 ---
 
-# Build-Along Final Assessment
+# 8. Build-Along Final Assessment
 
-**Location:** `Student-Build-Along/16-MILESTONE-13-FINAL-ASSESSMENT/`
+If you completed the optional Student Build-Along, complete the additional **Milestone 13 — Final Assessment** within the Build-Along.
 
-Build-Along participants complete the additional Milestone 13 assessment.
+**Location:**
 
----
+`Student-Build-Along/16-MILESTONE-13-FINAL-ASSESSMENT/`
 
-# Recommended Resource Sequence
+This assessment validates your ability to apply the AI Project Management lifecycle through the hands-on project experience.
 
-Follow this general sequence:
-
-**1. Course Guide**
-↓
-**2. Syllabus**
-↓
-**3. Course Modules**
-↓
-**4. Templates as assigned**
-↓
-**5. Build-Along — Optional**
-↓
-**6. PolicyAssist Capstone**
-↓
-**7. Portfolio**
-↓
-**8. Final Assessment**
+The Build-Along assessment is **not required** if you did not participate in the Build-Along.
 
 ---
 
-# What You Should Have at the End
+# 9. Your Completion Path
 
-By completing the course, you should have access to:
+## PM Track Only
+
+**Course Guide**
+↓
+**Modules 1–13**
+↓
+**Templates & Exercises**
+↓
+**Final Assessment**
+
+---
+
+## PM Track + Build-Along
+
+**Course Guide**
+↓
+**Modules 1–13**
+↓
+**Build-Along**
+↓
+**Petadel PolicyAssist / Your Own AI Project**
+↓
+**Capstone & Portfolio**
+↓
+**Build-Along Milestone 13 Assessment**
+↓
+**Course Final Assessment**
+
+---
+
+# 10. What You Should Have at the End
+
+By completing the course, you should have:
 
 * AI Project Management knowledge
 * Reusable PM and AI project templates
-* Hands-on AI product experience
+* Practical AI product experience
 * A complete reference AI project
 * Capstone evidence
 * Portfolio-ready project materials
 * Final assessment results
 
-The goal is not simply to finish the course.
-
-The goal is to demonstrate that you can manage an AI product from:
+Your work should demonstrate that you can manage an AI product through:
 
 **Business Problem → Requirements → Scope → AI Solution → Data → Evaluation → Risk → Testing → Release → Monitoring → Continuous Improvement**
+
+---
+
+# Final Standard
+
+The goal is not simply to complete files or assignments.
+
+The goal is to demonstrate that you can make sound Project Management decisions based on evidence.
 
 **Problem → Evidence → Decision → Action → Outcome**
