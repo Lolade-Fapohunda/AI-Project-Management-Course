@@ -2,27 +2,35 @@
 
 ## Purpose
 
-This guide explains how to navigate and complete the AI Project Management Course.
+This course is designed to help you become a practical, business-focused Artificial Intelligence (AI) Project Manager.
 
-The course is designed as a practical learning experience. Each module builds a specific Project Management capability and contributes to the final capstone portfolio.
+You will learn how to lead AI projects from business problem identification through requirements, planning, AI evaluation, risk management, testing, release, monitoring, and continuous improvement.
+
+The course focuses on **Project Management judgment, decision-making, evidence, and measurable outcomes**.
+
+You are not expected to become an AI engineer, machine learning engineer, software developer, data scientist, or cloud engineer.
+
+The goal is to help you understand enough about AI technology to lead technical teams, challenge unsupported technical claims, manage risks, communicate with stakeholders, and make informed Project Management decisions.
+
+---
 
 ## Student Start-Here Checklist
 
 Before beginning the course, complete the following:
 
-* [ ] Read the **Course Guide**.
-* [ ] Review the **Syllabus** to understand the 13-module learning sequence.
-* [ ] Review the **Glossary** for Project Management and AI terminology.
-* [ ] Review the **Student Resource Map** to understand where course resources are located.
-* [ ] Decide whether you will complete the **PM Track only** or the **PM Track + optional Build-Along**.
-* [ ] Review the **Project Management Templates** and use them as directed throughout the course.
-* [ ] If completing the Build-Along, review the **Build-Along Start Here** instructions before beginning the hands-on activities.
-* [ ] Review the **Petadel PolicyAssist AI** reference project if using it for the Build-Along or capstone.
-* [ ] Complete the required modules and practical exercises.
-* [ ] Complete the **Module 12 Capstone & Portfolio** activities.
-* [ ] Prepare your required portfolio evidence.
-* [ ] Complete the **Module 13 Final Assessment**.
-* [ ] Achieve a final assessment score of **80% or higher**.
+* Read the **Course Guide**.
+* Review the **Syllabus** to understand the 13-module learning sequence.
+* Review the **Glossary** for Project Management and AI terminology.
+* Review the **Student Resource Map** to understand where course resources are located.
+* Decide whether you will complete the **PM Track only** or the **PM Track + optional Build-Along**.
+* Review the **Project Management Templates** and use them as directed throughout the course.
+* If completing the Build-Along, review the **Build-Along Start Here** instructions before beginning the hands-on activities.
+* Review the **Petadel PolicyAssist AI** reference project if using it for the Build-Along or capstone.
+* Complete the required modules and practical exercises.
+* Complete the **Module 12 Capstone & Portfolio** activities.
+* Prepare your required portfolio evidence.
+* Complete the **Module 13 Final Assessment**.
+* Achieve a final assessment score of **80% or higher**.
 
 ### Recommended Starting Point
 
@@ -40,343 +48,290 @@ You can return to the Student Resource Map throughout the course whenever you ne
 
 ## How The Course Is Organized
 
-The course contains:
+The course contains **13 modules** that progressively develop your ability to lead AI projects.
 
-* **13 Learning Modules**
-* **22 Project Management Templates**
-* **1 AI Capstone Project**
-* **1 Final Assessment**
+The course combines:
 
-The learning sequence follows the lifecycle of an AI project from initial business problem through production and continuous improvement.
+* Project Management concepts
+* AI fundamentals
+* Practical Project Management artifacts
+* Realistic decision-making scenarios
+* AI-specific evaluation and governance
+* Optional technical Build-Along activities
+* Capstone development
+* Portfolio preparation
+* Final assessment
+
+The course is organized into two connected tracks.
+
+### PM Track
+
+The PM Track is the core course and is required for all students.
+
+You will learn how to:
+
+* Define the business problem.
+* Identify and manage stakeholders.
+* Develop requirements.
+* Manage scope and priorities.
+* Build and manage the product backlog.
+* Understand AI technology and architecture.
+* Evaluate data and knowledge readiness.
+* Define AI quality measures.
+* Manage AI risk, security, and governance.
+* Coordinate testing and User Acceptance Testing (UAT).
+* Assess release readiness.
+* Establish production monitoring.
+* Manage continuous improvement.
+* Make evidence-based project decisions.
+
+### Build Track
+
+The Build Track is optional.
+
+You will use the **Petadel PolicyAssist AI** reference project to connect Project Management concepts to practical technical work.
+
+You may use the working PolicyAssist application or apply the same Project Management process to your own AI product or use case.
+
+The Build Track is designed to help you understand how an AI product is built, tested, evaluated, and monitored.
+
+You are not required to become an AI engineer or software developer.
 
 ---
 
 ## Recommended Learning Sequence
 
-Complete the modules in order.
+Follow the course in order:
 
-```text
-Module 1
-AI Project Management Foundations
-        ↓
-Module 2
-Problem Discovery & Stakeholder Engagement
-        ↓
-Module 3
-Business Analysis & Requirements
-        ↓
-Module 4
-Agile Product Planning
-        ↓
-Module 5
-AI Technology Fundamentals
-        ↓
-Module 6
-AI Data & Knowledge Management
-        ↓
-Module 7
-AI Evaluation & Quality
-        ↓
-Module 8
-AI Risk, Security & Governance
-        ↓
-Module 9
-Testing, UAT & Pilot
-        ↓
-Module 10
-Release & Deployment Management
-        ↓
-Module 11
-Monitoring & Continuous Improvement
-        ↓
-Module 12
-Capstone & Portfolio
-        ↓
-Module 13
-Final Assessment
-```
+**Foundations → Problem Discovery → Requirements → Agile Planning → AI Technology → Data & Knowledge → AI Evaluation → Risk & Governance → Testing & UAT → Release → Monitoring → Capstone → Final Assessment**
+
+Each module builds on the previous module.
+
+Complete the practical activities as you progress so that your Project Management evidence develops alongside your understanding.
 
 ---
 
 ## How To Complete Each Module
 
-Each module contains instructional material followed by a practical application.
+For each module:
 
-The typical flow is:
+1. Learn the concepts.
+2. Review the examples.
+3. Complete the practical activity.
+4. Apply the relevant Project Management template or artifact.
+5. Make a Project Management decision where required.
+6. Document your evidence.
+7. Review your work before moving forward.
 
-**Learn → Analyze → Apply → Make A PM Decision → Produce An Artifact → Reflect**
+The objective is not simply to complete activities.
 
-Do not treat the modules as passive reading.
-
-The objective is to develop the ability to make Project Management decisions in realistic AI project situations.
+The objective is to build the ability to **analyze → decide → document → communicate → act**.
 
 ---
 
 ## Learning Levels
 
-Activities are identified using four levels.
+The course uses four learning levels.
 
 ### BUILD
 
-The learner directly implements or demonstrates a capability.
-
-Example:
-
-Building or testing a working component of the PolicyAssist AI prototype.
+Complete practical hands-on activities using the optional Build-Along and the Petadel PolicyAssist AI reference project.
 
 ### DESIGN
 
-The learner creates, defines, evaluates, or reviews a project artifact or technical approach.
-
-Example:
-
-Creating an AI evaluation plan or reviewing an AI architecture.
+Create Project Management artifacts, plans, requirements, assessments, and decisions.
 
 ### SIMULATE
 
-The learner works through a realistic project situation and makes a Project Management decision.
-
-Example:
-
-Determining whether an AI project should proceed when a critical risk remains unresolved.
+Work through realistic AI Project Management scenarios that require you to analyze evidence, identify risks, evaluate trade-offs, and make decisions.
 
 ### THEORY
 
-The learner develops knowledge of a concept without implementing it.
-
-Example:
-
-Understanding prompt injection or model drift from a Project Management perspective.
+Learn the foundational Project Management and AI concepts required to understand and manage AI projects effectively.
 
 ---
 
-## PM Track And Build Track
+## PM Track and Build Track
 
-The course has two complementary learning tracks.
+The **PM Track** is required for every student.
 
-### PM Track
+The **Build Track** is optional.
 
-The PM Track develops the skills required to lead an AI project.
+You can successfully complete the course without completing the technical Build-Along.
 
-Key areas include:
+The Build-Along provides additional hands-on experience using the Petadel PolicyAssist AI reference project.
 
-* Business problems
-* Stakeholder management
-* Requirements
-* Scope
-* Backlog management
-* Risk
-* Governance
-* Data readiness
-* AI evaluation
-* Testing
-* UAT
-* Release decisions
-* Monitoring
-* Business outcomes
+You may also apply the same process to your own AI product or use case.
 
-### Build Track
+The Build-Along is intended to strengthen your ability to communicate with technical teams and understand the technical implications of Project Management decisions.
 
-The Build Track provides hands-on exposure to an actual AI application through the Petadel PolicyAssist AI project.
-
-The learner uses the working application to understand how Project Management decisions affect the technical product.
-
-The Build Track does not require the learner to become an AI engineer.
-
----
-
-## When To Use The Templates
-
-The Templates Library contains reusable Project Management artifacts.
-
-Use templates when a module asks you to produce an artifact or when the capstone requires one.
-
-The templates are designed to be:
-
-* Reusable
-* Professional
-* Practical
-* Adaptable to real projects
-* Consistent with the course terminology
-
-Do not complete every template simply for the sake of completing it.
-
-Use the artifact when it supports a project decision or deliverable.
+It is not intended to turn you into an AI engineer.
 
 ---
 
 ## Course Capstone
 
-The capstone project is:
+The course uses **Petadel PolicyAssist AI** as the reference capstone project.
 
-**Petadel PolicyAssist AI**
+**Organization:** Petadel Technology Services (PTS)
 
-The project is developed for:
+Petadel PolicyAssist AI is a fictional internal Generative AI policy knowledge assistant designed to help employees retrieve authoritative company policy information.
 
-**Petadel Technology Services (PTS)**
+The reference project demonstrates how an AI Project Manager can manage a project across the complete lifecycle.
 
-The business problem involves employees having difficulty locating and understanding authoritative company policies.
+You may use the Petadel PolicyAssist AI reference project or apply the same Project Management framework to your own AI product or use case.
 
-The capstone brings together the knowledge and artifacts developed throughout the course.
+The purpose of the capstone is to demonstrate your ability to connect:
 
----
-
-## Capstone Lifecycle
-
-The capstone follows:
-
-**Initiation → Discovery → Requirements → Planning → Architecture → Build → Evaluation → Security & Governance → UAT → Release → Monitoring → Continuous Improvement**
-
-Each stage connects to concepts introduced earlier in the course.
+**Business Problem → Requirements → Scope → AI Solution → Data → Evaluation → Risk → Testing → Release → Monitoring → Continuous Improvement**
 
 ---
 
 ## Capstone Rule
 
-The capstone is not simply a coding exercise.
+Your capstone should demonstrate the complete Project Management lifecycle.
 
-The learner must demonstrate the ability to:
+You should be able to explain:
 
-* Understand the business problem
-* Define measurable outcomes
-* Manage stakeholders
-* Define requirements
-* Control scope
-* Evaluate technology
-* Assess data readiness
-* Define AI quality criteria
-* Manage risk
-* Address security and governance
-* Plan testing
-* Conduct UAT
-* Assess release readiness
-* Establish monitoring
-* Make evidence-based project decisions
+* What problem the project is solving.
+* Who the stakeholders are.
+* What the requirements are.
+* What is in and out of scope.
+* Why AI is appropriate.
+* How the AI solution works at a level appropriate for a Project Manager.
+* What data and knowledge sources are required.
+* How AI quality will be measured.
+* What risks and controls exist.
+* How testing and UAT will be performed.
+* What is required for release readiness.
+* How production performance will be monitored.
+* How continuous improvement will be managed.
+* What evidence supports the final project decision.
 
-A technically functional application is not automatically a successful project.
+A working AI application alone does not constitute a complete capstone.
+
+The capstone must demonstrate **Project Management judgment and evidence-based decision-making**.
 
 ---
 
 ## Practical Exercise Standard
 
-Each module contains practical application designed to reinforce the most important concepts from that module.
+Your practical work should be:
 
-The course intentionally avoids unnecessary repetition.
+**Specific → Measurable → Evidence-Based → Actionable**
 
-A practical exercise may require the learner to:
+Avoid vague statements such as:
 
-* Create an artifact
-* Analyze a project scenario
-* Evaluate an AI capability
-* Identify risks
-* Prioritize requirements
-* Review evidence
-* Make a Go, Hold, or No-Go decision
+> The system should work well.
 
----
+Instead, define measurable expectations such as:
 
-## Project Management Decision Framework
+> Retrieval accuracy should be at least 90%.
 
-Throughout the course, learners will repeatedly evaluate whether a project or capability should:
-
-### Proceed
-
-Evidence indicates the project or capability is ready to continue.
-
-### Proceed With Conditions
-
-The project may continue, but specific conditions must be documented, monitored, or resolved.
-
-### Hold
-
-The project should pause until a significant issue is resolved or sufficient evidence becomes available.
-
-### No-Go
-
-The project, release, or capability should not proceed because a critical condition has failed.
-
-The appropriate decision must be based on evidence rather than schedule pressure.
+Use Project Management evidence to support your decisions.
 
 ---
 
-## Evidence-Based Project Management
+## Decision Framework
 
-AI projects frequently involve uncertainty.
+Throughout the course, use:
 
-A vendor may make an accuracy claim.
+**KPI → Target → Actual → Trend → Threshold → Action**
 
-A model may appear to perform well.
+When evaluating an AI project, ask:
 
-Users may report that the application is useful.
+1. What does the evidence show?
+2. Is performance meeting the defined target?
+3. Is there a threshold breach?
+4. What is the business or product impact?
+5. What action is required?
+6. Who owns the action?
+7. When should the result be reviewed?
 
-A technical test may pass.
+Your recommended actions may include:
 
-None of these automatically proves that the project is ready for production.
-
-The AI Project Manager must ask:
-
-* What evidence supports the claim?
-* What was actually tested?
-* What requirements were validated?
-* What risks remain?
-* What acceptance criteria were met?
-* What defects remain?
-* What stakeholders approved the result?
-* What could fail after release?
+**Continue → Improve → Escalate → Reassess**
 
 ---
 
-## AI Project Management Mindset
+## Evidence-Based PM
 
-Throughout the course, think beyond:
+Strong AI Project Management decisions are based on evidence.
 
-> "Does the technology work?"
+Evidence may include:
 
-Instead ask:
+* Requirements
+* Acceptance criteria
+* Evaluation results
+* Test results
+* UAT results
+* Risk assessments
+* Security findings
+* KPI performance
+* User feedback
+* Monitoring data
+* Business outcomes
+* Decision records
 
-> "Does the solution solve the right business problem, meet its requirements, manage its risks, satisfy its users, and have sufficient evidence to proceed?"
+Do not make Project Management decisions based only on assumptions, opinions, or technical enthusiasm.
 
-This distinction is central to AI Project Management.
+Ask:
+
+**What do we know?**
+
+**How do we know it?**
+
+**What does the evidence mean?**
+
+**What should we do next?**
 
 ---
 
 ## Course Completion
 
-To complete the course, the learner should:
+To complete the course, you must:
 
-1. Complete Modules 1–11.
-2. Complete the practical exercises.
-3. Use the applicable templates.
-4. Complete the Petadel PolicyAssist AI capstone in Module 12.
-5. Produce the required portfolio artifacts.
-6. Complete the final assessment in Module 13.
+1. Complete Modules 1–13.
+2. Complete the required practical exercises.
+3. Use the Project Management templates as directed.
+4. Complete the Module 12 Capstone & Portfolio activities.
+5. Prepare your portfolio evidence.
+6. Complete the Module 13 Final Assessment.
 7. Achieve a final assessment score of **80% or higher**.
+
+Complete the capstone in Module 12 using **Petadel PolicyAssist AI or your own AI product or use case**.
+
+The optional Build-Along provides additional hands-on technical practice.
 
 ---
 
 ## Expected Competencies
 
-By the end of the course, the learner should be able to:
+By completing this course, you should be able to:
 
-* Lead AI project initiation.
-* Define and validate AI business problems.
-* Manage AI stakeholders.
+* Frame AI projects around measurable business outcomes.
+* Identify and analyze stakeholders.
 * Translate business needs into requirements.
-* Manage AI product backlogs.
-* Understand AI architecture and technology at the PM level.
-* Evaluate AI data and knowledge readiness.
-* Define AI evaluation criteria.
-* Manage AI risks and governance.
-* Plan testing and UAT.
-* Evaluate release readiness.
-* Establish monitoring and continuous improvement.
+* Manage scope, priorities, and dependencies.
+* Build and manage AI product backlogs.
+* Understand core AI concepts and architecture.
+* Evaluate data and knowledge readiness.
+* Define measurable AI quality criteria.
+* Evaluate AI performance and quality.
+* Identify and manage AI-specific risks.
+* Address security, privacy, and governance considerations.
+* Coordinate testing and UAT.
+* Evaluate pilot results.
+* Determine release readiness.
+* Develop monitoring and continuous improvement plans.
 * Make evidence-based Go, Hold, and No-Go decisions.
-* Communicate AI project status and decisions to leadership.
+* Communicate AI project information effectively to technical and business stakeholders.
+* Produce professional Project Management artifacts and portfolio evidence.
 
 ---
 
 ## Final Principle
 
-The goal of this course is not to make the learner the person who writes every line of AI code.
+The goal of this course is not to make you the person who writes every line of AI code.
 
-The goal is to make the learner the person who can **lead the AI project responsibly from business problem to measurable outcome.**
+The goal is to make you the person who can **lead the AI project responsibly from business problem to measurable outcome**.
