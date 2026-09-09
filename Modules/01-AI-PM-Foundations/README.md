@@ -339,4 +339,18 @@ Your assessment should contain:
 * Initial Risks
 * PM Recommendation
 
-##
+## Key Takeaway
+
+A strong AI Project Manager does not begin with technology.
+
+The PM begins with the business problem, validates the need, understands the stakeholders, evaluates AI suitability, and establishes measurable outcomes.
+
+## Connection To Capstone
+
+Petadel PolicyAssist AI will serve as the course reference project for applying the concepts taught in this course.
+
+You may use the Petadel PolicyAssist AI reference project or apply the same Project Management process to your own AI product or use case.
+
+You will not begin solving the PolicyAssist problem yet.
+
+The next modules will teach the Project Management skills required to analyze and manage an AI project before those skills are applied to the capstone.
