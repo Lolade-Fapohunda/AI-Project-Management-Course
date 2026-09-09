@@ -222,8 +222,6 @@ The PM portion is complete when you can:
 
 # Important
 
-The purpose of this lab is not to turn you into a software engineer.
-
 The purpose is to help you understand how an AI product's technical performance data can support:
 
 **Monitoring → Analysis → PM Decision → Corrective Action → Continuous Improvement**
