@@ -700,8 +700,6 @@ The purpose of the Petadel PolicyAssist example is not to teach students to copy
 
 It is to demonstrate **how an AI Project Manager thinks.**
 
-The student should be able to look at the example and understand:
+You should be able to look at the example and understand:
 
 **Problem → Evidence → Decision → Action → Outcome**
-
-That is the standard they should apply to their own AI project.
