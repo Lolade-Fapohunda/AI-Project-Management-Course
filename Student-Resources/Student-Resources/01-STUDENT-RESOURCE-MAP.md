@@ -117,13 +117,37 @@ Your portfolio should demonstrate:
 
 ---
 
-# Final Assessment
+# Final Assessment Path
+
+## All Students
+
+All students complete the course Final Assessment:
 
 **Location:** `Modules/13-Final-Assessment/`
 
-Complete the Final Assessment after progressing through the course.
+This assessment validates your understanding and application of the AI Project Management lifecycle.
 
-It validates your ability to apply AI Project Management concepts and make evidence-based decisions.
+---
+
+## Build-Along Participants
+
+If you completed the optional Student Build-Along, you also complete:
+
+**Location:** `Student-Build-Along/16-MILESTONE-13-FINAL-ASSESSMENT/`
+
+This assessment validates your ability to apply AI Project Management concepts through the hands-on project experience.
+
+### Your Path
+
+**PM Track Only**
+
+Course Modules → Final Assessment
+
+**PM Track + Build-Along**
+
+Course Modules → Build-Along → Capstone → Build-Along Milestone 13 Assessment → Final Assessment
+
+The Build-Along assessment is **not required** for students who did not participate in the Build-Along.
 
 ---
 
