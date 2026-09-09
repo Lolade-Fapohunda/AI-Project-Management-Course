@@ -1,4 +1,4 @@
-# Petadel PolicyAssist AI — Student Build-Along
+# PolicyAssist AI — Student Build-Along
 
 This is the optional hands-on Build-Along for the AI Project Management course.
 
