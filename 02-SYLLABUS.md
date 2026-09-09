@@ -425,13 +425,15 @@ Integrating the complete course into one end-to-end AI Project Management projec
 
 Develop and manage an AI-powered policy assistance solution that helps employees retrieve authoritative company policy information.
 
+Petadel PolicyAssist AI is the course reference project. You may use the reference project or apply the same Project Management process to your own AI product or use case.
+
 ## Capstone Lifecycle
 
 **Initiation → Discovery → Requirements → Planning → Architecture → Build → Evaluation → Security & Governance → UAT → Release → Monitoring → Continuous Improvement**
 
 ## Capstone Components
 
-The learner will develop:
+You will develop:
 
 1. Project Charter
 2. Discovery & Stakeholder Analysis
@@ -553,9 +555,9 @@ FINAL ASSESSMENT
 
 # Final Course Outcome
 
-Successful learners should be able to lead an AI project from initial business problem through production and continuous improvement.
+You should be able to lead an AI project from initial business problem through production and continuous improvement.
 
-They should be able to:
+You should be able to:
 
 * Ask the right questions
 * Challenge unsupported technical claims
