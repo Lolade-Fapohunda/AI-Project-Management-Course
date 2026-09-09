@@ -6,6 +6,36 @@ This guide explains how to navigate and complete the AI Project Management Cours
 
 The course is designed as a practical learning experience. Each module builds a specific Project Management capability and contributes to the final capstone portfolio.
 
+## Student Start-Here Checklist
+
+Before beginning the course, complete the following:
+
+* [ ] Read the **Course Guide**.
+* [ ] Review the **Syllabus** to understand the 13-module learning sequence.
+* [ ] Review the **Glossary** for Project Management and AI terminology.
+* [ ] Review the **Student Resource Map** to understand where course resources are located.
+* [ ] Decide whether you will complete the **PM Track only** or the **PM Track + optional Build-Along**.
+* [ ] Review the **Project Management Templates** and use them as directed throughout the course.
+* [ ] If completing the Build-Along, review the **Build-Along Start Here** instructions before beginning the hands-on activities.
+* [ ] Review the **Petadel PolicyAssist AI** reference project if using it for the Build-Along or capstone.
+* [ ] Complete the required modules and practical exercises.
+* [ ] Complete the **Module 12 Capstone & Portfolio** activities.
+* [ ] Prepare your required portfolio evidence.
+* [ ] Complete the **Module 13 Final Assessment**.
+* [ ] Achieve a final assessment score of **80% or higher**.
+
+### Recommended Starting Point
+
+Start with:
+
+**Course Guide → Syllabus → Glossary → Module 1**
+
+If you are completing the optional Build-Along, also review:
+
+**Student Build-Along → Start Here**
+
+You can return to the Student Resource Map throughout the course whenever you need to locate a template, project artifact, application, capstone resource, or assessment.
+
 ---
 
 ## How The Course Is Organized
