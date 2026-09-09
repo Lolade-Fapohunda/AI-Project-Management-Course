@@ -16,7 +16,7 @@ Specific conditions that must be satisfied for a requirement or user story to be
 
 An iterative Project Management approach that delivers work in smaller increments and adapts to changing requirements and feedback.
 
-### AI — Artificial Intelligence
+### Artificial Intelligence (AI)
 
 Technology that enables computer systems to perform tasks that normally require human intelligence, such as understanding language, recognizing patterns, making predictions, or generating content.
 
@@ -112,11 +112,11 @@ A failure or deviation from an expected requirement, behavior, or acceptance cri
 
 The level of business or technical impact caused by a defect.
 
-### Definition Of Done
+### Definition of Done
 
 A shared set of conditions that must be satisfied before work is considered complete.
 
-### Definition Of Ready
+### Definition of Ready
 
 A shared set of conditions indicating that work is sufficiently defined and prepared to begin.
 
@@ -359,7 +359,7 @@ A structured process for identifying the underlying cause of a problem rather th
 
 A search method that identifies information based on meaning and context rather than relying only on exact keyword matches.
 
-### Source Of Truth
+### Source of Truth
 
 The authoritative source that should be relied upon when determining the correct information.
 
