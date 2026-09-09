@@ -12,6 +12,34 @@ The course combines Project Management principles, AI fundamentals, practical pr
 
 The objective is to develop an AI Project Manager who can lead technical teams, manage business stakeholders, evaluate AI risks and quality, and make evidence-based project decisions.
 
+# Measurable Learning Objectives
+
+By the end of this course, you should be able to:
+
+1. **Frame an AI project** by evaluating a business problem, determining whether AI is an appropriate solution, and defining measurable business outcomes.
+
+2. **Analyze stakeholders and requirements** by identifying stakeholder needs, documenting business, functional, and non-functional requirements, and establishing measurable acceptance criteria.
+
+3. **Plan an AI product** by creating a prioritized backlog, applying prioritization methods such as MoSCoW, defining a Minimum Viable Product (MVP), and establishing release scope.
+
+4. **Evaluate AI technology** by explaining core AI concepts, assessing an AI architecture, identifying technical dependencies, and challenging unsupported technical claims.
+
+5. **Assess AI data and knowledge readiness** by evaluating data quality, ownership, authority, versioning, access controls, and knowledge governance.
+
+6. **Measure AI quality** by defining evaluation criteria, datasets, thresholds, and performance metrics for retrieval accuracy, answer accuracy, hallucination, citation correctness, and related quality dimensions.
+
+7. **Manage AI risk and governance** by identifying risks, assessing likelihood and impact, defining controls, addressing security and privacy concerns, and establishing governance decisions.
+
+8. **Plan and coordinate testing** by developing functional, negative, edge-case, security, regression, User Acceptance Testing (UAT), and pilot strategies.
+
+9. **Assess production readiness** by evaluating release criteria, deployment dependencies, rollback plans, user readiness, and Go/Hold/No-Go decisions.
+
+10. **Manage AI products in production** by defining monitoring metrics and thresholds, responding to incidents, analyzing root causes, and prioritizing continuous improvement.
+
+11. **Lead an end-to-end AI project** by applying the Project Management lifecycle from business problem through release, monitoring, and continuous improvement.
+
+12. **Produce portfolio-ready evidence** that demonstrates practical AI Project Management judgment and decision-making.
+
 ---
 
 # Course Structure
@@ -35,6 +63,38 @@ The course contains **13 modules**.
 | 13     | Final Assessment                           | AI Project Management competency        |
 
 ---
+
+# Course Delivery Model
+
+This course uses a practical, project-based learning model that combines instruction, application, decision-making, and documentation.
+
+Each module follows the general sequence:
+
+**Learn → Apply → Decide → Document → Review**
+
+You will learn the relevant Project Management and AI concepts, apply them to realistic project situations, make evidence-based Project Management decisions, document your work using practical templates and artifacts, and review the outcome.
+
+The course uses four learning levels:
+
+### BUILD
+
+Complete practical hands-on activities using the optional Build-Along and the Petadel PolicyAssist AI reference project.
+
+### DESIGN
+
+Create Project Management artifacts, plans, requirements, assessments, and decisions without requiring advanced technical development skills.
+
+### SIMULATE
+
+Work through realistic AI Project Management scenarios that require you to evaluate evidence, identify risks, resolve trade-offs, and make decisions.
+
+### THEORY
+
+Learn the foundational Project Management and AI concepts needed to understand and manage AI projects effectively.
+
+The **PM Track is required** for all students.
+
+The **Build-Along is optional** and provides additional hands-on technical practice. You do not need to become an AI engineer or software developer to complete the PM Track successfully.
 
 # Module 1: AI Project Management Foundations
 
