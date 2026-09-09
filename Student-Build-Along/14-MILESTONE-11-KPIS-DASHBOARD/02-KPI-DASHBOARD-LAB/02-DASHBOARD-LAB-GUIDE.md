@@ -4,11 +4,11 @@
 
 Build and interpret a simple Artificial Intelligence (AI) product Key Performance Indicator (KPI) dashboard.
 
-This is an optional technical Build-Along.
+This is an optional technical Build-Along activity.
 
 All students complete the Project Management (PM) analysis in Milestone 11.
 
-You do not need to code to complete the PM portion.
+No coding is required to complete the PM portion.
 
 ---
 
@@ -32,12 +32,12 @@ Consider:
 
 * What does each KPI measure?
 * Is higher or lower performance better?
-* Which KPIs are meeting target?
-* Which KPIs are missing target?
+* Which KPIs are meeting the target?
+* Which KPIs are missing the target?
 
 ### PM Decision
 
-Identify the KPI you would investigate first and explain why.
+Identify the KPI you would investigate first and explain your reasoning.
 
 ---
 
@@ -59,7 +59,7 @@ Modify the dashboard to add a visual comparison between:
 
 **Target vs. Actual**
 
-The purpose of this visualization is to make performance gaps easy to identify.
+The purpose of this visualization is to make performance gaps easier to identify.
 
 ### PM Question
 
@@ -83,7 +83,7 @@ The trend should help the PM determine whether product performance is:
 
 Is the product improving, declining, or remaining stable?
 
-Explain the evidence.
+Explain the evidence supporting your conclusion.
 
 ---
 
