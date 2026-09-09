@@ -270,6 +270,12 @@ Examples:
 
 Outcomes should be measurable whenever possible.
 
+A measurable outcome should identify **what will improve, the target, and how the result will be measured**.
+
+For example:
+
+> Reduce employee policy search time by at least 50%, measured by average task completion time.
+
 ## AI Suitability
 
 Not every business problem requires AI.
