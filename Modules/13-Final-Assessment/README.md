@@ -82,7 +82,7 @@ Should the project:
 * Proceed
 * Proceed With Conditions
 * Hold
-* Stop
+* No-Go
 
 ---
 
@@ -404,7 +404,7 @@ Recommended passing score:
 
 A strong performance should demonstrate more than memorized terminology.
 
-The learner should demonstrate the ability to:
+You should demonstrate the ability to:
 
 * Identify what matters.
 * Ask the right questions.
@@ -420,11 +420,13 @@ The learner should demonstrate the ability to:
 
 You have completed the course when you have:
 
-* Completed Modules 1–11.
-* Completed the Petadel PolicyAssist AI capstone.
-* Completed the capstone portfolio.
+* Completed Modules 1–13.
+* Completed the Module 12 capstone and portfolio activities.
 * Completed the final assessment.
+* Achieved a final assessment score of **80% or higher**.
 * Demonstrated evidence-based AI Project Management judgment.
+
+The capstone may use the **Petadel PolicyAssist AI reference project** or your own AI product or use case.
 
 ---
 
@@ -445,7 +447,7 @@ Answer the following:
 
 # Course Completion Statement
 
-By completing this course, you should be able to approach AI projects as a Project Manager who understands both **project management discipline and AI-specific risks**.
+By completing this course, you should be able to approach AI projects as a Project Manager who understands both **Project Management discipline and AI-specific risks**.
 
 You are not expected to be an AI engineer.
 
