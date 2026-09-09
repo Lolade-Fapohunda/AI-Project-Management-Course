@@ -23,6 +23,22 @@ By the end of this module, you should be able to:
 * Evaluate whether AI is appropriate for a problem
 * Translate discovery findings into a foundation for requirements
 
+## Module 2 Roadmap
+
+Follow this sequence throughout the module:
+
+**Learn → Analyze → Discover → Apply → Decide → Document → Check**
+
+You will:
+
+1. Learn how to define and investigate a business problem.
+2. Analyze the current state and distinguish symptoms from root causes.
+3. Discover stakeholder needs, concerns, and competing objectives.
+4. Apply the concepts through the practical exercise.
+5. Make an evidence-based Project Management decision.
+6. Document your findings in the required deliverable.
+7. Check your work before moving to Module 3.
+
 ## Start With The Problem
 
 A common mistake in technology projects is starting with a proposed solution.
@@ -367,22 +383,37 @@ The objective is not to delay the project.
 
 The objective is to prevent the team from building the wrong solution.
 
-## Deliverable
+## Deliverable Instructions
 
-Create a:
+Create a **Problem Discovery & Stakeholder Analysis** that demonstrates what you learned in this module.
 
-**Problem Discovery & Stakeholder Analysis**
+Your completed deliverable must include:
 
-Your deliverable should contain:
+* **Problem Statement:** Clearly define the business problem without prescribing a technology solution.
+* **Current-State Summary:** Describe how the process works today, including relevant pain points, delays, errors, dependencies, and existing controls.
+* **Root Cause Analysis:** Identify evidence-based root causes or clearly labeled hypotheses that require further validation.
+* **Stakeholder Analysis:** Identify key stakeholders and document their interests, influence, concerns, and desired outcomes.
+* **Discovery Findings:** Document the important facts and observations discovered during your analysis.
+* **Business Outcomes:** Define at least three measurable outcomes.
+* **AI Suitability Assessment:** Explain why AI may or may not be appropriate and identify at least one alternative solution.
+* **Key Risks:** Identify the major risks discovered during the analysis.
+* **PM Recommendation:** Provide a clear recommendation supported by the evidence.
 
-* Problem Statement
-* Current-State Summary
-* Root Cause Analysis
-* Stakeholder Analysis
-* Discovery Findings
-* Business Outcomes
-* AI Suitability Assessment
-* Key Risks
+### Deliverable Quality Standard
+
+Before submitting your work, confirm that:
+
+* The problem is clearly defined.
+* The current state is supported by evidence or clearly identified assumptions.
+* Root causes are distinguished from symptoms.
+* Stakeholders and competing objectives are identified.
+* Business outcomes are measurable.
+* AI suitability is evaluated rather than assumed.
+* At least one alternative to AI is considered.
+* Risks are documented.
+* The PM recommendation follows logically from the evidence.
+
+You are not expected to define detailed system requirements or acceptance criteria in this module. Those activities are covered in **Module 3: Business Analysis & Requirements**.
 
 ## Worked Petadel Discovery Example
 
@@ -501,6 +532,32 @@ The evidence should first establish:
 * Measurable success criteria.
 * Whether AI provides sufficient value over simpler alternatives.
 
+## Evidence-Based Discovery Worksheet
+
+Use this worksheet to organize evidence before finalizing your **Problem Discovery & Stakeholder Analysis** deliverable.
+
+| Discovery Area   | Evidence | Finding | Impact | Open Question |
+| ---------------- | -------- | ------- | ------ | ------------- |
+| Problem          |          |         |        |               |
+| Current State    |          |         |        |               |
+| Root Cause       |          |         |        |               |
+| Stakeholders     |          |         |        |               |
+| Business Outcome |          |         |        |               |
+| AI Suitability   |          |         |        |               |
+| Risk             |          |         |        |               |
+
+### How To Use The Worksheet
+
+Use evidence from discovery activities such as interviews, process reviews, document reviews, existing metrics, user feedback, and stakeholder discussions.
+
+For each area:
+
+**Evidence → Finding → Impact → Open Question**
+
+Use the completed worksheet to strengthen your formal Project Management deliverable.
+
+The worksheet supports the existing course templates. It does not replace the **Problem Statement**, **Stakeholder Register**, or other Project Management artifacts.
+
 ## Module 2 Completion Checklist
 
 Before moving to Module 3, confirm that you have completed:
@@ -516,6 +573,7 @@ Before moving to Module 3, confirm that you have completed:
 * [ ] Initial project risks.
 * [ ] A documented PM recommendation.
 * [ ] The **Problem Discovery & Stakeholder Analysis** deliverable.
+* [ ] A completed **Evidence-Based Discovery Worksheet**.
 * [ ] A review of your work for evidence, clarity, and consistency.
 
 Your Module 2 work is complete when you can explain the problem, who is affected, why it matters, what evidence supports your findings, and whether AI is an appropriate solution.
