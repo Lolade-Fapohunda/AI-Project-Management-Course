@@ -98,6 +98,7 @@ The Petadel reference project establishes the following target measures:
 
 | Measure                      |       Target |
 | ---------------------------- | -----------: |
+| Policy Search-Time Reduction |        ≥ 50% |
 | Retrieval Accuracy           |        ≥ 90% |
 | Answer Accuracy              |        ≥ 90% |
 | Hallucination Rate           |         < 2% |
@@ -857,4 +858,682 @@ Confirm:
 * UAT complete
 * Security approved
 * Data ready
-*
+* Critical defects resolved
+* High-severity defects addressed or formally accepted
+* Monitoring ready
+* Support ready
+* Rollback available
+* Training complete
+* Approvals obtained
+
+---
+
+## Deployment Strategy
+
+Evaluate an appropriate strategy such as:
+
+* Phased deployment
+* Pilot-to-production
+* Canary deployment
+
+Select the approach based on:
+
+* Risk
+* User population
+* Business impact
+* Technical readiness
+* Operational readiness
+
+---
+
+## Artifact
+
+Create a **Release & Deployment Plan** containing:
+
+* Release criteria
+* Deployment strategy
+* Dependencies
+* Go-live plan
+* Communication
+* Training
+* Monitoring
+* Support
+* Rollback
+* Hypercare
+* Approval requirements
+
+---
+
+## PM Decision
+
+Determine:
+
+> **Go, Proceed With Conditions, Hold, or No-Go?**
+
+Support the decision using project evidence.
+
+---
+
+# Capstone Phase 11: Monitoring & Continuous Improvement
+
+## Objective
+
+Establish how the AI product will be managed after release.
+
+### Monitoring Areas
+
+Monitor:
+
+* Retrieval accuracy
+* Answer accuracy
+* Hallucination
+* Grounding
+* Citation correctness
+* Unsupported-question behavior
+* Response latency
+* Availability
+* Security events
+* User satisfaction
+* Policy changes
+* Incidents
+* Business outcomes
+
+For your own project, define monitoring areas relevant to your AI product or use case.
+
+---
+
+## Change Triggers
+
+Define events that require additional review, such as:
+
+* Model changes
+* Major policy changes
+* Accuracy decline
+* Security incident
+* Significant data change
+* New business requirements
+* Major vendor change
+
+---
+
+## Continuous Improvement Loop
+
+**Monitor**
+
+↓
+
+**Identify Problem**
+
+↓
+
+**Analyze**
+
+↓
+
+**Create Backlog Item**
+
+↓
+
+**Prioritize**
+
+↓
+
+**Develop**
+
+↓
+
+**Test**
+
+↓
+
+**UAT**
+
+↓
+
+**Release**
+
+↓
+
+**Monitor Again**
+
+---
+
+## Artifact
+
+Create an **AI Monitoring & Continuous Improvement Plan** containing:
+
+* Metrics
+* Targets
+* Alert thresholds
+* Owners
+* Review frequency
+* Incident process
+* Feedback process
+* Improvement backlog
+* Change triggers
+* Escalation criteria
+
+---
+
+# Capstone Portfolio
+
+The final portfolio should contain the key artifacts created throughout the project.
+
+## Portfolio Structure
+
+For the Petadel reference project, your portfolio may use:
+
+```text
+Petadel-PolicyAssist/
+├── 01-Project-Charter/
+├── 02-Discovery-Stakeholder-Analysis/
+├── 03-Requirements/
+├── 04-Product-Backlog-Release-Plan/
+├── 05-AI-Architecture-Assessment/
+├── 06-Data-Readiness-Knowledge-Governance/
+├── 07-AI-Evaluation-Quality/
+├── 08-Risk-Security-Governance/
+├── 09-Testing-UAT-Pilot/
+├── 10-Release-Deployment/
+├── 11-Monitoring-Continuous-Improvement/
+└── 12-Executive-Summary/
+```
+
+If you are using your own AI product or use case, organize your portfolio using the same evidence structure and adapt the project naming accordingly.
+
+---
+
+## Module 12 Deliverables
+
+By the end of this module, you should have completed the following capstone evidence:
+
+1. **Project Charter**
+2. **Discovery & Stakeholder Analysis**
+3. **Requirements Specification**
+4. **Product Backlog & Release Plan**
+5. **AI Architecture & Technology Assessment**
+6. **Data Readiness & Knowledge Governance Assessment**
+7. **AI Evaluation & Quality Report**
+8. **AI Risk, Security & Governance Plan**
+9. **Testing, UAT & Pilot Plan**
+10. **Release & Deployment Plan**
+11. **AI Monitoring & Continuous Improvement Plan**
+12. **Decision Log**
+13. **Risk Register**
+14. **Requirements Traceability**
+15. **Executive Summary**
+16. **Final Go / Proceed With Conditions / Hold / No-Go Recommendation**
+17. **Final Presentation**
+
+If you are using the Petadel PolicyAssist AI reference project, these artifacts should describe the Petadel project.
+
+If you are using your own AI product or use case, apply the same evidence structure to your project.
+
+---
+
+## Executive Summary
+
+The portfolio should conclude with a concise executive summary.
+
+It should explain:
+
+* Business problem
+* Proposed solution
+* Business value
+* Major stakeholders
+* Key requirements
+* Architecture
+* AI quality results
+* Major risks
+* Security posture
+* UAT results
+* Release recommendation
+* Monitoring strategy
+* Future improvements
+
+The executive summary should be understandable to a non-technical executive.
+
+---
+
+# Capstone Decision Log
+
+Major project decisions should be documented.
+
+A decision log may include:
+
+| Decision ID | Decision | Evidence | Alternatives | Risk | Owner | Date | Outcome |
+| ----------- | -------- | -------- | ------------ | ---- | ----- | ---- | ------- |
+
+Examples of decisions include:
+
+* Whether AI is appropriate.
+* Which requirements enter the MVP.
+* Which technology architecture is selected.
+* Whether data is ready.
+* Whether quality targets are met.
+* Whether security risk is acceptable.
+* Whether UAT passes.
+* Whether the product should launch.
+
+The decision log demonstrates PM judgment.
+
+---
+
+# Capstone Risk Register
+
+Maintain a consolidated risk register throughout the project.
+
+Risks should be:
+
+* Identified
+* Assessed
+* Assigned
+* Mitigated
+* Monitored
+* Escalated
+* Accepted or closed
+
+The final portfolio should show how major risks changed throughout the project lifecycle.
+
+---
+
+# Capstone Traceability
+
+The project should demonstrate traceability from:
+
+**Business Problem**
+
+↓
+
+**Business Outcome**
+
+↓
+
+**Requirement**
+
+↓
+
+**User Story**
+
+↓
+
+**Acceptance Criteria**
+
+↓
+
+**Test**
+
+↓
+
+**Evaluation**
+
+↓
+
+**UAT**
+
+↓
+
+**Release Decision**
+
+This demonstrates that project decisions are connected rather than being isolated documents.
+
+---
+
+# Capstone Go / Hold / No-Go Framework
+
+The final project decision should consider all major readiness areas.
+
+| Area              | Status |
+| ----------------- | ------ |
+| Requirements      |        |
+| Data Readiness    |        |
+| AI Evaluation     |        |
+| Security          |        |
+| UAT               |        |
+| Defects           |        |
+| Governance        |        |
+| Monitoring        |        |
+| Rollback          |        |
+| User Readiness    |        |
+| Business Approval |        |
+
+### Go
+
+The product meets required criteria and risks are acceptable.
+
+### Proceed With Conditions
+
+The product may proceed with clearly documented limitations, controls, and approvals.
+
+### Hold
+
+Additional evidence or corrective action is required.
+
+### No-Go
+
+The product should not proceed because critical requirements, risks, or controls are unacceptable.
+
+---
+
+# Final Capstone Presentation
+
+Prepare a professional presentation explaining the project.
+
+Recommended structure:
+
+1. Business Problem
+2. Business Outcomes
+3. Stakeholders
+4. Requirements
+5. Product Scope
+6. AI Architecture
+7. Data Governance
+8. Evaluation Results
+9. Security & Risk
+10. UAT Results
+11. Release Readiness
+12. Monitoring
+13. Final Recommendation
+
+The presentation should focus on **decisions, evidence, risks, and business value** rather than technical implementation details.
+
+---
+
+# Practical Exercise 12: Complete The AI Project
+
+## Scenario
+
+You are the AI Project Manager responsible for taking an AI product from initial concept through production readiness.
+
+For the Petadel reference project, the product is **Petadel PolicyAssist AI**.
+
+Leadership expects a recommendation on whether the product should proceed to production.
+
+You have access to the project requirements, backlog, architecture, policy knowledge base, evaluation results, security findings, UAT results, risks, and monitoring plan.
+
+If you are using your own AI product or use case, use the corresponding project evidence.
+
+Your responsibility is to bring the entire project together.
+
+### Part 1: Review The Project
+
+Review each lifecycle phase:
+
+* Initiation
+* Discovery
+* Requirements
+* Planning
+* Architecture
+* Data
+* Evaluation
+* Security
+* UAT
+* Release
+* Monitoring
+
+Identify missing evidence, unresolved risks, or inconsistent decisions.
+
+### Part 2: Validate Traceability
+
+Trace at least **five major requirements** through:
+
+**Requirement → User Story → Acceptance Criteria → Test → Evaluation/UAT → Result**
+
+Identify any gaps.
+
+### Part 3: Review Project Risks
+
+Review the consolidated risk register.
+
+Identify:
+
+* Highest risks
+* Unresolved risks
+* Accepted risks
+* Risks that changed
+* Release-blocking risks
+
+### Part 4: Review AI Quality
+
+Review:
+
+* Retrieval accuracy
+* Answer accuracy
+* Hallucination
+* Citation correctness
+* Unsupported-question refusal
+* Response latency
+
+Determine whether the agreed thresholds have been achieved.
+
+### Part 5: Review Business Readiness
+
+Evaluate:
+
+* UAT
+* User satisfaction
+* Training
+* Support
+* Governance
+* Monitoring
+* Business approval
+
+### Part 6: Make The Final Decision
+
+Choose:
+
+* **Go**
+* **Proceed With Conditions**
+* **Hold**
+* **No-Go**
+
+Support your recommendation using:
+
+1. Evidence
+2. Business outcomes
+3. Requirements
+4. AI quality
+5. Security
+6. Risk
+7. UAT
+8. Operational readiness
+9. Governance
+10. Stakeholder impact
+
+### Part 7: Executive Recommendation
+
+Prepare a one-page executive recommendation explaining:
+
+* Current project status
+* Major achievements
+* Major risks
+* Outstanding issues
+* Evidence
+* Recommendation
+* Required actions
+
+---
+
+# PM Decision
+
+Leadership says:
+
+> "We have invested significant time in this project. Unless there is a major reason not to launch, we want to go live."
+
+Your responsibility is not to justify the investment.
+
+Your responsibility is to determine whether the product is actually ready.
+
+Consider the possibility that:
+
+* Technical metrics may pass while business outcomes do not.
+* UAT may identify serious usability issues.
+* Security may identify unacceptable risk.
+* Data may contain unresolved authority conflicts.
+* AI quality may pass overall but fail important categories.
+* A critical defect may remain unresolved.
+* Monitoring may not be ready.
+
+Your recommendation must be based on evidence rather than organizational pressure.
+
+### Key Principle
+
+> **The PM's responsibility is to protect the project's objectives, users, and organization, not simply to deliver the project on schedule.**
+
+---
+
+# Artifact / Output
+
+The final capstone portfolio should contain:
+
+* Project Charter
+* Discovery & Stakeholder Analysis
+* Requirements Specification
+* Product Backlog & Release Plan
+* AI Architecture & Technology Assessment
+* Data Readiness & Knowledge Governance Assessment
+* AI Evaluation & Quality Report
+* AI Risk, Security & Governance Plan
+* Testing, UAT & Pilot Plan
+* Release & Deployment Plan
+* AI Monitoring & Continuous Improvement Plan
+* Decision Log
+* Risk Register
+* Requirements Traceability
+* Executive Summary
+* Final Go/Hold/No-Go Recommendation
+* Final Presentation
+
+---
+
+# Final Success Targets
+
+For the Petadel PolicyAssist AI reference project, the final target framework includes:
+
+| Measure                      |       Target |
+| ---------------------------- | -----------: |
+| Policy Search-Time Reduction |        ≥ 50% |
+| Retrieval Accuracy           |        ≥ 90% |
+| Answer Accuracy              |        ≥ 90% |
+| Hallucination Rate           |         < 2% |
+| Citation Correctness         |         100% |
+| Unsupported-Question Refusal |         100% |
+| Response Latency             | ≤ 10 seconds |
+| User Satisfaction            |        ≥ 85% |
+| Critical Security Incidents  |            0 |
+
+These are target measures, not assumed results.
+
+Your final recommendation must be based on the available evidence and the agreed thresholds.
+
+If you are using your own AI product or use case, define equivalent measurable targets appropriate to your project.
+
+---
+
+# Capstone Quality Standard
+
+A successful capstone should demonstrate that you can:
+
+* Connect the business problem to measurable outcomes.
+* Maintain traceability from requirements through testing and release decisions.
+* Identify and manage project, AI, data, security, and governance risks.
+* Evaluate AI quality using measurable evidence.
+* Incorporate user acceptance and operational readiness.
+* Make a defensible Go, Proceed With Conditions, Hold, or No-Go recommendation.
+* Communicate the project clearly to technical and non-technical stakeholders.
+* Present the capstone as a professional AI Project Management case study.
+
+The capstone is complete when the required evidence is documented, internally consistent, and supports a clear final Project Management recommendation.
+
+---
+
+# Decision / Reflection
+
+Answer the following:
+
+1. What was the most significant business problem identified during the project?
+2. How did stakeholder needs affect the product?
+3. Which requirement created the greatest project risk?
+4. Which technical dependency created the greatest project risk?
+5. What was the most important data-governance decision?
+6. What did AI evaluation reveal that development alone could not?
+7. Which risk had the greatest potential business impact?
+8. What did UAT reveal about actual user needs?
+9. What evidence was most important to the final release decision?
+10. What would you change if you managed the project again?
+11. What evidence would cause you to reverse your final Go/No-Go decision?
+12. What makes this project demonstrate AI Project Management competency?
+
+---
+
+# Key Takeaways
+
+* The capstone demonstrates the complete AI Project Management lifecycle.
+* AI Project Management requires both traditional PM skills and AI-specific knowledge.
+* Business problems should drive technology decisions.
+* Requirements should remain traceable throughout the lifecycle.
+* AI architecture decisions should be understood from a project-risk perspective.
+* Data must be trustworthy, authoritative, approved, and appropriately governed.
+* AI quality must be measured rather than assumed.
+* Security and governance are project responsibilities, not final-stage activities.
+* UAT validates whether the product actually works for its intended users.
+* Release decisions should consider technical, business, security, operational, and governance readiness.
+* Production monitoring is part of the AI product lifecycle.
+* Continuous improvement should be driven by evidence.
+* Project decisions should be documented and defensible.
+* A strong AI PM knows when to challenge technical claims, escalate risk, or recommend a delay.
+* The final recommendation should be based on evidence rather than schedule pressure or organizational expectations.
+* The goal of the capstone is to demonstrate that you can **manage an AI product from problem definition through production and continuous improvement.**
+
+---
+
+# Connection To Portfolio
+
+A completed capstone becomes a primary portfolio project for this course.
+
+Your portfolio should demonstrate that you can:
+
+* Manage an AI project.
+* Communicate with technical and non-technical stakeholders.
+* Translate business problems into AI requirements.
+* Understand AI architecture.
+* Govern AI data.
+* Evaluate AI quality.
+* Manage AI security and risk.
+* Coordinate UAT and pilots.
+* Manage releases.
+* Monitor production AI systems.
+* Make evidence-based decisions.
+
+The capstone should be presented as a **professional AI Project Management case study**, not simply as a software demonstration.
+
+---
+
+# Competency Check
+
+Before moving to Module 13, confirm that you can:
+
+* [ ] Explain the complete AI Project Management lifecycle.
+* [ ] Define an AI business problem and measurable business outcomes.
+* [ ] Analyze stakeholders and competing objectives.
+* [ ] Develop business, functional, non-functional, and AI-specific requirements.
+* [ ] Create and prioritize an AI product backlog.
+* [ ] Explain an AI architecture and its project dependencies.
+* [ ] Assess data readiness, authority, quality, and governance.
+* [ ] Define AI evaluation metrics and thresholds.
+* [ ] Analyze AI evaluation results.
+* [ ] Identify and manage AI-specific risks.
+* [ ] Define security and governance requirements.
+* [ ] Coordinate testing, UAT, and pilot activities.
+* [ ] Evaluate production readiness.
+* [ ] Develop a release and deployment plan.
+* [ ] Define rollback and hypercare requirements.
+* [ ] Establish AI production monitoring.
+* [ ] Create a continuous-improvement process.
+* [ ] Maintain project traceability.
+* [ ] Document major project decisions.
+* [ ] Communicate project status and risks to executives.
+* [ ] Make a defensible **Go, Proceed With Conditions, Hold, or No-Go** decision.
+* [ ] Complete your **AI Project Management Capstone Portfolio**.
+
+**Module Complete When:** You can demonstrate, through the Petadel PolicyAssist AI reference project or your own AI product or use case, that you can manage an AI product from business problem through requirements, technology, data, evaluation, security, UAT, release, monitoring, and continuous improvement.
