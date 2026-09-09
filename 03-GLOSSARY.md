@@ -1,478 +1,356 @@
-# AI Project Management Glossary
+# Module 1: AI Project Management Foundations
 
 ## Purpose
 
-This glossary provides a quick reference for the Project Management, Artificial Intelligence (AI), technology, data, evaluation, security, and governance terminology used throughout the course.
+AI projects require more than technical development.
 
----
+They require project managers who can understand business problems, work with technical teams, challenge assumptions, manage stakeholders, evaluate risk, and make informed delivery decisions.
 
-# A
+This module establishes the foundation for managing AI projects without requiring the project manager to become an AI engineer.
 
-### Acceptance Criteria
+## Learning Objectives
 
-Specific conditions that must be satisfied for a requirement or user story to be considered complete and accepted.
+By the end of this module, you should be able to:
 
-### Agile
+* Explain what makes an AI project different from a traditional technology project
+* Describe the role of an AI Project Manager
+* Distinguish business success from technical completion
+* Challenge technical claims using measurable evidence
+* Understand the PM Track and Build Track
+* Recognize when to BUILD, DESIGN, SIMULATE, or understand a concept through THEORY
+* Identify key AI project-management responsibilities
 
-An iterative Project Management approach that delivers work in smaller increments and adapts to changing requirements and feedback.
+## What Is An AI Project?
 
-### Artificial Intelligence (AI)
-
-Technology that enables computer systems to perform tasks that normally require human intelligence, such as understanding language, recognizing patterns, making predictions, or generating content.
-
-### AI Application
-
-A software application that uses one or more AI capabilities to perform a business function.
-
-### AI Drift
-
-A decline or change in AI system performance over time because conditions, data, user behavior, or other factors have changed.
-
-### AI Evaluation
-
-The structured measurement of an AI system's performance against defined quality criteria.
-
-### AI Model
-
-A trained computational system that performs a specific AI task, such as generating text, classifying information, predicting outcomes, or producing embeddings.
-
-### AI Project Manager
-
-A Project Manager responsible for coordinating the business, technical, operational, risk, governance, and stakeholder aspects of an AI project.
-
-### AI Risk
-
-A potential event or condition associated with an AI system that could negatively affect the organization, users, data, security, compliance, or business outcomes.
-
----
-
-# B
-
-### Backlog
-
-A prioritized list of work that may be completed as part of a product or project.
-
-### Business Outcome
-
-The measurable result the organization expects to achieve from a project.
-
-### Business Requirement
-
-A statement describing what the organization needs to achieve or accomplish.
-
----
-
-# C
-
-### Change Management
-
-The structured process used to manage changes to project scope, requirements, technology, processes, users, or operations.
-
-### Chunking
-
-Breaking a document or other content into smaller sections so that the sections can be processed, indexed, retrieved, or evaluated individually.
-
-### Citation
-
-A reference identifying the source used to support an AI-generated response.
-
-### Citation Correctness
-
-The degree to which a cited source actually supports the claim made in an AI response.
-
-### Continuous Improvement
-
-The ongoing process of identifying problems, opportunities, changes, and enhancements and incorporating them into future work.
-
----
-
-# D
-
-### Data Drift
-
-A change in the characteristics or distribution of data used by an AI system.
-
-### Data Lifecycle
-
-The stages through which data moves, including creation, collection, storage, use, modification, retention, archival, and disposal.
-
-### Data Quality
-
-The degree to which data is accurate, complete, consistent, current, relevant, and suitable for its intended purpose.
-
-### Data Readiness
-
-The determination of whether data is sufficiently complete, accurate, governed, authorized, and usable for an AI project.
-
-### Defect
-
-A failure or deviation from an expected requirement, behavior, or acceptance criterion.
-
-### Defect Severity
-
-The level of business or technical impact caused by a defect.
-
-### Definition of Done
-
-A shared set of conditions that must be satisfied before work is considered complete.
-
-### Definition of Ready
-
-A shared set of conditions indicating that work is sufficiently defined and prepared to begin.
-
-### Deployment
-
-The technical process of moving software, models, configurations, or other components into an environment where they can operate.
-
----
-
-# E
-
-### Embedding
-
-A numerical representation of text, documents, or other information that captures semantic meaning and allows similarity-based comparison.
-
-### Epic
-
-A large body of related work that can be divided into smaller user stories.
-
-### Evaluation Dataset
-
-A controlled collection of questions, inputs, expected outcomes, and other test information used to evaluate an AI system.
-
-### Evaluation Metric
-
-A measurable indicator used to determine how well an AI system performs.
-
----
-
-# F
-
-### Functional Requirement
-
-A requirement describing what a system must do.
-
-### False Positive
-
-A result incorrectly identified as positive when it is actually negative.
-
-### False Negative
-
-A result incorrectly identified as negative when it is actually positive.
-
----
-
-# G
-
-### Generative AI
-
-AI technology capable of generating new content such as text, images, audio, code, or other outputs.
-
-### Go Decision
-
-A decision that a project, release, or capability is sufficiently ready to proceed.
-
-### Go/No-Go Decision
-
-A formal decision determining whether a project, release, or capability should proceed.
-
-### Governance
-
-The structures, policies, roles, controls, and decision processes used to ensure that a project or system operates appropriately and responsibly.
-
-### Grounding
-
-Connecting an AI-generated response to verified information from an approved source.
-
----
-
-# H
-
-### Hallucination
-
-An AI-generated statement that is inaccurate, unsupported, or fabricated.
-
-### Hypercare
-
-The period immediately following a release when enhanced monitoring, support, and issue management are provided.
-
----
-
-# I
-
-### Incident
-
-An event that causes or could cause harm, disruption, security impact, data exposure, or significant system degradation.
-
-### Ingestion
-
-The process of bringing documents, data, or other information into an AI system for processing and use.
-
-### Integration
-
-The connection of systems, applications, services, data sources, or components so that they can work together.
-
----
-
-# L
-
-### Large Language Model (LLM)
-
-An AI model trained on large amounts of data to understand and generate human language.
-
-### Latency
-
-The amount of time between a system request and the system's response.
-
----
-
-# M
-
-### Machine Learning (ML)
-
-A branch of AI in which systems learn patterns from data to perform tasks or make predictions.
-
-### Metadata
-
-Information that describes other information, such as document owner, version, status, effective date, or classification.
-
-### Minimum Viable Product (MVP)
-
-The smallest version of a product that can deliver meaningful value and provide useful feedback.
-
-### Monitoring
-
-The ongoing observation of a system, its performance, risks, data, users, and business outcomes after deployment.
-
-### MoSCoW Prioritization
-
-A prioritization method consisting of:
-
-* **Must Have**
-* **Should Have**
-* **Could Have**
-* **Won't Have This Time**
-
----
-
-# N
-
-### Non-Functional Requirement
-
-A requirement describing how a system must perform rather than what it must do.
+An AI project uses artificial intelligence to perform, support, or improve a business process or decision.
 
 Examples include:
 
+* AI customer-support assistants
+* Document analysis systems
+* Recommendation systems
+* Fraud detection
+* Predictive forecasting
+* Automated classification
+* AI-powered search
+* Generative AI applications
+
+The presence of AI creates additional project-management considerations because AI outputs may be probabilistic rather than completely deterministic.
+
+A traditional application may be expected to produce the same result every time given the same input.
+
+An AI system may produce different outputs and may sometimes produce incorrect or unsupported information.
+
+This changes how the project must be planned, evaluated, tested, governed, and released.
+
+## The AI Project Manager Role
+
+An AI Project Manager is responsible for connecting:
+
+**Business Goals + Users + Technology + Risk + Delivery**
+
+The AI PM does not need to build every component of the AI system.
+
+The PM must understand enough about the technology to:
+
+* Ask informed questions
+* Identify dependencies
+* Understand technical risks
+* Challenge unrealistic claims
+* Coordinate technical and business teams
+* Define measurable outcomes
+* Manage scope
+* Track delivery
+* Support testing and acceptance
+* Coordinate governance
+* Make informed release recommendations
+
+## Traditional Technology Projects vs. AI Projects
+
+Traditional technology projects often focus on:
+
+* Functionality
 * Performance
 * Security
 * Availability
-* Scalability
-* Reliability
 * Usability
+* Integration
 
-### No-Go Decision
+AI projects include those concerns but add additional considerations such as:
 
-A decision that a project, release, or capability should not proceed.
+* Data quality
+* Model behavior
+* Accuracy
+* Hallucination
+* Grounding
+* Bias
+* Explainability
+* Evaluation
+* Human oversight
+* Model limitations
 
----
+The project manager must therefore manage both the traditional technology lifecycle and the additional uncertainty introduced by AI.
 
-# P
+## Challenging Technical Claims
 
-### Pilot
+AI projects often include statements such as:
 
-A limited deployment used to validate a product, process, or solution with a controlled group before broader implementation.
+> "The model is 95% accurate."
 
-### Precision
+The PM should ask:
 
-A measurement of how many retrieved results are relevant among all results retrieved.
+* Accurate on what dataset?
+* What does accuracy mean?
+* How was it measured?
+* Was the data representative?
+* What types of errors occurred?
+* Was the model tested on unseen data?
+* What is the acceptable business threshold?
 
-### Prompt Injection
+Another example:
 
-An attempt to manipulate an AI system through specially crafted input that causes the system to ignore intended instructions, reveal information, or perform unintended actions.
+> "The AI can answer employee questions."
 
-### Project Charter
+The PM should ask:
 
-A formal document that establishes the purpose, objectives, scope, stakeholders, governance, and authority of a project.
+* Which questions?
+* Based on what information?
+* How does the system handle unsupported questions?
+* How does it identify reliable information?
+* What happens when the answer is uncertain?
+* How are responses evaluated?
 
-### Project Scope
+The PM does not need to perform the technical analysis personally.
 
-The defined boundaries of what a project will and will not deliver.
+The PM must ensure that appropriate evidence exists.
 
-### Production
+## Working AI Application vs. Successful AI Product
 
-The environment in which a system is actively used by its intended users.
+A technically functioning application is not automatically a successful product.
 
----
+A system may:
 
-# R
+* Run successfully
+* Produce responses
+* Have no obvious software errors
 
-### RAID Log
+And still fail because:
 
-A Project Management artifact used to track:
+* Users do not trust it
+* Answers are inaccurate
+* Information is outdated
+* Security controls are insufficient
+* Performance is too slow
+* The solution does not solve the original business problem
 
-* **Risks**
-* **Assumptions**
-* **Issues**
-* **Dependencies**
+The PM must therefore evaluate:
 
-### Recall
+**Technical Completion + Business Value + User Acceptance + Risk + Governance**
 
-A measurement of how many relevant results were successfully retrieved from all relevant results available.
+## PM Track
 
-### Retrieval
+The PM Track focuses on the responsibilities of the project manager.
 
-The process of finding relevant information from a data or knowledge source.
+You will learn to manage:
 
-### Retrieval-Augmented Generation (RAG)
+* Business problems
+* Stakeholders
+* Requirements
+* Scope
+* Backlogs
+* Risks
+* Dependencies
+* Governance
+* Testing
+* UAT
+* Release decisions
+* Monitoring
+* Continuous improvement
 
-An AI architecture that retrieves relevant information from a knowledge source and provides that information to a generative AI model to help produce a grounded response.
+## Build Track
 
-### Release
+The Build Track provides hands-on exposure to an AI application.
 
-A controlled delivery of a product, feature, model, configuration, or capability for use.
+You will use the technical work to understand what the development team is actually building.
 
-### Release Readiness
+The purpose is not to turn you into an AI engineer.
 
-The determination of whether all required conditions for a release have been satisfied.
+The purpose is to help you understand:
 
-### Residual Risk
+* What the technical team is doing
+* Where dependencies exist
+* What technical risks look like
+* How AI components interact
+* How to evaluate technical progress
+* How to connect technical work to PM decisions
 
-The risk that remains after controls or mitigation activities have been applied.
+## BUILD / DESIGN / SIMULATE / THEORY
 
-### Rollback
+### BUILD
 
-The process of returning a system to a previously approved state after a release or deployment problem.
+You directly implement or configure something.
 
-### Root Cause
+Examples:
 
-The underlying reason a problem or failure occurred.
+* Build a prototype
+* Configure a workflow
+* Create an evaluation dataset
 
-### Root-Cause Analysis (RCA)
+### DESIGN
 
-A structured process for identifying the underlying cause of a problem rather than treating only its symptoms.
+You create or review a project artifact.
 
----
+Examples:
 
-# S
+* Requirements
+* Risk register
+* RACI matrix
+* Test strategy
+* Governance plan
 
-### Semantic Search
+### SIMULATE
 
-A search method that identifies information based on meaning and context rather than relying only on exact keyword matches.
+You practice making realistic project decisions.
 
-### Source of Truth
+Examples:
 
-The authoritative source that should be relied upon when determining the correct information.
+* Go/No-Go decisions
+* Risk escalation
+* Stakeholder conflicts
+* Scope tradeoffs
 
-### Stakeholder
+### THEORY
 
-A person, group, or organization that affects, is affected by, or has an interest in a project.
+You understand a concept without implementing it.
 
-### Stakeholder Register
+Examples:
 
-A Project Management artifact used to document stakeholders, their roles, influence, interests, concerns, and engagement needs.
+* AI architecture concepts
+* Security concepts
+* Model limitations
+* Enterprise infrastructure
 
----
+## AI Project Lifecycle
 
-# T
+AI projects typically move through stages such as:
 
-### Technical Debt
+**Initiation → Discovery → Requirements → Planning → Architecture → Build → Evaluation → Security/Governance → UAT → Release → Monitoring → Continuous Improvement**
 
-The future cost or additional work created by choosing a short-term technical solution instead of addressing an issue properly.
+The project manager's responsibilities change throughout the lifecycle, but accountability for coordination, visibility, risk, and delivery remains.
 
-### Test Case
+## Course Project Introduction
 
-A defined scenario used to determine whether a system behaves as expected.
+This course includes a fictional AI project that serves as the reference project for applying the concepts taught throughout the course.
 
-### Test Plan
+The project is:
 
-A structured document describing the testing strategy, scope, scenarios, responsibilities, environments, and acceptance conditions.
+**Petadel PolicyAssist AI**
 
-### Traceability
+Petadel Technology Services (PTS) is exploring an AI-powered solution to improve how employees access and understand organizational policies.
 
-The ability to connect business needs to requirements, user stories, acceptance criteria, testing, and final outcomes.
+You are being introduced to the project at a high level.
 
----
+The detailed problem discovery, requirements, architecture, backlog, evaluation, testing, governance, and implementation work will be developed later in the course.
 
-# U
+The project will serve as the practical reference environment where you apply the concepts learned throughout the course.
 
-### Unsupported Question
+You may use the Petadel PolicyAssist AI reference project or apply the same Project Management process to your own AI product or use case for your capstone.
 
-A question for which the AI system does not have sufficient authoritative evidence to provide a reliable answer.
+## Practical Exercise 1: Is AI Actually The Right Solution?
 
-### User Acceptance Testing (UAT)
+### Scenario
 
-Testing performed by intended users or business representatives to determine whether a solution meets business needs and acceptance criteria.
+A company is experiencing delays in an internal business process.
 
-### User Story
+Leadership proposes:
 
-A concise description of a capability written from the perspective of the person who needs it.
+> "Let's build an AI solution."
 
-Typical structure:
+You have been assigned as the project manager.
 
-**As a [user], I want [capability], so that [business value].**
+Before approving the project, determine whether AI is actually appropriate.
 
----
+### Part 1: Define The Problem
 
-# V
+Identify:
 
-### Vector Database
+* The business problem
+* Who is affected
+* The current impact
+* One measurable business outcome
 
-A database designed to store and retrieve numerical representations of information, commonly used for semantic search and AI retrieval.
+### Part 2: Evaluate AI Suitability
 
-### Versioning
+Identify:
 
-The process of identifying and managing different versions of documents, data, software, models, or configurations.
+* One reason AI could help
+* One reason AI may not be necessary
+* One alternative solution
+* One piece of information you need before making a recommendation
 
----
+### Part 3: Identify Risks
 
-# W
+Identify three initial risks.
 
-### Workflow
+For each risk, provide:
 
-A defined sequence of activities required to complete a business or technical process.
+* Risk
+* Impact
+* Likelihood
+* Mitigation
 
----
+### Part 4: Make The PM Decision
 
-# AI Project Management Decision Terms
+Choose one:
 
-These terms are used repeatedly throughout the course.
+* Proceed with AI discovery
+* Proceed with a non-AI solution
+* Conduct additional discovery before deciding
 
-### Proceed
+Explain your decision.
 
-Available evidence indicates that the project or activity can continue.
+## PM Decision
 
-### Proceed With Conditions
+The correct PM response is not automatically:
 
-The project may continue provided specific conditions, controls, or corrective actions are documented and managed.
+> "Yes, let's build AI."
 
-### Hold
+The PM should first determine whether:
 
-The project or activity should pause until a significant issue is resolved or sufficient evidence is obtained.
+* The problem is clearly understood
+* The business value is measurable
+* AI is appropriate
+* Data or information is available
+* Risks are manageable
+* Stakeholders support the initiative
 
-### No-Go
+## Artifact / Output
 
-The project, release, or activity should not proceed because a critical requirement, control, acceptance criterion, or readiness condition has failed.
+Create an:
 
----
+**AI Project Initial Assessment**
 
-# Core AI Project Management Principle
+Your assessment should contain:
 
-The most important distinction in this course is:
+* Problem Statement
+* Business Outcome
+* AI Suitability Assessment
+* Alternative Solution
+* Initial Risks
+* PM Recommendation
 
-**A technically functioning AI system is not automatically a successful AI product.**
+## Key Takeaway
 
-A successful AI project must also demonstrate:
+A strong AI Project Manager does not begin with technology.
 
-* Business value
-* Clear requirements
-* Appropriate data
-* Reliable AI performance
-* Grounded responses
-* Appropriate security
-* Effective governance
-* User acceptance
-* Operational readiness
-* Measurable outcomes
-* Continuous monitoring
+The PM begins with the business problem, validates the need, understands the stakeholders, evaluates AI suitability, and establishes measurable outcomes.
 
-The Project Manager's responsibility is to connect these elements and ensure that decisions are supported by evidence.
+## Connection To Capstone
+
+Petadel PolicyAssist AI will serve as the course reference project for applying the concepts taught in this course.
+
+You may use the Petadel PolicyAssist AI reference project or apply the same Project Management process to your own AI product or use case.
+
+You will not begin solving the PolicyAssist problem yet.
+
+The next modules will teach the Project Management skills required to analyze and manage an AI project before those skills are applied to the capstone.
