@@ -1,14 +1,20 @@
 # AI Project Management Course
 
+[svg](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/README.md#ai-project-management-course)
+
 ## Overview
+
+[svg](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/README.md#overview)
 
 The AI Project Management Course is a practical, end-to-end course designed to prepare Project Managers to lead AI and technology projects.
 
-The course focuses on project management rather than programming.
+The course focuses on Project Management rather than programming.
 
 The goal is to help Project Managers understand enough about AI, data, architecture, evaluation, security, governance, testing, deployment, and monitoring to make informed project decisions and lead cross-functional teams.
 
 ## Course Structure
+
+[svg](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/README.md#course-structure)
 
 The course contains 13 modules covering the complete project lifecycle.
 
@@ -23,19 +29,29 @@ The course includes both:
 
 ### PM Track
 
-Project management concepts, decisions, frameworks, requirements, planning, governance, risk, testing, release, and monitoring.
+[svg](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/README.md#pm-track)
+
+Project Management concepts, decisions, frameworks, requirements, planning, governance, risk, testing, release, and monitoring.
 
 ### Build Track
 
-Hands-on exposure to the working Petadel PolicyAssist AI project.
+[svg](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/README.md#build-track)
+
+Hands-on exposure to the working Petadel PolicyAssist AI reference project.
 
 The Build Track is designed to provide practical understanding without turning the course into a programming course.
 
 ## Capstone Project
 
+[svg](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/README.md#capstone-project)
+
 ### Petadel PolicyAssist AI
 
-The course capstone is an AI-powered policy assistance solution for Petadel Technology Services (PTS).
+[svg](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/README.md#petadel-policyassist-ai)
+
+Petadel PolicyAssist AI is the course reference project and demonstrates an AI-powered policy assistance solution for Petadel Technology Services (PTS).
+
+You may use the Petadel PolicyAssist AI reference project or apply the same Project Management process to your own AI product or use case.
 
 The business problem is that employees may have difficulty locating and understanding authoritative company policies.
 
@@ -63,6 +79,8 @@ The capstone is introduced during the course and fully executed in Module 12.
 
 ## Capstone Lifecycle
 
+[svg](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/README.md#capstone-lifecycle)
+
 The project follows the complete project lifecycle:
 
 **Initiation → Discovery → Requirements → Planning → Architecture → Build → Evaluation → Security and Governance → UAT → Release → Monitoring → Continuous Improvement**
@@ -70,6 +88,8 @@ The project follows the complete project lifecycle:
 This lifecycle connects the concepts taught throughout the course.
 
 ## Templates Library
+
+[svg](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/README.md#templates-library)
 
 The course includes a reusable library of Project Management and AI project templates.
 
@@ -102,6 +122,8 @@ These templates can be reused for real-world technology and AI projects.
 
 ## Course Repository Structure
 
+[svg](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/README.md#course-repository-structure)
+
 ```text
 AI-Project-Management-Course/
 │
@@ -114,6 +136,10 @@ AI-Project-Management-Course/
 │
 ├── Templates/
 │
+├── Student-Resources/
+│
+├── Student-Build-Along/
+│
 ├── Capstone/
 │   └── Petadel-Policy-Assist/
 │
@@ -123,6 +149,8 @@ AI-Project-Management-Course/
 ```
 
 ## Working Application
+
+[svg](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/README.md#working-application)
 
 The course includes the working Petadel PolicyAssist AI prototype.
 
@@ -144,7 +172,9 @@ Local development can use **Ollama with Llama 3.2 3B** as a fallback.
 
 ## Professional Outcome
 
-By completing the course, the learner should be able to:
+[svg](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/README.md#professional-outcome)
+
+By completing the course, you should be able to:
 
 * Define AI project business problems.
 * Build project charters.
@@ -165,13 +195,19 @@ By completing the course, the learner should be able to:
 
 ## Capstone Portfolio
 
+[svg](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/README.md#capstone-portfolio)
+
 The Portfolio folder presents the strongest professional evidence from the Petadel PolicyAssist AI capstone.
+
+You may also use evidence from your own AI product or use case when completing the capstone.
 
 The relationship is:
 
 **Course Learning → Capstone Application → Project Evidence → Professional Portfolio**
 
 ## Final Project Principle
+
+[svg](https://github.com/Lolade-Fapohunda/AI-Project-Management-Course/blob/main/README.md#final-project-principle)
 
 A working application is not automatically a production-ready product.
 
