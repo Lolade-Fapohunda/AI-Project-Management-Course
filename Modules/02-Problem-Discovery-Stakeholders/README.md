@@ -532,8 +532,8 @@ Your Module 2 work is complete when you can explain the problem, who is affected
 
 ## Connection To Capstone
 
-Petadel PolicyAssist AI will later use the discovery and stakeholder-management techniques from this module.
+Use the discovery and stakeholder-management techniques from this module when developing your capstone.
 
 You may use the Petadel PolicyAssist AI reference project or apply the same Project Management process to your own AI product or use case.
 
-In the capstone, you will translate the project's business problem, stakeholders, current state, and desired outcomes into formal requirements and project decisions.
+In the capstone, you will translate the business problem, stakeholders, current state, and desired outcomes into formal requirements and project decisions.
