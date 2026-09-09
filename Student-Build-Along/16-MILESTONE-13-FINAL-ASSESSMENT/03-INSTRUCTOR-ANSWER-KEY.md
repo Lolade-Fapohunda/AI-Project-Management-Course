@@ -281,7 +281,7 @@ These gaps require corrective action or explicit risk acceptance before unrestri
 
 ### Acceptable Alternative
 
-**No-Go** may receive full credit if the learner clearly explains that the failed AI quality and user-experience thresholds represent unacceptable release risk.
+**No-Go** may receive full credit if the student clearly explains that the failed AI quality and user-experience thresholds represent unacceptable release risk.
 
 The important factor is the quality of the reasoning, not selecting the exact same label.
 
@@ -357,7 +357,7 @@ The executive should understand:
 
 **Recommendation → Evidence → Risk → Action → Success Measure**
 
-The learner should avoid overwhelming the executive with unnecessary technical detail.
+The student should avoid overwhelming the executive with unnecessary technical detail.
 
 ---
 
@@ -372,53 +372,68 @@ There is no single required wording.
 A strong response should demonstrate an end-to-end lifecycle:
 
 **Business Problem**
+
 → Define the problem and desired outcome.
 
 **Stakeholders & Users**
+
 → Identify affected users, decision-makers, technical teams, and governance stakeholders.
 
 **Requirements**
+
 → Translate business and user needs into measurable requirements and acceptance criteria.
 
 **Scope**
+
 → Establish what is included, excluded, and prioritized.
 
 **MVP**
+
 → Define the smallest useful solution that can validate the core need.
 
 **AI Solution**
+
 → Understand the proposed architecture well enough to manage dependencies, risks, and decisions.
 
 **Data & Knowledge**
+
 → Validate source quality, authority, versioning, metadata, access, and governance.
 
 **AI Evaluation**
+
 → Establish measurable quality and performance targets.
 
 **Risk & Governance**
+
 → Identify AI, security, privacy, operational, and business risks.
 
 **Testing & UAT**
+
 → Validate functionality, quality, security, usability, and user acceptance.
 
 **Release**
+
 → Evaluate readiness against defined criteria.
 
 **Go/No-Go**
+
 → Make an evidence-based release recommendation.
 
 **KPIs**
+
 → Measure product performance and business outcomes.
 
 **Monitoring**
+
 → Continuously review product health.
 
 **Continuous Improvement**
+
 → Use evidence, feedback, incidents, and KPI trends to prioritize corrective actions and future improvements.
 
 ### Full-Credit Principle
 
-The learner should demonstrate connections between stages rather than presenting the lifecycle as an unrelated checklist.
+The student should demonstrate connections between stages rather than presenting the lifecycle as an unrelated checklist.
 
 ---
 
@@ -428,7 +443,7 @@ The learner should demonstrate connections between stages rather than presenting
 
 There is no single correct answer.
 
-Strong responses should demonstrate genuine reflection and show that the learner can connect course concepts to future PM practice.
+Strong responses should demonstrate genuine reflection and show that the student can connect course concepts to future PM practice.
 
 Good responses may identify principles such as:
 
@@ -454,39 +469,39 @@ A strong submission should consistently demonstrate:
 
 ### Business Thinking
 
-Can the learner connect product decisions to business value?
+Can the student connect product decisions to business value?
 
 ### PM Discipline
 
-Can the learner manage scope, requirements, stakeholders, risks, ownership, and delivery?
+Can the student manage scope, requirements, stakeholders, risks, ownership, and delivery?
 
 ### AI Understanding
 
-Can the learner discuss AI concepts sufficiently to manage an AI product without needing to be an AI engineer?
+Can the student discuss AI concepts sufficiently to manage an AI product without needing to be an AI engineer?
 
 ### Evidence-Based Decision Making
 
-Does the learner use measurable evidence rather than assumptions?
+Does the student use measurable evidence rather than assumptions?
 
 ### Governance
 
-Does the learner recognize authority, security, privacy, access, and compliance considerations?
+Does the student recognize authority, security, privacy, access, and compliance considerations?
 
 ### Quality
 
-Does the learner understand that AI quality requires measurable evaluation?
+Does the student understand that AI quality requires measurable evaluation?
 
 ### Release Readiness
 
-Can the learner distinguish between a product that is technically functional and one that is actually ready for release?
+Can the student distinguish between a product that is technically functional and one that is actually ready for release?
 
 ### Monitoring
 
-Does the learner understand that deployment is not the end of the AI product lifecycle?
+Does the student understand that deployment is not the end of the AI product lifecycle?
 
 ### Communication
 
-Can the learner communicate a clear recommendation to both technical and executive audiences?
+Can the student communicate a clear recommendation to both technical and executive audiences?
 
 ---
 
