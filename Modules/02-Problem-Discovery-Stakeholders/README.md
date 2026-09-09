@@ -384,6 +384,142 @@ Your deliverable should contain:
 * AI Suitability Assessment
 * Key Risks
 
+## Worked Petadel Discovery Example
+
+The following example demonstrates what a strong discovery analysis can look like. Use it as a model for the quality and reasoning expected in your own work.
+
+### Problem Statement
+
+Employees at Petadel Technology Services may spend excessive time locating and determining which internal policy information they should rely on because policy documents may exist across multiple locations, versions, and formats.
+
+This can result in longer search times, uncertainty about which information is authoritative, inconsistent interpretations, and increased operational risk.
+
+### Current-State Findings
+
+Potential current-state findings include:
+
+* Employees may search across multiple repositories.
+* Policy documents may exist in different formats.
+* Employees may encounter multiple versions of the same policy.
+* Policy ownership and authority may not always be obvious.
+* Some documents may be difficult to search or interpret.
+* Employees may rely on informal guidance when authoritative information is difficult to locate.
+
+### Possible Root Causes
+
+Possible root causes include:
+
+* Lack of a centralized authoritative policy source.
+* Inconsistent document versioning.
+* Unclear ownership or approval status.
+* Poor metadata.
+* Scanned or difficult-to-search documents.
+* Inconsistent knowledge-management practices.
+
+These are discovery hypotheses that should be validated through stakeholder interviews, document review, and evidence.
+
+### Stakeholders
+
+Potential stakeholders include:
+
+| Stakeholder         | Interest | Influence | Primary Concern            | Desired Outcome                       |
+| ------------------- | -------- | --------- | -------------------------- | ------------------------------------- |
+| Executive Sponsor   | High     | High      | Business value             | Improved employee productivity        |
+| HR or Policy Owner  | High     | High      | Policy accuracy            | Employees use correct policies        |
+| Employees           | High     | Medium    | Usability                  | Find answers quickly                  |
+| IT                  | High     | High      | Feasibility                | Reliable technical solution           |
+| Security            | High     | High      | Access and data protection | Controlled and secure access          |
+| Legal or Compliance | Medium   | High      | Policy authority and risk  | Appropriate use of policy information |
+
+The exact stakeholder set should be confirmed during discovery.
+
+### Conflicting Objectives
+
+Stakeholders may have different priorities.
+
+For example:
+
+* Leadership may prioritize search-time reduction.
+* Policy owners may prioritize accuracy and authority.
+* Employees may prioritize speed and ease of use.
+* Security may prioritize access controls.
+* IT may prioritize maintainability and reliability.
+
+The PM must balance these objectives when defining requirements and success measures.
+
+### Desired Business Outcomes
+
+Potential measurable outcomes include:
+
+* Reduce employee policy search time by at least 50%.
+* Achieve retrieval accuracy of at least 90%.
+* Achieve answer accuracy of at least 90%.
+* Maintain appropriate citation and source accuracy.
+* Improve employee satisfaction with policy access.
+
+These outcomes must be validated and finalized through the project's requirements process.
+
+### AI Suitability Assessment
+
+AI may be appropriate because the problem involves:
+
+* Large amounts of information.
+* Document search and retrieval.
+* Natural-language questions.
+* Semantic matching.
+* Information summarization.
+
+However, AI may not be appropriate if:
+
+* A simple centralized search solution could solve the problem adequately.
+* Authoritative documents cannot be established.
+* Data access cannot be controlled.
+* The organization cannot tolerate inaccurate responses.
+
+The PM should therefore evaluate AI against realistic alternatives rather than assuming that AI is the answer.
+
+### Initial Risks
+
+| Risk                        | Impact | Likelihood | Initial Response                               |
+| --------------------------- | ------ | ---------- | ---------------------------------------------- |
+| Outdated policy information | High   | Medium     | Establish version and authority controls       |
+| Incorrect AI response       | High   | Medium     | Define evaluation and grounding controls       |
+| Unauthorized policy access  | High   | Medium     | Establish access controls and security testing |
+| Low user adoption           | Medium | Medium     | Conduct user discovery and UAT                 |
+| Incomplete policy sources   | High   | Medium     | Perform data readiness and source assessment   |
+
+### PM Recommendation
+
+Proceed with structured discovery and requirements analysis before approving full implementation.
+
+The evidence should first establish:
+
+* The scale of the business problem.
+* The authoritative policy sources.
+* Stakeholder needs.
+* Security and access requirements.
+* Measurable success criteria.
+* Whether AI provides sufficient value over simpler alternatives.
+
+## Module 2 Completion Checklist
+
+Before moving to Module 3, confirm that you have completed:
+
+* [ ] A clear problem statement.
+* [ ] A current-state analysis.
+* [ ] Root causes or root-cause hypotheses.
+* [ ] A stakeholder analysis.
+* [ ] Discovery findings.
+* [ ] Three measurable business outcomes.
+* [ ] An AI suitability assessment.
+* [ ] At least one alternative to AI.
+* [ ] Initial project risks.
+* [ ] A documented PM recommendation.
+* [ ] The **Problem Discovery & Stakeholder Analysis** deliverable.
+* [ ] A review of your work for evidence, clarity, and consistency.
+
+Your Module 2 work is complete when you can explain the problem, who is affected, why it matters, what evidence supports your findings, and whether AI is an appropriate solution.
+
 ## Key Takeaways
 
 * Start with the problem, not the technology.
