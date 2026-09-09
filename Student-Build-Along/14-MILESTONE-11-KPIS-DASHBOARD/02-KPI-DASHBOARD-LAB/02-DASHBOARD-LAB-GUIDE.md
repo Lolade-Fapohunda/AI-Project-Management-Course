@@ -4,7 +4,7 @@
 
 Build and interpret a simple Artificial Intelligence (AI) product Key Performance Indicator (KPI) dashboard.
 
-This is an **optional technical Build-Along**.
+This is an optional technical Build-Along.
 
 All students complete the Project Management (PM) analysis in Milestone 11.
 
@@ -59,11 +59,13 @@ Modify the dashboard to add a visual comparison between:
 
 **Target vs. Actual**
 
+The purpose of this visualization is to make performance gaps easy to identify.
+
 ### PM Question
 
-Which KPIs are performing above target?
-
-Which KPIs are performing below target?
+* Which KPIs are performing above target?
+* Which KPIs are performing below target?
+* Which gaps require further investigation?
 
 ---
 
@@ -71,13 +73,15 @@ Which KPIs are performing below target?
 
 Add performance-over-time data and a trend visualization.
 
+The trend should help the PM determine whether product performance is:
+
+* Improving
+* Declining
+* Remaining stable
+
 ### PM Question
 
-Is the product:
-
-* Improving?
-* Declining?
-* Remaining stable?
+Is the product improving, declining, or remaining stable?
 
 Explain the evidence.
 
@@ -91,55 +95,15 @@ Add logic that classifies each KPI as:
 * **Needs Attention**
 * **Below Threshold**
 
-# KPI Decision Thresholds
+Use the **KPI Decision Thresholds** defined in:
 
-Use the following decision rules for the PolicyAssist reference dashboard.
+**Milestone 11 → Part 1 — KPI Decision Thresholds**
 
-| KPI                          |      Target | On Target | Needs Attention | Below Threshold |
-| ---------------------------- | ----------: | --------- | --------------- | --------------- |
-| Policy Search-Time Reduction |        ≥50% | ≥50%      | 45%–49.9%       | <45%            |
-| Retrieval Accuracy           |        ≥90% | ≥90%      | 81%–89.9%       | <81%            |
-| Answer Accuracy              |        ≥90% | ≥90%      | 81%–89.9%       | <81%            |
-| Hallucination Rate           |         <2% | <2%       | 2%–2.49%        | ≥2.5%           |
-| Citation Correctness         |        100% | 100%      | 90%–99.9%       | <90%            |
-| Unsupported-Question Refusal |        100% | 100%      | 90%–99.9%       | <90%            |
-| Response Latency             | ≤10 seconds | ≤10 sec   | >10–12.5 sec    | >12.5 sec       |
-| User Satisfaction            |        ≥85% | ≥85%      | 76.5%–84.9%     | <76.5%          |
-| Critical Security Incidents  |           0 | 0         | 1               | ≥2              |
+Do not create separate thresholds for the technical lab.
 
-## How to Apply the Thresholds
+The technical dashboard should implement the same PM decision framework used by all students.
 
-### On Target
-
-The KPI meets or exceeds the required performance level.
-
-**PM action:** Continue monitoring.
-
-### Needs Attention
-
-The KPI is outside the target but has not reached the critical threshold.
-
-**PM action:** Investigate the cause, define corrective action, assign an owner, and monitor the KPI more closely.
-
-### Below Threshold
-
-The KPI has reached a level that represents significant product, business, safety, security, or user risk.
-
-**PM action:** Escalate the issue and determine whether the product should be improved, paused, rolled back, or reassessed.
-
-## Important Rule for AI Safety and Security
-
-For **Critical Security Incidents**, the normal performance logic does not apply.
-
-* **0 incidents:** On Target
-* **1 incident:** Needs Attention and immediate investigation
-* **2 or more incidents:** Below Threshold and escalation required
-
-For safety, security, governance, or compliance issues, the PM should not rely solely on the numerical KPI status. The severity and impact of the incident must also be assessed.
-
-## PM Decision Framework
-
-Use the KPI status together with business context:
+### PM Decision Framework
 
 **On Target → Continue**
 
@@ -147,13 +111,17 @@ Use the KPI status together with business context:
 
 **Below Threshold → Escalate / Reassess**
 
-The threshold tells the PM **when action is required**. The PM must still determine **what action is appropriate and why**.
-
-Remember that some KPIs are better when the value is **higher**, while others are better when the value is **lower**.
-
 ### PM Question
 
 Which KPI requires the most immediate attention?
+
+Explain your reasoning using the KPI's:
+
+* Target
+* Actual performance
+* Trend
+* Threshold
+* Business or product impact
 
 ---
 
@@ -170,6 +138,7 @@ Verify that:
 * Trend information displays correctly.
 * Status logic works.
 * Threshold conditions are identified correctly.
+* The dashboard provides information that supports PM decision-making.
 
 Document any issues discovered during testing.
 
@@ -181,23 +150,27 @@ Review the completed dashboard.
 
 Identify:
 
-* KPIs meeting target
-* KPIs missing target
-* Improving trends
-* Declining trends
-* Threshold breaches
-* Business risks
-* Product risks
+* KPIs meeting target.
+* KPIs missing target.
+* Improving trends.
+* Declining trends.
+* Threshold breaches.
+* Business risks.
+* Product risks.
 
 Use:
 
 **KPI → Target → Actual → Trend → Threshold → Action**
 
+Do not simply describe what the dashboard shows.
+
+Explain what the information means for the product.
+
 ---
 
 ## Step 8 — Make the PM Decision
 
-Use the dashboard evidence to select one:
+Use the dashboard evidence to select the appropriate action:
 
 **Continue → Improve → Escalate → Reassess**
 
@@ -209,15 +182,19 @@ Document:
 4. The action owner.
 5. The next review point.
 
+Your decision should be based on measurable evidence rather than assumptions.
+
 ---
 
 # Final PM Checkpoint
 
 Answer:
 
-> **What is the product telling us through its KPIs, and what should the PM do about it?**
+> What is the product telling us through its KPIs, and what should the PM do about it?
 
-Your answer should be based on measurable evidence rather than assumptions.
+Your answer should connect:
+
+**Performance → Risk → Action → Outcome**
 
 ---
 
@@ -232,14 +209,25 @@ The technical dashboard is complete when it includes:
 * Status/threshold logic
 * PM decision support
 
-The PM portion is complete when you can explain the product's current health and recommend an evidence-based action.
+The PM portion is complete when you can:
+
+* Explain the product's current health.
+* Identify performance gaps.
+* Identify meaningful trends.
+* Recognize threshold breaches.
+* Explain the associated risks.
+* Recommend an evidence-based action.
 
 ---
 
 # Important
 
-The purpose of this lab is **not** to turn you into a software engineer.
+The purpose of this lab is not to turn you into a software engineer.
 
 The purpose is to help you understand how an AI product's technical performance data can support:
 
 **Monitoring → Analysis → PM Decision → Corrective Action → Continuous Improvement**
+
+The technical dashboard is simply a tool for making the PM analysis visible and actionable.
+
+The **PM decision is the outcome — not the code.**
