@@ -22,28 +22,17 @@ Watch → Make a PM Decision → Complete the Hands-On Activity → Test → Doc
 
 By completing the Build-Along, students will understand how an AI product moves from:
 
-Business Problem
-→ Requirements
-→ Planning
-→ AI Architecture
-→ Data & Retrieval
-→ AI Evaluation
-→ Security & Governance
-→ Testing & UAT
-→ Release
-→ Deployment
-→ Monitoring
-→ Continuous Improvement
+Business Problem → Requirements → Planning → AI Architecture → Data & Retrieval → AI Evaluation → Security & Governance → Testing & UAT → Release → Deployment → Monitoring → Continuous Improvement
 
-## What Students Are NOT Expected To Become
+## What Students are NOT Expected To Become
 
 Students are not expected to become:
 
-- AI engineers
-- Machine-learning engineers
-- Python developers
-- Data scientists
-- Cloud engineers
+* AI engineers
+* Machine-learning engineers
+* Python developers
+* Data scientists
+* Cloud engineers
 
 Advanced coding and AI engineering are outside the scope of this course.
 
@@ -51,19 +40,19 @@ Advanced coding and AI engineering are outside the scope of this course.
 
 Students will learn how to:
 
-- Translate business problems into AI product requirements
-- Understand AI architecture from a PM perspective
-- Evaluate AI outputs
-- Define AI quality metrics
-- Identify AI risks
-- Manage security and governance requirements
-- Plan and execute testing and UAT
-- Make Go / Hold / No-Go decisions
-- Understand deployment and rollback
-- Monitor AI product performance
-- Analyze KPIs and dashboards
-- Make continuous-improvement decisions
-- Build a portfolio-ready AI PM project
+* Translate business problems into AI product requirements
+* Understand AI architecture from a PM perspective
+* Evaluate AI outputs
+* Define AI quality metrics
+* Identify AI risks
+* Manage security and governance requirements
+* Plan and execute testing and UAT
+* Make Go / Hold / No-Go decisions
+* Understand deployment and rollback
+* Monitor AI product performance
+* Analyze KPIs and dashboards
+* Make continuous-improvement decisions
+* Build a portfolio-ready AI PM project
 
 ## PM Track vs. Build-Along
 
@@ -73,29 +62,31 @@ All students complete the PM Track.
 
 This includes:
 
-- Project initiation
-- Problem discovery
-- Stakeholder management
-- Requirements
-- Product backlog
-- MVP prioritization
-- AI risk management
-- Governance
-- AI evaluation
-- Testing
-- UAT
-- Release management
-- KPIs
-- Dashboards
-- Monitoring
-- Continuous improvement
-- Portfolio development
+* Project initiation
+* Problem discovery
+* Stakeholder management
+* Requirements
+* Product backlog
+* MVP prioritization
+* AI risk management
+* Governance
+* AI evaluation
+* Testing
+* UAT
+* Release management
+* KPIs
+* Dashboards
+* Monitoring
+* Continuous improvement
+* Portfolio development
 
 ### Build-Along — Optional
 
 Students who choose the Build-Along receive guided hands-on activities using the Petadel PolicyAssist AI application.
 
 The Build-Along demonstrates how PM decisions become working product capabilities.
+
+The optional Build-Along continues through Milestone 13 and includes a separate Build-Along Final Assessment. The required Module 13 Final Assessment is separate and must be completed by all students.
 
 ## Important Dashboard Rule
 
@@ -121,4 +112,4 @@ Students completing the optional Build-Along will additionally have hands-on exp
 
 Both paths lead to the same PM objective:
 
-**Demonstrate the ability to manage an AI product from initiation through production and continuous improvement.**
+Demonstrate the ability to manage an AI product from initiation through production and continuous improvement.

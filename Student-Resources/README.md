@@ -50,7 +50,7 @@ The optional Build-Along provides hands-on experience using the Petadel PolicyAs
 
 Resource: `Student-Build-Along/`
 
-The Build-Along follows the AI Project Management lifecycle from foundation through the capstone.
+The Build-Along follows the AI Project Management lifecycle from foundation through the capstone and final Build-Along assessment.
 
 You may:
 
@@ -59,9 +59,9 @@ You may:
 
 The Build-Along is optional. The PM Track remains the core course.
 
-The Build-Along includes hands-on activities aligned with Modules 1–12.
+The Build-Along includes hands-on activities aligned with Modules 1–13.
 
-There is no separate technical Build-Along milestone for Module 13. The Final Assessment is required for all students.
+The Build-Along includes a separate final assessment in Milestone 13. The required Module 13 Final Assessment is completed by all students.
 
 ---
 
