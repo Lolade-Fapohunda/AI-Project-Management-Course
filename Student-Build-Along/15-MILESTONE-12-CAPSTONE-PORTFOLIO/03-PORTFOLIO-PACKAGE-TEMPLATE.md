@@ -109,21 +109,27 @@ Make sure someone unfamiliar with your project can quickly understand:
 # 1. Portfolio Title
 
 **Project Title:**
+
 [Enter project title]
 
 **AI Product / Solution:**
+
 [Enter product name]
 
 **Organization:**
+
 [Enter organization or indicate fictional/synthetic]
 
 **Your Role:**
+
 [Enter role]
 
 **Project Stage:**
+
 [Prototype / MVP / Pilot / Release Candidate / Released / Other]
 
 **Project Duration:**
+
 [Enter]
 
 ---
@@ -143,6 +149,7 @@ Include:
 * Recommended next step.
 
 **Executive Summary:**
+
 [Enter]
 
 ---
@@ -241,15 +248,19 @@ Include:
 ## Important Technical Decision
 
 **Decision:**
+
 [Enter]
 
 **Reason:**
+
 [Enter]
 
 **Trade-off:**
+
 [Enter]
 
 **PM Contribution:**
+
 [Explain how you managed, evaluated, coordinated, or governed the decision.]
 
 ---
@@ -361,14 +372,17 @@ Summarize the evidence used to determine release readiness.
 **GO / CONDITIONAL GO / HOLD / NO-GO**
 
 **Rationale:**
+
 [Explain why.]
 
 ## Authorized Release Decision
 
 **Decision:**
+
 [Enter]
 
 **Decision Authority:**
+
 [Enter]
 
 ## Deployment Decision
@@ -376,6 +390,7 @@ Summarize the evidence used to determine release readiness.
 **DEPLOY / HOLD DEPLOYMENT / ROLLBACK**
 
 **Rationale:**
+
 [Explain why.]
 
 ## Important Distinction
