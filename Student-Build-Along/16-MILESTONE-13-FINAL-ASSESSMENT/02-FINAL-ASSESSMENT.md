@@ -4,7 +4,7 @@
 
 Answer all **15 questions**.
 
-Use the concepts, frameworks, evidence, and PM practices taught throughout the course.
+Use the concepts, frameworks, evidence, and Project Management (PM) practices taught throughout the course.
 
 For scenario-based questions, explain your reasoning rather than providing only a conclusion.
 
@@ -204,11 +204,11 @@ Your response should address:
 * Whether the product can reasonably proceed to the intended release stage.
 * Conditions that would be required, if applicable.
 
-Remember:
+Use the following definitions:
 
-**GO = Proceed**
+**GO = Proceed with release**
 
-**CONDITIONAL GO = Proceed under defined conditions**
+**CONDITIONAL GO = Proceed with defined conditions**
 
 **HOLD = Do not proceed yet because required evidence, remediation, validation, or readiness work is incomplete**
 
@@ -270,7 +270,7 @@ Your response should include:
 * Recommended action.
 * What needs to happen next.
 
-Communicate the decision without unnecessary technical detail.
+Communicate the recommendation without unnecessary technical detail.
 
 ---
 
@@ -335,11 +335,11 @@ Consider:
 
 **Business Value → Product Quality → Risk → Governance → Readiness → Outcome**
 
-When evidence is incomplete, say what is missing.
+When evidence is incomplete, identify what is missing.
 
 When a risk is significant, explain its impact.
 
-When a metric misses target, explain what the miss means.
+When a metric misses its target, explain what the miss means.
 
 When making a release recommendation, distinguish:
 
@@ -359,7 +359,7 @@ from:
 
 ---
 
-# Final Decision Framework
+# Decision Framework
 
 Use these terms consistently throughout your assessment.
 
@@ -383,7 +383,7 @@ Use these terms consistently throughout your assessment.
 
 # Final Submission Checklist
 
-* [ ] All 15 questions answered.
+* [ ] All 15 questions are answered.
 * [ ] Scenario responses include reasoning.
 * [ ] Numerical evidence is used where provided.
 * [ ] AI evaluation concepts are applied correctly.

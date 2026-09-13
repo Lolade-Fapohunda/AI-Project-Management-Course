@@ -8,13 +8,13 @@ Your portfolio should communicate the project clearly to someone who did not com
 
 It should demonstrate:
 
-**Business Problem → PM Strategy → AI Solution → Evidence → Decisions → Outcomes → Lessons**
+**Business Problem → PM Strategy → AI Solution → Evidence → Risk → Decisions → Outcomes → Improvement**
 
-Focus on your individual PM contribution.
+Focus on what **you** managed, decided, coordinated, evaluated, communicated, or governed.
 
 Do not claim technical work you did not personally perform.
 
-Your portfolio should accurately represent the actual maturity of your project.
+Your portfolio should accurately represent the actual maturity of the project. Do not present prototype or Minimum Viable Product (MVP) evidence as production evidence.
 
 ---
 
@@ -22,91 +22,72 @@ Your portfolio should accurately represent the actual maturity of your project.
 
 Complete your Portfolio Package **after you finish your Capstone Submission**.
 
-Your goal is to turn your capstone work into a professional case study that clearly demonstrates your AI PM experience.
+## Step 1 — Review Your Capstone
 
-## Step 1 — Complete Your Capstone
+Review the completed capstone and identify the strongest evidence of your PM work.
 
-Finish your Capstone Submission first.
+You do not need to include everything you created during the course.
 
-Make sure your capstone contains the evidence needed to support your project story, decisions, results, and recommendations.
+## Step 2 — Build the Story
 
-## Step 2 — Select Your Strongest Evidence
-
-Review the work you completed throughout the course.
-
-Select the artifacts that best demonstrate your:
-
-* PM decisions.
-* AI product understanding.
-* Risk management.
-* Evaluation approach.
-* Testing and User Acceptance Testing (UAT).
-* Release readiness.
-* Key Performance Indicators (KPIs) and performance management.
-* Business outcomes.
-
-You do not need to include every artifact.
-
-## Step 3 — Build Your Project Story
-
-Organize your portfolio around this progression:
+Organize your portfolio around:
 
 **Problem → Strategy → AI Solution → Evidence → Risk → Testing → Release → Outcomes → Improvement**
 
-Make sure each section helps explain what happened and why it mattered.
+## Step 3 — Highlight Your PM Contribution
 
-## Step 4 — Show Your PM Contribution
+Explain what you personally:
 
-Clearly identify what **you** managed, decided, coordinated, evaluated, communicated, or governed.
+* Managed.
+* Decided.
+* Coordinated.
+* Evaluated.
+* Governed.
+* Communicated.
 
-Use specific examples.
+Use specific examples rather than general statements.
 
-Instead of:
+## Step 4 — Select Strong Evidence
 
-> "I participated in the project."
-
-Write:
-
-> "I defined the evaluation criteria, reviewed AI performance against targets, and recommended corrective actions before release."
-
-Do not claim technical work you did not personally perform.
-
-## Step 5 — Add Supporting Visuals
-
-Add visuals that make the project easier to understand.
+Choose the artifacts that best demonstrate your PM judgment.
 
 Examples include:
 
-* Product screenshots.
-* Architecture diagrams.
-* Evaluation charts.
-* KPI dashboards.
-* Workflow diagrams.
-* Release-readiness evidence.
+* Requirements.
+* Product backlog.
+* MVP definition.
+* AI architecture.
+* Data assessment.
+* AI evaluation results.
+* Risk register.
+* Security assessment.
+* Testing / User Acceptance Testing (UAT).
+* Release assessment.
+* Key Performance Indicator (KPI) dashboard.
 
-Choose visuals that strengthen the story rather than simply filling space.
+You do not need to include every artifact.
 
-## Step 6 — Present Results Accurately
+## Step 5 — Add Visuals
 
-Clearly distinguish between:
+Use screenshots, diagrams, dashboards, charts, or workflows when they make the story easier to understand.
+
+## Step 6 — Report Results Accurately
+
+Clearly distinguish:
 
 **Measured Results**
 
-What your evidence demonstrates.
-
-and
+What the evidence demonstrates.
 
 **Expected Results**
 
-What you expect or project but have not yet validated.
+What is projected but has not yet been validated.
 
 Do not present projected benefits as achieved results.
 
-Do not present prototype or MVP evidence as proof of production readiness.
-
 ## Step 7 — Protect Sensitive Information
 
-Before publishing your portfolio, remove or redact:
+Before publishing, remove or redact:
 
 * Confidential information.
 * Personally identifiable information.
@@ -115,25 +96,13 @@ Before publishing your portfolio, remove or redact:
 * Restricted security information.
 * Proprietary business information.
 
-For fictional or synthetic projects, clearly identify them as such where appropriate.
+Clearly identify fictional or synthetic projects where appropriate.
 
-## Step 8 — Complete Your Final Review
-
-Review your portfolio using the **Public Portfolio Checklist** and **Final Portfolio Review**.
+## Step 8 — Complete the Final Review
 
 Make sure someone unfamiliar with your project can quickly understand:
 
 **What problem existed → What you managed → What decisions you made → What evidence you produced → What results were achieved → What should happen next**
-
-## Completion Standard
-
-Your finished portfolio should demonstrate more than an AI application.
-
-It should demonstrate your ability to:
-
-**Understand the problem → Define the product → Manage AI risks → Evaluate evidence → Govern readiness → Measure performance → Communicate outcomes**
-
-Your portfolio should make your PM contribution clear and supported by evidence.
 
 ---
 
@@ -165,13 +134,13 @@ Write a concise overview of the project.
 
 Include:
 
-* The business problem.
-* The AI solution.
+* Business problem.
+* AI solution.
 * Your PM role.
-* The most important evidence or result.
-* The primary risk or challenge.
-* The current release/deployment status.
-* The recommended next step.
+* Most important evidence or result.
+* Primary risk or challenge.
+* Current release / deployment status.
+* Recommended next step.
 
 **Executive Summary:**
 [Enter]
@@ -186,7 +155,7 @@ Include:
 
 ## Why It Mattered
 
-[Explain the operational, financial, employee, customer, compliance, strategic, or risk impact.]
+[Explain the business, user, operational, financial, compliance, strategic, or risk impact.]
 
 ## Opportunity
 
@@ -220,7 +189,7 @@ Include:
 
 [Describe what the product needed to accomplish.]
 
-## Minimum Viable Product
+## MVP
 
 [Describe the smallest useful version of the product.]
 
@@ -346,9 +315,7 @@ Identify the most important AI-specific risks.
 
 ## What the Evidence Showed
 
-[Interpret the most important findings.]
-
-Do not simply list metrics. Explain what they meant for product quality and readiness.
+[Interpret the most important findings and explain what they meant for product quality or readiness.]
 
 ## PM Judgment
 
@@ -373,7 +340,7 @@ Do not simply list metrics. Explain what they meant for product quality and read
 |       |          |        |                          |
 |       |          |        |                          |
 
-## User Acceptance Testing
+## UAT
 
 [Summarize what users tested and what the results demonstrated.]
 
@@ -421,7 +388,7 @@ Explain any difference between them:
 
 ---
 
-# 13. KPIs & Monitoring
+# 13. KPI & Monitoring
 
 Use:
 
@@ -442,7 +409,7 @@ Use:
 
 ## Monitoring Approach
 
-[Describe how performance would be monitored after release.]
+[Describe how performance should be monitored after release.]
 
 ---
 
@@ -468,7 +435,7 @@ Use:
 
 [Explain the value created or expected.]
 
-Clearly distinguish measured outcomes from projections.
+Clearly distinguish measured results from projections.
 
 ---
 
@@ -512,33 +479,31 @@ Identify the most important improvements that should follow from the evidence.
 
 Make your individual contribution unmistakable.
 
-Describe what you personally:
-
-**Managed**
+## What You Managed
 
 [Enter]
 
-**Decided**
+## What You Decided
 
 [Enter]
 
-**Coordinated**
+## What You Coordinated
 
 [Enter]
 
-**Evaluated**
+## What You Evaluated
 
 [Enter]
 
-**Governed**
+## What You Governed
 
 [Enter]
 
-**Communicated**
+## What You Communicated
 
 [Enter]
 
-Use specific examples of ownership, judgment, and impact.
+Use specific examples showing ownership, judgment, and impact.
 
 Avoid vague statements such as:
 
@@ -548,7 +513,7 @@ Avoid vague statements such as:
 
 # 18. Portfolio Evidence
 
-Select the strongest artifacts that support your story.
+Select the strongest evidence that supports your professional case study.
 
 | Evidence | Link / Reference | What It Demonstrates |
 | -------- | ---------------- | -------------------- |
@@ -557,22 +522,6 @@ Select the strongest artifacts that support your story.
 |          |                  |                      |
 |          |                  |                      |
 |          |                  |                      |
-
-Examples include:
-
-* Requirements.
-* Product backlog.
-* MVP definition.
-* AI architecture.
-* Data assessment.
-* Evaluation results.
-* Risk register.
-* Security assessment.
-* Testing results.
-* UAT.
-* Release assessment.
-* KPI dashboard.
-* Other relevant evidence.
 
 Use only evidence you are permitted to share publicly.
 
@@ -733,11 +682,11 @@ Before publishing, confirm that someone unfamiliar with the project can answer:
 
 ---
 
-# Final Portfolio Standard
+# Portfolio Completion Standard
 
-A strong portfolio case study demonstrates more than an AI application.
+Your finished portfolio should demonstrate more than an AI application.
 
-It demonstrates the ability to:
+It should demonstrate your ability to:
 
 **Understand the problem → Define the product → Manage AI risks → Evaluate evidence → Govern readiness → Measure performance → Communicate outcomes**
 

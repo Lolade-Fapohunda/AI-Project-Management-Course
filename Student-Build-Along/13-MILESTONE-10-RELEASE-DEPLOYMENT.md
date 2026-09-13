@@ -2,7 +2,7 @@
 
 ## Objective
 
-In this milestone, you will determine whether the AI product is ready to be released and whether it is ready to be deployed into its intended environment.
+In this milestone, you will determine whether the Artificial Intelligence (AI) product is ready to be released and whether it is ready to be deployed into its intended environment.
 
 The goal is not simply to deploy the application.
 
@@ -10,7 +10,7 @@ The goal is to make a controlled, evidence-based decision about:
 
 **Release Approval → Deployment Readiness → Deployment → Validation → Stabilization**
 
-You will apply the evidence collected in earlier milestones to determine whether the product should move forward.
+You will apply evidence collected in earlier milestones to determine whether the product should move forward.
 
 ---
 
@@ -18,20 +18,20 @@ You will apply the evidence collected in earlier milestones to determine whether
 
 You will:
 
-1. Review the testing and User Acceptance Testing (UAT) evidence from Milestone 9.
+1. Review testing and User Acceptance Testing (UAT) evidence from Milestone 9.
 2. Review AI evaluation results.
 3. Review security and governance conditions.
 4. Define release criteria.
 5. Review open defects, risks, and dependencies.
 6. Make a release recommendation.
 7. Identify the authorized release decision-maker.
-8. Determine deployment readiness separately from release approval.
+8. Assess deployment readiness separately from release approval.
 9. Define the deployment approach.
 10. Define post-deployment validation.
 11. Define rollback conditions and procedures.
 12. Define operational readiness and stabilization monitoring.
 13. Complete the Release & Deployment Readiness Record.
-14. Document the final release and deployment decisions.
+14. Document the release and deployment decisions.
 
 ---
 
@@ -46,7 +46,7 @@ For example, an AI product may:
 * Have acceptable evaluation results.
 * Receive release approval.
 
-But production deployment may still need to wait because:
+But deployment may still need to wait because:
 
 * Role-based access control has not been implemented.
 * Required production configuration is incomplete.
@@ -70,7 +70,11 @@ For PolicyAssist, consider this sequence:
 
 ↓
 
-**Release Recommendation: GO**
+**PM Release Recommendation: CONDITIONAL GO**
+
+↓
+
+**Authorized Release Decision: CONDITIONAL GO**
 
 ↓
 
@@ -78,7 +82,7 @@ For PolicyAssist, consider this sequence:
 
 ↓
 
-**Deployment: HOLD**
+**Deployment Decision: HOLD DEPLOYMENT**
 
 ↓
 
@@ -90,9 +94,9 @@ For PolicyAssist, consider this sequence:
 
 ↓
 
-**Deploy**
+**DEPLOY**
 
-This distinction prevents the PM from assuming that approval to release automatically means the product can safely enter production.
+This distinction prevents the PM from assuming that release approval automatically means the product can safely enter production.
 
 ---
 
@@ -120,7 +124,7 @@ The deployment decision answers:
 
 Review the evidence from Milestone 9.
 
-Include:
+Include applicable:
 
 * Test results.
 * UAT results.
@@ -134,10 +138,10 @@ Include:
 
 Also review relevant evidence from:
 
-* Milestone 7 AI evaluation.
-* Milestone 8 security and governance.
-* Milestone 6 data and retrieval.
-* Milestone 4 MVP and backlog.
+* Milestone 7 AI Evaluation.
+* Milestone 8 Security & Governance.
+* Milestone 6 Data & Retrieval.
+* Milestone 4 MVP and Backlog.
 
 Do not restart the entire testing process.
 
@@ -171,8 +175,6 @@ Your criteria should be specific enough to support a release decision.
 ---
 
 # Release Criteria Table
-
-Use:
 
 | Release Criterion   | Required Result | Actual Result | Status | Evidence Reference |
 | ------------------- | --------------- | ------------- | ------ | ------------------ |
@@ -222,7 +224,7 @@ Consider:
 
 * Authentication.
 * Authorization.
-* Role-based access control.
+* Role-Based Access Control.
 * Confidential data protection.
 * Privacy.
 * Auditability.
@@ -252,7 +254,7 @@ The release decision should reflect the actual state.
 
 # Part 5 — Review Open Defects and Risks
 
-Review all unresolved items.
+Review unresolved items.
 
 For each significant issue, determine:
 
@@ -308,7 +310,7 @@ The product meets the required release conditions and identified risks are accep
 
 The product is approved to proceed **only under clearly defined conditions**.
 
-Conditions should have:
+Conditions should include:
 
 * A specific requirement, risk, or limitation.
 * An identified owner.
@@ -407,8 +409,6 @@ The PM recommendation and final authorized decision should be recorded separatel
 
 # Release Decision Record
 
-Use:
-
 | Decision Element          | Assessment |
 | ------------------------- | ---------- |
 | PM Recommendation         |            |
@@ -449,7 +449,7 @@ Deployment readiness should consider:
 * Required policy content available.
 * Approved content loaded.
 * Appropriate metadata present.
-* Version/status checks completed.
+* Version and status checks completed.
 
 ## Monitoring
 
@@ -533,9 +533,9 @@ Useful when:
 * Availability is important.
 * Rapid rollback is required.
 
-### PM Decision
+## PM Assessment
 
-Select one approach and explain:
+Select an approach and explain:
 
 **Approach → Reason → Risk → Mitigation**
 
@@ -557,7 +557,7 @@ The approved release meets the deployment-readiness conditions.
 
 The release may be approved, but a deployment condition remains unresolved.
 
-Examples:
+Examples include:
 
 * Production access controls are incomplete.
 * Production security validation is outstanding.
@@ -571,7 +571,7 @@ Examples:
 
 The deployment has created an unacceptable condition requiring recovery to a previous known-good state.
 
-Examples:
+Examples include:
 
 * Critical production defect.
 * Security failure.
@@ -585,31 +585,31 @@ Examples:
 
 # Important Relationship
 
-The following combinations are possible:
+The following combinations are possible.
 
-### Release GO + Deploy
+## Release GO + DEPLOY
 
 The product is approved and ready to deploy.
 
-### Release GO + Hold Deployment
+## Release GO + HOLD DEPLOYMENT
 
 The product is approved, but a deployment-specific condition remains unresolved.
 
-### Release Conditional Go + Deploy
+## Release CONDITIONAL GO + DEPLOY
 
-The product is approved to proceed under defined conditions and deployment readiness has also been satisfied.
+The product is approved under defined conditions and deployment readiness has also been satisfied.
 
-### Release Conditional Go + Hold Deployment
+## Release CONDITIONAL GO + HOLD DEPLOYMENT
 
 The product has conditional approval, but a separate deployment condition is not yet satisfied.
 
-### Release Hold
+## Release HOLD
 
 The product has not been approved to proceed.
 
 Deployment should not occur.
 
-### Release No-Go
+## Release NO-GO
 
 The product should not be released.
 
@@ -643,7 +643,7 @@ The exact sequence should reflect your product and environment.
 
 Define at least **5 post-deployment checks**.
 
-Examples:
+Examples include:
 
 * Application loads successfully.
 * Users can submit a supported question.
@@ -670,8 +670,6 @@ Use:
 
 A rollback plan defines how the team will return to a known-good state when deployment creates unacceptable risk.
 
-Define:
-
 ## Rollback Trigger
 
 What condition causes rollback consideration?
@@ -694,7 +692,7 @@ What previous version or known-good state will be restored?
 
 ## Rollback Method
 
-How will the recovery occur?
+How will recovery occur?
 
 ## Recovery Validation
 
@@ -712,7 +710,7 @@ Use:
 
 # Part 14 — Operational Readiness
 
-Deployment is not the end of the PM responsibility.
+Deployment is not the end of PM responsibility.
 
 Confirm:
 
@@ -734,10 +732,10 @@ The team should know what happens when something goes wrong after deployment.
 
 Define at least **3 areas to monitor immediately after deployment**.
 
-Examples:
+Examples include:
 
 * Response accuracy.
-* Hallucination or unsupported-response behavior.
+* Unsupported-response behavior.
 * Response latency.
 * Retrieval quality.
 * User feedback.
@@ -750,9 +748,7 @@ For each monitoring area, identify:
 
 **Metric → Target → Threshold → Owner → Action**
 
----
-
-# Stabilization Monitoring Table
+## Stabilization Monitoring Table
 
 | Monitoring Area | KPI / Measure | Target | Threshold | Owner | Action |
 | --------------- | ------------- | -----: | --------: | ----- | ------ |
@@ -762,11 +758,11 @@ For each monitoring area, identify:
 
 ---
 
-# Part 16 — Complete the Release & Deployment Readiness Record
+# Part 16 — Release & Deployment Readiness Record
 
-Use the following student-ready template to document your final assessment.
+Use the following record to document your final assessment.
 
-## 1. Product Information
+## 16.1 Product Information
 
 **Project Name:**
 [Enter project name]
@@ -778,7 +774,7 @@ Use the following student-ready template to document your final assessment.
 [Enter version or release identifier]
 
 **Release Stage:**
-[Prototype / Pilot / MVP / Production / Other]
+[Prototype / MVP / Pilot / Production / Other]
 
 **Assessment Date:**
 [Enter date]
@@ -788,9 +784,7 @@ Use the following student-ready template to document your final assessment.
 
 ---
 
-## 2. Release Criteria Assessment
-
-Document whether the product satisfies the criteria required for the intended release stage.
+## 16.2 Release Criteria Assessment
 
 | Release Criterion   | Required Result | Actual Result | Status | Evidence Reference |
 | ------------------- | --------------- | ------------- | ------ | ------------------ |
@@ -821,16 +815,16 @@ Document whether the product satisfies the criteria required for the intended re
 
 ---
 
-## 3. AI Quality Assessment
+## 16.3 AI Quality Assessment
 
-| Measure                      | Target | Actual | Status | Interpretation | Evidence Reference |
-| ---------------------------- | -----: | -----: | ------ | -------------- | ------------------ |
-| Retrieval Accuracy           |        |        |        |                |                    |
-| Answer Accuracy              |        |        |        |                |                    |
-| Hallucination Rate           |        |        |        |                |                    |
-| Citation Correctness         |        |        |        |                |                    |
-| Unsupported-Question Refusal |        |        |        |                |                    |
-| Response Latency             |        |        |        |                |                    |
+| Measure                                   | Target | Actual | Status | Interpretation | Evidence Reference |
+| ----------------------------------------- | -----: | -----: | ------ | -------------- | ------------------ |
+| Retrieval Accuracy                        |        |        |        |                |                    |
+| Answer Accuracy                           |        |        |        |                |                    |
+| Unsupported / Hallucinated Response Rate  |        |        |        |                |                    |
+| Citation Correctness                      |        |        |        |                |                    |
+| Unsupported-Question Refusal / Escalation |        |        |        |                |                    |
+| Response Latency                          |        |        |        |                |                    |
 
 ### AI Quality Assessment
 
@@ -848,7 +842,7 @@ Document whether the product satisfies the criteria required for the intended re
 
 ---
 
-## 4. Security & Governance Assessment
+## 16.4 Security & Governance Assessment
 
 | Control / Requirement         | Status | Risk / Impact | Evidence Reference | Required Action |
 | ----------------------------- | ------ | ------------- | ------------------ | --------------- |
@@ -874,7 +868,7 @@ Document whether the product satisfies the criteria required for the intended re
 
 ---
 
-## 5. Open Defects & Risks
+## 16.5 Open Defects & Risks
 
 | ID | Issue / Risk | Type | Severity | Impact | Owner | Must Fix / Can Defer | Release Impact |
 | -- | ------------ | ---- | -------- | ------ | ----- | -------------------- | -------------- |
@@ -886,20 +880,17 @@ Document whether the product satisfies the criteria required for the intended re
 ### Highest-Priority Issue
 
 **Issue / Risk:**
-
 [Enter issue]
 
 **Why is it the highest priority?**
-
 [Enter reasoning]
 
 **Required action:**
-
 [Enter action]
 
 ---
 
-## 6. PM Release Recommendation
+## 16.6 PM Release Recommendation
 
 Select one:
 
@@ -937,16 +928,16 @@ Select one:
 
 ---
 
-## 7. Release Decision Authority
+## 16.7 Authorized Release Decision
 
 **PM Recommendation:**
-[Go / Conditional Go / Hold / No-Go]
+[GO / CONDITIONAL GO / HOLD / NO-GO]
 
 **Authorized Decision-Maker:**
 [Product Owner / Executive Sponsor / Business Owner / Steering Committee / Other]
 
 **Authorized Decision:**
-[Go / Conditional Go / Hold / No-Go]
+[GO / CONDITIONAL GO / HOLD / NO-GO]
 
 **Decision Date:**
 [Enter date]
@@ -961,9 +952,7 @@ Remember:
 
 ---
 
-## 8. Deployment Readiness Assessment
-
-Release approval does not automatically mean the product is ready to deploy.
+## 16.8 Deployment Readiness Assessment
 
 | Deployment Condition                      | Required? | Actual Status | Evidence Reference | Owner |
 | ----------------------------------------- | --------- | ------------- | ------------------ | ----- |
@@ -993,9 +982,9 @@ Release approval does not automatically mean the product is ready to deploy.
 
 ---
 
-## 9. Deployment Approach
+## 16.9 Deployment Approach
 
-Select the approach used for this release:
+Select the approach:
 
 **☐ Direct Deployment**
 
@@ -1021,7 +1010,7 @@ Select the approach used for this release:
 
 ---
 
-## 10. Deployment Decision
+## 16.10 Deployment Decision
 
 Select one:
 
@@ -1045,9 +1034,7 @@ Select one:
 
 ---
 
-## 11. Post-Deployment Validation
-
-Define at least **5 validation checks**.
+## 16.11 Post-Deployment Validation
 
 | Validation Check              | Expected Result | Actual Result | Status | Evidence Reference |
 | ----------------------------- | --------------- | ------------- | ------ | ------------------ |
@@ -1057,53 +1044,31 @@ Define at least **5 validation checks**.
 | Citation / evidence behavior  |                 |               |        |                    |
 | Unsupported-question handling |                 |               |        |                    |
 
-Add additional checks where appropriate.
-
 ---
 
-## 12. Rollback Plan
+## 16.12 Rollback Plan
 
-### Rollback Trigger
-
-What condition would cause rollback consideration?
-
+**Rollback Trigger:**
 [Enter condition]
 
-### Rollback Decision Owner
-
+**Rollback Decision Owner:**
 [Enter role or name]
 
-### Recovery State
-
-What known-good version or state will be restored?
-
+**Recovery State:**
 [Enter version or state]
 
-### Rollback Method
-
-How will the rollback be performed?
-
+**Rollback Method:**
 [Describe method]
 
-### Recovery Validation
-
-How will you confirm that the recovered state is functioning?
-
+**Recovery Validation:**
 [Describe validation]
 
-### Communication
-
-Who must be informed?
-
+**Communication:**
 [Identify stakeholders]
-
-### Rollback Sequence
-
-**Trigger → Decision → Recovery → Validation → Communication**
 
 ---
 
-## 13. Operational Readiness
+## 16.13 Operational Readiness
 
 | Operational Area    | Status | Owner | Evidence Reference |
 | ------------------- | ------ | ----- | ------------------ |
@@ -1122,9 +1087,7 @@ Who must be informed?
 
 ---
 
-## 14. Stabilization Monitoring
-
-Define at least **3 areas to monitor immediately after deployment**.
+## 16.14 Stabilization Monitoring
 
 | Monitoring Area | KPI / Measure | Target | Threshold | Owner | Action |
 | --------------- | ------------- | -----: | --------: | ----- | ------ |
@@ -1141,47 +1104,6 @@ Define at least **3 areas to monitor immediately after deployment**.
 **What would trigger escalation?**
 
 [Enter conditions]
-
----
-
-## 15. Final Release & Deployment Summary
-
-### Release
-
-**PM Recommendation:**
-[Go / Conditional Go / Hold / No-Go]
-
-**Authorized Decision:**
-[Go / Conditional Go / Hold / No-Go]
-
-### Deployment
-
-**Deployment Decision:**
-[Deploy / Hold Deployment / Rollback]
-
-### Key Risk
-
-[Enter highest remaining risk.]
-
-### Required Action
-
-[Enter immediate action.]
-
-### Owner
-
-[Enter owner.]
-
-### Next Review Point
-
-[Enter date or milestone.]
-
----
-
-## 16. PM Decision Statement
-
-Complete the following:
-
-> **Based on the available evidence, I recommend [decision] because [evidence/reasoning]. The primary risk is [risk], which will be addressed by [action] owned by [owner]. The decision will be reviewed at [review point].**
 
 ---
 
@@ -1212,13 +1134,13 @@ The purpose is to understand deployment from a PM perspective.
 
 # Part 18 — PM Decisions
 
-Make at least **three PM decisions** during this milestone.
+Make at least **3 PM decisions** during this milestone.
 
 Examples:
 
-* Should the product receive a Go, Conditional Go, Hold, or No-Go recommendation?
+* Should the product receive a GO, CONDITIONAL GO, HOLD, or NO-GO recommendation?
 * Which open issue has the greatest release impact?
-* Is a condition acceptable for a limited release?
+* Is a condition acceptable for a controlled release?
 * Should deployment proceed?
 * What must be validated before deployment?
 * What deployment approach is appropriate?
@@ -1233,37 +1155,35 @@ For each decision, use:
 
 # Common Release & Deployment Mistakes
 
-Avoid:
-
-### Mistake 1 — Treating deployment as the release decision
+## Mistake 1 — Treating Deployment as the Release Decision
 
 Deployment is execution.
 
 Release is approval.
 
-### Mistake 2 — Using Conditional Go to bypass critical risk
+## Mistake 2 — Using Conditional Go to Bypass Critical Risk
 
 A serious unresolved security, authorization, privacy, or safety issue should not be disguised as a manageable condition.
 
-### Mistake 3 — Treating Hold as No-Go
+## Mistake 3 — Treating Hold as No-Go
 
 A Hold means the decision cannot proceed yet.
 
 It does not necessarily mean the product should never be released.
 
-### Mistake 4 — Deploying because testing passed
+## Mistake 4 — Deploying Because Testing Passed
 
 Testing is one input into the release decision.
 
-### Mistake 5 — Ignoring rollback
+## Mistake 5 — Ignoring Rollback
 
 A production deployment without a recovery strategy increases operational risk.
 
-### Mistake 6 — Forgetting post-deployment validation
+## Mistake 6 — Forgetting Post-Deployment Validation
 
 The product must be verified after deployment.
 
-### Mistake 7 — Assuming the PM personally authorizes release
+## Mistake 7 — Assuming the PM Personally Authorizes Release
 
 The PM coordinates and recommends unless formal decision authority has been assigned.
 
@@ -1326,10 +1246,10 @@ A product should not be deployed simply because it works.
 It should be deployed when:
 
 * The intended release conditions are satisfied.
-* The remaining risks are understood and acceptable.
+* Remaining risks are understood and acceptable.
 * Required controls are implemented and validated.
 * The authorized decision-maker has approved the release.
 * The deployment environment is ready.
 * Rollback and monitoring are in place.
 
-The next milestone will use KPI evidence to determine whether the product is delivering the intended performance and business value after release.
+**Release Approval → Deployment Readiness → Deployment → Validation → Stabilization**

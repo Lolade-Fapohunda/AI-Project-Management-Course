@@ -1,20 +1,82 @@
 # Milestone 12 — Capstone Submission Template
 
-## Instructions
+## Purpose
 
 Use this template to assemble the strongest evidence from Milestones 1–11 into one complete Artificial Intelligence (AI) Project Management (PM) capstone.
 
-Do not copy every artifact into this document.
+Your capstone should demonstrate that you can:
 
-Use evidence to tell one connected story:
+**Understand the problem → Define the product → Manage risk → Evaluate evidence → Test the product → Assess readiness → Measure outcomes → Recommend what happens next**
+
+Do not copy every artifact from the course into this document.
+
+Use your evidence to tell one connected story:
 
 **Problem → Plan → Build → Evaluate → Secure → Test → Release → Measure → Improve → Recommend**
 
-For each section, focus on:
-
-**What was done → Why → Evidence → Result**
-
 Report evidence according to the actual maturity of your product. Do not present prototype or Minimum Viable Product (MVP) evidence as production evidence.
+
+---
+
+# How to Complete Your Capstone Submission
+
+Complete this submission after finishing Milestones 1–11.
+
+## Step 1 — Review Your Milestones
+
+Review your work from M1–M11 and identify the strongest evidence for each area of the AI product lifecycle.
+
+Use the **Milestone Evidence Mapping** below to determine where each piece of evidence belongs.
+
+## Step 2 — Complete the Capstone Sections
+
+Work through the template from:
+
+**Project Overview → Business Problem → Requirements → AI Solution → Data → Evaluation → Security & Governance → Testing / UAT → Release / Deployment → KPI / Business Outcome → Improvement → Lessons Learned**
+
+## Step 3 — Reference Your Evidence
+
+Use artifact names, links, screenshots, test IDs, milestone references, or other traceable references.
+
+You do not need to copy complete milestone documents into this capstone.
+
+## Step 4 — Use the Correct Decision Terminology
+
+Use these terms consistently:
+
+**Release:** GO / CONDITIONAL GO / HOLD / NO-GO
+
+**Deployment:** DEPLOY / HOLD DEPLOYMENT / ROLLBACK
+
+**Monitoring:** CONTINUE / IMPROVE / ESCALATE / REASSESS
+
+**Final PM Recommendation:** CONTINUE / IMPROVE / ESCALATE / REASSESS / SCALE
+
+## Step 5 — Report Results Honestly
+
+Distinguish between:
+
+**Measured Results**
+What the evidence demonstrates.
+
+**Expected Results**
+What is projected but has not yet been validated.
+
+Do not present prototype or MVP evidence as production evidence.
+
+## Step 6 — Demonstrate PM Judgment
+
+Do more than describe what happened.
+
+Explain:
+
+**What was decided → Why → What evidence supported it → What happened → What should happen next**
+
+## Step 7 — Complete Your Final Recommendation
+
+Bring the strongest evidence together:
+
+**Business Value → Evidence → Risk → Action → Next Step**
 
 ---
 
@@ -24,20 +86,20 @@ Use this table to identify where the strongest evidence from each milestone appe
 
 You do not need to reproduce the entire milestone artifact. Reference the relevant section, table, link, screenshot, or supporting document.
 
-| Milestone | Focus                         | Capstone Section                    | Evidence to Reference                                       |
-| --------- | ----------------------------- | ----------------------------------- | ----------------------------------------------------------- |
-| M1        | AI Project Foundation         | Project Overview                    | Project purpose, objectives, initial context                |
-| M2        | Problem, Users & Stakeholders | Business Problem & Users            | Problem statement, stakeholder analysis, user needs         |
-| M3        | Requirements                  | Requirements, Scope & MVP           | Requirements, measures, acceptance criteria                 |
-| M4        | Backlog & MVP                 | Requirements, Scope & MVP           | Backlog, prioritization, MVP definition, release scope      |
-| M5        | AI Architecture               | AI Solution                         | Architecture, workflow, dependencies, technical decisions   |
-| M6        | Data & Retrieval              | Data & Knowledge                    | Sources, authority, metadata, retrieval evidence            |
-| M7        | AI Evaluation                 | AI Evaluation                       | Evaluation scenarios, metrics, results, regression evidence |
-| M8        | Security & Governance         | Risk, Security & Governance         | Security controls, access, governance, risk evidence        |
-| M9        | Testing & UAT                 | Testing & UAT                       | Test results, defects, UAT evidence                         |
-| M10       | Release & Deployment          | Release & Deployment Readiness      | Release assessment, release decision, deployment decision   |
-| M11       | KPIs & Dashboard              | KPI, Performance & Business Outcome | KPI results, dashboard evidence, monitoring                 |
-| M12       | Capstone & Portfolio          | Final Recommendation                | Integrated evidence, outcomes, portfolio story              |
+| Milestone | Focus                         | Capstone Section                    | Evidence to Reference                                         |
+| --------- | ----------------------------- | ----------------------------------- | ------------------------------------------------------------- |
+| M1        | AI Project Foundation         | Project Overview                    | Project purpose, objectives, initial context                  |
+| M2        | Problem, Users & Stakeholders | Business Problem & Users            | Problem statement, stakeholder analysis, user needs           |
+| M3        | Requirements                  | Requirements, Scope & MVP           | Requirements, measures, acceptance criteria                   |
+| M4        | Backlog & MVP                 | Requirements, Scope & MVP           | Backlog, prioritization, MVP definition, release scope        |
+| M5        | AI Architecture               | AI Solution                         | Architecture, workflow, dependencies, technical decisions     |
+| M6        | Data & Retrieval              | Data & Knowledge                    | Sources, authority, metadata, retrieval evidence              |
+| M7        | AI Evaluation                 | AI Evaluation                       | Evaluation scenarios, metrics, results, regression evidence   |
+| M8        | Security & Governance         | Risk, Security & Governance         | Security controls, access, governance, risk evidence          |
+| M9        | Testing & UAT                 | Testing & UAT                       | Test results, defects, User Acceptance Testing (UAT) evidence |
+| M10       | Release & Deployment          | Release & Deployment Readiness      | Release assessment, release decision, deployment decision     |
+| M11       | KPIs & Dashboard              | KPI, Performance & Business Outcome | KPI results, dashboard evidence, monitoring                   |
+| M12       | Capstone & Portfolio          | Final PM Recommendation             | Integrated evidence, outcomes, portfolio story                |
 
 ## Evidence Reference Standard
 
@@ -330,7 +392,7 @@ Address applicable areas:
 |          |      |          |                |        |
 |          |      |          |                |        |
 
-## User Acceptance Testing (UAT)
+## User Acceptance Testing
 
 | UAT ID | User Type | User Goal | Expected | Actual | Result | Evidence |
 | ------ | --------- | --------- | -------- | ------ | ------ | -------- |
@@ -395,7 +457,7 @@ Complete when applicable.
 ## Authorized Release Decision
 
 **Authorized Decision:**
-[Enter]
+[GO / CONDITIONAL GO / HOLD / NO-GO]
 
 **Decision Authority:**
 [Product Owner / Executive Sponsor / Business Owner / Steering Committee / Other]
@@ -413,12 +475,15 @@ The PM provides the readiness assessment and recommendation. The formally design
 Select one:
 
 **DEPLOY**
+
 The approved release is ready for deployment.
 
 **HOLD DEPLOYMENT**
+
 The release may be approved, but a deployment-specific condition remains unresolved.
 
 **ROLLBACK**
+
 The deployment created an unacceptable condition requiring recovery to a previous known-good state.
 
 **Deployment Decision:**
@@ -477,7 +542,7 @@ Use:
 
 ## Monitoring Decision
 
-**Continue / Improve / Escalate / Reassess**
+**CONTINUE / IMPROVE / ESCALATE / REASSESS**
 
 **Rationale:**
 [Explain the performance evidence that drove the decision.]
@@ -559,6 +624,7 @@ Examples may include:
 * Backlog.
 * MVP definition.
 * Architecture.
+* Data assessment.
 * Evaluation results.
 * Risk register.
 * Security assessment.
@@ -567,6 +633,8 @@ Examples may include:
 * Release assessment.
 * KPI dashboard.
 * Other relevant evidence.
+
+Use only evidence you are permitted to share publicly.
 
 ---
 
@@ -614,7 +682,7 @@ Bring the evidence together into one final recommendation.
 
 ## Recommended Action
 
-**Continue / Improve / Escalate / Reassess / Scale**
+**CONTINUE / IMPROVE / ESCALATE / REASSESS / SCALE**
 
 ## Evidence Supporting the Recommendation
 
