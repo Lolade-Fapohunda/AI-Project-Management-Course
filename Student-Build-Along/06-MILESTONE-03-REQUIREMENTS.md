@@ -1,212 +1,465 @@
-# Milestone 2 — Problem, Users & Stakeholders
+# Milestone 3 — Requirements
 
-## PM Objective
+## Objective
 
-Translate the business problem into clear user and stakeholder needs, then determine how those needs should influence product decisions.
+In this milestone, you will translate the validated business problem and stakeholder needs into clear, measurable requirements for the AI product.
 
-## Hands-On Objective
+The goal is not simply to create a list of features.
 
-Apply what you learned in the corresponding PM Track module to the PolicyAssist project.
+The goal is to define **what the product must do, how well it must perform, how success will be measured, and what conditions must be satisfied for the product to be acceptable.**
 
-You are not being asked to relearn stakeholder management. You are applying the concepts to a real project scenario.
+You will apply Project Management (PM) thinking to:
 
----
-
-## 1. Start With the Business Problem
-
-Review the problem you identified in Milestone 1.
-
-For PolicyAssist, the initial business problem is:
-
-> Employees spend too much time searching through policies and asking Human Resources (HR) repetitive policy questions. Policy information may also exist in multiple locations or versions, making it difficult to determine which information is authoritative and current.
-
-The initial desired business outcomes are:
-
-* Reduce employee time spent searching for policies by at least 50%.
-* Reduce repetitive policy questions directed to HR.
-* Help employees find accurate, current, and authoritative policy information.
-* Improve confidence in the information employees receive.
-
-### Your Task
-
-Write the business problem in your own words.
-
-Then identify:
-
-| Item                                       | Your Response |
-| ------------------------------------------ | ------------- |
-| Business problem                           |               |
-| Who is affected?                           |               |
-| Desired business outcome                   |               |
-| How will we know the problem is improving? |               |
+**Stakeholder Need → Business Value → Product Requirement → Measure → Acceptance Criteria**
 
 ---
 
-# 2. Identify the Users and Stakeholders
+# What You Will Do
 
-Use the stakeholder concepts from the PM Track to identify the people or groups who matter to this project.
+You will:
 
-For PolicyAssist, consider groups such as:
-
-* Employees
-* Human Resources (HR)
-* Information Technology (IT)
-* Leadership
-* Policy owners
-
-You may identify additional stakeholders if you believe they are relevant.
-
-### Stakeholder Analysis
-
-| Stakeholder   | Role                      | Primary Need                                   | Concern/Risk                          | Influence |
-| ------------- | ------------------------- | ---------------------------------------------- | ------------------------------------- | --------- |
-| Employees     | End users                 | Fast, accurate policy answers                  | Incorrect or outdated answers         | Medium    |
-| HR            | Policy/support owner      | Reduce repetitive questions and maintain trust | Incorrect AI responses                | High      |
-| IT            | Technology/security owner | Reliable and secure application                | Security or system issues             | High      |
-| Leadership    | Business stakeholder      | Demonstrable business value                    | Investment without measurable results | High      |
-| Policy Owners | Policy content owners     | Accurate and current policy information        | Outdated or conflicting content       | High      |
-
-### Your Task
-
-Review the table and modify it based on your own analysis.
-
-You should be able to explain **why each stakeholder matters to the project**, rather than simply listing names.
+1. Review the problem and stakeholder needs established in Milestone 2.
+2. Translate those needs into product requirements.
+3. Define functional and non-functional requirements.
+4. Define AI-specific requirements.
+5. Define security and access requirements.
+6. Establish measurable targets.
+7. Write acceptance criteria.
+8. Identify requirement risks and dependencies.
+9. Prioritize the requirements.
+10. Make a PM recommendation about what must be true for the product to succeed.
 
 ---
 
-# 3. Connect Stakeholder Needs to Product Outcomes
+# Why Requirements Matter
 
-Different stakeholders may define success differently.
+An AI product can fail even when the technology works.
 
 For example:
 
-* **Employees** may define success as finding the right policy quickly.
-* **HR** may define success as fewer repetitive policy questions.
-* **IT** may define success as a secure and reliable application.
-* **Leadership** may define success as measurable business value.
-* **Policy Owners** may define success as employees receiving the correct current policy.
+* The AI may answer questions but use the wrong information.
+* The product may provide answers without citations.
+* The response may be too slow.
+* Unsupported questions may receive invented answers.
+* Unauthorized users may receive restricted information.
+* The product may perform well technically but fail to solve the original business problem.
 
-Complete the following:
+Requirements prevent these gaps by defining what success means before the team builds and tests the product.
 
-| Stakeholder   | What Success Looks Like |
-| ------------- | ----------------------- |
-| Employees     |                         |
-| HR            |                         |
-| IT            |                         |
-| Leadership    |                         |
-| Policy Owners |                         |
+A strong requirement should help the team answer:
 
-### PM Question
-
-Where do these definitions of success align?
-
-Where might they conflict?
+> **What must be true for the product to meet the business need?**
 
 ---
 
-# 4. Identify Stakeholder Conflicts and Trade-Offs
+# Part 1 — Review the Stakeholder Needs
 
-AI projects often involve competing priorities.
+Review the stakeholder analysis from Milestone 2.
 
-For example:
+Identify the most important needs for:
 
-* Employees may want fast answers.
-* HR may prioritize accuracy and appropriate escalation.
-* IT may prioritize security and access controls.
-* Leadership may prioritize measurable business results.
-* Policy owners may prioritize governance and source accuracy.
+* Employees.
+* Human Resources.
+* Information Technology.
+* Security and governance stakeholders.
+* Project or product leadership.
 
-Identify at least **two potential conflicts or trade-offs**.
+For each important need, ask:
 
-| Conflict or Trade-Off | Stakeholders Involved | PM Consideration |
-| --------------------- | --------------------- | ---------------- |
-|                       |                       |                  |
-|                       |                       |                  |
-
-Do not solve every conflict yet.
-
-The purpose is to recognize where stakeholder needs could affect scope, requirements, priorities, risk, or product decisions.
+* What problem does this need address?
+* Why does it matter?
+* What would success look like?
+* What risk exists if the need is not addressed?
 
 ---
 
-# 5. Determine What Should Influence Initial Scope
+# Part 2 — Define Product Requirements
 
-Not every stakeholder request should automatically become a product requirement.
+Create at least **8 requirements** for PolicyAssist.
 
-For each major stakeholder need, determine whether it should influence the initial product scope.
+Your requirements should include a mix of:
 
-| Stakeholder Need                    | Should Influence Initial Scope? | Why? |
-| ----------------------------------- | ------------------------------- | ---- |
-| Accurate policy answers             |                                 |      |
-| Current/authoritative policy source |                                 |      |
-| Reduced employee search time        |                                 |      |
-| Reduced repetitive HR questions     |                                 |      |
-| Secure access                       |                                 |      |
-| Reporting on product performance    |                                 |      |
+* Functional requirements.
+* Non-functional requirements.
+* AI-specific requirements.
+* Security and access requirements.
 
-Use the PM Track concepts you learned to justify your decisions.
+Do not make every requirement a feature.
+
+A requirement can define:
+
+* Behavior.
+* Quality.
+* Performance.
+* Security.
+* Governance.
+* Reliability.
+* User experience.
+* Business outcome.
 
 ---
 
-# 6. Make Your PM Decisions
+# Requirement Categories
 
-Based on your analysis, document at least **three decisions or questions** that should influence the project.
+## Functional Requirements
 
-Use this format:
+Functional requirements describe what the product must do.
 
-| Decision or Question | Business Reason | Evidence Needed | Risk/Trade-Off | Expected Outcome |
-| -------------------- | --------------- | --------------- | -------------- | ---------------- |
-|                      |                 |                 |                |                  |
-|                      |                 |                 |                |                  |
-|                      |                 |                 |                |                  |
+Examples:
 
-Examples of decision areas include:
+* The system shall retrieve relevant policy information.
+* The system shall display supporting citations.
+* The system shall identify unsupported questions.
+* The system shall provide a human escalation path when sufficient evidence is unavailable.
 
-* Which users should be prioritized first?
-* What business outcome should be measured first?
-* What accuracy expectations should the product have?
-* What information must be authoritative?
-* Which stakeholder needs are essential for the Minimum Viable Product (MVP)?
-* What risks require further investigation?
+## Non-Functional Requirements
 
-You are not expected to have all the answers yet.
+Non-functional requirements describe how well the product must operate.
 
-Good Project Managers identify important questions before making unsupported assumptions.
+Examples:
+
+* Response time.
+* Reliability.
+* Usability.
+* Availability.
+* Performance.
+
+Example:
+
+> PolicyAssist should return a response within **10 seconds** under the defined test conditions.
+
+## AI-Specific Requirements
+
+AI-specific requirements define expected AI behavior.
+
+Examples:
+
+* Retrieve authoritative information.
+* Ground responses in retrieved evidence.
+* Avoid unsupported claims.
+* Handle unsupported questions appropriately.
+* Maintain defined answer-quality targets.
+
+## Security and Access Requirements
+
+These requirements define who can access information and under what conditions.
+
+Examples:
+
+* Users must only receive information they are authorized to access.
+* Confidential information must not be exposed to unauthorized users.
+* Authorization issues must be zero.
+* Access controls must be validated before production deployment.
+
+---
+
+# Part 3 — Make Requirements Measurable
+
+Avoid vague requirements.
+
+### Weak
+
+> The AI should be accurate.
+
+### Stronger
+
+> PolicyAssist should achieve at least **90% answer accuracy** against the approved evaluation set.
+
+### Weak
+
+> The system should be fast.
+
+### Stronger
+
+> PolicyAssist should return a response within **10 seconds** under the defined performance test conditions.
+
+### Weak
+
+> The system should be secure.
+
+### Stronger
+
+> Unauthorized users must not retrieve restricted policy information, and authorization issues must remain at **0**.
+
+The requirement should make success measurable.
+
+---
+
+# Part 4 — Define Acceptance Criteria
+
+For each major requirement, define acceptance criteria.
+
+Acceptance criteria describe the conditions that must be satisfied for the requirement to be considered complete.
+
+Example:
+
+### Requirement
+
+PolicyAssist shall provide grounded responses supported by authoritative policy information.
+
+### Acceptance Criteria
+
+* The response is based on retrieved policy evidence.
+* The policy source is identified.
+* A citation is provided when applicable.
+* Unsupported information is not presented as fact.
+* The expected response behavior passes the defined evaluation test.
+
+Use acceptance criteria that can be tested.
+
+---
+
+# Part 5 — Define Measures
+
+For your major requirements, identify the measure that will determine whether the requirement is satisfied.
+
+Examples include:
+
+| Requirement Area      | Example Measure              |
+| --------------------- | ---------------------------- |
+| Search efficiency     | Policy search-time reduction |
+| Retrieval             | Retrieval accuracy           |
+| Answer quality        | Answer accuracy              |
+| Hallucination         | Hallucination rate           |
+| Citations             | Citation correctness         |
+| Unsupported questions | Appropriate refusal rate     |
+| Performance           | Response latency             |
+| User experience       | User satisfaction            |
+| Security              | Authorization issues         |
+| Confidentiality       | Confidential data exposure   |
+
+Use measurable evidence whenever possible.
+
+---
+
+# Part 6 — PolicyAssist Success Targets
+
+Use the established PolicyAssist targets.
+
+| Measure                      |      Target | Direction        |
+| ---------------------------- | ----------: | ---------------- |
+| Policy Search-Time Reduction |        ≥50% | Higher is better |
+| Retrieval Accuracy           |        ≥90% | Higher is better |
+| Answer Accuracy              |        ≥90% | Higher is better |
+| Hallucination Rate           |         <2% | Lower is better  |
+| Citation Correctness         |        100% | Higher is better |
+| Unsupported-Question Refusal |        100% | Higher is better |
+| Response Latency             | ≤10 seconds | Lower is better  |
+| User Satisfaction            |        ≥85% | Higher is better |
+| Critical Security Incidents  |           0 | Lower is better  |
+
+These targets establish measurable expectations.
+
+Later milestones will evaluate whether the product actually achieves them.
+
+---
+
+# Part 7 — Identify Risks and Dependencies
+
+Requirements can introduce dependencies and risks.
+
+For each major requirement, consider:
+
+* What must exist for this requirement to work?
+* What could prevent it from being satisfied?
+* Which team or stakeholder owns the dependency?
+* What happens if the requirement is missed?
+
+Examples:
+
+### Retrieval Accuracy
+
+Potential dependency:
+
+* High-quality authoritative policy documents.
+
+Potential risk:
+
+* Duplicate or outdated documents may reduce retrieval quality.
+
+### Citation Correctness
+
+Potential dependency:
+
+* Accurate document metadata and source mapping.
+
+Potential risk:
+
+* The system may cite an incorrect or unrelated source.
+
+### Authorization
+
+Potential dependency:
+
+* Identity and access-control mechanisms.
+
+Potential risk:
+
+* Unauthorized users may retrieve restricted information.
+
+---
+
+# Part 8 — Prioritize Requirements
+
+Not every requirement has the same priority.
+
+Use:
+
+* **Must**
+* **Should**
+* **Could**
+* **Deferred / Out of Scope**
+
+Prioritize based on:
+
+* Business value.
+* User impact.
+* Risk.
+* Regulatory or governance importance.
+* Technical dependency.
+* MVP necessity.
+
+Security and authorization requirements should receive appropriate priority because a security failure can prevent safe deployment.
+
+---
+
+# Part 9 — Requirements Review
+
+Create a requirements table.
+
+| ID   | Requirement | Type | Measure | Acceptance Criteria | Priority | Risk / Dependency |
+| ---- | ----------- | ---- | ------- | ------------------- | -------- | ----------------- |
+| R-01 |             |      |         |                     |          |                   |
+| R-02 |             |      |         |                     |          |                   |
+| R-03 |             |      |         |                     |          |                   |
+| R-04 |             |      |         |                     |          |                   |
+| R-05 |             |      |         |                     |          |                   |
+| R-06 |             |      |         |                     |          |                   |
+| R-07 |             |      |         |                     |          |                   |
+| R-08 |             |      |         |                     |          |                   |
+
+Add additional rows when needed.
+
+---
+
+# Part 10 — PM Decisions
+
+Make at least **three PM decisions** based on your requirements.
+
+Examples:
+
+* Which requirement is essential to the MVP?
+* Which requirement creates the highest risk?
+* Which requirement depends on another capability?
+* Which requirement must be validated before release?
+* Which requirement can be deferred?
+
+For each decision, explain:
+
+**Requirement → Evidence → Risk/Impact → Decision**
+
+---
+
+# Requirements Quality Check
+
+Review each requirement.
+
+Ask:
+
+### Is it clear?
+
+Can the team understand what is expected?
+
+### Is it measurable?
+
+Can you determine whether it was achieved?
+
+### Is it testable?
+
+Can evidence be collected?
+
+### Is it relevant?
+
+Does it support the business problem?
+
+### Is ownership clear?
+
+Does someone own the requirement or acceptance decision?
+
+### Is the requirement realistic?
+
+Can it be achieved within the defined scope, constraints, and resources?
+
+---
+
+# Common Requirement Problems
+
+Avoid:
+
+### Vague language
+
+"Easy to use."
+
+Instead define how usability will be evaluated.
+
+### Unmeasurable language
+
+"Highly accurate."
+
+Instead define the accuracy target.
+
+### Feature-only thinking
+
+A list of features does not define product quality.
+
+### Missing acceptance criteria
+
+Without acceptance criteria, the team may disagree about what "complete" means.
+
+### Missing security requirements
+
+Security should be defined as a requirement, not discovered only after development.
+
+### Requirements disconnected from business value
+
+Every major requirement should support a user need, business objective, risk-control objective, or product-quality objective.
 
 ---
 
 # Deliverable
 
-Complete a **Problem & Stakeholder Analysis** containing:
+Complete a **PolicyAssist Requirements Record** containing:
 
-1. Business problem
-2. Affected users
-3. Stakeholders
-4. Stakeholder needs
-5. Stakeholder concerns and risks
-6. Definitions of success
-7. Potential conflicts or trade-offs
-8. Scope implications
-9. At least three PM decisions or questions
+1. At least 8 requirements.
+2. Requirement category/type.
+3. Measure.
+4. Acceptance criteria.
+5. Priority.
+6. Risks or dependencies.
+7. At least three PM requirement decisions.
 
 ---
 
-# PM Checkpoint
+# Checkpoint
 
-Before moving to Milestone 3, you should be able to answer:
+Before moving forward, answer:
 
-> **Who has a stake in this AI product, what does each stakeholder need, where do their priorities differ, and how should those needs influence the project?**
+> **What must be true for PolicyAssist to solve the original business problem safely and effectively?**
 
-You should also be able to explain:
+Your answer should connect:
 
-> **Why should a particular stakeholder need influence the product scope?**
-
-If you cannot explain the reason, do not simply add the requirement. Identify what evidence or clarification is needed first.
+**Business Need → Requirement → Measure → Acceptance Criteria**
 
 ---
 
-## PM Perspective
+# PM Perspective
 
-**Stakeholder analysis is not a list of names. It is a decision-making tool.**
+A Project Manager does not simply collect requirements.
 
-The goal is to understand whose needs matter, why they matter, where priorities conflict, and how those factors should influence the AI product.
+The PM helps the team determine:
+
+**What matters → Why it matters → How success will be measured → How it will be accepted → What risk exists if it fails**
+
+Good requirements create the foundation for:
+
+**Backlog → MVP → Architecture → Evaluation → Testing → Release**

@@ -2,515 +2,658 @@
 
 ## Purpose
 
-This answer key provides the expected reasoning and evaluation guidance for the Final Assessment.
+Use this answer key to evaluate student responses consistently.
 
-Answers do not need to use the exact wording below. Award credit when the response demonstrates sound AI Project Management judgment and is supported by appropriate evidence.
+The answer key identifies:
+
+* The core concept being assessed.
+* The strongest expected response.
+* Important reasoning points.
+* Acceptable alternative answers where appropriate.
+* Scoring guidance.
+
+For scenario-based questions, evaluate **reasoning and PM judgment**, not exact wording.
+
+A student may reach a different conclusion and still receive full or partial credit when the recommendation is supported by the evidence and demonstrates sound Project Management (PM) judgment.
 
 ---
 
-# Part 1 — AI Project Management Knowledge
+# Scoring Overview
 
-## Question 1 — AI Project Manager
+| Section                    | Questions |  Points |
+| -------------------------- | --------: | ------: |
+| AI PM Knowledge            |       1–5 |      20 |
+| Scenario-Based PM Judgment |      6–10 |      30 |
+| Release Decision           |        11 |      10 |
+| KPI Analysis               |        12 |      10 |
+| Executive Recommendation   |        13 |      10 |
+| End-to-End AI PM Challenge |        14 |      15 |
+| Reflection                 |        15 |       5 |
+| **Total**                  |    **15** | **100** |
 
-### Expected Answer
+## Scoring Standard
 
-The primary responsibility of an AI Project Manager is to align the AI product with the business problem and manage the people, scope, requirements, risks, decisions, delivery, and outcomes required to achieve that objective.
+Use:
 
-The role is broader than maintaining a schedule.
+**Full Credit:** Correct concept, appropriate reasoning, and clear PM application.
 
-A strong answer should recognize that an AI Project Manager coordinates business and technical stakeholders, manages uncertainty and AI-specific risks, establishes governance, tracks quality and performance, and supports decisions throughout the product lifecycle.
+**Partial Credit:** General understanding is demonstrated, but important reasoning, risk, evidence, or PM implications are missing.
 
-### Full-Credit Indicators
+**No / Minimal Credit:** The response demonstrates a material misunderstanding of the concept or scenario.
 
-The answer identifies:
+---
 
-* Business alignment.
-* Cross-functional coordination.
-* Scope and requirements.
-* Risk and governance.
-* Delivery and decision-making.
-* Outcomes and continuous improvement.
+# Question 1 — AI Project Management
+
+## Expected Answer
+
+The primary role of an AI Project Manager is to manage the product, business objectives, stakeholders, risks, requirements, delivery, evaluation, governance, readiness, and outcomes associated with the AI initiative.
+
+AI projects require additional attention to areas such as:
+
+* Data quality.
+* AI evaluation.
+* Model or response behavior.
+* Grounding.
+* Hallucinations or unsupported responses.
+* Security and authorization.
+* Governance.
+* Uncertainty and changing AI behavior.
+* Monitoring after release.
+
+A PM should not simply manage the technology implementation.
+
+The PM must connect:
+
+**Business Need → Product → AI → Risk → Evidence → Outcome**
+
+## Full-Credit Indicators
+
+The student identifies both traditional PM responsibilities and AI-specific considerations.
 
 ---
 
 # Question 2 — Business Problem
 
-### Expected Answer
+## Expected Answer
 
-The business problem should be defined before selecting technology because the technology is a means to achieve a business outcome.
+An AI project should begin with a clearly defined business problem so that the team can determine:
 
-Starting with technology can result in:
+* Whether AI is appropriate.
+* Who the users are.
+* What problem must be solved.
+* What outcome is expected.
+* What success should be measured.
 
-* Solving the wrong problem.
-* Building unnecessary functionality.
-* Poor adoption.
-* Uncontrolled scope.
-* Weak return on investment.
-* An AI solution that technically works but provides little business value.
+Starting with technology can lead to a solution looking for a problem, unnecessary complexity, poor adoption, or no measurable business value.
 
-### Full-Credit Indicator
+## Strong Example
 
-The answer clearly connects:
+An organization builds an AI chatbot because the technology is available but never establishes what employee problem it must solve. Employees do not find it useful, so adoption remains low despite a technically functioning system.
 
-**Business Need → Solution → Outcome**
+## Full-Credit Indicators
 
-rather than:
-
-**Technology → Solution**
+The student connects problem definition to value, scope, and measurable outcomes.
 
 ---
 
 # Question 3 — Minimum Viable Product
 
-### Expected Answer
+## Expected Answer
 
-A **Minimum Viable Product (MVP)** is the smallest version of a product that delivers enough value to validate the core business and user need.
+A **Minimum Viable Product (MVP)** is the smallest useful version of a product that can provide core value and generate meaningful evidence about whether the product solves the intended problem.
 
-An MVP helps control scope by focusing the team on the highest-priority capabilities required to test the product's value.
+An MVP is useful because it allows the team to:
 
-A strong answer may also explain that an MVP is not simply a product with fewer features. It should contain enough functionality to produce meaningful evidence and feedback.
+* Validate assumptions.
+* Learn from users.
+* Test the product.
+* Manage cost and complexity.
+* Reduce unnecessary scope.
+
+MVP scope is not necessarily the same as later release scope.
+
+A later release may contain additional capabilities, controls, fixes, and approved changes.
+
+## Full-Credit Indicators
+
+The student clearly distinguishes:
+
+**MVP = smallest useful version for validation**
+
+from:
+
+**Release Scope = approved capabilities, controls, fixes, and changes for a specific release**
 
 ---
 
 # Question 4 — RACI
 
-### Expected Answer
+## Expected Answer
 
-A **Responsible, Accountable, Consulted, and Informed (RACI)** matrix clarifies who performs work, who owns the outcome, who provides input, and who needs to be kept informed.
+A **Responsible, Accountable, Consulted, and Informed (RACI)** matrix clarifies roles and ownership.
 
-Clear ownership reduces:
+* **Responsible:** Performs the work.
+* **Accountable:** Owns the outcome and decision.
+* **Consulted:** Provides input.
+* **Informed:** Needs to know the outcome or status.
 
-* Confusion.
-* Duplicated work.
-* Missed responsibilities.
-* Delayed decisions.
-* Accountability gaps.
+A PM can use RACI to prevent confusion over decision ownership, identify gaps, and clarify who must be involved.
 
-### Full-Credit Indicator
+## Example
 
-The answer recognizes that **Accountable** ownership is particularly important for major project decisions.
+For PolicyAssist policy approval:
 
----
+**Responsible:** HR Policy Manager
 
-# Question 5 — Authoritative Information
+**Accountable:** HR Executive / designated policy owner
 
-### Expected Answer
+**Consulted:** PM, Legal, IT, Security
 
-AI systems that retrieve organizational information must use authoritative and approved sources.
+**Informed:** Employees / relevant stakeholders
 
-If outdated, duplicate, or unauthorized information is used, the AI may produce responses that are technically plausible but operationally incorrect.
-
-Potential consequences include:
-
-* Incorrect employee guidance.
-* Conflicting answers.
-* Compliance issues.
-* Security or access violations.
-* Loss of trust.
-* Increased hallucination or unsupported-answer risk.
-
-A strong answer connects source authority and governance directly to AI reliability.
+Exact roles may differ by organization.
 
 ---
 
-# Part 2 — Scenario-Based PM Decisions
+# Question 5 — Source of Truth
+
+## Expected Answer
+
+An AI product needs an authoritative source of truth so that responses are based on approved and current information.
+
+For PolicyAssist, approved policy content is the source of truth.
+
+The Large Language Model (LLM) generates language but should not automatically determine what the organization's policy is.
+
+The PM should ensure that:
+
+* Sources are authorized.
+* Versions are identifiable.
+* Effective dates are known.
+* Conflicts are addressed.
+* Outdated content is controlled.
+
+## Full-Credit Principle
+
+**The AI generates the response. The authoritative policy provides the truth.**
+
+---
 
 # Question 6 — Scope Change
 
-### Expected Answer
+## Expected Answer
 
-The Project Manager should not automatically add the requested features.
+The PM should not automatically accept the requested feature.
 
-The request should first be evaluated against:
+The PM should assess:
 
 * Business value.
-* User need.
-* MVP objectives.
-* Requirements.
-* Priority.
-* Schedule impact.
-* Resource impact.
-* Risk.
+* Alignment with product goals.
+* MVP / release impact.
+* Cost and schedule.
+* Security implications.
+* Testing requirements.
 * Dependencies.
-* Release impact.
+* Resources.
+* Risk.
 
-The PM should document the change and use the established change-control or prioritization process.
+The PM should then present the impact and seek the appropriate prioritization and approval decision.
 
-If the features are not essential to the MVP, they may be deferred to a later release or backlog.
+The feature may be:
 
-### Strong PM Response
+* Added to the current release.
+* Added to a later release.
+* Deferred.
+* Rejected.
 
-A strong response follows:
+## Full-Credit Example
 
-**Request → Impact Analysis → Prioritization → Decision → Documentation → Communication**
+> The feature has potential value, but adding it now would increase security and testing requirements and delay the planned release. I would assess the value and impacts, present the trade-offs to the appropriate decision-maker, and determine whether it belongs in the current release or should be deferred.
+
+## Do Not Require
+
+The student does not have to select a specific outcome if the reasoning is strong.
 
 ---
 
 # Question 7 — AI Evaluation
 
-### Evidence
+## Expected Answer
 
-* Retrieval Accuracy = 92% — meets target.
-* Answer Accuracy = 89% — below target.
-* Hallucination Rate = 2.5% — below required performance.
-* Citation Correctness = 100% — meets target.
+The product performs well in some areas but has meaningful quality gaps.
 
-### Expected Decision
+| Metric                                   |  Target | Actual | Assessment   |
+| ---------------------------------------- | ------: | -----: | ------------ |
+| Retrieval Accuracy                       |    ≥90% |    92% | Meets target |
+| Answer Accuracy                          |    ≥90% |    89% | Below target |
+| Unsupported / Hallucinated Response Rate |     <2% |   2.5% | Below target |
+| Citation Correctness                     |    100% |   100% | Meets target |
+| Response Time                            | ≤10 sec |  8 sec | Meets target |
 
-The product has mixed evaluation results and requires improvement before unrestricted release.
+The unsupported / hallucinated response rate deserves significant attention because unsupported AI guidance can directly affect user decisions and trust.
 
-The most significant concern is that the system is generating answers below the required accuracy target while hallucination is also above the acceptable threshold.
+Answer accuracy also requires corrective action.
 
-The PM should:
+The PM should not recommend unrestricted progression without addressing the quality gaps.
 
-1. Investigate the failed evaluation cases.
-2. Determine root causes.
-3. Identify whether retrieval, prompting, grounding, source quality, or another component is contributing.
-4. Define corrective actions.
-5. Re-test.
-6. Reassess release readiness.
+## Full-Credit Indicators
 
-### Key Principle
+The student:
 
-Passing some KPIs does not automatically make the product ready for release.
+* Identifies missed targets.
+* Does not allow strong metrics to hide weak ones.
+* Recognizes unsupported responses as a significant AI risk.
+* Recommends corrective action or controlled progression.
 
 ---
 
 # Question 8 — Data Governance
 
-### Expected Answer
+## Expected Answer
 
-The team should not simply use every document.
+Document A should be treated as authoritative because it is:
 
-The authoritative source must be identified before the documents are treated as trusted knowledge for the AI system.
+* Approved.
+* Current.
+* Versioned.
+* Effective as of the relevant date.
 
-The PM should require:
+Document B should not override Document A because it is:
 
-* Version identification.
-* Authority validation.
-* Approval/status verification.
-* Required metadata.
-* Duplicate/conflicting document review.
-* Appropriate access controls.
-* Removal or exclusion of unauthorized sources.
+* Older.
+* Employee-created.
+* Not approved.
+* Lacking authoritative governance information.
 
-### Core Relationship
+The system should use authority, version, effective date, approval status, and ownership to determine which source controls.
 
-**Data Quality → Authority → Governance → AI Reliability**
+## Strong PM Response
 
-More information is not automatically better information.
+The PM should ensure the outdated or unauthorized document is removed, excluded, or appropriately classified so it cannot be mistakenly treated as authoritative.
 
 ---
 
-# Question 9 — Security
+# Question 9 — Security & Authorization
 
-### Expected Answer
+## Expected Answer
 
-The product should not proceed to unrestricted production release while an authorization defect allows users to retrieve information they should not be able to access.
+This is a critical authorization failure.
 
-This is a release-blocking security issue because access control is a fundamental product requirement.
+The system disclosed restricted information to a user who was not authorized to receive it.
 
-The PM should require:
+The PM should:
 
-* Investigation.
-* Root-cause analysis.
-* Remediation.
-* Retesting.
-* Regression testing.
-* Verification that unauthorized access is prevented.
-* Appropriate security/governance sign-off.
+1. Treat the issue as a serious security failure.
+2. Stop or restrict the affected behavior as appropriate.
+3. Escalate through the appropriate security / governance process.
+4. Determine scope and impact.
+5. Correct the authorization control.
+6. Retest the affected access scenarios.
+7. Add the scenario to regression testing.
+8. Prevent release or deployment until the issue is appropriately resolved.
 
-### Key Principle
+## Key Principle
 
-Security decisions should consider **severity and impact**, not simply how frequently the issue is expected to occur.
+**Target: 0 unauthorized information disclosures.**
+
+A technically correct response does not make an unauthorized disclosure acceptable.
+
+## Full-Credit Indicator
+
+The student identifies the issue as release-blocking or otherwise requiring resolution before the affected product stage proceeds.
 
 ---
 
 # Question 10 — User Acceptance Testing
 
-### Expected Answer
+## Expected Answer
 
-The product should not be considered fully accepted solely because its technical accuracy targets are met.
+UAT should not automatically be considered successful.
 
-UAT evaluates whether the product meets the users' practical needs.
+Technical correctness does not equal user acceptance.
 
-If responses are technically correct but difficult to understand, the PM should:
+If users cannot easily understand the answer or determine what action to take, the product may not satisfy the intended user need.
 
-* Document the user feedback.
-* Determine whether usability affects the acceptance criteria.
-* Assess business impact.
-* Identify improvements.
-* Re-test where appropriate.
-* Obtain appropriate user acceptance.
+The PM should:
 
-### Key Principle
+* Document the UAT findings.
+* Determine whether the usability issue affects acceptance criteria.
+* Address the issue where necessary.
+* Retest affected scenarios.
+* Determine whether UAT should be accepted, accepted with conditions, or not accepted.
 
-**Technical correctness ≠ complete user acceptance.**
+## Full-Credit Principle
+
+**Technical testing asks whether the product works as designed.**
+
+**UAT asks whether intended users can successfully use and accept it for the intended purpose.**
 
 ---
 
-# Part 3 — Release Decision
+# Question 11 — Release Readiness
 
-# Question 11 — Go / Conditional Go / No-Go
+## Strongest Expected Answer
 
-### Expected Answer
+**B. CONDITIONAL GO**
 
-The strongest expected recommendation is:
+The product demonstrates sufficient value and several strong performance indicators, but not every target has been met.
 
-**Conditional Go**
+### Evidence Supporting Conditional Go
 
-The product demonstrates several positive release indicators:
+**Met:**
 
+* Retrieval Accuracy: 92% ≥ 90%.
+* Citation Correctness: 100%.
+* Response Time: 8 seconds ≤ 10 seconds.
+* Critical Security Incidents: 0.
 * Requirements complete.
-* Zero critical defects.
+* Critical defects: 0.
 * UAT passed.
-* Retrieval Accuracy meets target.
-* Citation Correctness meets target.
-* Response Latency meets target.
-* Zero critical security incidents.
-* Release plan complete.
-* Rollback plan complete.
+* Release and rollback plans complete.
 
-However:
+**Not Met:**
 
-* Answer Accuracy is 89% against a ≥90% target.
-* Hallucination Rate is 2.5% against a <2% target.
-* User Satisfaction is 82% against an ≥85% target.
+* Answer Accuracy: 89% < 90%.
+* Unsupported / Hallucinated Response Rate: 2.5% > 2%.
+* User Satisfaction: 82% < 85%.
 
-These gaps require corrective action or explicit risk acceptance before unrestricted production operation.
+These gaps should result in specific conditions, owners, monitoring, and follow-up.
 
-### Acceptable Alternative
+## Why Not GO?
 
-**No-Go** may receive full credit if the student clearly explains that the failed AI quality and user-experience thresholds represent unacceptable release risk.
+The product does not meet all defined quality targets.
 
-The important factor is the quality of the reasoning, not selecting the exact same label.
+A blanket GO would overlook meaningful AI quality and user-experience gaps.
 
-### Full-Credit Decision Logic
+## Why Not Automatically HOLD?
 
-A strong answer should identify:
+A well-reasoned student may select HOLD if they determine that the failed metrics prevent even a controlled release.
 
-**Evidence → Risk → Conditions → Decision → Monitoring**
+However, to receive full credit for HOLD, the student must explain why the unmet targets create a release-level blocker rather than merely requiring managed conditions.
 
----
+## Why Not Automatically NO-GO?
 
-# Part 4 — KPI Decision
+The product has meaningful value, several strong results, no critical security incidents, passed UAT, and no critical defects.
 
-# Question 12 — Monitoring and Performance
+NO-GO can receive full credit only if the student provides a strong risk-based justification for why the unsupported-response rate or other evidence makes the product unacceptable at the intended release stage.
 
-### KPI Interpretation
+## Important Terminology
 
-| KPI                          | Actual | Assessment      |
-| ---------------------------- | -----: | --------------- |
-| Policy Search-Time Reduction |    58% | On Target       |
-| Retrieval Accuracy           |    92% | On Target       |
-| Answer Accuracy              |    89% | Needs Attention |
-| Hallucination Rate           |   2.5% | Below Threshold |
-| Citation Correctness         |   100% | On Target       |
-| Unsupported-Question Refusal |    95% | Needs Attention |
-| Response Latency             |  8 sec | On Target       |
-| User Satisfaction            |    82% | Needs Attention |
-| Critical Security Incidents  |      0 | On Target       |
+**GO = Proceed**
 
-### Expected Priority
+**CONDITIONAL GO = Proceed under defined conditions**
 
-The hallucination rate should receive immediate attention because it is **below threshold** and represents a direct AI reliability risk.
+**HOLD = Do not proceed yet because required evidence, remediation, validation, or readiness work is incomplete**
 
-The PM should also investigate:
-
-* Answer Accuracy.
-* Unsupported-Question Refusal.
-* User Satisfaction.
-
-### Expected Action
-
-A strong recommendation is to investigate the AI quality failures, identify root causes, implement corrective actions, and continue monitoring the affected KPIs.
-
-### Key Principle
-
-Use:
-
-**KPI → Target → Actual → Trend → Threshold → Action**
-
-The PM should not simply report the numbers.
+**NO-GO = Do not release the current version**
 
 ---
 
-# Part 5 — Executive Communication
+# Question 12 — KPI Decision
+
+## Strongest Expected Answer
+
+The **Unsupported / Hallucinated Response Rate** should receive the highest priority.
+
+Actual:
+
+**2.5%**
+
+Target:
+
+**<2%**
+
+This is important because unsupported AI guidance can cause employees to make decisions based on information that is not supported by policy evidence.
+
+The PM should also consider:
+
+* Answer Accuracy: 89% vs. 90%.
+* Refusal / Escalation: 95% vs. 100%.
+* User Satisfaction: 82% vs. 85%.
+
+These metrics indicate related response-quality and experience problems.
+
+## Recommended Action
+
+Investigate the root causes, improve grounding / refusal behavior, retest, and monitor the metric after corrective changes.
+
+A strong answer may prioritize answer accuracy first if the student provides a convincing risk-based justification.
+
+---
 
 # Question 13 — Executive Recommendation
 
-### Expected Answer
+## Expected Answer
 
-The executive response should be concise and decision-oriented.
+The recommendation should be concise and evidence-based.
 
-A strong response should communicate that the product shows meaningful readiness evidence but has unresolved performance gaps that should be addressed or explicitly accepted before unrestricted production use.
+A strong response might be:
 
-The executive should understand:
+> PolicyAssist demonstrates meaningful value and strong performance in retrieval, citation correctness, response time, and search-time reduction. However, answer accuracy, unsupported-response performance, and user satisfaction remain below target. I recommend a Conditional Go for a controlled release stage, subject to defined corrective actions and monitoring. Production deployment should remain on hold until required production authorization controls are implemented and validated.
 
-1. Current recommendation.
-2. Evidence supporting the recommendation.
-3. Primary risks.
-4. Required actions.
-5. How success will be measured.
+## Full-Credit Indicators
 
-### Strong Communication Structure
+The response includes:
 
-**Recommendation → Evidence → Risk → Action → Success Measure**
-
-The student should avoid overwhelming the executive with unnecessary technical detail.
+* Current status.
+* Strongest evidence.
+* Primary risk.
+* Business value.
+* Clear recommendation.
+* Specific next actions.
 
 ---
-
-# Part 6 — Final PM Challenge
 
 # Question 14 — End-to-End AI PM Challenge
 
-### Expected Approach
+## Expected Answer
 
-There is no single required wording.
+A strong answer should show an integrated lifecycle approach.
 
-A strong response should demonstrate an end-to-end lifecycle:
+### 1. Business Problem
 
-**Business Problem**
+Define the business problem and desired outcome.
 
-→ Define the problem and desired outcome.
+### 2. Users & Stakeholders
 
-**Stakeholders & Users**
+Identify primary users, stakeholders, needs, influence, and decision-makers.
 
-→ Identify affected users, decision-makers, technical teams, and governance stakeholders.
+### 3. Requirements
 
-**Requirements**
+Translate needs into measurable functional, non-functional, AI, security, and business requirements.
 
-→ Translate business and user needs into measurable requirements and acceptance criteria.
+### 4. Scope & MVP
 
-**Scope**
+Define what is in scope, out of scope, and required for the MVP.
 
-→ Establish what is included, excluded, and prioritized.
+### 5. AI Solution
 
-**MVP**
+Define the PM-level solution architecture, major components, dependencies, and trade-offs.
 
-→ Define the smallest useful solution that can validate the core need.
+### 6. Data & Knowledge
 
-**AI Solution**
+Identify authoritative sources, data-quality requirements, metadata, versioning, retrieval, and governance.
 
-→ Understand the proposed architecture well enough to manage dependencies, risks, and decisions.
+### 7. AI Evaluation
 
-**Data & Knowledge**
+Define evaluation scenarios and measures for retrieval, responses, grounding, citations, unsupported responses, performance, and other applicable quality dimensions.
 
-→ Validate source quality, authority, versioning, metadata, access, and governance.
+### 8. Security & Governance
 
-**AI Evaluation**
+Address authorization, privacy, confidential information, governance ownership, auditability, escalation, and change control.
 
-→ Establish measurable quality and performance targets.
+### 9. Testing & UAT
 
-**Risk & Governance**
+Validate requirements, product behavior, user experience, and acceptance.
 
-→ Identify AI, security, privacy, operational, and business risks.
+### 10. Release Readiness
 
-**Testing & UAT**
+Assess evidence, defects, risks, security, governance, UAT, monitoring, and operational readiness.
 
-→ Validate functionality, quality, security, usability, and user acceptance.
+Use:
 
-**Release**
+**GO / CONDITIONAL GO / HOLD / NO-GO**
 
-→ Evaluate readiness against defined criteria.
+### 11. Deployment
 
-**Go/No-Go**
+Assess whether the approved release is actually ready for deployment.
 
-→ Make an evidence-based release recommendation.
+Use:
 
-**KPIs**
+**DEPLOY / HOLD DEPLOYMENT / ROLLBACK**
 
-→ Measure product performance and business outcomes.
+### 12. KPI Monitoring
 
-**Monitoring**
+Measure:
 
-→ Continuously review product health.
+**KPI → Target → Actual → Trend → Threshold → Action**
 
-**Continuous Improvement**
+### 13. Business Outcomes
 
-→ Use evidence, feedback, incidents, and KPI trends to prioritize corrective actions and future improvements.
+Compare the target outcome with measured and projected results.
 
-### Full-Credit Principle
+### 14. Continuous Improvement
 
-The student should demonstrate connections between stages rather than presenting the lifecycle as an unrelated checklist.
+Prioritize improvements based on evidence, risk, value, and feasibility.
+
+## Full-Credit Standard
+
+The student demonstrates a connected lifecycle rather than listing unrelated project activities.
 
 ---
 
-# Final Reflection
+# Question 15 — PM Reflection
 
-# Question 15 — Your AI PM Approach
+## Expected Answer
 
 There is no single correct answer.
 
-Strong responses should demonstrate genuine reflection and show that the student can connect course concepts to future PM practice.
+A strong response should:
 
-Good responses may identify principles such as:
+* Demonstrate genuine reflection.
+* Identify a meaningful AI PM lesson.
+* Discuss an AI-specific risk or challenge.
+* Identify a PM skill strengthened.
+* Explain what the student would do differently.
+* Show how the student's understanding changed.
 
-* Start with the business problem.
-* Use evidence instead of assumptions.
-* Define measurable outcomes.
-* Control scope.
-* Establish clear ownership.
-* Treat data authority as a governance issue.
-* Evaluate AI before release.
-* Treat security as a release concern.
-* Include users in acceptance decisions.
-* Monitor AI after deployment.
-* Continuously improve based on evidence.
+## Full-Credit Example
+
+> I learned that AI quality depends on more than whether the model produces an answer. Data authority, retrieval, grounding, evaluation, security, and governance all influence whether the product is acceptable. I would establish stronger negative testing and evidence requirements earlier in my next AI project.
 
 ---
 
-# Assessment Review Standard
+# Critical Competency Guidance
 
-Review the assessment as a demonstration of **PM judgment**, not memorization.
+Regardless of the numerical score, pay particular attention to Questions:
 
-A strong submission should consistently demonstrate:
+* 7: AI Evaluation
+* 8: Data Governance
+* 9: Security / Authorization
+* 10: UAT
+* 11: Release Readiness
+* 12: KPI Decision
+* 14: End-to-End AI PM
 
-### Business Thinking
+A student who demonstrates a serious misunderstanding of these areas may require reassessment.
 
-Can the student connect product decisions to business value?
+Examples include:
 
-### PM Discipline
-
-Can the student manage scope, requirements, stakeholders, risks, ownership, and delivery?
-
-### AI Understanding
-
-Can the student discuss AI concepts sufficiently to manage an AI product without needing to be an AI engineer?
-
-### Evidence-Based Decision Making
-
-Does the student use measurable evidence rather than assumptions?
-
-### Governance
-
-Does the student recognize authority, security, privacy, access, and compliance considerations?
-
-### Quality
-
-Does the student understand that AI quality requires measurable evaluation?
-
-### Release Readiness
-
-Can the student distinguish between a product that is technically functional and one that is actually ready for release?
-
-### Monitoring
-
-Does the student understand that deployment is not the end of the AI product lifecycle?
-
-### Communication
-
-Can the student communicate a clear recommendation to both technical and executive audiences?
+* Treating the LLM as the source of truth.
+* Treating a successful technical test as proof of UAT acceptance.
+* Accepting unauthorized disclosure because the answer was accurate.
+* Ignoring unsupported AI responses.
+* Treating one strong KPI as evidence that all quality requirements are satisfied.
+* Confusing release approval with deployment approval.
+* Using GO, HOLD, or NO-GO without reasoning from the evidence.
 
 ---
 
-# Final Instructor Principle
+# Release Terminology Reference
 
-The strongest AI Project Managers do not simply coordinate tasks.
+Use these definitions consistently when grading.
 
-They create a disciplined connection between:
+## Release Decision
 
-**Problem → Evidence → Decision → Action → Outcome**
+**GO**
 
-That is the standard this final assessment is designed to validate.
+Proceed with release.
+
+**CONDITIONAL GO**
+
+Proceed with defined conditions, owners, validation requirements, and monitoring.
+
+**HOLD**
+
+Do not proceed yet because required evidence, remediation, validation, or readiness work is incomplete.
+
+**NO-GO**
+
+Do not release the current version.
+
+## Deployment Decision
+
+**DEPLOY**
+
+The approved release is ready for deployment.
+
+**HOLD DEPLOYMENT**
+
+The release may be approved, but a deployment-specific condition remains unresolved.
+
+**ROLLBACK**
+
+The deployment created an unacceptable condition requiring recovery to a previous known-good state.
+
+## Monitoring Decision
+
+**CONTINUE**
+
+Performance remains acceptable and the current direction should continue.
+
+**IMPROVE**
+
+Performance or product quality requires corrective action.
+
+**ESCALATE**
+
+The issue requires leadership, governance, or additional intervention.
+
+**REASSESS**
+
+The assumptions, product direction, scope, or business case should be reconsidered.
+
+## Final PM Recommendation
+
+**CONTINUE / IMPROVE / ESCALATE / REASSESS / SCALE**
+
+This is the overall forward-looking PM recommendation.
+
+---
+
+# Important Grading Principle
+
+Do not grade students based solely on whether they selected the same decision as the answer key.
+
+For judgment questions, grade:
+
+**Evidence → Analysis → Risk → Decision → Action**
+
+A different answer can receive full credit when the student's reasoning is logically sound and supported by the scenario.
+
+---
+
+# Final Assessment Standard
+
+A successful student demonstrates the ability to move beyond:
+
+> **"The AI works."**
+
+to:
+
+> **"The evidence shows what is working, what is not, what risks remain, what decision is appropriate, and what should happen next."**
+
+The ultimate competency being assessed is:
+
+**Evidence-Based AI Project Management**

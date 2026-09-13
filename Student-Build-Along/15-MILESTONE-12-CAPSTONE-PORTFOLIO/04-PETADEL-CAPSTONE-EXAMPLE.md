@@ -1,68 +1,71 @@
 # Petadel PolicyAssist AI — Completed Capstone Example
 
-## Instructor Reference Project
+> **Project Status:** Controlled Release Assessment
+> **Project Type:** Fictional / Synthetic AI Product
+> **Organization:** Petadel Technology Services (PTS)
+> **Role:** Project Manager / Product Manager
 
-This is the completed capstone example for the Petadel PolicyAssist AI project.
+## How to Use This Example
 
-It demonstrates how the Project Management (PM) artifacts developed throughout the course can be integrated into a complete AI product lifecycle.
+Use this completed example as a reference for the level of evidence, analysis, and PM judgment expected in your own capstone.
 
-This example is provided to demonstrate the **standard expected for a completed capstone**.
+Pay attention to how the example connects:
 
-Students may:
+**Problem → Evidence → Decision → Action → Outcome**
 
-* Follow this project as the reference example.
-* Build their own version of PolicyAssist.
-* Apply the same PM process to their own AI product or use case.
+Do not copy the example as your own work.
 
 ---
 
-# 1. Project Overview
+# 1. Executive Summary
 
-**Organization:**
-Petadel Technology Services (PTS)
+Petadel Technology Services employees were spending unnecessary time searching Google, SharePoint, and departmental folders for company policies. Employees also encountered duplicate, outdated, and conflicting documents, creating uncertainty about which policy version was authoritative. Human Resources (HR) received repetitive questions that could have been answered through a reliable centralized policy experience.
 
-**Project:**
-Petadel PolicyAssist AI
+**PolicyAssist** was proposed as an Artificial Intelligence (AI)-enabled policy assistant that allows employees to ask policy questions in natural language and receive responses grounded in approved policy information.
 
-**Project Type:**
-Internal Artificial Intelligence (AI) policy-assistance product
+The product was designed around a critical principle:
 
-**Project Role:**
-AI Project Manager / Project Manager
+**The Large Language Model (LLM) is not the source of truth. Approved policy content is the source of truth.**
 
-**Product Status:**
-Reference implementation / completed capstone
+The project established requirements for retrieval accuracy, response accuracy, unsupported response reduction, citation correctness, response time, user satisfaction, security, authorization, and escalation.
 
-### Project Objective
+Evaluation demonstrated strong performance in several areas, including retrieval accuracy, citation correctness, response latency, and security incident prevention. However, answer accuracy, unsupported-response performance, refusal/escalation performance, and user satisfaction remained below target.
 
-Create an AI-enabled policy assistance solution that allows employees to locate, retrieve, understand, and reference authoritative organizational policies more efficiently while reducing the risk of unsupported or inaccurate answers.
+The evidence supported a **CONDITIONAL GO** for a controlled release stage with defined corrective actions and monitoring.
 
-### Core Product Principle
-
-**Retrieve → Ground → Answer → Cite**
-
-If sufficient authoritative evidence is unavailable:
-
-**Do Not Invent → Refuse or Escalate**
+Production deployment was **not automatically approved** because production-specific access and authorization controls still required implementation and validation.
 
 ---
 
 # 2. Business Problem
 
-Organizations may maintain thousands of policy documents across departments and repositories.
+## The Problem
 
-Employees may have difficulty determining:
+Employees had no single trusted place to quickly determine which company policy applied to a question.
 
-* Which policy applies.
-* Where the policy is located.
-* Whether the document is current.
-* Which version is authoritative.
-* Whether they are authorized to access the information.
-* How the policy applies to their question.
+They commonly searched:
 
-A large document repository does not automatically create an effective policy-access experience.
+* Google.
+* SharePoint.
+* Department folders.
+* Older saved documents.
+* Informal employee-created references.
 
-The project therefore focused on creating a controlled AI-assisted policy retrieval and response experience.
+This created several problems:
+
+* Time spent locating policies.
+* Uncertainty about current versions.
+* Duplicate or conflicting documents.
+* Repetitive HR questions.
+* Risk of employees relying on outdated information.
+
+## Business Goal
+
+The project targeted:
+
+**At least a 50% reduction in policy search time**
+
+while improving the accuracy, consistency, and confidence of policy responses.
 
 ---
 
@@ -70,636 +73,581 @@ The project therefore focused on creating a controlled AI-assisted policy retrie
 
 ## Primary Users
 
-The primary users are employees seeking answers to policy-related questions.
+Employees across Petadel Technology Services.
 
 ## Key Stakeholders
 
-Representative stakeholder groups include:
+| Stakeholder                  | Interest                                                  |
+| ---------------------------- | --------------------------------------------------------- |
+| Employees                    | Fast, accurate policy answers                             |
+| Human Resources              | Reduced repetitive questions and authoritative policy use |
+| Information Technology       | Application reliability, access, and support              |
+| Project / Product Management | Scope, delivery, risk, evaluation, and business value     |
+| Executive Leadership         | Business value, risk, and readiness                       |
 
-* Employees.
-* Human Resources.
-* Finance.
-* Department leadership.
-* Information Technology.
-* Security.
-* Governance/compliance stakeholders.
-* Product/project leadership.
+## Major Stakeholder Consideration
 
-## Stakeholder Considerations
+Employees wanted fast answers, while HR required confidence that responses were based on approved and current policy information.
 
-Important stakeholder concerns include:
+The project therefore prioritized:
 
-* Accuracy.
-* Authority of policy sources.
-* Data access.
-* Security.
-* Privacy.
-* Ease of use.
-* Response speed.
-* Trust in AI-generated answers.
-* Human escalation.
-
-### PM Takeaway
-
-The project demonstrates that AI product management requires coordination between business users, technical teams, governance stakeholders, and product owners.
+**Speed + Accuracy + Authority + Traceability**
 
 ---
 
-# 4. Business Requirements
+# 4. Requirements, Scope & MVP
 
-The solution was designed around measurable business and product outcomes.
+## Key Requirements
 
-Key requirements included:
+| Requirement                               |      Target |
+| ----------------------------------------- | ----------: |
+| Policy search-time reduction              |        ≥50% |
+| Retrieval accuracy                        |        ≥90% |
+| Answer accuracy                           |        ≥90% |
+| Unsupported / hallucinated response rate  |         <2% |
+| Citation correctness                      |        100% |
+| Unsupported-question refusal / escalation |        100% |
+| Response latency                          | ≤10 seconds |
+| User satisfaction                         |        ≥85% |
+| Critical security incidents               |           0 |
+| Unauthorized access issues                |           0 |
 
-* Reduce employee policy search time by at least 50%.
-* Provide retrieval accuracy of at least 90%.
-* Provide answer accuracy of at least 90%.
-* Maintain hallucination below 2%.
-* Provide 100% citation correctness.
-* Correctly refuse unsupported questions.
-* Keep response latency at or below 10 seconds.
-* Achieve user satisfaction of at least 85%.
-* Maintain zero critical security incidents.
+## MVP
 
-The requirements establish measurable success criteria rather than simply requiring that an AI chatbot be created.
+The Minimum Viable Product (MVP) focused on the core employee experience:
 
----
-
-# 5. Scope
-
-## In Scope
-
-* Policy document ingestion.
-* Policy document retrieval.
-* Semantic search.
-* Authoritative-source identification.
-* AI-generated grounded responses.
-* Source citations.
-* Unsupported-question handling.
-* Access-control considerations.
-* AI evaluation.
-* Security and governance.
-* Testing and UAT.
-* Deployment.
-* KPI monitoring.
-* Continuous improvement.
+* Ask a policy question.
+* Retrieve relevant policy information.
+* Generate a grounded response.
+* Provide supporting evidence or citation.
+* Refuse or escalate when the available information does not support an answer.
 
 ## Out of Scope
 
-The project does not attempt to:
+The MVP did not attempt to become a general-purpose employee assistant.
 
-* Replace policy owners.
-* Replace organizational governance.
-* Make independent policy decisions.
-* Authorize employee access outside established controls.
-* Guarantee an answer when authoritative evidence is unavailable.
+Examples of excluded capabilities included:
 
-### PM Takeaway
-
-The scope deliberately positions AI as an assistance and retrieval capability rather than as the final authority on organizational policy.
+* General employee advice unrelated to approved policy content.
+* Unsupported policy domains.
+* Uncontrolled employee-created knowledge sources.
+* Broad enterprise knowledge retrieval without governance.
 
 ---
 
-# 6. Product Strategy & MVP
+# 5. AI Solution
 
-## Product Vision
+## Solution Flow
 
-Enable employees to obtain faster, evidence-based access to authoritative policy information while maintaining appropriate controls around accuracy, access, governance, and escalation.
+**Employee Question → Application Interface → Policy Data → Processing / Embeddings → Vector Database → Retrieval → LLM → Grounded Response → Citation → Employee**
 
-## Minimum Viable Product (MVP)
+The design separated the authoritative policy content from the language model.
 
-The MVP focuses on the essential workflow:
+The AI generated the response, but the policy content supplied the information used to ground the response.
 
-**Policy Documents → Retrieval → Grounded AI Response → Citation**
+## Major Architecture Decision
 
-The MVP establishes the foundation needed to validate:
+A retrieval-based architecture was selected so PolicyAssist could locate relevant policy content before generating an answer.
 
-* Retrieval.
-* Grounding.
-* Answer generation.
-* Citation.
-* Unsupported-question handling.
+### Reason
 
-Additional improvements can be introduced through the product backlog and continuous-improvement process.
+The product required answers grounded in approved policy information rather than relying solely on general model knowledge.
 
----
+### Trade-off
 
-# 7. AI Solution
+Retrieval introduced additional complexity around:
 
-## Architecture
+* Source quality.
+* Metadata.
+* Versioning.
+* Retrieval relevance.
+* Conflicting documents.
 
-The reference implementation uses the following architecture:
+### PM Implication
 
-**Policy Documents → Chunking → Embeddings → Vector Database → Retrieval → Large Language Model (LLM) → Grounding/Citation → User Interface**
-
-## Technology Components
-
-The reference implementation uses:
-
-* Python.
-* Streamlit.
-* Sentence Transformers.
-* `all-MiniLM-L6-v2` embeddings.
-* ChromaDB vector database.
-* Google Gen AI SDK.
-* Gemini 2.5 Flash as the primary cloud Large Language Model (LLM).
-* Ollama / Llama 3.2 3B as a local fallback.
-* pytest for testing.
-* Streamlit Community Cloud for deployment.
-
-## PM-Level Technical Decision
-
-The technical architecture supports semantic retrieval before generation.
-
-This allows the product to ground its response in retrieved policy evidence rather than relying only on the model's general knowledge.
-
-### Key PM Principle
-
-The Project Manager does not need to become an AI engineer.
-
-The PM needs to understand:
-
-**What the component does → Why it is needed → What risk it introduces → How it will be evaluated.**
+The architecture reduced reliance on unsupported model knowledge but increased the importance of disciplined data management and retrieval evaluation.
 
 ---
 
-# 8. Data & Knowledge Management
+# 6. Data & Knowledge
 
-## Core Data Challenge
+## Policy Sources
 
-Policy documents are only useful when the system can identify relevant and authoritative information.
+The PolicyAssist prototype used approved fictional policy content covering areas such as:
 
-Important data-management concerns include:
+* Employee Leave.
+* Attendance.
+* Remote Work.
+* Information Security.
+* Code of Conduct.
+* Expense Reimbursement.
 
-* Duplicate policies.
-* Outdated policies.
-* Different departmental versions.
-* Missing metadata.
-* Scanned PDF documents.
-* Irrelevant documents.
-* Unauthorized information.
-* Conflicting policy versions.
+## Source-of-Truth Approach
 
-## Authority Rule
+PolicyAssist treated approved policy content as the source of truth.
 
-A policy document is eligible for authoritative retrieval only when it satisfies the required governance conditions:
+Policy authority was evaluated using:
 
-**Active + Authoritative + Approved + Required Metadata Present**
+* Policy owner.
+* Approval status.
+* Version.
+* Effective date.
+* Relevance.
+* Currency.
 
-This prevents the system from treating every document in the repository as equally trustworthy.
+The LLM itself was not treated as an authoritative source.
 
----
+## Data / Retrieval Finding
 
-# 9. AI Evaluation
+Testing demonstrated that retrieval could surface more than one potentially relevant policy.
 
-The project uses measurable AI quality targets.
+For example, remote-work questions could retrieve both Remote Work and Attendance content.
 
-| KPI                          |  Target | Reference Actual | Status          |
-| ---------------------------- | ------: | ---------------: | --------------- |
-| Policy Search-Time Reduction |    ≥50% |              58% | On Target       |
-| Retrieval Accuracy           |    ≥90% |              92% | On Target       |
-| Answer Accuracy              |    ≥90% |              89% | Needs Attention |
-| Hallucination Rate           |     <2% |             2.5% | Below Threshold |
-| Citation Correctness         |    100% |             100% | On Target       |
-| Unsupported-Question Refusal |    100% |              95% | Needs Attention |
-| Response Latency             | ≤10 sec |            8 sec | On Target       |
-| User Satisfaction            |    ≥85% |              82% | Needs Attention |
-| Critical Security Incidents  |       0 |                0 | On Target       |
+This created a risk that the system could combine information from multiple sources without adequately distinguishing primary authority.
 
-## Evaluation Interpretation
+## PM Response
 
-The dashboard shows that the product has several strong performance indicators.
-
-However, not all targets are satisfied.
-
-The most significant concerns are:
-
-* Hallucination rate above the approved target.
-* Answer accuracy below target.
-* Unsupported-question refusal below target.
-* User satisfaction below target.
-
-### PM Decision
-
-The product should **not be treated as fully optimized simply because several KPIs are on target**.
-
-The AI quality gaps require corrective action.
-
-This demonstrates an important PM principle:
-
-> **A good dashboard does not automatically mean a good product. The PM must interpret the evidence.**
+The project identified stronger metadata, source authority, version control, and retrieval evaluation as necessary controls.
 
 ---
 
-# 10. Risk, Security & Governance
+# 7. AI Evaluation
 
-## Major AI Risks
+The product was evaluated using separate response and citation measures.
 
-### Hallucination
+| Metric                                    |  Target | Actual | Status    |
+| ----------------------------------------- | ------: | -----: | --------- |
+| Retrieval Accuracy                        |    ≥90% |    92% | Pass      |
+| Answer Accuracy                           |    ≥90% |    89% | Attention |
+| Unsupported Response Rate                 |     <2% |   2.5% | Fail      |
+| Citation Correctness                      |    100% |   100% | Pass      |
+| Unsupported-Question Refusal / Escalation |    100% |    95% | Fail      |
+| Response Latency                          | ≤10 sec |  8 sec | Pass      |
+| User Satisfaction                         |    ≥85% |    82% | Attention |
+| Critical Security Incidents               |       0 |      0 | Pass      |
 
-The system may generate information that is not supported by authoritative policy evidence.
+## Evaluation Findings
 
-**Control:**
+PolicyAssist demonstrated strong retrieval, citation, latency, and security results.
 
-Ground responses in retrieved policy evidence and refuse or escalate when sufficient evidence is unavailable.
+However, the product did not meet every quality target.
 
-### Incorrect Retrieval
+The most significant gaps were:
 
-The system may retrieve an irrelevant policy.
+* Unsupported response rate remained above the <2% target.
+* Answer accuracy remained below the 90% target.
+* Unsupported questions were not refused or escalated 100% of the time.
+* User satisfaction remained below the 85% target.
 
-**Control:**
+## PM Interpretation
 
-Use semantic retrieval thresholds and evaluate retrieval accuracy.
+The evidence demonstrated meaningful product value, but it did not support unrestricted production use.
 
-### Outdated Policy
-
-The system may retrieve an obsolete version.
-
-**Control:**
-
-Apply policy authority and status rules before documents become eligible for retrieval.
-
-### Unauthorized Access
-
-Employees may attempt to retrieve information they are not authorized to access.
-
-**Control:**
-
-Access authority must be considered before exposing policy information.
-
-### Human Escalation
-
-Some questions should not be answered solely by AI.
-
-**Control:**
-
-Unsupported or insufficiently grounded questions should be refused or escalated.
+The appropriate PM response was to continue the product direction while addressing the identified quality and readiness gaps.
 
 ---
 
-# 11. Governance Principle
+# 8. Risk, Security & Governance
 
-The product follows:
+## Major Risks
 
-**Retrieve → Ground → Answer → Cite**
+| Risk                    | Impact                                         | Mitigation                              | Status                         |
+| ----------------------- | ---------------------------------------------- | --------------------------------------- | ------------------------------ |
+| Unsupported AI response | Employees receive incorrect policy information | Evaluation, grounding, refusal testing  | Requires improvement           |
+| Outdated policy         | Incorrect employee guidance                    | Version and effective-date controls     | Requires governance            |
+| Conflicting policies    | Inconsistent answers                           | Authority and metadata controls         | Requires governance            |
+| Unauthorized access     | Confidential information exposure              | Authentication / authorization controls | Production validation required |
+| Missing escalation      | Employee receives unsupported answer           | Refusal and escalation testing          | Requires improvement           |
 
-When evidence is insufficient:
+## Security Position
 
-**Do Not Invent → Refuse or Escalate**
+The evaluation recorded:
 
-This creates an explicit boundary around what the AI system should and should not do.
+**0 critical security incidents**
+
+This result does not, by itself, prove complete production security readiness.
+
+Production authorization controls must be implemented and validated before unrestricted employee deployment.
+
+## Governance Principle
+
+Policy ownership, approval, versioning, and change management must remain outside the language model.
 
 ---
 
-# 12. Testing
+# 9. Testing & User Acceptance Testing
 
-Testing addresses more than whether the application runs.
+## Testing Coverage
 
-The project considers:
+Testing included:
 
-* Functional behavior.
-* Retrieval quality.
-* Answer quality.
-* Citation correctness.
-* Hallucination.
+* Straightforward policy questions.
+* Questions using different wording.
+* Specific policy details.
+* Questions involving multiple policy areas.
 * Unsupported questions.
-* Response latency.
-* Security.
-* Unauthorized access.
-* Regression behavior.
-* User acceptance.
+* Citation behavior.
+* Response quality.
+* User experience.
 
-## Testing Principle
+## Testing Findings
 
-A technically functioning AI product is not necessarily a production-ready AI product.
+The system generally demonstrated the intended core workflow.
 
-The PM must evaluate:
+However, testing showed that retrieval and response behavior could vary depending on the question.
 
-**Functionality + Quality + Security + User Acceptance + Business Readiness**
+A remote-work question could surface more than one relevant policy.
 
----
+An unsupported question about pets was correctly handled through refusal and escalation, demonstrating the desired behavior for unsupported content.
 
-# 13. User Acceptance Testing
+## User Acceptance Testing
 
-UAT evaluates whether the product actually meets user needs.
+User Acceptance Testing (UAT) focused on whether an employee could:
 
-Representative UAT scenarios include:
+1. Ask a policy question.
+2. Understand the response.
+3. Identify supporting evidence.
+4. Determine what to do when the system could not answer.
 
-* Finding a known policy.
-* Asking a question requiring policy retrieval.
-* Receiving a response with supporting citations.
-* Asking a question where evidence is insufficient.
-* Testing whether unsupported information is refused.
-* Verifying that users can understand the response.
-* Evaluating response usefulness.
+UAT indicated that the core experience was usable, but overall satisfaction remained below the 85% target.
 
-### UAT Decision
+## Testing / UAT Conclusion
 
-The PM should use documented UAT results, user feedback, and acceptance criteria to determine whether the product is acceptable for the intended release stage.
+The evidence supported continued product improvement.
+
+Known limitations were documented rather than treated as passing results.
 
 ---
 
-# 14. Release Readiness
+# 10. Release Readiness
 
-Release readiness should be assessed across:
+Release readiness was assessed using evidence from:
 
 * Requirements.
-* Acceptance criteria.
 * AI evaluation.
-* Security.
+* Security and governance.
 * Testing.
 * UAT.
 * Monitoring.
-* Support.
-* Rollback.
+* Operational readiness.
 
-The release decision should not be based solely on whether the application is technically deployable.
+## Strengths
+
+* Retrieval accuracy exceeded target.
+* Citation correctness met target.
+* Response latency met target.
+* No critical security incidents were observed.
+* Core employee question-answering workflow functioned.
+
+## Remaining Gaps
+
+* Answer accuracy below target.
+* Unsupported response rate above target.
+* Refusal / escalation below target.
+* User satisfaction below target.
+* Production authorization controls required further validation.
 
 ---
 
-# 15. Release Decision
+# 11. Release Decision
 
-## Reference Assessment
+## PM Release Recommendation
 
 **CONDITIONAL GO**
 
-The reference project demonstrates a functioning AI product and several KPIs are on target.
+The evidence supported proceeding to a controlled release stage with defined conditions.
 
-However, the reference KPI results identify areas requiring improvement:
+This was **not** an unrestricted production approval.
 
-* Hallucination rate.
-* Answer accuracy.
-* Unsupported-question refusal.
-* User satisfaction.
+## Release Conditions
 
-### Conditions
+| Condition                 | Owner                | Required Action                       | Success Measure              |
+| ------------------------- | -------------------- | ------------------------------------- | ---------------------------- |
+| Unsupported response rate | Product / AI team    | Reduce unsupported responses          | <2%                          |
+| Answer accuracy           | Product / AI team    | Improve response quality              | ≥90%                         |
+| Refusal / escalation      | Product / AI team    | Improve unsupported-question handling | 100%                         |
+| User satisfaction         | Product / UX team    | Address user feedback                 | ≥85%                         |
+| Production authorization  | IT / Security        | Implement and validate controls       | 0 unauthorized-access issues |
+| Monitoring                | Product / Operations | Establish ongoing monitoring          | Required monitoring active   |
 
-Before broader scaling, the team should:
+## Authorized Release Decision
 
-1. Investigate the hallucination-rate breach.
-2. Improve answer accuracy.
-3. Improve unsupported-question refusal.
-4. Investigate user-satisfaction results.
-5. Continue monitoring post-release KPIs.
-6. Reassess readiness after corrective actions.
+**Authorized Decision:** Conditional Go
 
-### PM Principle
+**Decision Authority:** Designated Product / Business authority
 
-A Conditional Go allows the organization to move forward while explicitly managing remaining risk.
+The Project Manager provides the readiness assessment and recommendation. The formally designated authority makes or confirms the release decision.
 
 ---
 
-# 16. KPI & Monitoring
+# 12. Deployment Decision
 
-The KPI dashboard provides a post-release view of product health.
+## Deployment Decision
 
-The PM uses:
+**HOLD DEPLOYMENT**
+
+The release may proceed through the approved controlled-release stage, but unrestricted production deployment should not occur until the required production-specific controls are implemented and validated.
+
+This demonstrates the difference between:
+
+**Release Decision: CONDITIONAL GO**
+
+and:
+
+**Deployment Decision: HOLD DEPLOYMENT**
+
+Release approval does not automatically authorize deployment.
+
+---
+
+# 13. KPI & Monitoring
+
+The KPI framework used:
 
 **KPI → Target → Actual → Trend → Threshold → Action**
 
-### Decision Rules
+| KPI                                       |  Target | Actual | Status          | PM Action               |
+| ----------------------------------------- | ------: | -----: | --------------- | ----------------------- |
+| Policy Search-Time Reduction              |     50% |    58% | On Target       | Continue monitoring     |
+| Retrieval Accuracy                        |     90% |    92% | On Target       | Maintain                |
+| Answer Accuracy                           |     90% |    89% | Attention       | Improve                 |
+| Unsupported / Hallucinated Response Rate  |     <2% |   2.5% | Below Threshold | Immediate investigation |
+| Citation Correctness                      |    100% |   100% | On Target       | Maintain                |
+| Unsupported-Question Refusal / Escalation |    100% |    95% | Attention       | Improve                 |
+| Response Latency                          | ≤10 sec |  8 sec | On Target       | Maintain                |
+| User Satisfaction                         |     85% |    82% | Attention       | Investigate feedback    |
+| Critical Security Incidents               |       0 |      0 | On Target       | Maintain                |
 
-**On Target → Continue**
+## Monitoring Decision
 
-**Needs Attention → Improve**
+**IMPROVE**
 
-**Below Threshold → Escalate / Reassess**
-
-### Security
-
-Security performance requires additional consideration.
-
-**0 critical incidents → On Target**
-
-**1 critical incident → Needs Attention + immediate investigation**
-
-**2+ critical incidents → Escalation / Reassessment**
-
-Security, governance, and compliance decisions should also consider severity and business impact rather than relying solely on a numeric threshold.
+The strongest improvement priority was reducing unsupported responses because an incorrect policy answer could directly affect employee decisions and trust.
 
 ---
 
-# 17. Continuous Improvement
+# 14. Business Outcome
 
-Based on the KPI evidence, improvement priorities include:
+## Target
 
-## Priority 1 — Hallucination Reduction
+Reduce employee policy search time by at least:
 
-Investigate unsupported model behavior and strengthen grounding controls.
+**50%**
 
-**Success Measure:**
-Hallucination rate below 2%.
+## Measured Result
 
-## Priority 2 — Answer Accuracy
+The assessment showed:
 
-Investigate incorrect or incomplete answers.
+**58% reduction**
 
-**Success Measure:**
-Answer accuracy at or above 90%.
+This exceeded the target.
 
-## Priority 3 — Unsupported Questions
+## Additional Results
 
-Improve the system's ability to recognize when sufficient evidence does not exist.
+PolicyAssist also demonstrated:
 
-**Success Measure:**
-Unsupported-question refusal at 100%.
+* Retrieval accuracy above target.
+* Citation correctness at target.
+* Response latency within target.
+* No critical security incidents during the assessed testing.
 
-## Priority 4 — User Satisfaction
+However:
 
-Investigate usability, clarity, trust, and usefulness.
+* Answer accuracy remained below target.
+* Unsupported response rate remained above target.
+* Unsupported-question refusal / escalation remained below target.
+* User satisfaction remained below target.
 
-**Success Measure:**
-User satisfaction at or above 85%.
+## Outcome Status
 
----
+**PARTIALLY ACHIEVED**
 
-# 18. Business Outcomes
-
-## Intended Outcomes
-
-The project targets:
-
-* Faster policy discovery.
-* Improved access to authoritative policy information.
-* Reduced employee search effort.
-* Better user experience.
-* Improved confidence in policy answers.
-* Reduced risk from unsupported responses.
-
-## Reference Results
-
-The reference KPI data indicates a:
-
-**58% policy search-time reduction**
-
-against a target of at least 50%.
-
-This demonstrates that the product is meeting the search-time improvement objective in the reference evaluation.
+The product demonstrated meaningful business value, but not all product quality and experience objectives had been achieved.
 
 ---
 
-# 19. Lessons Learned
+# 15. Continuous Improvement
+
+The highest-priority improvement areas were:
+
+| Improvement                                       | Priority | Success Measure              |
+| ------------------------------------------------- | -------- | ---------------------------- |
+| Reduce unsupported / hallucinated responses       | High     | <2%                          |
+| Improve answer accuracy                           | High     | ≥90%                         |
+| Improve unsupported-question refusal / escalation | High     | 100%                         |
+| Improve user satisfaction                         | Medium   | ≥85%                         |
+| Strengthen production authorization controls      | Critical | 0 unauthorized-access issues |
+
+## First Improvement Priority
+
+**Reduce unsupported AI responses.**
+
+This was prioritized because an incorrect policy answer could directly affect employee behavior and undermine trust in the product.
+
+---
+
+# 16. Lessons Learned
 
 ## What Worked
 
-* Establishing measurable AI KPIs.
-* Separating retrieval from generation.
-* Grounding responses in policy evidence.
-* Requiring citations.
-* Establishing authority rules.
-* Defining explicit unsupported-question behavior.
-* Monitoring product performance after release.
+* The product focused on a specific employee problem.
+* Requirements were measurable.
+* Retrieval and response quality were evaluated separately.
+* Citation correctness was explicitly measured.
+* Unsupported questions were included in testing.
+* Security and governance were considered before deployment.
+* KPI results were used to support PM decisions.
 
-## What Required Attention
+## What Did Not Work
 
-The KPI results demonstrate that a product can perform well in some dimensions while still having important quality gaps.
+* Response quality did not consistently meet all targets.
+* Unsupported-response performance remained above the acceptable threshold.
+* User satisfaction remained below target.
+* Production authorization requirements were not yet fully validated.
 
-The project therefore requires continuous evaluation rather than a one-time launch assessment.
+## What Would Be Done Differently
 
-## Key PM Lesson
-
-AI projects require the PM to manage uncertainty.
-
-The question is not simply:
-
-> "Does the model work?"
-
-The stronger question is:
-
-> "Does the product perform reliably enough, safely enough, and consistently enough to achieve the intended business outcome?"
+The project would establish stronger evaluation coverage for unsupported questions, conflicting policy retrieval, and authorization scenarios earlier in the lifecycle.
 
 ---
 
-# 20. Portfolio Evidence
+# 17. PM Contribution
 
-Students should use the actual course artifacts as supporting evidence rather than copying the entire project into this document.
+The PM role included:
 
-Recommended evidence includes:
+* Defining measurable requirements.
+* Establishing product scope and MVP priorities.
+* Coordinating stakeholder needs.
+* Evaluating AI quality against defined targets.
+* Separating retrieval, response, citation, security, and performance measures.
+* Identifying AI-specific risks.
+* Coordinating testing and UAT.
+* Assessing release readiness.
+* Distinguishing release approval from deployment readiness.
+* Interpreting KPI results.
+* Recommending corrective actions.
+* Communicating evidence and risk to decision-makers.
 
-* Problem statement.
-* Stakeholder analysis.
-* Requirements.
-* Scope.
-* Product backlog.
-* MVP definition.
-* AI architecture.
-* Data/retrieval approach.
-* Risk register.
-* Evaluation framework.
-* Test results.
-* UAT results.
-* Release-readiness assessment.
-* KPI dashboard.
-* Continuous-improvement backlog.
-
-### Evidence Structure
-
-**Artifact → Decision → Evidence → Outcome**
-
-The artifact supports the decision.
-
-The decision explains the PM action.
-
-The evidence supports the decision.
-
-The outcome demonstrates what happened as a result.
+The PM did not treat the AI model as the source of truth and did not equate a working prototype with production readiness.
 
 ---
 
-# 21. PM Decisions Demonstrated
+# 18. Portfolio Evidence
 
-The Petadel PolicyAssist project demonstrates the following PM decisions:
+Selected evidence included:
 
-| PM Area     | Example Decision                                                                            |
-| ----------- | ------------------------------------------------------------------------------------------- |
-| Problem     | Improve policy discovery                                                                    |
-| Scope       | Focus on retrieval, grounding, citation, and controlled response                            |
-| MVP         | Establish core policy-assistance workflow                                                   |
-| AI          | Use retrieval-grounded generation                                                           |
-| Data        | Restrict retrieval to authoritative eligible documents                                      |
-| Risk        | Treat hallucination as a measurable product risk                                            |
-| Security    | Consider authorization before exposing policy information                                   |
-| Evaluation  | Measure retrieval, answer quality, hallucination, citations, refusal, latency, satisfaction |
-| Release     | Use evidence to determine readiness                                                         |
-| Monitoring  | Track KPIs after release                                                                    |
-| Improvement | Prioritize corrective actions based on KPI evidence                                         |
+| Evidence                         | Demonstrates                             |
+| -------------------------------- | ---------------------------------------- |
+| Requirements record              | Measurable product definition            |
+| AI architecture                  | PM-level technical understanding         |
+| Data & Retrieval Assessment      | Source-of-truth and retrieval governance |
+| AI Evaluation Results            | Evidence-based AI quality assessment     |
+| Security & Governance Assessment | AI risk management                       |
+| Testing / UAT Results            | Product validation                       |
+| Release Readiness Record         | Release decision-making                  |
+| KPI Dashboard                    | Performance management                   |
+| PolicyAssist application         | Applied AI product understanding         |
 
 ---
 
-# 22. Portfolio Story
+# 19. Interview Talking Points
 
-The completed case study can be summarized as:
+## What Problem Did You Solve?
 
-### Problem
+Employees spent too much time searching for policies and were uncertain which documents were current and authoritative.
 
-Employees struggle to efficiently locate and interpret authoritative organizational policies.
+## What Did You Manage?
 
-### Solution
+I managed the product lifecycle from problem definition through requirements, AI evaluation, risk management, testing, release readiness, KPI monitoring, and continuous improvement.
 
-Petadel PolicyAssist uses AI-assisted retrieval and grounded generation to help employees find relevant policy information and receive responses supported by source citations.
+## What Was the Biggest AI Risk?
 
-### PM Approach
+Providing an incorrect policy answer that appeared authoritative.
 
-The project applies structured Project Management across:
+## How Did You Address It?
 
-**Discovery → Requirements → Planning → AI Design → Data → Evaluation → Governance → Testing → UAT → Release → Monitoring → Improvement**
+We established authoritative policy sources, evaluated retrieval and response quality separately, measured unsupported responses, required citations, tested unsupported questions, and established human escalation.
 
-### Evidence
+## What Did the Evidence Show?
 
-The product is evaluated against measurable performance targets.
+The product exceeded the search-time reduction and retrieval targets and met citation and latency targets, but answer accuracy, unsupported-response performance, and user satisfaction still required improvement.
 
-### Key Result
+## What Was Your Recommendation?
 
-The reference evaluation demonstrates a 58% reduction in policy search time against a target of at least 50%.
-
-### Remaining Risk
-
-AI quality metrics reveal areas requiring improvement, particularly hallucination and answer accuracy.
-
-### PM Recommendation
-
-Proceed with a **Conditional Go** while corrective actions are completed and product performance continues to be monitored.
+I recommended **Conditional Go** for a controlled release stage, while keeping **deployment on hold** until required production controls were implemented and validated.
 
 ---
 
-# 23. Interview Summary
+# 20. Final PM Recommendation
 
-A concise interview explanation could follow this structure:
+## Recommended Action
 
-> I managed an AI policy-assistance product designed to reduce the time employees spend finding and understanding organizational policies. I managed the project across requirements, scope, AI solution planning, data and knowledge management, AI evaluation, risk and governance, testing, UAT, release readiness, and KPI monitoring. One important PM decision was recognizing that strong overall product performance did not eliminate AI quality risks. The evaluation showed a 58% reduction in policy search time, but hallucination and answer-accuracy metrics still required corrective action. Based on the evidence, I would recommend a Conditional Go with targeted improvements and continued monitoring.
+**IMPROVE**
 
----
+Continue the product direction while addressing the remaining quality and production-readiness gaps.
 
-# 24. Instructor Standard
+## Strongest Evidence
 
-This example demonstrates the expected capstone standard.
+* Search-time reduction: **58% vs. 50% target**
+* Retrieval accuracy: **92% vs. 90% target**
+* Citation correctness: **100%**
+* Response latency: **8 seconds vs. ≤10-second target**
+* Critical security incidents: **0**
 
-A completed capstone should show that the student can:
+## Primary Risk
 
-* Define a meaningful business problem.
-* Identify users and stakeholders.
-* Manage requirements and scope.
-* Prioritize an MVP.
-* Understand AI architecture at a PM level.
-* Manage data and knowledge risks.
-* Evaluate AI performance.
-* Manage AI-specific risks.
-* Coordinate testing and UAT.
-* Assess release readiness.
-* Make a Go/Conditional Go/No-Go decision.
-* Monitor KPIs.
-* Recommend corrective actions.
-* Connect technical performance to business outcomes.
-* Communicate the project professionally.
+Unsupported or inaccurate policy responses could cause employees to act on incorrect information.
+
+## Required Next Action
+
+Prioritize response-quality improvements and production authorization controls.
+
+## Next Review
+
+Reassess release and deployment readiness after corrective actions and validation.
 
 ---
 
-# Final Principle
+# Final Capstone Decision Record
 
-The purpose of the Petadel PolicyAssist example is not to teach students to copy one project.
+| Decision Element            | Assessment                                                   |
+| --------------------------- | ------------------------------------------------------------ |
+| Business Outcome            | Partially Achieved                                           |
+| Strongest Evidence          | 58% reduction in policy search time                          |
+| Primary Product Risk        | Unsupported / inaccurate AI responses                        |
+| Primary Business Risk       | Employees relying on incorrect policy information            |
+| PM Release Recommendation   | Conditional Go                                               |
+| Authorized Release Decision | Conditional Go                                               |
+| Release Decision Authority  | Designated Product / Business authority                      |
+| Deployment Decision         | Hold Deployment                                              |
+| Monitoring Decision         | Improve                                                      |
+| Final PM Recommendation     | Improve                                                      |
+| Immediate Action            | Improve AI response quality and validate production controls |
+| Action Owner                | Product / AI / IT / Security teams                           |
+| Next Review Point           | After corrective actions and validation                      |
 
-It is to demonstrate **how an AI Project Manager thinks.**
+---
 
-You should be able to look at the example and understand:
+# Portfolio Takeaway
+
+The PolicyAssist project demonstrates an important AI Project Management principle:
+
+**A product can demonstrate meaningful value without being ready for unrestricted production deployment.**
+
+The PM's responsibility is to understand what the evidence demonstrates, identify what remains unresolved, distinguish release readiness from deployment readiness, and make a defensible recommendation.
+
+In this case:
+
+**Business Value + Strong Retrieval + Strong Citation + Acceptable Performance**
+
+were balanced against:
+
+**Response Quality + Unsupported Responses + User Satisfaction + Production Authorization**
+
+The resulting decision was:
+
+**CONDITIONAL GO → HOLD DEPLOYMENT → CORRECTIVE ACTION → VALIDATION → DEPLOYMENT REASSESSMENT**
+
+That is evidence-based AI Project Management.
 
 **Problem → Evidence → Decision → Action → Outcome**

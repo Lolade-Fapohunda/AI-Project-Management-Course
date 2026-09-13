@@ -1,595 +1,697 @@
-# Capstone Submission Template
+# Milestone 12 — Capstone Submission Template
 
-## Petadel PolicyAssist AI Project Management Capstone
+## Instructions
 
-Use this template to assemble your final AI Project Management capstone.
+Use this template to assemble the strongest evidence from Milestones 1–11 into one complete Artificial Intelligence (AI) Project Management (PM) capstone.
 
-You may use:
+Do not copy every artifact into this document.
 
-* **Option A:** Petadel PolicyAssist AI
-* **Option B:** Your own AI product or use case
+Use evidence to tell one connected story:
 
-Replace the instructional text with your project evidence and decisions.
+**Problem → Plan → Build → Evaluate → Secure → Test → Release → Measure → Improve → Recommend**
+
+For each section, focus on:
+
+**What was done → Why → Evidence → Result**
+
+Report evidence according to the actual maturity of your product. Do not present prototype or Minimum Viable Product (MVP) evidence as production evidence.
 
 ---
 
-# 1. Project Overview
+# 1. Milestone Evidence Mapping
+
+Use this table to identify where the strongest evidence from each milestone appears in your capstone.
+
+You do not need to reproduce the entire milestone artifact. Reference the relevant section, table, link, screenshot, or supporting document.
+
+| Milestone | Focus                         | Capstone Section                    | Evidence to Reference                                       |
+| --------- | ----------------------------- | ----------------------------------- | ----------------------------------------------------------- |
+| M1        | AI Project Foundation         | Project Overview                    | Project purpose, objectives, initial context                |
+| M2        | Problem, Users & Stakeholders | Business Problem & Users            | Problem statement, stakeholder analysis, user needs         |
+| M3        | Requirements                  | Requirements, Scope & MVP           | Requirements, measures, acceptance criteria                 |
+| M4        | Backlog & MVP                 | Requirements, Scope & MVP           | Backlog, prioritization, MVP definition, release scope      |
+| M5        | AI Architecture               | AI Solution                         | Architecture, workflow, dependencies, technical decisions   |
+| M6        | Data & Retrieval              | Data & Knowledge                    | Sources, authority, metadata, retrieval evidence            |
+| M7        | AI Evaluation                 | AI Evaluation                       | Evaluation scenarios, metrics, results, regression evidence |
+| M8        | Security & Governance         | Risk, Security & Governance         | Security controls, access, governance, risk evidence        |
+| M9        | Testing & UAT                 | Testing & UAT                       | Test results, defects, UAT evidence                         |
+| M10       | Release & Deployment          | Release & Deployment Readiness      | Release assessment, release decision, deployment decision   |
+| M11       | KPIs & Dashboard              | KPI, Performance & Business Outcome | KPI results, dashboard evidence, monitoring                 |
+| M12       | Capstone & Portfolio          | Final Recommendation                | Integrated evidence, outcomes, portfolio story              |
+
+## Evidence Reference Standard
+
+Use a consistent reference whenever you cite supporting evidence.
+
+Examples:
+
+**M7 Evaluation Results, T01–T05**
+
+**M9 UAT, UAT-02**
+
+**M10 Release Readiness, Criterion 4**
+
+**M11 KPI Dashboard, Answer Accuracy**
+
+A reviewer should be able to understand what the evidence is and where to find it.
+
+Do not create evidence simply to fill this table.
+
+---
+
+# 2. Project Overview
 
 **Project Name:**
 [Enter project name]
 
-**Product Name:**
+**AI Product / Solution:**
 [Enter product name]
+
+**Organization:**
+[Enter organization or indicate fictional/synthetic]
 
 **Project Manager:**
 [Enter name]
 
-**Project Status:**
-[Complete / Pilot / Released / Other]
+**Current Project Stage:**
+[Prototype / MVP / Pilot / Release Candidate / Released / Other]
 
 **Project Objective:**
-[Summarize the project objective.]
+[Describe the objective.]
 
-**Evidence / Artifact:**
-[Link to or identify the project overview artifact.]
-
----
-
-# 2. Business Problem
-
-### Problem Statement
-
-[Describe the business or user problem.]
-
-### Why This Problem Matters
-
-[Explain the impact of the problem on users, the organization, cost, productivity, risk, or business outcomes.]
-
-### Evidence
-
-[Provide evidence supporting the problem.]
-
-**Evidence / Artifact:**
-[Link to or identify the problem statement, research, discovery notes, or supporting evidence.]
+**Primary Business Outcome Target:**
+[State the measurable outcome.]
 
 ---
 
-# 3. Users & Stakeholders
+# 3. Business Problem & Users
 
-### Primary Users
+## Business Problem
 
-[List primary users.]
+[Describe the problem, why it matters, and the current-state impact.]
 
-### Key Stakeholders
+## Primary Users
 
-| Stakeholder  | Role   | Interest   | Influence         | Engagement Approach |
-| ------------ | ------ | ---------- | ----------------- | ------------------- |
-| [Name/Group] | [Role] | [Interest] | [High/Medium/Low] | [Approach]          |
+| User Group | Need / Pain Point | Desired Outcome |
+| ---------- | ----------------- | --------------- |
+|            |                   |                 |
+|            |                   |                 |
+|            |                   |                 |
 
-### Stakeholder Risks or Concerns
+## Key Stakeholders
 
-[Document major stakeholder concerns and how they were addressed.]
+| Stakeholder | Role / Interest | Influence | Engagement Approach |
+| ----------- | --------------- | --------- | ------------------- |
+|             |                 |           |                     |
+|             |                 |           |                     |
+|             |                 |           |                     |
 
-**Evidence / Artifact:**
-[Link to stakeholder register, stakeholder map, RACI, engagement plan, or related artifact.]
+## Key Consideration
 
----
-
-# 4. Requirements
-
-## Business Requirements
-
-1. [Requirement]
-2. [Requirement]
-3. [Requirement]
-
-## Functional Requirements
-
-1. [Requirement]
-2. [Requirement]
-3. [Requirement]
-
-## Non-Functional Requirements
-
-1. [Requirement]
-2. [Requirement]
-3. [Requirement]
-
-### Requirements Ownership
-
-**Requirements Owner:**
-[Name/Role]
-
-### Requirements Traceability
-
-Explain how the major requirements connect to the delivered product.
-
-| Requirement   | Status                      | Evidence / Artifact |
-| ------------- | --------------------------- | ------------------- |
-| [Requirement] | [Complete/Partial/Deferred] | [Link or artifact]  |
+[Describe the most important user, stakeholder, or business consideration that influenced the project.]
 
 ---
 
-# 5. Scope
+# 4. Requirements, Scope & MVP
 
-## In Scope
+## Key Requirements
 
-* [Item]
-* [Item]
-* [Item]
+| ID | Requirement | Type | Measure / Target | Acceptance Criteria | Priority |
+| -- | ----------- | ---- | ---------------- | ------------------- | -------- |
+|    |             |      |                  |                     |          |
+|    |             |      |                  |                     |          |
+|    |             |      |                  |                     |          |
+|    |             |      |                  |                     |          |
+|    |             |      |                  |                     |          |
 
-## Out of Scope
+## Scope
 
-* [Item]
-* [Item]
-* [Item]
+**In Scope:**
+[Enter]
 
-## Assumptions
+**Out of Scope:**
+[Enter]
 
-* [Assumption]
-* [Assumption]
+**Major Assumptions / Constraints:**
+[Enter]
 
-## Constraints
+## Minimum Viable Product
 
-* [Constraint]
-* [Constraint]
+**MVP:**
+[Describe the smallest useful version needed to provide core value and generate meaningful validation evidence.]
 
-**Evidence / Artifact:**
-[Link to scope statement, Business Requirements Document (BRD), project charter, or related artifact.]
+## Release Scope
 
----
+[Describe the capabilities, controls, fixes, and approved changes included in the specific release being assessed.]
 
-# 6. Product Strategy & MVP
+## Major Scope Decisions
 
-### Product Vision
-
-[Describe the intended product outcome.]
-
-### Minimum Viable Product (MVP)
-
-[Describe what was included in the MVP and why.]
-
-### Prioritization Approach
-
-[Explain how features were prioritized.]
-
-### Deferred Features
-
-| Feature   | Reason Deferred | Future Priority |
-| --------- | --------------- | --------------- |
-| [Feature] | [Reason]        | [Priority]      |
-
-**Evidence / Artifact:**
-[Link to product backlog, prioritization matrix, MVP definition, or related artifact.]
+[Summarize significant trade-offs, changes, deferrals, or exclusions and why they were made.]
 
 ---
 
-# 7. AI Solution
+# 5. AI Solution
 
-### AI Use Case
+## AI Use Case
 
-[Describe how Artificial Intelligence (AI) is used.]
+[Describe how Artificial Intelligence (AI) is being used.]
 
-### AI Approach
+## Solution Overview
 
-[Explain the AI approach at a Project Manager level.]
+[Describe the solution at the PM level.]
 
-### Architecture Overview
+## End-to-End Flow
 
-Describe the major components and how they interact.
+**User → Interface → Data / Knowledge → Processing → Retrieval → AI → Response → Evidence / Citation → User**
 
-**Example:**
+## Major Components & Dependencies
 
-**Data → Processing → Retrieval → AI Model → Grounded Response → User**
+| Component | Purpose | Dependency | Key Risk |
+| --------- | ------- | ---------- | -------- |
+|           |         |            |          |
+|           |         |            |          |
+|           |         |            |          |
 
-### Key Technology Decisions
+## Major Technical / Architecture Decision
 
-| Decision   | Selected Approach | Reason   |
-| ---------- | ----------------- | -------- |
-| [Decision] | [Approach]        | [Reason] |
+**Decision:**
+[Enter]
 
-**Evidence / Artifact:**
-[Link to AI architecture, solution design, technical decision record, or related artifact.]
+**Reason:**
+[Enter]
 
----
+**Trade-off / Risk:**
+[Enter]
 
-# 8. Data & Knowledge Management
-
-### Data Sources
-
-[List the primary data or knowledge sources.]
-
-### Data Quality
-
-[Describe how data quality was assessed.]
-
-### Data Risks
-
-[Identify outdated, incomplete, inaccurate, duplicated, or unauthorized data risks.]
-
-### Data Governance
-
-[Explain how authoritative information is identified, maintained, and controlled.]
-
-**Evidence / Artifact:**
-[Link to data inventory, data assessment, knowledge-management documentation, or related artifact.]
+**Result / Evidence:**
+[Enter]
 
 ---
 
-# 9. AI Evaluation
+# 6. Data & Knowledge
 
-Document the evaluation framework used to determine whether the AI product performs as intended.
+## Sources
 
-| Metric   |   Target |   Actual | Status   | Interpretation   |
-| -------- | -------: | -------: | -------- | ---------------- |
-| [Metric] | [Target] | [Actual] | [Status] | [Interpretation] |
+| Source | Authority | Version / Status | Intended Use |
+| ------ | --------- | ---------------- | ------------ |
+|        |           |                  |              |
+|        |           |                  |              |
+|        |           |                  |              |
 
-### Evaluation Findings
+## Data / Knowledge Considerations
 
-[Summarize the most important findings.]
+Address applicable areas:
 
-### Evaluation Owner
+* Quality.
+* Authority.
+* Versioning.
+* Duplicates.
+* Conflicting information.
+* Freshness.
+* Metadata.
+* Access.
 
-**Owner:**
-[Name/Role]
+## Source-of-Truth Approach
 
-### PM Decision
+[Explain how authoritative information is identified and maintained.]
 
-[Explain what the evaluation evidence means for the product.]
+## Retrieval Approach
 
-**Evidence / Artifact:**
-[Link to evaluation plan, test dataset, evaluation results, or related evidence.]
+[Explain how relevant information is retrieved.]
 
----
+## Key Data Risk
 
-# 10. Risk, Security & Governance
+**Risk:**
+[Enter]
 
-## Top Risks
+**Impact:**
+[Enter]
 
-| Risk   | Likelihood | Impact  | Mitigation   | Owner   | Status   |
-| ------ | ---------- | ------- | ------------ | ------- | -------- |
-| [Risk] | [H/M/L]    | [H/M/L] | [Mitigation] | [Owner] | [Status] |
+**Control / Mitigation:**
+[Enter]
 
-## AI-Specific Risks
-
-Address applicable risks such as:
-
-* Hallucination.
-* Incorrect retrieval.
-* Outdated information.
-* Unauthorized access.
-* Privacy.
-* Security.
-* Bias.
-* Inappropriate outputs.
-* Model limitations.
-* Lack of human escalation.
-
-### Governance Controls
-
-[Describe the controls used to reduce AI risk.]
-
-**Evidence / Artifact:**
-[Link to risk register, security assessment, governance plan, RACI, or related artifact.]
+**Evidence / Result:**
+[Enter]
 
 ---
 
-# 11. Testing
+# 7. AI Evaluation
 
-### Test Strategy
+## Evaluation Results
 
-[Summarize the testing approach.]
+| Metric                           | Target | Actual | Status | Interpretation |
+| -------------------------------- | -----: | -----: | ------ | -------------- |
+| Retrieval Accuracy               |        |        |        |                |
+| Answer Accuracy                  |        |        |        |                |
+| Grounded Response                |        |        |        |                |
+| Unsupported Response Rate        |        |        |        |                |
+| Citation Presence                |        |        |        |                |
+| Citation Accuracy                |        |        |        |                |
+| Citation Support                 |        |        |        |                |
+| Response Time                    |        |        |        |                |
+| Appropriate Refusal / Escalation |        |        |        |                |
 
-### Test Results
+## Critical Failures
 
-| Test Area   | Result      | Defects | Resolution   | Evidence |
-| ----------- | ----------- | ------: | ------------ | -------- |
-| Functional  | [Pass/Fail] |     [#] | [Resolution] | [Link]   |
-| AI Quality  | [Pass/Fail] |     [#] | [Resolution] | [Link]   |
-| Security    | [Pass/Fail] |     [#] | [Resolution] | [Link]   |
-| Performance | [Pass/Fail] |     [#] | [Resolution] | [Link]   |
+[Identify any critical failure or state none.]
 
-### Outstanding Defects
+## Regression Testing
 
-[Document unresolved defects and their impact.]
+[Summarize regression testing and results.]
 
-### Testing Owner
+## PM Interpretation
 
-**Owner:**
-[Name/Role]
+[Explain what the evaluation evidence means for product quality, risk, and readiness.]
 
----
-
-# 12. User Acceptance Testing
-
-### UAT Objective
-
-[Describe what users needed to validate.]
-
-### UAT Results
-
-| Scenario   | Expected Result | Actual Result | Status      | Evidence |
-| ---------- | --------------- | ------------- | ----------- | -------- |
-| [Scenario] | [Expected]      | [Actual]      | [Pass/Fail] | [Link]   |
-
-### User Feedback
-
-[Summarize significant feedback.]
-
-### UAT Decision
-
-**Accepted / Conditionally Accepted / Rejected**
-
-Explain the decision.
-
-### UAT Owner
-
-**Owner:**
-[Name/Role]
+Do not simply restate the numbers. Explain their significance.
 
 ---
 
-# 13. Release Readiness
+# 8. Risk, Security & Governance
 
-Evaluate the product before release.
+## Major Risks
 
-| Area                | Status            | Owner   | Evidence |
-| ------------------- | ----------------- | ------- | -------- |
-| Requirements        | [Ready/Not Ready] | [Owner] | [Link]   |
-| Acceptance Criteria | [Ready/Not Ready] | [Owner] | [Link]   |
-| AI Evaluation       | [Ready/Not Ready] | [Owner] | [Link]   |
-| Security            | [Ready/Not Ready] | [Owner] | [Link]   |
-| Testing             | [Ready/Not Ready] | [Owner] | [Link]   |
-| UAT                 | [Ready/Not Ready] | [Owner] | [Link]   |
-| Monitoring          | [Ready/Not Ready] | [Owner] | [Link]   |
-| Support             | [Ready/Not Ready] | [Owner] | [Link]   |
-| Rollback            | [Ready/Not Ready] | [Owner] | [Link]   |
+| Risk | Impact | Mitigation / Control | Owner | Status |
+| ---- | ------ | -------------------- | ----- | ------ |
+|      |        |                      |       |        |
+|      |        |                      |       |        |
+|      |        |                      |       |        |
 
----
+## Security Controls
 
-# 14. Go / No-Go Decision
+| Control                      | Implemented? | Tested? | Result | Evidence |
+| ---------------------------- | ------------ | ------- | ------ | -------- |
+| Authentication               |              |         |        |          |
+| Authorization                |              |         |        |          |
+| Role-Based Access            |              |         |        |          |
+| Confidential Data Protection |              |         |        |          |
+| Privacy                      |              |         |        |          |
+| Auditability                 |              |         |        |          |
+| Logging                      |              |         |        |          |
 
-## Decision
+Do not mark a control as passed unless it was implemented and appropriately tested.
 
-**GO / CONDITIONAL GO / NO-GO**
+## Governance
 
-### Evidence
+Address applicable areas:
 
-[What evidence supports the decision?]
+* Policy ownership.
+* Source authority.
+* Version control.
+* Change control.
+* AI governance ownership.
+* Human escalation.
+* Monitoring.
+* Incident management.
 
-### Conditions
+## Key Security / Governance Concern
 
-[If Conditional Go, document the conditions.]
-
-### Remaining Risks
-
-[Document risks that remain.]
-
-### Decision Owner
-
-[Name/Role]
-
-### Next Review Point
-
-[Date or milestone]
-
-**Evidence / Artifact:**
-[Link to release-readiness assessment, decision record, or approval artifact.]
+[Identify the most significant security or governance issue and explain its impact on readiness.]
 
 ---
 
-# 15. KPI & Monitoring
+# 9. Testing & User Acceptance Testing
 
-Document the product's Key Performance Indicators (KPIs).
+## Representative Test Results
 
-| KPI   |   Target |   Actual | Trend   | Threshold | Action   | Owner   | Evidence |
-| ----- | -------: | -------: | ------- | --------- | -------- | ------- | -------- |
-| [KPI] | [Target] | [Actual] | [Trend] | [Status]  | [Action] | [Owner] | [Link]   |
+| Test ID | Test Area | Expected Result | Actual Result | Status | Evidence |
+| ------- | --------- | --------------- | ------------- | ------ | -------- |
+|         |           |                 |               |        |          |
+|         |           |                 |               |        |          |
+|         |           |                 |               |        |          |
+|         |           |                 |               |        |          |
+|         |           |                 |               |        |          |
+|         |           |                 |               |        |          |
 
-### Product Health
+## Significant Issues
 
-**On Target / Needs Attention / Below Threshold**
+| Issue ID | Type | Severity | Release Impact | Status |
+| -------- | ---- | -------- | -------------- | ------ |
+|          |      |          |                |        |
+|          |      |          |                |        |
 
-### Interpretation
+## User Acceptance Testing (UAT)
 
-What is the product telling you through its KPIs?
+| UAT ID | User Type | User Goal | Expected | Actual | Result | Evidence |
+| ------ | --------- | --------- | -------- | ------ | ------ | -------- |
+|        |           |           |          |        |        |          |
+|        |           |           |          |        |        |          |
+|        |           |           |          |        |        |          |
 
-[Explain the evidence.]
+## Testing & UAT Conclusion
 
-### PM Action
+[Summarize what testing and UAT demonstrated, including significant defects, accepted limitations, and items requiring remediation.]
+
+---
+
+# 10. Release & Deployment Readiness
+
+## Release Criteria
+
+| Criterion                 | Evidence | Status | Condition / Risk |
+| ------------------------- | -------- | ------ | ---------------- |
+| Requirements met          |          |        |                  |
+| AI evaluation acceptable  |          |        |                  |
+| Testing completed         |          |        |                  |
+| UAT completed             |          |        |                  |
+| Security addressed        |          |        |                  |
+| Governance addressed      |          |        |                  |
+| Critical defects resolved |          |        |                  |
+| Monitoring prepared       |          |        |                  |
+| Operational readiness     |          |        |                  |
+| Rollback prepared         |          |        |                  |
+
+## PM Release Recommendation
+
+Select one:
+
+**GO**
+Proceed with release.
+
+**CONDITIONAL GO**
+Proceed only under defined conditions.
+
+**HOLD**
+Do not proceed yet because required evidence, remediation, validation, or readiness work is incomplete.
+
+**NO-GO**
+Do not release the current version.
+
+**PM Recommendation:**
+[GO / CONDITIONAL GO / HOLD / NO-GO]
+
+**Rationale:**
+[Explain the evidence supporting the recommendation.]
+
+## Release Conditions
+
+Complete when applicable.
+
+| Condition | Owner | Due / Review Point | Success Measure | Status |
+| --------- | ----- | ------------------ | --------------- | ------ |
+|           |       |                    |                 |        |
+|           |       |                    |                 |        |
+
+## Authorized Release Decision
+
+**Authorized Decision:**
+[Enter]
+
+**Decision Authority:**
+[Product Owner / Executive Sponsor / Business Owner / Steering Committee / Other]
+
+**Decision Date:**
+[Enter]
+
+**Conditions / Follow-Up:**
+[Enter]
+
+The PM provides the readiness assessment and recommendation. The formally designated authority makes or confirms the authorized release decision.
+
+## Deployment Decision
+
+Select one:
+
+**DEPLOY**
+The approved release is ready for deployment.
+
+**HOLD DEPLOYMENT**
+The release may be approved, but a deployment-specific condition remains unresolved.
+
+**ROLLBACK**
+The deployment created an unacceptable condition requiring recovery to a previous known-good state.
+
+**Deployment Decision:**
+[DEPLOY / HOLD DEPLOYMENT / ROLLBACK]
+
+**Rationale:**
+[Explain the deployment-readiness assessment.]
+
+---
+
+# 11. Post-Deployment Validation
+
+Complete this section when the product has been deployed.
+
+| Validation Check             | Expected Result | Actual Result | Status | Evidence |
+| ---------------------------- | --------------- | ------------- | ------ | -------- |
+| Core user workflow           |                 |               |        |          |
+| AI response quality          |                 |               |        |          |
+| Citation / evidence behavior |                 |               |        |          |
+| Security / access behavior   |                 |               |        |          |
+| Monitoring / performance     |                 |               |        |          |
+
+If the product was not deployed:
+
+**Reason:**
+[Explain what prevented deployment.]
+
+---
+
+# 12. KPI, Performance & Business Outcome
+
+Use:
+
+**KPI → Target → Actual → Trend → Threshold → Action**
+
+## KPI Results
+
+| KPI | Target | Actual | Trend | Threshold Status | Action |
+| --- | -----: | -----: | ----- | ---------------- | ------ |
+|     |        |        |       |                  |        |
+|     |        |        |       |                  |        |
+|     |        |        |       |                  |        |
+|     |        |        |       |                  |        |
+|     |        |        |       |                  |        |
+
+## Performance Interpretation
+
+**On Target:**
+[Identify KPIs meeting target.]
+
+**Attention Required:**
+[Identify KPIs approaching or entering the attention range.]
+
+**Below Threshold:**
+[Identify KPIs requiring action.]
+
+## Monitoring Decision
 
 **Continue / Improve / Escalate / Reassess**
 
-Explain why.
+**Rationale:**
+[Explain the performance evidence that drove the decision.]
+
+## Business Outcome
+
+**Target Outcome:**
+[What was the project intended to achieve?]
+
+**Measured Outcome:**
+[What does the available evidence demonstrate?]
+
+**Expected Outcome:**
+[What benefit is projected but not yet validated?]
+
+**Outcome Status:**
+**Achieved / Partially Achieved / Not Yet Achieved**
+
+**Business Value:**
+[Explain the value created or expected.]
+
+Clearly distinguish proven results from projected results.
 
 ---
 
-# 16. Continuous Improvement
+# 13. Improvement Priorities & Lessons Learned
 
-Identify the next improvements for the product.
+## Improvement Priorities
 
-| Improvement   | Business Value | Priority   | Owner   | Success Measure | Evidence |
-| ------------- | -------------- | ---------- | ------- | --------------- | -------- |
-| [Improvement] | [Value]        | [Priority] | [Owner] | [Measure]       | [Link]   |
+| Improvement | Problem Addressed | Value | Priority | Owner | Success Measure |
+| ----------- | ----------------- | ----- | -------- | ----- | --------------- |
+|             |                   |       |          |       |                 |
+|             |                   |       |          |       |                 |
+|             |                   |       |          |       |                 |
 
-### Future Roadmap
+## Priority Improvement
 
-**Near Term**
+**What should happen first?**
+[Enter]
 
-[Improvement]
+**Why?**
+[Enter]
 
-**Medium Term**
+## Lessons Learned
 
-[Improvement]
+### What Worked
 
-**Long Term**
+[Enter]
 
-[Improvement]
+### What Did Not Work
 
----
+[Enter]
 
-# 17. Lessons Learned
+### What Would You Do Differently?
 
-## What Worked
+[Enter]
 
-[Describe successful decisions, processes, or practices.]
-
-## What Did Not Work
-
-[Describe problems, delays, defects, or ineffective approaches.]
-
-## What Would You Do Differently?
-
-[Describe specific improvements.]
-
-## Key PM Lesson
+### Key PM Lesson
 
 [Explain what the project taught you about managing AI products.]
 
-**Evidence / Artifact:**
-[Link to lessons-learned document, retrospective, or related artifact if applicable.]
-
 ---
 
-# 18. Business Outcome
+# 14. Portfolio Evidence
 
-### Intended Outcome
+Select the strongest evidence supporting your professional case study.
 
-[What measurable outcome was expected?]
+| Artifact / Evidence | Link or Reference | What It Demonstrates |
+| ------------------- | ----------------- | -------------------- |
+|                     |                   |                      |
+|                     |                   |                      |
+|                     |                   |                      |
+|                     |                   |                      |
+|                     |                   |                      |
 
-### Actual Outcome
+Examples may include:
 
-[What evidence is available?]
-
-### Business Impact
-
-[Describe the impact on users, productivity, cost, risk, quality, revenue, or another relevant business outcome.]
-
-### Outcome Assessment
-
-**Achieved / Partially Achieved / Not Yet Achieved**
-
-Explain the evidence.
-
-**Evidence / Artifact:**
-[Link to KPI results, business case, benefits assessment, user feedback, or other supporting evidence.]
-
----
-
-# 19. Portfolio Evidence
-
-Attach or link relevant project artifacts.
-
-Recommended evidence:
-
-* Problem statement.
-* Stakeholder analysis.
 * Requirements.
-* Product backlog.
+* Backlog.
 * MVP definition.
-* AI architecture.
-* Risk register.
+* Architecture.
 * Evaluation results.
-* Test results.
-* UAT results.
-* Release decision.
+* Risk register.
+* Security assessment.
+* Testing results.
+* UAT.
+* Release assessment.
 * KPI dashboard.
-* Monitoring evidence.
-* Continuous-improvement backlog.
-
-### Artifact Index
-
-| Artifact   | Purpose   | Owner   | Location / Link |
-| ---------- | --------- | ------- | --------------- |
-| [Artifact] | [Purpose] | [Owner] | [Link]          |
-| [Artifact] | [Purpose] | [Owner] | [Link]          |
-| [Artifact] | [Purpose] | [Owner] | [Link]          |
-
-Do not include confidential, proprietary, personally identifiable, or restricted information.
+* Other relevant evidence.
 
 ---
 
-# 20. Executive Summary
+# 15. Executive Summary
 
-Write a concise executive summary of the entire project.
+Summarize the project for an executive, recruiter, or hiring manager.
 
-Include:
+### Problem
 
-**Problem → Solution → PM Approach → AI Approach → Evidence → Risk → Outcome → Recommendation**
+[Enter]
 
-[Write executive summary here.]
+### Solution
 
-**Evidence / Artifact:**
-[Link to supporting project artifacts.]
+[Enter]
 
----
+### PM Contribution
 
-# 21. Final PM Recommendation
+[Enter]
 
-Answer:
+### Key Evidence
 
-> **Would you recommend continuing, scaling, improving, or reassessing this AI product?**
+[Enter]
 
-### Recommendation
+### Major Risk
 
-[Enter recommendation.]
+[Enter]
 
-### Evidence
+### Release / Deployment Status
 
-[Summarize the strongest evidence.]
+[Enter]
 
-### Business Impact
+### Business Outcome
 
-[Explain expected or demonstrated impact.]
+[Enter]
 
-### Key Risks
+### Recommended Next Step
 
-[Summarize remaining risks.]
-
-### Next Action
-
-[Define the immediate next action.]
-
-### Decision Owner
-
-[Name/Role]
+[Enter]
 
 ---
 
-# Final Submission Checklist
+# 16. Final PM Recommendation
 
-Before submitting, confirm:
+Bring the evidence together into one final recommendation.
 
-* [ ] Business problem is clearly defined.
-* [ ] Users and stakeholders are identified.
-* [ ] Requirements are documented.
-* [ ] Requirement ownership is identified.
-* [ ] Scope is defined.
-* [ ] MVP is explained.
-* [ ] AI approach is explained at a PM level.
-* [ ] Data and knowledge risks are addressed.
-* [ ] AI evaluation results are documented.
-* [ ] Evaluation ownership is identified.
-* [ ] Security and governance are addressed.
-* [ ] Testing results are documented.
-* [ ] Testing evidence is linked.
-* [ ] UAT results are documented.
-* [ ] UAT ownership is identified.
-* [ ] Release readiness is assessed.
-* [ ] Go/Conditional Go/No-Go decision is documented.
-* [ ] KPI ownership and evidence are documented.
-* [ ] KPIs and monitoring are documented.
-* [ ] Continuous-improvement actions are identified.
-* [ ] Business outcome is evaluated.
-* [ ] Lessons learned are documented.
-* [ ] Portfolio evidence is assembled.
-* [ ] Artifact links are included.
-* [ ] Confidential or sensitive information has been removed.
+## Recommended Action
+
+**Continue / Improve / Escalate / Reassess / Scale**
+
+## Evidence Supporting the Recommendation
+
+[Identify the strongest evidence across product performance, risk, business outcome, and readiness.]
+
+## Primary Remaining Risk
+
+[Identify the most significant remaining risk.]
+
+## Next Action
+
+[Describe the action that should happen next.]
+
+## Owner
+
+[Enter]
+
+## Next Review Point
+
+[Enter]
+
+### Final PM Statement
+
+[Write a concise executive-level statement connecting the evidence, business value, risk, and recommended action.]
 
 ---
 
-# Final Question
+# 17. Final Submission Checklist
 
-> **Can you demonstrate, with evidence, that you managed this AI product from problem definition through release and continuous improvement?**
+## Required Capstone
 
-If yes, the capstone is complete.
+* [ ] Business problem documented.
+* [ ] Users and stakeholders documented.
+* [ ] Requirements documented.
+* [ ] Scope and MVP documented.
+* [ ] MVP distinguished from release scope.
+* [ ] AI solution explained at PM level.
+* [ ] Data and knowledge approach documented.
+* [ ] AI evaluation results documented.
+* [ ] Security and governance addressed.
+* [ ] Testing documented.
+* [ ] UAT documented.
+* [ ] Release readiness assessed.
+* [ ] PM release recommendation documented.
+* [ ] Authorized release decision documented.
+* [ ] Deployment decision documented.
+* [ ] KPI and monitoring results documented.
+* [ ] Business outcome assessed.
+* [ ] Improvement priorities documented.
+* [ ] Lessons learned documented.
+* [ ] Supporting evidence referenced.
+* [ ] Final PM recommendation completed.
+
+## Portfolio
+
+* [ ] Strongest evidence selected.
+* [ ] Individual PM contribution clearly identified.
+* [ ] Technical work accurately represented.
+* [ ] Executive-level story is clear.
+* [ ] Confidential or restricted information removed.
+
+## Evidence Quality
+
+* [ ] Evidence references are traceable.
+* [ ] Product maturity is accurately represented.
+* [ ] Missing evidence is identified honestly.
+* [ ] Results are distinguished from projections.
+* [ ] Recommendations are supported by evidence.
+
+---
+
+# Completion Standard
+
+Your completed submission should allow a reviewer to understand:
+
+**What problem existed → What solution was proposed → What decisions were made → What the evidence showed → What risks remained → What release and deployment decisions were supported → What value was demonstrated → What should happen next**
+
+The capstone should demonstrate **PM judgment**, not simply activity completion.
+
+**Problem → Evidence → Decision → Action → Outcome**

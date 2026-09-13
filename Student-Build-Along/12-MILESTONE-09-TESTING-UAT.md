@@ -1,600 +1,762 @@
-# Milestone 9: Testing & User Acceptance Testing (UAT)
+# Milestone 9 — Testing & User Acceptance Testing (UAT)
 
-## PM Objective
+## Objective
 
-Validate that the Artificial Intelligence (AI) product meets its agreed requirements, acceptance criteria, and intended user needs well enough to move toward release.
+In this milestone, you will validate whether the AI product works as intended, satisfies its requirements, supports user needs, and provides enough evidence to support a release decision.
 
-## Hands-On Objective
+You will bring together:
 
-Use the requirements, acceptance criteria, risks, AI evaluation results, and security findings from earlier milestones to conduct structured testing and User Acceptance Testing (UAT).
+**Requirements → Acceptance Criteria → Testing → Evidence → UAT → Release Recommendation**
 
-In earlier milestones, you evaluated specific areas of the product:
+The goal is not simply to prove that the application runs.
 
-* Milestone 6: Data and retrieval
-* Milestone 7: AI response and citation quality
-* Milestone 8: Security and governance
+The goal is to determine whether the product is:
 
-In this milestone, you bring those findings together and answer:
-
-> **Does the product meet the requirements well enough for its intended users to accept it?**
-
-You are not repeating every earlier test.
-
-You are using the evidence already collected to validate the product as a whole.
+* Functionally acceptable.
+* AI-quality acceptable.
+* Secure enough for its intended stage.
+* Usable by intended users.
+* Consistent with approved requirements.
+* Ready for the next release decision.
 
 ---
 
-# Section 1: Review What Must Be Accepted
+# What You Will Do
 
-Return to your Milestone 3 requirements and Milestone 4 backlog.
+You will:
 
-Identify the requirements that are included in the Minimum Viable Product (MVP).
-
-For each selected requirement, identify its acceptance criteria.
-
-Use:
-
-| Requirement ID | Requirement | MVP? | Acceptance Criteria | Source Milestone |
-| -------------- | ----------- | ---- | ------------------- | ---------------- |
-|                |             |      |                     |                  |
-|                |             |      |                     |                  |
-|                |             |      |                     |                  |
-|                |             |      |                     |                  |
-|                |             |      |                     |                  |
-
-Focus your testing on requirements that are important to the intended product outcome.
+1. Review the approved requirements and MVP.
+2. Build a focused testing plan.
+3. Define representative test scenarios.
+4. Execute applicable tests.
+5. Record actual results and evidence.
+6. Classify and prioritize issues.
+7. Evaluate User Acceptance Testing (UAT).
+8. Trace requirements to test evidence.
+9. Determine which issues must be fixed and which may be deferred.
+10. Assess release readiness.
+11. Make a release recommendation based on the evidence.
+12. Identify the appropriate release decision authority.
 
 ---
 
-# Section 2: Build the Test Plan
+# Why Testing & UAT Matter
 
-Create a small set of representative tests that cover the most important MVP requirements.
+An AI application can appear to work while still failing important product requirements.
 
-Create at least **six test scenarios**.
+For example:
 
-Your scenarios should include a mixture of:
+* The application may run but return incorrect information.
+* Retrieval may be technically functional but retrieve the wrong policy.
+* An answer may be correct but cite the wrong source.
+* An unsupported question may receive an invented answer.
+* A user may technically complete a task but find the response difficult to understand.
+* A security control may exist but fail under an unauthorized-access test.
+* Requirements may exist without sufficient evidence that they were actually satisfied.
 
-* A core user task
-* A requirement involving AI behavior
-* A requirement involving citation or evidence
-* A requirement involving error or unsupported behavior
-* A requirement involving user experience
-* A requirement involving a business or operational outcome
+Testing provides evidence.
 
-Use previous milestone results where appropriate rather than repeating the same test unnecessarily.
+UAT determines whether the product is acceptable to its intended users.
+
+The PM uses both to support the release decision.
+
+---
+
+# Testing vs. UAT
+
+Testing and UAT are related but different.
+
+## Testing
+
+Testing determines whether the product behaves according to defined requirements and expected technical or product conditions.
+
+Testing may evaluate:
+
+* Functionality.
+* Integration.
+* AI behavior.
+* Citations.
+* Performance.
+* Security.
+* Regression behavior.
+
+## User Acceptance Testing
+
+UAT determines whether the intended users consider the product acceptable for its intended use.
+
+UAT focuses on:
+
+* User goals.
+* User workflows.
+* Usability.
+* Expected outcomes.
+* Acceptance criteria.
+* Practical usefulness.
+
+A product can pass technical tests and still fail UAT.
+
+Likewise, a product that users like may still have technical, security, or governance defects that prevent release.
+
+---
+
+# Part 1 — Review Requirements and MVP
+
+Review:
+
+* Milestone 3 requirements.
+* Milestone 4 backlog and MVP.
+* Milestone 7 evaluation results.
+* Milestone 8 security and governance findings.
+
+Identify the requirements that must be validated before the intended release stage.
+
+Do not automatically retest every earlier activity.
+
+Instead, determine what evidence is already available and what additional validation is necessary.
+
+---
+
+# Part 2 — Build a Focused Test Plan
+
+Create a small but representative test plan.
+
+Your plan should cover at least **6 test scenarios** across the following areas:
+
+| Test Area                      | What You Are Validating                                            |
+| ------------------------------ | ------------------------------------------------------------------ |
+| Core User Task                 | Can the user complete the primary task?                            |
+| AI Behavior                    | Does the AI behave as expected?                                    |
+| Citation / Evidence            | Does the response provide appropriate supporting evidence?         |
+| Unsupported Behavior           | Does the product refuse or escalate when evidence is insufficient? |
+| User Experience                | Can the intended user understand and use the result?               |
+| Business / Operational Outcome | Does the product support the intended outcome?                     |
+
+You may include additional security, performance, integration, or regression tests where applicable.
+
+---
+
+# Reusable Test Scenario Template
+
+Use the following structure for each test scenario.
+
+| Field                      | Student Entry |
+| -------------------------- | ------------- |
+| Test ID                    |               |
+| Requirement / User Need    |               |
+| Test Area                  |               |
+| Scenario                   |               |
+| Preconditions              |               |
+| Expected Result            |               |
+| Acceptance Criteria        |               |
+| Actual Result              |               |
+| Pass / Fail / Not Testable |               |
+| Evidence Reference         |               |
+| Issue ID                   |               |
+| Severity                   |               |
+| Release Impact             |               |
+
+You may create additional test scenarios using this same structure.
+
+The purpose is consistency.
+
+Every important test should make it possible to understand:
+
+**What was tested → What should happen → What actually happened → What evidence exists → What the result means**
+
+---
+
+# Part 3 — Define Expected Results Before Testing
+
+Define the expected result before observing the actual result.
+
+This reduces the risk of changing the standard after seeing the outcome.
+
+For each test, document:
+
+* Test ID.
+* Requirement or user need.
+* Scenario.
+* Expected result.
+* Acceptance criteria.
+* Test conditions.
+
+### Example
+
+**Test ID:** T01
+
+**Scenario:** Employee asks how many paid time off days are available.
+
+**Expected Result:** The product provides the current approved policy information and appropriate supporting evidence.
+
+**Acceptance Criteria:**
+
+* Relevant information is retrieved.
+* Response is grounded in the policy source.
+* Citation or supporting evidence is provided.
+* No unsupported material claim is introduced.
+
+---
+
+# Part 4 — Execute the Tests
+
+Run the applicable tests against the current product.
 
 Record:
 
-| Test ID | Requirement ID | Test Scenario | Expected Result | Acceptance Criteria | Evidence Reference |
-| ------- | -------------- | ------------- | --------------- | ------------------- | ------------------ |
-|         |                |               |                 |                     |                    |
-|         |                |               |                 |                     |                    |
-|         |                |               |                 |                     |                    |
-|         |                |               |                 |                     |                    |
-|         |                |               |                 |                     |                    |
-|         |                |               |                 |                     |                    |
+* Actual result.
+* Pass or Fail.
+* Evidence Reference.
+* Issue ID, where applicable.
 
-### Evidence Reference
+Use the following structure:
 
-Use this field to identify the proof you will use to evaluate the test.
+| Test ID | Test Area | Scenario | Expected Result | Actual Result | Pass/Fail | Evidence Reference | Issue ID |
+| ------- | --------- | -------- | --------------- | ------------- | --------- | ------------------ | -------- |
+| T01     |           |          |                 |               |           |                    |          |
+| T02     |           |          |                 |               |           |                    |          |
+| T03     |           |          |                 |               |           |                    |          |
+| T04     |           |          |                 |               |           |                    |          |
+| T05     |           |          |                 |               |           |                    |          |
+| T06     |           |          |                 |               |           |                    |          |
 
-Examples:
-
-* Screenshot
-* Captured response
-* Test record
-* Prior milestone result
-* UAT observation
-* Defect record
-* Other documented evidence
+Add additional rows as required.
 
 ---
 
-# Section 3: Execute Functional and Integration Tests
+# Evidence Reference
 
-Run the applicable test scenarios.
-
-A functional test asks:
-
-> **Does the product perform the required function?**
-
-An integration test asks:
-
-> **Do the connected parts of the product work together as expected?**
-
-For example, an employee may:
-
-1. Enter a policy question
-2. Receive a response
-3. Review supporting information
-4. Use the answer to complete the intended task
-
-Record:
-
-| Test ID | Actual Result | Pass/Fail | Evidence Reference | Issue ID |
-| ------- | ------------- | --------- | ------------------ | -------- |
-|         |               |           |                    |          |
-|         |               |           |                    |          |
-|         |               |           |                    |          |
-|         |               |           |                    |          |
-|         |               |           |                    |          |
-|         |               |           |                    |          |
-
-Use the **Evidence Reference** to identify the proof supporting your result.
-
-Use the **Issue ID** only when a defect, gap, or other concern is identified.
-
----
-
-# Section 4: Apply Consistent Test Pass/Fail Rules
-
-Use these rules for each test.
-
-### Pass
-
-A test passes when the actual result meets the defined acceptance criteria for that scenario.
-
-### Fail
-
-A test fails when the actual result does not meet one or more required acceptance criteria.
-
-### Not Testable
-
-Use **Not Testable** when the capability cannot be tested in the current application or environment.
-
-Do not convert Not Testable into Pass.
-
-Document why the test could not be performed and identify the required future condition.
-
-### Test-Level Rule
-
-A test receives an overall **Pass** only when all required acceptance criteria for that scenario are met.
-
-One passing element does not cancel a failed mandatory criterion.
-
-When a test is Not Testable, record the reason and the Evidence Reference for the limitation when available.
-
----
-
-# Section 5: Evaluate Defects and Gaps
-
-When a test fails, determine whether the result represents:
-
-**Defect:** The product does not behave as required.
-
-**Requirement Gap:** The requirement or acceptance criteria are incomplete or unclear.
-
-**Data Issue:** The underlying data or source information is incorrect, incomplete, or outdated.
-
-**Process Issue:** The product may work, but a business or operational process is missing or ineffective.
-
-**Enhancement:** The product works as required, but a future improvement may provide additional value.
-
-Classify each issue:
-
-| Issue ID | Test ID | Issue | Type | Business Impact | Recommended Action | Evidence Reference |
-| -------- | ------- | ----- | ---- | --------------- | ------------------ | ------------------ |
-|          |         |       |      |                 |                    |                    |
-|          |         |       |      |                 |                    |                    |
-|          |         |       |      |                 |                    |                    |
-
-The Evidence Reference should identify the proof supporting the issue classification.
-
----
-
-# Section 6: Assign Defect Severity
-
-Use four simple severity levels.
-
-### Critical
-
-The issue creates unacceptable risk or prevents a critical business function from being safely used.
-
-Examples:
-
-* Unauthorized information exposure
-* Materially incorrect policy guidance affecting a critical decision
-* Critical MVP function cannot be used
-* A required control is bypassed
-
-### High
-
-The issue significantly affects a key requirement or user task but does not create immediate critical risk.
-
-### Medium
-
-The issue affects functionality, usability, or efficiency but the primary business task can still be completed.
-
-### Low
-
-The issue has limited business impact and does not materially prevent successful use.
-
-Record:
-
-| Issue ID | Severity | Reason | Must Be Fixed Before Release? | Evidence Reference |
-| -------- | -------- | ------ | ----------------------------- | ------------------ |
-|          |          |        |                               |                    |
-|          |          |        |                               |                    |
-|          |          |        |                               |                    |
-
-Severity should be based on **business and user impact**, not simply how difficult an issue is to fix.
-
----
-
-# Section 7: Conduct User Acceptance Testing
-
-User Acceptance Testing (UAT) evaluates the product from the perspective of the people who are expected to use or benefit from it.
-
-For this Build-Along, assume representative business users such as employees, Human Resources (HR), or another appropriate user group for your project.
-
-Select at least **three user scenarios**.
-
-For each scenario, define:
-
-* The user's goal
-* What the user is expected to do
-* What a successful outcome looks like
-* Whether the user would consider the result acceptable
-
-Use:
-
-| UAT ID | User Type | User Goal | Scenario | Expected Outcome | Actual Outcome | Acceptance Result | Evidence Reference |
-| ------ | --------- | --------- | -------- | ---------------- | -------------- | ----------------- | ------------------ |
-| UAT01  |           |           |          |                  |                | Pass/Fail         |                    |
-| UAT02  |           |           |          |                  |                | Pass/Fail         |                    |
-| UAT03  |           |           |          |                  |                | Pass/Fail         |                    |
-
-The focus is not whether the system is technically impressive.
-
-The focus is whether the intended user can accomplish the intended task successfully.
-
----
-
-# Section 8: Evaluate UAT Acceptance
-
-For each UAT scenario, ask:
-
-### Task Completion
-
-Could the user complete the intended task?
-
-### Expected Outcome
-
-Did the product produce the expected result?
-
-### Usability
-
-Could the user reasonably understand and use the result?
-
-### Confidence
-
-Would the user have reasonable confidence in using the result?
-
-### Business Value
-
-Does the product actually help the user accomplish the intended business outcome?
-
-Record:
-
-| UAT ID | Task Completed? | Expected Outcome Met? | Usable? | User Accepts? | Acceptance Result | Evidence Reference |
-| ------ | --------------- | --------------------- | ------- | ------------- | ----------------- | ------------------ |
-| UAT01  |                 |                       |         |               | Pass/Fail         |                    |
-| UAT02  |                 |                       |         |               | Pass/Fail         |                    |
-| UAT03  |                 |                       |         |               | Pass/Fail         |                    |
-
-### UAT Pass/Fail Rule
-
-**Pass:** The intended user can complete the required task, the expected outcome is achieved, and the user accepts the result.
-
-**Fail:** The intended user cannot complete the required task, the expected outcome is not achieved, or the user does not accept the result.
-
----
-
-# Section 9: Review Earlier AI Quality Evidence
-
-Do not repeat all Milestone 7 testing.
-
-Instead, review the results already collected.
-
-Use your Milestone 7 findings to determine:
-
-* Whether response quality met its target
-* Whether unsupported-response results created a release concern
-* Whether citation quality met its target
-* Whether any critical AI quality issue remains unresolved
-
-Record the key findings:
-
-| Area                      | Previous Result | Target | Current Status | Release Impact | Evidence Reference |
-| ------------------------- | --------------: | -----: | -------------- | -------------- | ------------------ |
-| Response Accuracy         |                 |        |                |                |                    |
-| Unsupported Response Rate |                 |        |                |                |                    |
-| Citation Accuracy         |                 |        |                |                |                    |
-| Citation Support          |                 |        |                |                |                    |
-
-You are carrying forward evidence, not recreating the entire evaluation.
-
----
-
-# Section 10: Review Security and Governance Evidence
-
-Use your Milestone 8 results.
-
-Identify:
-
-* Critical security findings
-* Production readiness gaps
-* Required governance controls
-* Open security or governance conditions
-
-Determine whether any outstanding issue affects the product's ability to move forward.
-
-Use:
-
-| Area              | Finding | Current Status | Production Requirement? | Release Impact | Evidence Reference |
-| ----------------- | ------- | -------------- | ----------------------- | -------------- | ------------------ |
-| Access            |         |                |                         |                |                    |
-| Data Protection   |         |                |                         |                |                    |
-| Privacy/Logging   |         |                |                         |                |                    |
-| Policy Governance |         |                |                         |                |                    |
-| Auditability      |         |                |                         |                |                    |
-
-Remember that a control that is not implemented in the student prototype may be a **production condition** rather than a failed prototype test.
-
----
-
-# Section 11: Review Requirements Traceability
-
-Trace each critical MVP requirement to its test evidence.
-
-Use:
-
-**Requirement → Acceptance Criteria → Test → Result → Evidence → Release Decision**
-
-Complete:
-
-| Requirement ID | Requirement | Acceptance Criteria | Test ID | Test Result | Evidence Reference | Release Impact |
-| -------------- | ----------- | ------------------- | ------- | ----------- | ------------------ | -------------- |
-|                |             |                     |         |             |                    |                |
-|                |             |                     |         |             |                    |                |
-|                |             |                     |         |             |                    |                |
-|                |             |                     |         |             |                    |                |
-|                |             |                     |         |             |                    |                |
-
-The Evidence Reference should point to the same evidence used to support the related test result.
-
-This creates a basic **requirements traceability** record.
-
-It allows you to demonstrate not only that testing occurred, but that testing was connected to what the product was required to deliver.
-
----
-
-# Section 12: Identify Open Issues
-
-Before recommending release, identify all unresolved issues that could affect the decision.
-
-Separate:
-
-**Must Fix Before Release**
-
-and
-
-**Can Be Deferred**
-
-Use:
-
-| Issue ID | Issue | Severity | Must Fix Before Release? | Owner | Next Action | Evidence Reference |
-| -------- | ----- | -------- | ------------------------ | ----- | ----------- | ------------------ |
-|          |       |          |                          |       |             |                    |
-|          |       |          |                          |       |             |                    |
-|          |       |          |                          |       |             |                    |
-
-Do not defer an issue simply because fixing it is inconvenient.
-
-Base the decision on business impact, risk, user impact, and release requirements.
-
----
-
-# Section 13: Make the UAT Decision
-
-Based on the UAT evidence, determine whether the intended user needs have been met.
-
-Choose one:
-
-### Accepted
-
-The intended users can complete the required tasks and the product meets the agreed acceptance criteria.
-
-### Accepted with Conditions
-
-The intended users can use the product, but specific issues or conditions must be addressed before or during release.
-
-### Not Accepted
-
-The product does not meet important user or business expectations and requires corrective action before it can proceed.
-
-Document:
-
-**UAT Decision:**
-[Accepted / Accepted with Conditions / Not Accepted]
-
-**Evidence Reference(s):**
-[Evidence supporting the decision]
-
-**Open Issues:**
-[Important unresolved issues]
-
-**Required Actions:**
-[Actions needed]
-
----
-
-# Section 14: Make the Release Recommendation
-
-Combine your testing, UAT, AI evaluation, security, governance, and requirements evidence.
-
-Choose one:
-
-### Go
-
-The product meets its defined acceptance criteria, no unresolved critical issues prevent release, and the remaining risks are acceptable.
-
-### Hold
-
-More evidence, testing, remediation, or stakeholder review is required before release.
-
-### No-Go
-
-The product does not meet critical requirements or has unresolved risks that make release unacceptable.
-
-Document:
-
-**Recommendation:**
-[Go / Hold / No-Go]
-
-**Evidence Reference(s):**
-[Key evidence supporting the recommendation]
-
-**Critical Issues:**
-[Unresolved critical or high-impact issues]
-
-**Conditions:**
-[Required actions before release]
-
-**Decision Owner:**
-[Role responsible]
-
----
-
-# Section 15: Define Exit Criteria
-
-Create a short list of conditions that must be satisfied before release.
-
-Your exit criteria should cover the most important areas:
-
-* Critical MVP requirements
-* Acceptance criteria
-* UAT acceptance
-* AI quality
-* Security
-* Governance
-* Critical defects
-* Required documentation
-
-Record:
-
-| Exit Criterion                          | Required? | Status | Evidence Reference |
-| --------------------------------------- | --------- | ------ | ------------------ |
-| Critical MVP requirements met           | Yes       |        |                    |
-| UAT accepted                            | Yes       |        |                    |
-| No unresolved critical defect           | Yes       |        |                    |
-| AI quality requirements met             | Yes       |        |                    |
-| Critical security requirements met      | Yes       |        |                    |
-| Required governance controls identified | Yes       |        |                    |
-| Release conditions documented           | Yes       |        |                    |
-
-Use the Evidence Reference to identify the evidence supporting each exit criterion.
-
----
-
-# Evidence Reference Standard
-
-Use **Evidence Reference** consistently throughout this milestone.
-
-An Evidence Reference should identify where the supporting proof can be found.
+**Evidence Reference** identifies the proof supporting your test result.
 
 Examples include:
 
-* Test ID
-* Screenshot
-* Captured response
-* UAT observation
-* Prior milestone result
-* Defect ID
-* Document or artifact
-* Other recorded evidence
+* Screenshot.
+* Response capture.
+* Evaluation result.
+* UAT observation.
+* Defect record.
+* Prior milestone result.
+* Test output.
+* Approval record.
 
-The purpose is traceability.
+Use the same **Evidence Reference** concept throughout this milestone.
 
-A reviewer should be able to move from:
-
-**Requirement → Test → Result → Evidence → Decision**
-
-without having to rely on memory or assumption.
+The goal is to make every important test conclusion traceable to evidence.
 
 ---
 
-# Deliverable: Testing & UAT Results Record
+# Test Result Rules
 
-Create a **Testing & User Acceptance Testing Results Record** containing:
+Use these rules consistently.
 
-* At least six representative test scenarios
-* Expected results and acceptance criteria
-* Actual test results
-* Test-level Pass/Fail results
-* Evidence References for test results
-* Defects and gaps
-* Defect severity
-* At least three UAT scenarios
-* UAT results
-* Evidence References for UAT results
-* Requirements traceability
-* Results carried forward from Milestone 7
-* Results carried forward from Milestone 8
-* Evidence References for carried-forward results
-* Open issues
-* Must-Fix versus Deferred decisions
-* UAT decision
-* Release recommendation: Go, Hold, or No-Go
-* Release exit criteria
-* Evidence supporting the decision
+## Pass
+
+The actual result meets the defined acceptance criteria and expected outcome.
+
+## Fail
+
+The actual result does not meet the defined acceptance criteria or expected outcome.
+
+## Not Testable
+
+The test cannot be performed in the current application or environment.
+
+Do not convert **Not Testable** into Pass.
+
+Do not claim a requirement has been validated when the required test could not be performed.
 
 ---
 
-# PM Checkpoint
+# Part 5 — Identify Issues and Defects
 
-Before moving forward, you should be able to answer:
+For each failed or concerning result, determine what type of problem exists.
 
-> **Does the product meet its agreed requirements and intended user needs well enough to move toward release?**
+Classify the issue as one of the following:
 
-You should also be able to explain:
+## Defect
 
-* The difference between functional testing and UAT
-* How acceptance criteria are used during testing
-* How to determine whether a test passes or fails
-* How to distinguish defects from enhancements
-* How to prioritize defects by business impact
-* How UAT differs from technical testing
-* How earlier AI evaluation and security findings should carry into release decisions
-* How requirements traceability connects requirements to evidence
-* How Evidence References support test and release decisions
-* Which issues must be fixed before release
-* What conditions can be deferred
-* Why UAT acceptance does not automatically mean production readiness
-* How the evidence supports your Go, Hold, or No-Go recommendation
+The product does not perform according to an approved requirement or acceptance criterion.
+
+## Requirement Gap
+
+The product may behave as designed, but an important requirement was never adequately defined.
+
+## Data Issue
+
+The source data or knowledge is incomplete, inaccurate, outdated, conflicting, or otherwise unsuitable.
+
+## Process Issue
+
+The problem results from a workflow, ownership, governance, or operational process.
+
+## Enhancement
+
+The current product may meet its approved requirements, but a potential improvement has been identified.
+
+Do not classify every improvement as a defect.
+
+---
+
+# Part 6 — Assign Severity
+
+Assign a severity level to significant issues.
+
+## Critical
+
+The issue creates unacceptable risk or prevents safe or appropriate use.
+
+Examples:
+
+* Unauthorized disclosure.
+* Critical security bypass.
+* Material data exposure.
+* Severe product failure.
+* Critical release requirement failure.
+
+## High
+
+The issue materially affects product quality, user value, release readiness, or business outcome.
+
+## Medium
+
+The issue affects quality or usability but may not prevent the intended release.
+
+## Low
+
+The issue has limited impact and can generally be addressed through normal backlog management.
+
+---
+
+# Part 7 — Determine Must Fix vs. Can Defer
+
+Not every issue must block release.
+
+For each open issue, determine:
+
+**Must Fix**
+
+The issue should be resolved before the intended release stage.
+
+or:
+
+**Can Defer**
+
+The issue may be moved to a later release when the associated risk is understood and accepted.
+
+Consider:
+
+* Severity.
+* User impact.
+* Business impact.
+* Security.
+* Governance.
+* Regulatory implications.
+* Frequency.
+* Workaround availability.
+* Release stage.
+* Risk of recurrence.
+
+---
+
+# Release-Blocking Conditions
+
+An issue may be release-blocking when it:
+
+* Creates unacceptable security or privacy risk.
+* Allows unauthorized access.
+* Exposes confidential information.
+* Causes material unsupported policy guidance.
+* Violates a critical requirement.
+* Prevents required acceptance criteria from being met.
+* Creates unacceptable business or user risk.
+
+A lower-severity enhancement should not automatically block release.
+
+---
+
+# Part 8 — Carry Forward Earlier Evidence
+
+Do not unnecessarily repeat every test from Milestones 6–8.
+
+Use prior evidence where it remains valid.
+
+For example:
+
+* Milestone 6 retrieval evidence can support retrieval-related traceability.
+* Milestone 7 AI evaluation evidence can support response-quality conclusions.
+* Milestone 8 security findings can support governance readiness.
+
+Use an **Evidence Reference** to connect the earlier result to the current assessment.
+
+Retest when:
+
+* The underlying capability changed.
+* New evidence is required.
+* A previous result is no longer valid.
+* A regression risk exists.
+* A release condition requires fresh validation.
+
+The PM should avoid both unnecessary duplication and unsupported carry-forward assumptions.
+
+---
+
+# Part 9 — User Acceptance Testing (UAT)
+
+UAT evaluates whether intended users can use the product successfully for their intended purpose.
+
+Complete at least **3 representative UAT scenarios**.
+
+Your scenarios should represent realistic user goals.
+
+Examples:
+
+* Finding a known policy.
+* Asking a policy question requiring retrieval.
+* Receiving a cited response.
+* Asking a question where evidence is insufficient.
+* Understanding the response and knowing what to do next.
+
+Use:
+
+| UAT ID | User Type | User Goal | Scenario | Expected Result | Actual Result | Acceptance Result | Evidence Reference |
+| ------ | --------- | --------- | -------- | --------------- | ------------- | ----------------- | ------------------ |
+| UAT-01 |           |           |          |                 |               |                   |                    |
+| UAT-02 |           |           |          |                 |               |                   |                    |
+| UAT-03 |           |           |          |                 |               |                   |                    |
+
+---
+
+# UAT Acceptance Rule
+
+A UAT scenario is accepted when:
+
+1. The intended user can complete the required task.
+2. The expected outcome is achieved.
+3. The user considers the result acceptable for the intended use.
+
+A technically correct response does not automatically guarantee acceptance.
+
+For example, a response may contain correct information but still fail the intended user experience if users cannot understand or use it effectively.
+
+---
+
+# Part 10 — Capture User Feedback
+
+Document significant UAT feedback.
+
+Consider:
+
+* Usefulness.
+* Clarity.
+* Trust.
+* Ease of use.
+* Confidence.
+* Response quality.
+* Citation usefulness.
+* Workflow fit.
+* Missing capabilities.
+
+Distinguish feedback from defects.
+
+A user suggestion may be an enhancement rather than a failure.
+
+---
+
+# Part 11 — Requirements Traceability
+
+Create a traceability record connecting requirements to testing evidence.
+
+Use:
+
+| Requirement ID | Requirement | Acceptance Criteria | Test ID | Test Result | Evidence Reference | Release Impact |
+| -------------- | ----------- | ------------------- | ------- | ----------- | ------------------ | -------------- |
+| R-01           |             |                     |         |             |                    |                |
+| R-02           |             |                     |         |             |                    |                |
+| R-03           |             |                     |         |             |                    |                |
+| R-04           |             |                     |         |             |                    |                |
+| R-05           |             |                     |         |             |                    |                |
+
+Add additional rows as needed.
+
+The goal is to answer:
+
+> **How do we know the approved requirement was actually validated?**
+
+---
+
+# Part 12 — Review the Overall Evidence
+
+Bring together:
+
+**Requirements + Testing + UAT + AI Evaluation + Security + Risks**
+
+Do not rely on a single test result.
+
+Consider:
+
+* What passed?
+* What failed?
+* What was not testable?
+* What remains open?
+* What is release-blocking?
+* What can be deferred?
+* What user concerns remain?
+* What risk remains?
+
+---
+
+# Part 13 — Release Recommendation
+
+Use the four-way release decision framework established in this course.
+
+## GO
+
+The product meets the required release conditions and identified risks are acceptable.
+
+**Decision: Proceed with release.**
+
+## CONDITIONAL GO
+
+The product is approved to proceed **only under clearly defined conditions**.
+
+Conditions should have:
+
+* A specific requirement, risk, or limitation.
+* An identified owner.
+* A required action.
+* A due point or review point.
+* A success or validation measure.
+* Appropriate monitoring or oversight.
+
+**Decision: Proceed within the approved conditions.**
+
+Conditional Go should not be used to bypass a critical unresolved security, authorization, privacy, or safety issue.
+
+## HOLD
+
+The release decision **cannot proceed yet** because required evidence, remediation, validation, or readiness work is incomplete.
+
+Examples include:
+
+* A required test has not been completed.
+* A required security control has not been implemented or validated.
+* A release criterion has not been demonstrated.
+* A significant dependency is unresolved.
+* Evidence is insufficient to support a responsible release decision.
+
+**Decision: Do not proceed until the condition is resolved, validated, or formally reassessed.**
+
+## NO-GO
+
+The evidence demonstrates that the product should not be released in its current state.
+
+Examples include:
+
+* A critical security or authorization failure.
+* Unacceptable privacy or data-exposure risk.
+* A material product failure creates unacceptable risk.
+* A critical release requirement is not satisfied.
+* The product is not suitable for the intended release stage.
+
+**Decision: Do not release. Significant remediation or reassessment is required.**
+
+---
+
+# The Key Distinction
+
+Use this rule:
+
+**GO = Proceed**
+
+**CONDITIONAL GO = Proceed with defined conditions**
+
+**HOLD = Do not proceed yet**
+
+**NO-GO = Do not release in the current state**
+
+When deciding between Conditional Go and Hold, ask:
+
+> **Has the organization approved proceeding under controlled conditions, or is a required condition still preventing approval?**
+
+If the condition prevents approval, use **HOLD**.
+
+If approval has been granted with controlled, documented conditions, use **CONDITIONAL GO**.
+
+---
+
+# Release Decision Authority
+
+The Project Manager coordinates the release-readiness assessment, reviews the evidence, identifies risks, and makes or facilitates the appropriate release recommendation.
+
+The PM should **not assume personal authority to approve a release** unless that authority has been explicitly assigned.
+
+The person or group with formal release authority depends on the organization's governance model.
+
+Examples may include:
+
+* Product Owner.
+* Executive Sponsor.
+* Steering Committee.
+* Change-approval authority.
+* Business owner.
+* Governance or release board.
+* Other formally designated decision-maker.
+
+The PM should identify the applicable decision authority before the final release recommendation is recorded.
+
+Use:
+
+**PM Assessment → PM Recommendation → Authorized Decision → Conditions / Actions → Ownership → Follow-Up**
+
+---
+
+# Release Decision Record
+
+Complete the following:
+
+| Decision Element              | Assessment |
+| ----------------------------- | ---------- |
+| PM Release Recommendation     |            |
+| Decision Authority            |            |
+| Final Decision                |            |
+| Strongest Evidence            |            |
+| Open Issues                   |            |
+| Critical / High Risks         |            |
+| Must-Fix Conditions           |            |
+| Conditions, if Conditional Go |            |
+| Action Owner(s)               |            |
+| Decision Date                 |            |
+| Next Review Point             |            |
+
+If the PM recommendation and authorized final decision differ, document both.
+
+For example:
+
+**PM Recommendation:** Conditional Go
+
+**Authorized Decision:** Hold
+
+This is not automatically an error.
+
+The purpose of governance is to make the decision authority and decision rationale visible.
+
+---
+
+# Part 14 — Exit Criteria
+
+Before recommending release, verify whether the following conditions have been satisfied.
+
+| Exit Criterion                                  | Status | Evidence Reference |
+| ----------------------------------------------- | ------ | ------------------ |
+| Representative testing completed                |        |                    |
+| Critical defects resolved or formally addressed |        |                    |
+| AI evaluation reviewed                          |        |                    |
+| Security findings reviewed                      |        |                    |
+| UAT completed                                   |        |                    |
+| User acceptance determined                      |        |                    |
+| Requirements traceability completed             |        |                    |
+| Release-blocking issues identified              |        |                    |
+| Open risks documented                           |        |                    |
+| Release recommendation supported by evidence    |        |                    |
+| Decision authority identified                   |        |                    |
+
+Do not mark an item complete without supporting evidence.
+
+---
+
+# Deliverable
+
+Complete a **Testing & UAT Results Record** containing:
+
+1. A focused test plan.
+2. At least 6 representative test scenarios.
+3. Expected and actual results.
+4. Pass / Fail / Not Testable results.
+5. Evidence References.
+6. Issue and defect classifications.
+7. Severity assessments.
+8. Must-Fix vs. Can-Defer decisions.
+9. At least 3 UAT scenarios.
+10. UAT acceptance results.
+11. User feedback.
+12. Requirements traceability.
+13. Release recommendation.
+14. Release decision authority.
+15. Final decision, when available.
+16. Open issues and risks.
+17. Evidence supporting the recommendation.
+
+---
+
+# Final PM Checkpoint
+
+Answer:
+
+> **Does the evidence show that the product meets its requirements, satisfies intended users, manages material risks, and is ready for the intended release stage?**
+
+Then answer:
+
+> **Who has the authority to make the final release decision, and what evidence should that decision be based on?**
+
+Your answer should connect:
+
+**Requirements → Evidence → Risk → UAT → PM Recommendation → Authorized Decision**
+
+Do not answer based only on whether the application works.
 
 ---
 
 # PM Perspective
 
-**Testing provides evidence. UAT provides user acceptance. The PM uses both to make a release decision.**
+Testing provides evidence.
 
-You are not asking whether every possible problem has been eliminated.
+UAT provides user acceptance evidence.
 
-You are asking:
+Risk and governance review provide control evidence.
 
-**Did we build what we agreed to build?**
+The PM brings these together to make a release recommendation.
 
-**Can the intended user accomplish the intended task?**
+The PM does not simply ask:
 
-**Are the remaining risks acceptable?**
+> **"Did the test pass?"**
 
-**Can we trace the decision back to evidence?**
+The PM asks:
 
-**Is there enough evidence to move forward?**
+> **"What does the evidence mean for the product, the users, the business, and the release decision?"**
 
-The progression is:
+The PM also asks:
 
-**Requirement → Acceptance Criteria → Test → Evidence → Defect/Gaps → UAT → Exit Criteria → Release Recommendation**
+> **"Who has the authority to approve the decision, and what conditions must be satisfied?"**
 
-The next milestone will focus on **Release & Deployment**, where you will turn the testing and UAT evidence into a controlled release decision and deployment plan.
+The next milestone separates **release approval** from **deployment readiness and execution**.
+
+---
+
+# Milestone Completion Standard
+
+Milestone 9 is complete when you have:
+
+* Reviewed the approved requirements and MVP.
+* Defined at least 6 representative test scenarios.
+* Used the reusable test scenario structure.
+* Defined expected results before testing.
+* Recorded actual results and Evidence References.
+* Applied Pass / Fail / Not Testable consistently.
+* Classified significant issues.
+* Assigned severity where appropriate.
+* Determined Must Fix vs. Can Defer.
+* Completed at least 3 UAT scenarios.
+* Captured significant user feedback.
+* Completed requirements traceability.
+* Reviewed relevant prior evidence.
+* Identified release-blocking conditions.
+* Documented a PM release recommendation.
+* Identified the formal release decision authority.
+* Documented the final decision when available.
+* Completed the release exit-criteria review.
+* Completed the final PM checkpoint.
+
+The quality standard is not the number of tests.
+
+The quality standard is whether the evidence is sufficient to explain:
+
+**What was tested → What happened → What it means → What risk remains → What the PM recommends → Who decides → What happens next**

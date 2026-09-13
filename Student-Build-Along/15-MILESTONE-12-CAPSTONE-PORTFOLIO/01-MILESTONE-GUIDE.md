@@ -2,7 +2,7 @@
 
 ## Objective
 
-In this milestone, you will integrate the Project Management (PM) work completed throughout the course into a complete Artificial Intelligence (AI) project capstone and professional portfolio package.
+In this milestone, you will integrate the Project Management (PM) work completed throughout the course into a complete **Artificial Intelligence (AI) project capstone** and professional portfolio package.
 
 You will demonstrate that you can manage an AI product through its lifecycle:
 
@@ -31,70 +31,266 @@ Instead, you will:
 5. Compare your work against the completed Petadel PolicyAssist reference example.
 6. Make a final evidence-based PM recommendation.
 
-### Your M12 Files
+---
 
-Use the four files provided for this milestone:
+# Your M12 Files
 
-**Milestone 12 Guide**
+Use the four files provided for this milestone.
+
+### Milestone 12 Guide
+
 Explains what to do and how to evaluate your capstone.
 
-**Capstone Submission Template**
+### Capstone Submission Template
+
 Your working document for assembling the complete capstone.
 
-**Portfolio Package Template**
+### Portfolio Package Template
+
 Your professional case-study format for presenting the project publicly.
 
-**Completed Capstone Example**
+### Completed Capstone Example
+
 The Petadel PolicyAssist reference showing the expected standard.
 
 ---
 
-# Capstone Options
+# Required Deliverables
 
-You may complete the capstone using one of two approaches.
+Milestone 12 has **two primary outputs**:
 
-## Option A — Petadel PolicyAssist
+**1. Capstone Submission**
 
-Use the Petadel PolicyAssist AI project as the reference implementation provided throughout this course.
+**2. Portfolio Package**
 
-You will assemble the PM artifacts and evidence developed throughout the course into a complete project package.
+These outputs have different purposes.
 
-## Option B — Your Own AI Product
+The **Capstone Submission** demonstrates that you can manage an AI product through the complete lifecycle.
 
-Apply the same Project Management process to your own AI product, use case, or business problem.
+The **Portfolio Package** transforms that work into a professional case study that can be presented to recruiters, hiring managers, executives, or other professional audiences.
 
-You do not need to recreate the PolicyAssist technical application.
-
-Your project should demonstrate the same PM lifecycle and evidence-based decision-making.
+The optional technical Build-Along supports these deliverables but does not replace them.
 
 ---
 
-# Capstone Completion Model
+# Deliverable 1 — Capstone Submission
 
-Your completed project should demonstrate evidence across the full lifecycle.
+The **Capstone Submission** is the primary required deliverable for Milestone 12.
 
-| Area                          | Evidence                                                     |
-| ----------------------------- | ------------------------------------------------------------ |
-| Problem                       | Problem statement and business need                          |
-| Stakeholders                  | Stakeholder analysis and engagement approach                 |
-| Requirements                  | Business, functional, and non-functional requirements        |
-| Scope                         | In-scope, out-of-scope, assumptions, and constraints         |
-| Product Planning              | Backlog, prioritization, and Minimum Viable Product (MVP)    |
-| AI Design                     | Architecture and technology decisions                        |
-| Data                          | Data sources, quality, authority, and retrieval approach     |
-| Evaluation                    | AI evaluation framework and results                          |
-| Risk                          | Risk register and mitigation                                 |
-| Security & Governance         | Access, security, privacy, and governance controls           |
-| Testing                       | Test strategy, results, and defects                          |
-| User Acceptance Testing (UAT) | User scenarios and acceptance results                        |
-| Release                       | Release readiness and deployment approach                    |
-| Monitoring                    | Key Performance Indicators (KPIs), dashboard, and monitoring |
-| Continuous Improvement        | Improvement actions and future roadmap                       |
-| Business Outcome              | Evidence of product value                                    |
+Complete the:
 
-The evidence should tell one connected story.
+**Capstone Submission Template**
 
-**Problem → Decision → Action → Evidence → Outcome**
+Your completed capstone should demonstrate evidence across the AI product lifecycle.
+
+At minimum, it should contain:
+
+* Project overview.
+* Business problem.
+* Users and stakeholders.
+* Requirements.
+* Scope.
+* Minimum Viable Product (MVP).
+* AI solution.
+* Data and knowledge management.
+* AI evaluation.
+* Risk, security, and governance.
+* Testing.
+* User Acceptance Testing (UAT).
+* Release readiness.
+* Release decision.
+* Deployment readiness and decision.
+* Key Performance Indicators (KPIs) and monitoring.
+* Continuous improvement.
+* Lessons learned.
+* Business outcome.
+* Portfolio evidence index.
+* Final PM recommendation.
+
+Use the actual evidence developed throughout Milestones 1–11.
+
+Do not simply copy every milestone into the capstone.
+
+Select and organize the evidence that best demonstrates your PM decisions and outcomes.
+
+---
+
+# Required Capstone Evidence
+
+Your capstone should include or reference the relevant supporting artifacts.
+
+Examples include:
+
+* Problem statement.
+* Stakeholder analysis.
+* Requirements.
+* Product backlog.
+* MVP definition.
+* AI architecture.
+* Data and retrieval assessment.
+* Evaluation results.
+* Risk register.
+* Security and governance assessment.
+* Test results.
+* UAT results.
+* Release-readiness assessment.
+* Release decision.
+* Deployment readiness assessment.
+* KPI dashboard.
+* Monitoring evidence.
+* Continuous-improvement backlog.
+
+Use links or artifact references where appropriate.
+
+You do not need to duplicate the full contents of every artifact inside the capstone.
+
+---
+
+# Final PM Decision Record
+
+Your capstone must include a clear final PM recommendation.
+
+Document:
+
+| Decision Element            | Assessment |
+| --------------------------- | ---------- |
+| Business Outcome            |            |
+| Strongest Evidence          |            |
+| Primary Product Risk        |            |
+| Primary Business Risk       |            |
+| PM Recommendation           |            |
+| Release Recommendation      |            |
+| Authorized Release Decision |            |
+| Release Decision Authority  |            |
+| Deployment Decision         |            |
+| Immediate Action            |            |
+| Action Owner                |            |
+| Next Review Point           |            |
+
+Your recommendation should connect:
+
+**Business Value → Evidence → Risk → Decision → Action → Outcome**
+
+---
+
+# Deliverable 2 — Portfolio Package
+
+After completing the Capstone Submission, use the:
+
+**Portfolio Package Template**
+
+The Portfolio Package is a professional presentation of the project.
+
+It should demonstrate:
+
+**Problem → Users → PM Strategy → AI Solution → Risk → Evaluation → Testing → Release → Outcomes → Continuous Improvement**
+
+The Portfolio Package should make your individual contribution clear.
+
+Distinguish between:
+
+**What the product did**
+
+and
+
+**What you personally managed, influenced, decided, coordinated, or evaluated.**
+
+Do not claim technical work you did not personally perform.
+
+---
+
+# Portfolio Package Standard
+
+Your portfolio case study should be understandable without requiring the reader to complete the course.
+
+A recruiter or hiring manager should be able to understand:
+
+* The business problem.
+* Why AI was appropriate.
+* Your PM role.
+* Your major decisions.
+* How you managed AI-specific risks.
+* How the product was evaluated.
+* How testing and UAT were handled.
+* How release readiness was determined.
+* How product performance was measured.
+* What outcomes were achieved or expected.
+* What should happen next.
+
+---
+
+# Technical Build-Along Evidence
+
+The technical implementation is **optional**.
+
+Students who completed the optional Build-Along may include technical evidence such as:
+
+* PolicyAssist screenshots.
+* Application workflow.
+* Architecture diagram.
+* KPI dashboard.
+* Evaluation results.
+* Deployment evidence.
+
+Technical evidence should support the PM story.
+
+It should not replace the PM analysis.
+
+**The portfolio demonstrates PM capability, not software-engineering proficiency.**
+
+---
+
+# Completed Capstone Example
+
+The:
+
+**Petadel PolicyAssist AI — Completed Capstone Example**
+
+is a reference resource.
+
+It is **not a student deliverable**.
+
+Use it to compare the quality and completeness of your own work.
+
+Do not submit the instructor example as your own work.
+
+---
+
+# Required vs. Optional Summary
+
+| Item                                  | Required?                              | Purpose                                        |
+| ------------------------------------- | -------------------------------------- | ---------------------------------------------- |
+| Completed Capstone Submission         | **Yes**                                | Demonstrates complete AI PM lifecycle          |
+| Supporting Capstone Evidence          | **Yes**                                | Demonstrates decisions and results             |
+| Final PM Recommendation               | **Yes**                                | Demonstrates final PM judgment                 |
+| Portfolio Package                     | **Yes** for the full portfolio outcome | Converts capstone into professional case study |
+| Technical Build-Along Evidence        | **Optional**                           | Demonstrates applied technical understanding   |
+| PolicyAssist Technical Implementation | **Optional**                           | Supports the Build-Along                       |
+| Completed Capstone Example            | **Reference only**                     | Demonstrates expected standard                 |
+
+---
+
+# What You Submit
+
+Your M12 submission should contain:
+
+### Required
+
+**Completed Capstone Submission**
+
+with its supporting evidence and final PM recommendation.
+
+### Portfolio Outcome
+
+**Completed Portfolio Package**
+
+using the Portfolio Package Template.
+
+### Optional
+
+Technical Build-Along evidence, screenshots, implementation details, or other supporting material.
+
+Do not submit the instructor's completed example as your own work.
 
 ---
 
@@ -119,22 +315,23 @@ Your capstone should answer:
 9. How did we evaluate the AI?
 10. How did we test the product?
 11. What did UAT tell us?
-12. Was the product ready for release?
-13. How did we measure product performance?
-14. What business outcome did the product target?
-15. What should happen next?
+12. What release decision did the evidence support?
+13. Was the product ready for deployment?
+14. How did we measure product performance?
+15. What business outcome did the product target?
+16. What should happen next?
 
-### PM Standard
+## PM Standard
 
 Do not describe activities without explaining their purpose.
 
-For example:
+### Weak
 
-**Weak:**
-"We created a risk register."
+> "We created a risk register."
 
-**Stronger:**
-"We identified hallucination and authorization as high-impact AI risks and assigned mitigation actions before release."
+### Stronger
+
+> "We identified hallucination and authorization as high-impact AI risks and assigned mitigation actions before release."
 
 The second statement demonstrates PM judgment.
 
@@ -155,10 +352,11 @@ Confirm that your final capstone clearly shows:
 * In-scope capabilities.
 * Out-of-scope capabilities.
 * MVP scope.
-* Deferred or rejected capabilities.
+* Later-release capabilities, where applicable.
+* Deferred capabilities.
 * Major assumptions and constraints.
 
-### PM Decision
+## PM Decision
 
 Answer:
 
@@ -166,16 +364,48 @@ Answer:
 
 Identify any item that was:
 
-* Completed
-* Partially completed
-* Deferred
-* Rejected
+* Completed.
+* Partially completed.
+* Planned for a later release.
+* Deferred.
+* Rejected.
+* Out of scope.
 
 Support your conclusion with evidence from your requirements, backlog, and MVP artifacts.
 
 ---
 
-# Part 3 — Review the AI Solution
+# Part 3 — Review MVP vs. Release Scope
+
+Do not treat the MVP and release scope as the same thing.
+
+## MVP
+
+The **Minimum Viable Product (MVP)** is the smallest set of capabilities needed to provide core user value and generate meaningful evidence about whether the product solves the intended problem.
+
+## Release Scope
+
+Release scope is the set of capabilities, controls, fixes, and approved changes included in a specific release.
+
+A later release may contain more capabilities than the original MVP.
+
+The progression may be:
+
+**MVP Definition → MVP Validation → Learn → Prioritize → Release Scope → Release Validation → Release Decision**
+
+## PM Decision
+
+Explain:
+
+* What was required for MVP validation?
+* What was intentionally deferred?
+* What belongs to a later release?
+* What remains permanently out of scope?
+* Why?
+
+---
+
+# Part 4 — Review the AI Solution
 
 Review the architecture and technical decisions developed in Milestone 5.
 
@@ -197,13 +427,13 @@ For PolicyAssist, the core flow is:
 
 **Policy Documents → Processing → Embeddings → Vector Database → Retrieval → Large Language Model (LLM) → Grounded Response → Citation → User**
 
-### PM Decision
+## PM Decision
 
 Identify at least one important technical or architecture decision.
 
 Explain:
 
-**Decision → Reason → Tradeoff → Risk**
+**Decision → Reason → Tradeoff → Risk → Outcome**
 
 You do not need to claim that you personally engineered technical components you did not build.
 
@@ -211,7 +441,7 @@ Your role is to demonstrate that you can manage and communicate technical decisi
 
 ---
 
-# Part 4 — Review Data & Knowledge Management
+# Part 5 — Review Data & Knowledge Management
 
 Review Milestone 6.
 
@@ -236,15 +466,15 @@ For PolicyAssist, remember:
 
 The authoritative source must be identified before the AI relies on the information.
 
-### PM Decision
+## PM Decision
 
 Identify the most important data or knowledge risk and explain:
 
-**Risk → Impact → Control → Evidence**
+**Risk → Impact → Control → Evidence → Decision**
 
 ---
 
-# Part 5 — Review AI Evaluation
+# Part 6 — Review AI Evaluation
 
 Review Milestone 7.
 
@@ -270,11 +500,11 @@ Use:
 
 **Metric → Target → Actual → Status → Interpretation → Decision**
 
-### PM Decision
+## PM Decision
 
 Answer:
 
-> **Does the evaluation evidence support continued use, improvement, or additional validation?**
+> **Does the evaluation evidence support continued use, improvement, additional validation, or release at the intended stage?**
 
 Do not simply report the numbers.
 
@@ -282,7 +512,7 @@ Explain what they mean for the product.
 
 ---
 
-# Part 6 — Review Security & Governance
+# Part 7 — Review Security & Governance
 
 Review Milestone 8.
 
@@ -310,7 +540,7 @@ Address applicable areas such as:
 
 Do not claim that a control passed if it was not implemented or tested.
 
-### PM Decision
+## PM Decision
 
 Identify the most significant remaining security or governance risk.
 
@@ -320,7 +550,7 @@ Explain:
 
 ---
 
-# Part 7 — Review Testing & UAT
+# Part 8 — Review Testing & UAT
 
 Review Milestone 9.
 
@@ -335,12 +565,12 @@ Review evidence for:
 * Unsupported-question handling.
 * User experience.
 * Business or operational expectations.
-* User Acceptance Testing (UAT).
+* UAT.
 * Defects and issues.
 
 Carry forward relevant evidence rather than unnecessarily repeating earlier tests.
 
-### Testing Decision
+## Testing Decision
 
 Determine whether the remaining issues are:
 
@@ -348,7 +578,7 @@ Determine whether the remaining issues are:
 
 Explain the release impact.
 
-### UAT Decision
+## UAT Decision
 
 Determine whether the product was:
 
@@ -358,46 +588,204 @@ Support the decision with UAT evidence.
 
 ---
 
-# Part 8 — Review Release & Deployment
+# Part 9 — Review Release & Deployment
 
 Review Milestone 10.
 
-Keep two decisions separate:
+Keep the release decision and deployment decision separate.
 
-### Release Decision
+## Release Decision
 
-Should the product be approved for release?
+The release decision asks:
 
-**Go → Hold → No-Go**
+> **Should this version be approved to proceed to its intended release stage?**
 
-### Deployment Decision
+Use:
 
-Can the approved release actually be deployed into the intended environment?
+**GO → CONDITIONAL GO → HOLD → NO-GO**
 
-**Deploy → Hold Deployment → Rollback**
+### GO
 
-Your capstone should demonstrate that release approval does not automatically mean production deployment is appropriate.
+The product meets the required release conditions and identified risks are acceptable.
 
-Review:
+**Decision: Proceed with release.**
 
-* Release criteria.
-* Open defects.
-* UAT.
-* AI quality.
-* Security conditions.
-* Deployment readiness.
-* Environment and configuration requirements.
-* Support ownership.
-* Monitoring.
-* Rollback.
+### CONDITIONAL GO
 
-### PM Decision
+The product is approved to proceed **only under clearly defined conditions**.
 
-Document your final release position and explain the evidence behind it.
+Conditions should include:
+
+* Specific requirement, risk, or limitation.
+* Identified owner.
+* Required action.
+* Due point or review point.
+* Success or validation measure.
+* Appropriate monitoring or oversight.
+
+**Decision: Proceed within the approved conditions.**
+
+Conditional Go should not be used to bypass a critical unresolved security, authorization, privacy, or safety issue.
+
+### HOLD
+
+The release decision **cannot proceed yet** because required evidence, remediation, validation, or readiness work is incomplete.
+
+Examples include:
+
+* Required testing is incomplete.
+* A required security control has not been implemented or validated.
+* A release criterion has not been demonstrated.
+* A significant dependency remains unresolved.
+* Evidence is insufficient to support a responsible release decision.
+
+**Decision: Do not proceed until the condition is resolved, validated, or formally reassessed.**
+
+### NO-GO
+
+The evidence demonstrates that the product should not be released in its current state.
+
+Examples include:
+
+* Critical security or authorization failure.
+* Unacceptable privacy or data-exposure risk.
+* Material product failure.
+* Critical release requirement not satisfied.
+* Product unsuitable for the intended release stage.
+
+**Decision: Do not release. Significant remediation or reassessment is required.**
+
+### Key Distinction
+
+**GO = Proceed**
+
+**CONDITIONAL GO = Proceed with defined conditions**
+
+**HOLD = Do not proceed yet**
+
+**NO-GO = Do not release in the current state**
 
 ---
 
-# Part 9 — Review KPI & Monitoring
+# Release Decision Authority
+
+The Project Manager coordinates the readiness assessment, reviews evidence, identifies risks, and makes or facilitates the release recommendation.
+
+The PM should not assume personal authority to approve a release unless that authority has been explicitly assigned.
+
+The final decision may belong to:
+
+* Product Owner.
+* Executive Sponsor.
+* Business Owner.
+* Steering Committee.
+* Change-approval authority.
+* Release board.
+* Governance authority.
+* Other formally designated decision-maker.
+
+Document:
+
+**PM Assessment → PM Recommendation → Authorized Decision → Conditions / Actions → Owner → Follow-Up**
+
+If the PM recommendation and authorized decision differ, document both.
+
+---
+
+# Deployment Decision
+
+The deployment decision asks:
+
+> **Can the approved release safely be deployed into the intended environment now?**
+
+Use:
+
+**DEPLOY → HOLD DEPLOYMENT → ROLLBACK**
+
+### DEPLOY
+
+The approved release meets the deployment-readiness conditions.
+
+### HOLD DEPLOYMENT
+
+The release may be approved, but a deployment-specific condition remains unresolved.
+
+Examples:
+
+* Production access controls are incomplete.
+* Production security validation is outstanding.
+* Required monitoring is not configured.
+* Production configuration is incomplete.
+* Deployment dependencies are unresolved.
+
+### ROLLBACK
+
+A deployment has created an unacceptable condition requiring recovery to a previous known-good state.
+
+Examples:
+
+* Critical production defect.
+* Security failure.
+* Material data exposure.
+* Severe performance degradation.
+* Unacceptable user impact.
+
+---
+
+# Release and Deployment Combinations
+
+The following combinations are possible:
+
+### Release GO + Deploy
+
+The product is approved and ready to deploy.
+
+### Release GO + Hold Deployment
+
+The product is approved, but a deployment-specific condition remains unresolved.
+
+### Release Conditional Go + Deploy
+
+The product is approved under defined conditions and deployment readiness has also been satisfied.
+
+### Release Conditional Go + Hold Deployment
+
+The product has conditional approval, but a separate deployment condition remains unresolved.
+
+### Release Hold
+
+The product has not been approved to proceed.
+
+Deployment should not occur.
+
+### Release No-Go
+
+The product should not be released.
+
+Deployment should not occur.
+
+---
+
+# PM Decision
+
+Document:
+
+* PM release recommendation.
+* Authorized release decision.
+* Decision authority.
+* Release conditions.
+* Deployment readiness.
+* Deployment decision.
+* Remaining risks.
+* Required actions.
+
+Your final capstone should make clear that:
+
+**Release approval ≠ automatic deployment approval**
+
+---
+
+# Part 10 — Review KPI & Monitoring
 
 Review Milestone 11.
 
@@ -422,7 +810,7 @@ The dashboard provides evidence.
 
 The PM interprets the evidence and determines what should happen next.
 
-### PM Decision
+## PM Decision
 
 Select the appropriate action:
 
@@ -432,7 +820,7 @@ Explain why.
 
 ---
 
-# Part 10 — Business Outcome
+# Part 11 — Business Outcome
 
 Connect product performance to the business problem.
 
@@ -452,21 +840,21 @@ Consider outcomes such as:
 
 Distinguish clearly between:
 
-**Target Outcome**
+## Target Outcome
 
 What the project intended to achieve.
 
-**Measured Outcome**
+## Measured Outcome
 
 What the available evidence demonstrates.
 
-**Expected Outcome**
+## Expected Outcome
 
 What is projected but has not yet been validated.
 
 Do not present expected results as proven results.
 
-### PM Decision
+## PM Decision
 
 Classify the outcome:
 
@@ -476,7 +864,7 @@ Explain the evidence.
 
 ---
 
-# Part 11 — Continuous Improvement
+# Part 12 — Continuous Improvement
 
 Review the evidence collected throughout the lifecycle.
 
@@ -507,13 +895,13 @@ For major improvements, identify:
 
 **Problem → Improvement → Value → Priority → Owner → Success Measure**
 
-### PM Decision
+## PM Decision
 
 Identify the first improvement that should receive attention and explain why.
 
 ---
 
-# Part 12 — Lessons Learned
+# Part 13 — Lessons Learned
 
 Document lessons from the project.
 
@@ -537,7 +925,7 @@ Your answer should demonstrate growth in PM judgment, not simply summarize activ
 
 ---
 
-# Part 13 — Assemble the Capstone Submission
+# Part 14 — Assemble the Capstone Submission
 
 Open the:
 
@@ -561,7 +949,7 @@ The final submission should be understandable without requiring the reviewer to 
 
 ---
 
-# Part 14 — Build the Portfolio Package
+# Part 15 — Build the Portfolio Package
 
 After completing the capstone submission, use the:
 
@@ -591,7 +979,7 @@ Do not claim technical work you did not perform.
 
 ---
 
-# Part 15 — Use the Completed Example
+# Part 16 — Use the Completed Example
 
 Review:
 
@@ -617,7 +1005,7 @@ Look especially for:
 * Corrective actions.
 * Business outcomes.
 
-### PM Question
+## PM Question
 
 Ask yourself:
 
@@ -625,7 +1013,7 @@ Ask yourself:
 
 ---
 
-# Part 16 — Final Executive Review
+# Part 17 — Final Executive Review
 
 Imagine you are presenting the project to an executive steering committee.
 
@@ -645,7 +1033,9 @@ Be prepared to answer:
 
 ### What does the evidence show?
 
-### Is the product ready?
+### What release decision does the evidence support?
+
+### Is the product ready for deployment?
 
 ### What business value has been demonstrated?
 
@@ -692,6 +1082,29 @@ Your recommendation should include:
 
 ---
 
+# Final Capstone Decision Record
+
+Complete:
+
+| Decision Element            | Assessment |
+| --------------------------- | ---------- |
+| Business Outcome            |            |
+| Strongest Evidence          |            |
+| Primary Product Risk        |            |
+| Primary Business Risk       |            |
+| PM Recommendation           |            |
+| Release Recommendation      |            |
+| Authorized Release Decision |            |
+| Release Decision Authority  |            |
+| Deployment Decision         |            |
+| Immediate Action            |            |
+| Action Owner                |            |
+| Next Review Point           |            |
+
+This record should summarize the most important PM judgment demonstrated by your capstone.
+
+---
+
 # Final Capstone Checkpoint
 
 Answer:
@@ -724,12 +1137,14 @@ The capstone is complete when you can:
 * Identify the users and stakeholders.
 * Connect stakeholder needs to requirements.
 * Explain scope and MVP decisions.
+* Distinguish MVP scope from release scope.
 * Explain the AI architecture at a PM level.
 * Explain the data and retrieval approach.
 * Identify major AI-specific risks.
 * Explain evaluation results.
 * Explain testing and UAT results.
 * Explain release and deployment decisions.
+* Distinguish PM recommendation from authorized decision.
 * Interpret KPI performance.
 * Connect technical performance to business outcomes.
 * Recommend evidence-based corrective actions.
@@ -756,6 +1171,8 @@ The stronger questions are:
 > **Did we manage the right risks?**
 
 > **Does the evidence support the current release decision?**
+
+> **Is the product ready for its intended release and deployment stage?**
 
 > **Is the product creating the intended value?**
 

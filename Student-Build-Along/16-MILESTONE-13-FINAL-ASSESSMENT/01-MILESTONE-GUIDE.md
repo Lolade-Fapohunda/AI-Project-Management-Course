@@ -1,488 +1,265 @@
-# Milestone 13 — Final Assessment Guide
+# Milestone 13 — Final Assessment
 
-## Objective
+## Purpose
 
-This milestone is the final validation of your ability to apply the **Artificial Intelligence (AI) Project Management** lifecycle from project initiation through release, monitoring, and continuous improvement.
+This final assessment measures your ability to apply the Artificial Intelligence (AI) Project Management (PM) concepts, tools, and decision-making practices covered throughout the course.
 
-You will demonstrate that you can make evidence-based **Project Management (PM) decisions** across the complete AI product lifecycle.
+You will demonstrate that you can:
 
-This is the final milestone of the Student Build-Along.
+**Understand the problem → Define the product → Plan the work → Manage AI-specific risks → Evaluate evidence → Test the product → Assess readiness → Measure performance → Recommend what happens next**
 
-The assessment focuses on your ability to apply PM concepts to realistic AI product situations, not simply recall terminology.
+This is not a test of software-engineering ability.
+
+It is a test of your ability to **manage, evaluate, govern, and make decisions about AI products.**
 
 ---
 
 # What You Are Being Assessed On
 
-The Final Assessment evaluates your ability to:
+Your assessment evaluates your ability to:
 
-* Understand the role of an AI Project Manager.
-* Define and protect the business problem.
-* Identify and manage stakeholders.
-* Translate business needs into measurable requirements.
-* Define scope and Minimum Viable Product (MVP).
-* Plan and prioritize AI product work.
-* Understand AI technology well enough to make informed PM decisions.
-* Manage data and knowledge risks.
-* Evaluate AI quality and performance.
-* Manage AI risk, security, and governance.
-* Plan and evaluate testing and User Acceptance Testing (UAT).
-* Assess release readiness.
-* Make evidence-based Go, Conditional Go, Hold, or No-Go recommendations.
+* Apply Project Management principles to AI initiatives.
+* Translate business problems into measurable requirements.
+* Define product scope and Minimum Viable Product (MVP).
+* Explain AI solutions at a PM level.
+* Evaluate data and retrieval quality.
+* Evaluate AI response quality.
+* Assess citations, grounding, and unsupported responses.
+* Identify security, privacy, authorization, and governance risks.
+* Evaluate testing and User Acceptance Testing (UAT).
+* Assess release and deployment readiness.
 * Interpret Key Performance Indicators (KPIs).
-* Use evidence to drive corrective action.
-* Communicate recommendations to technical and business stakeholders.
-* Manage continuous improvement after release.
-
-You are being assessed on **AI Project Management judgment**, not advanced software engineering.
-
----
-
-# Assessment Prerequisites
-
-Before beginning the Final Assessment, you should have completed and reviewed Milestones 1–12.
-
-Your previous work provides the foundation for the final assessment.
-
-Review the following before starting:
-
-### Milestones 1–4
-
-* AI project foundation.
-* Problem definition.
-* Users and stakeholders.
-* Requirements.
-* Scope.
-* Backlog.
-* Prioritization.
-* MVP.
-
-### Milestones 5–6
-
-* AI architecture.
-* Data and knowledge management.
-* Source authority.
-* Metadata.
-* Retrieval.
-
-### Milestones 7–8
-
-* AI evaluation.
-* Response quality.
-* Citations.
-* Hallucination.
-* Security.
-* Access.
-* Governance.
-
-### Milestones 9–10
-
-* Testing.
-* UAT.
-* Release readiness.
-* Deployment.
-* Rollback.
-* Operational readiness.
-
-### Milestone 11
-
-* KPIs.
-* Targets.
-* Actual performance.
-* Trends.
-* Decision thresholds.
-* Monitoring.
-* Continuous improvement.
-
-### Milestone 12
-
-* Capstone integration.
-* Portfolio evidence.
-* Business outcomes.
-* PM decision-making.
+* Connect product performance to business outcomes.
+* Make evidence-based PM decisions.
+* Communicate recommendations to stakeholders and executives.
 
 ---
 
 # Assessment Standard
 
-Your answers should demonstrate more than knowledge of terminology.
+The strongest answers do more than identify a problem.
 
-For scenario-based questions, show that you can determine:
+They demonstrate:
 
-**What should happen?**
+**Evidence → Analysis → Risk → Decision → Action**
 
-**Why should it happen?**
+For scenario-based questions, explain:
 
-**What evidence supports the decision?**
+1. What you observe.
+2. Why it matters.
+3. What risk or requirement is affected.
+4. What you would recommend.
+5. Why your recommendation is appropriate.
 
-**What risk or impact exists?**
+Do not select an answer simply because it sounds cautious or technically sophisticated.
 
-**What should the PM do next?**
-
-A strong response connects course concepts to practical PM decisions.
-
-The strongest answers demonstrate:
-
-**Business Need → Product Decision → Evidence → Risk → Action → Outcome**
-
----
-
-# Core Decision Framework
-
-Throughout the assessment, use:
-
-**Evidence → Risk/Impact → Decision → Action → Owner → Outcome**
-
-The appropriate evidence may include:
-
-* Business requirements.
-* Acceptance criteria.
-* Stakeholder needs.
-* Test results.
-* UAT feedback.
-* AI evaluation results.
-* Security findings.
-* Risk assessments.
-* KPI results.
-* User feedback.
-* Release-readiness information.
-
-Do not make assumptions when the scenario provides evidence you can use.
-
-When evidence is incomplete, identify what additional evidence is needed instead of inventing information.
-
----
-
-# AI PM Lifecycle
-
-You should be able to connect the major stages of the lifecycle:
-
-**Business Problem → Users & Stakeholders → Requirements → Scope → MVP → AI Solution → Data → Evaluation → Risk & Governance → Security → Testing → UAT → Release → Monitoring → Continuous Improvement**
-
-The stages are connected.
-
-For example:
-
-Requirements establish what success means.
-
-Requirements inform scope and MVP.
-
-The MVP informs solution design.
-
-The solution creates technical and data dependencies.
-
-Those dependencies create risks that must be managed.
-
-Evaluation and testing produce evidence.
-
-That evidence informs release decisions.
-
-After release, KPIs and monitoring provide evidence for continuous improvement.
-
-A strong PM does not treat these stages as isolated activities.
-
----
-
-# AI Product Understanding
-
-You should understand the major AI concepts covered in the course sufficiently to manage an AI product and communicate with technical teams.
-
-These include:
-
-* **Large Language Model (LLM)**
-* **Retrieval-Augmented Generation (RAG)**
-* Embeddings.
-* Vector databases.
-* Retrieval.
-* Grounding.
-* AI evaluation.
-* Hallucination.
-* Data quality.
-* Data governance.
-* AI security.
-* AI monitoring.
-
-You are not expected to engineer these technologies from scratch.
-
-You are expected to understand:
-
-**What it does → Why it is needed → What risk it introduces → How it should be evaluated**
-
----
-
-# PM Judgment Expectations
-
-The assessment also evaluates whether you can distinguish between related but different concepts.
-
-## Project Issue vs. Product Issue
-
-A project issue affects delivery, execution, resources, schedule, or coordination.
-
-A product issue affects the product's functionality, quality, user experience, safety, or business value.
-
-## Risk vs. Active Issue
-
-A risk is a potential future problem.
-
-An issue is a problem that has already occurred.
-
-## Performance Gap vs. Threshold Breach
-
-A performance gap means the target was missed.
-
-A threshold breach means performance has crossed the defined unacceptable boundary.
-
-## Defect vs. Change Request
-
-A defect means the product does not perform as required.
-
-A change request proposes something new or different from the approved requirement or scope.
-
-## Release Blocker vs. Non-Blocking Issue
-
-A release blocker creates unacceptable risk or prevents required release criteria from being satisfied.
-
-A non-blocking issue may be deferred when the associated risk is understood and accepted.
+Choose the response that best reflects sound PM judgment based on the evidence provided.
 
 ---
 
 # Assessment Structure
 
-The Final Assessment contains **15 questions** across six areas.
+The final assessment contains **15 questions**.
 
-## Part 1 — AI Project Management Knowledge
-
-**Questions 1–5**
-
-These questions evaluate your understanding of core AI PM concepts, including:
-
-* AI Project Management.
-* Business problem definition.
-* MVP.
-* RACI.
-* Authoritative information.
-
-## Part 2 — Scenario-Based PM Decisions
-
-**Questions 6–10**
-
-These questions evaluate your ability to apply PM judgment to realistic situations involving:
-
-* Scope changes.
-* AI evaluation.
-* Data governance.
-* Security.
-* UAT.
-
-## Part 3 — Release Decision
-
-**Question 11**
-
-This question evaluates your ability to assess complete release evidence and make a:
-
-**Go / Conditional Go / Hold / No-Go**
-
-recommendation.
-
-## Part 4 — KPI Decision
-
-**Question 12**
-
-This question evaluates your ability to:
-
-* Interpret KPI performance.
-* Distinguish targets from thresholds.
-* Identify the highest-priority issue.
-* Recommend corrective action.
-
-## Part 5 — Executive Communication
-
-**Question 13**
-
-This question evaluates your ability to communicate a concise, evidence-based recommendation to an executive audience.
-
-## Part 6 — Final PM Challenge
-
-**Questions 14–15**
-
-These questions evaluate your ability to:
-
-* Apply the complete lifecycle.
-* Explain how lifecycle stages connect.
-* Reflect on your development as an AI Project Manager.
+| Section                    | Questions |  Points |
+| -------------------------- | --------: | ------: |
+| AI PM Knowledge            |       1–5 |      20 |
+| Scenario-Based PM Judgment |      6–10 |      30 |
+| Release Decision           |        11 |      10 |
+| KPI Analysis               |        12 |      10 |
+| Executive Recommendation   |        13 |      10 |
+| End-to-End AI PM Challenge |        14 |      15 |
+| Reflection                 |        15 |       5 |
+| **Total**                  |    **15** | **100** |
 
 ---
 
-# Scoring & Completion Standard
+# Passing Standard
 
-The Final Assessment is worth **100 points**.
+**80 points or higher = Pass**
 
-| Assessment Area             | Questions |  Points |
-| --------------------------- | --------: | ------: |
-| AI PM Knowledge             |       1–5 |      20 |
-| Scenario-Based PM Decisions |      6–10 |      30 |
-| Release Decision            |        11 |      10 |
-| KPI Decision                |        12 |      10 |
-| Executive Communication     |        13 |      10 |
-| End-to-End AI PM Challenge  |        14 |      15 |
-| Final Reflection            |        15 |       5 |
-| **Total**                   |    **15** | **100** |
+|    Score | Result            |
+| -------: | ----------------- |
+|   90–100 | Excellent         |
+|    80–89 | Pass              |
+|    70–79 | Needs Improvement |
+| Below 70 | Not Passed        |
 
-## Passing Score
-
-A score of **80 points or higher** is required to pass the Final Assessment.
-
-### Performance Levels
-
-|        Score | Result            | Interpretation                                                              |
-| -----------: | ----------------- | --------------------------------------------------------------------------- |
-|   **90–100** | Excellent         | Demonstrates strong AI PM judgment and lifecycle application                |
-|    **80–89** | Pass              | Demonstrates competent AI PM judgment and meets the course standard         |
-|    **70–79** | Needs Improvement | Demonstrates partial understanding but does not yet meet the final standard |
-| **Below 70** | Not Passed        | Does not yet demonstrate sufficient mastery of the course principles        |
+A strong score is important, but the most important consideration is demonstrated competence in the critical AI PM areas.
 
 ---
 
-# Critical Competency Requirement
+# Critical Competencies
 
-A passing score is not based only on the total number of points.
+You must demonstrate sufficient understanding of the following areas:
 
-You must also demonstrate competent judgment in areas that can create significant AI product risk.
-
-A passing submission must demonstrate acceptable reasoning in:
-
+* AI product requirements.
+* Data and knowledge governance.
 * AI evaluation.
-* Data governance.
 * Security and authorization.
-* UAT.
+* Testing and UAT.
 * Release readiness.
-* KPI-based decision-making.
+* KPI interpretation.
+* Evidence-based PM decision-making.
 
-A serious misunderstanding of a critical security, governance, safety, or release decision may require reassessment even when the numerical score is otherwise close to passing.
-
-For example, recommending unrestricted production release after identifying an unresolved authorization bypass would demonstrate insufficient release judgment.
-
----
-
-# What Earns Full Credit
-
-Full credit is awarded when the answer:
-
-* Addresses the actual question.
-* Uses the evidence provided.
-* Applies an appropriate PM concept or framework.
-* Explains the reasoning.
-* Identifies relevant risks or impacts.
-* Recommends an appropriate action.
-* Connects the decision to the expected outcome.
-
-A correct conclusion without sound reasoning may receive partial credit.
-
-A different conclusion from the instructor answer key may receive full credit when the reasoning is well supported by the evidence.
-
----
-
-# Partial Credit
-
-Partial credit may be awarded when:
-
-* The core concept is correct but incompletely explained.
-* The decision is reasonable but important evidence is omitted.
-* The student identifies the problem but does not define the next action.
-* The student recommends an action but does not identify the risk or impact.
-* The student identifies a KPI gap but does not distinguish a missed target from a threshold breach.
-* The student demonstrates understanding but provides insufficient evidence.
-
-The objective is to evaluate **PM judgment**, not exact wording.
+A serious misunderstanding in a critical area may require reassessment even when the overall numerical score meets the passing threshold.
 
 ---
 
 # Assessment Conditions
 
-Complete the Final Assessment independently.
+You may use:
 
-Use your own reasoning and words.
+* Your course notes.
+* Your own project artifacts.
+* Your own capstone materials.
+* Course frameworks and templates.
 
-Do not copy responses from another student, the completed Petadel PolicyAssist example, or the instructor answer key.
+You may not:
 
-You may use the course materials and your own project artifacts to review concepts while completing the assessment.
+* Copy answers from the Instructor Answer Key.
+* Submit another student's work.
+* Present the completed Petadel PolicyAssist example as your own project.
+* Claim experience or project results you did not personally perform or demonstrate.
 
-The purpose is to demonstrate that you can apply the concepts independently.
+The purpose of the assessment is to demonstrate your own understanding and PM judgment.
 
-For scenario questions, use the evidence provided in the scenario.
+---
 
-For questions based on your own project or capstone, use your documented project evidence.
+# How to Answer Knowledge Questions
+
+For questions about concepts or frameworks, provide the clearest correct answer.
+
+Demonstrate that you understand:
+
+**What the concept is → Why it matters → How a PM uses it**
+
+Avoid unnecessarily long answers.
 
 ---
 
 # How to Answer Scenario Questions
 
-Do not answer scenario questions with only a label such as:
+Scenario questions are designed to test judgment.
 
-**Go**
+Read the evidence carefully before answering.
 
-**No-Go**
+A strong scenario response should identify:
 
-**Fix it**
+**Situation → Evidence → Risk → PM Response**
 
-**Add the feature**
+For example:
 
-Instead, explain the reasoning.
+> The AI response is technically plausible, but the retrieved policy is outdated. The issue is therefore not simply answer quality. It is a source-authority and data-governance problem. The PM should prevent the outdated source from being treated as authoritative and require validation of the current policy version.
 
-A strong scenario response typically follows:
-
-**Evidence → Assessment → Risk/Impact → PM Decision → Action**
-
-Where appropriate, also identify:
-
-**Owner → Follow-Up → Success Measure**
-
-You do not need to use those exact headings in every answer.
-
-What matters is that your reasoning demonstrates the decision logic.
+Your answer should respond to the scenario that was actually presented.
 
 ---
 
-# How to Handle Incomplete Evidence
+# Incomplete Evidence
 
-AI projects often involve uncertainty.
+AI projects often contain incomplete information.
 
-When evidence is insufficient, do not invent information.
+Do not invent missing facts.
 
-A strong PM may recommend:
+When evidence is incomplete:
 
-* Additional testing.
-* Additional stakeholder validation.
-* Data validation.
-* Risk assessment.
-* Root Cause Analysis (RCA).
-* Additional UAT.
-* Corrective action.
-* Reassessment.
+1. Identify what is known.
+2. Identify what is unknown.
+3. Explain the risk created by the missing information.
+4. State what evidence is needed.
+5. Recommend whether to proceed, hold, escalate, or reassess.
 
-Recognizing that more evidence is needed is part of good PM judgment.
+A strong PM does not turn missing evidence into an unsupported assumption.
 
 ---
 
-# Release Decision Guidance
+# AI Evaluation Guidance
 
-When evaluating release readiness, consider the complete evidence rather than a single metric.
+When evaluating an AI product, distinguish between:
 
-Review:
+## Retrieval Quality
 
-* Requirements.
-* Acceptance criteria.
-* Critical defects.
-* AI evaluation.
-* Security.
-* UAT.
-* Performance.
-* Monitoring.
-* Support.
-* Rollback.
-* Remaining risks.
+Did the system retrieve the right information?
 
-Use the decision that best reflects the evidence.
+## Response Quality
+
+Did the AI correctly use the available evidence to produce an acceptable response?
+
+## Citation Quality
+
+Did the citation identify and support the information used?
+
+Do not treat these as one combined measurement.
+
+For example, a system could:
+
+* Retrieve the correct policy.
+* Generate an incorrect answer.
+* Provide a citation that does not support the claim.
+
+That represents different quality failures.
+
+---
+
+# Grounding
+
+A grounded response is supported by the evidence available to the AI.
+
+When evaluating grounding, ask:
+
+> **Can the important claims in the response be traced back to the supporting evidence?**
+
+An answer that sounds reasonable is not necessarily grounded.
+
+---
+
+# Unsupported Responses
+
+A reliable AI product should not invent information when evidence is unavailable.
+
+When the available evidence does not support an answer, the appropriate response may be:
+
+**Refuse → Explain the limitation → Escalate when appropriate**
+
+Do not reward an AI system simply because it produces an answer.
+
+A correct refusal can be better product behavior than an unsupported answer.
+
+---
+
+# Security and Authorization
+
+Security questions should be evaluated based on the user's authority and the information involved.
+
+Remember:
+
+> **A technically correct answer can still be an unacceptable product response if the user is not authorized to receive the information.**
+
+Unauthorized disclosure is a serious product failure.
+
+Treat authorization and confidential-information exposure as high-priority risks.
+
+---
+
+# Testing and User Acceptance Testing
+
+Testing determines whether requirements and expected behavior are being met.
+
+User Acceptance Testing (UAT) determines whether intended users can successfully complete the required task and accept the result.
+
+A product can:
+
+* Pass technical testing.
+* Still fail UAT.
+
+Technical correctness does not automatically equal user acceptance.
+
+---
+
+# Release Decision Framework
+
+Use the same release terminology established throughout the course.
 
 ## GO
 
@@ -492,381 +269,385 @@ The product meets the required release conditions and identified risks are accep
 
 ## CONDITIONAL GO
 
-The product is approved to proceed **only under clearly defined conditions**.
+The product may proceed only under clearly defined conditions.
 
-Conditions should have:
+Conditions should identify:
 
-* A specific requirement, risk, or limitation.
-* An identified owner.
-* A required action.
-* A due point or review point.
-* A success or validation measure.
-* Appropriate monitoring or oversight.
+* What must be monitored or completed.
+* Who owns the action.
+* When it must be reviewed.
+* How success will be verified.
 
-**Decision: Proceed within the approved conditions.**
+**Decision: Proceed under approved conditions.**
 
 Conditional Go should not be used to bypass a critical unresolved security, authorization, privacy, or safety issue.
 
 ## HOLD
 
-The release decision **cannot proceed yet** because required evidence, remediation, validation, or readiness work is incomplete.
+The release decision cannot proceed yet because required evidence, remediation, validation, or readiness work is incomplete.
 
-Examples include:
-
-* A required security control has not been implemented.
-* A required test has not been completed.
-* A release criterion has not been validated.
-* A significant dependency is unresolved.
-* Required evidence is insufficient to support the release decision.
-
-**Decision: Do not proceed until the condition is resolved, validated, or formally reassessed.**
+**Decision: Do not proceed until the outstanding condition is resolved or formally reassessed.**
 
 ## NO-GO
 
-The evidence demonstrates that the product should not be released in its current state.
+The product should not be released in its current state.
 
 Examples include:
 
-* A critical security or authorization failure.
-* Unacceptable privacy or data exposure risk.
-* A critical release requirement is not satisfied.
-* A material product failure creates unacceptable risk.
-* The current evidence shows that the product is not suitable for the intended release stage.
+* Critical security failure.
+* Unauthorized information disclosure.
+* Material product failure.
+* Critical release requirement not satisfied.
+* Unacceptable risk for the intended release stage.
 
 **Decision: Do not release. Significant remediation or reassessment is required.**
 
-### The Key Distinction
+---
 
-Use this rule:
+# Release Decision vs. Deployment Decision
 
-**GO = Proceed**
+These are different decisions.
 
-**CONDITIONAL GO = Proceed with defined conditions**
+## Release Decision
 
-**HOLD = Do not proceed yet**
+> **Should this version be approved to proceed to its intended release stage?**
 
-**NO-GO = Do not release in the current state**
+Choices:
 
-When deciding between Conditional Go and Hold, ask:
+**GO / CONDITIONAL GO / HOLD / NO-GO**
 
-> **Has the organization approved proceeding under controlled conditions, or is a required condition still preventing approval?**
+## Deployment Decision
 
-If the condition prevents approval, use **HOLD**.
+> **Can the approved release be deployed into the intended environment now?**
 
-If approval has been granted with controlled, documented conditions, use **CONDITIONAL GO**.
+Choices:
+
+**DEPLOY / HOLD DEPLOYMENT / ROLLBACK**
+
+For example:
+
+**Release = CONDITIONAL GO**
+
+does not automatically mean:
+
+**Deployment = DEPLOY**
+
+A product can have conditional release approval while deployment remains on hold because a production-specific control has not yet been validated.
 
 ---
 
-# KPI Decision Guidance
+# Release Decision Authority
 
-Use the framework established in Milestone 11:
+The Project Manager assesses readiness and provides a recommendation.
+
+The PM should not assume authority to approve a release unless that authority has been explicitly assigned.
+
+The authorized decision-maker may be:
+
+* Product Owner.
+* Executive Sponsor.
+* Business Owner.
+* Steering Committee.
+* Release board.
+* Governance authority.
+* Other formally designated authority.
+
+When answering a release scenario, distinguish between:
+
+**PM Recommendation**
+
+and
+
+**Authorized Release Decision**
+
+when appropriate.
+
+---
+
+# KPI Guidance
+
+For KPI questions, use:
 
 **KPI → Target → Actual → Trend → Threshold → Action**
 
-Remember:
+Do not stop at identifying whether a KPI passed or failed.
 
-## On Target
+Explain:
 
-The KPI meets the required target.
+* What the metric shows.
+* Whether it meets the target.
+* Whether it is approaching a decision threshold.
+* What risk it represents.
+* What action the PM should take.
 
-**Action: Continue**
+For example:
 
-## Needs Attention
-
-The KPI misses the target but remains within the attention range.
-
-**Action: Improve**
-
-## Below Threshold
-
-The KPI has crossed the unacceptable-performance threshold.
-
-**Action: Escalate / Reassess**
-
-Do not treat every missed target as a crisis.
-
-Do not ignore a threshold breach.
-
-Also consider:
-
-* Business impact.
-* User impact.
-* Product impact.
-* Risk.
-* Trend.
-* Severity.
+A KPI may technically be close to target but still represent an important risk if it is trending in the wrong direction.
 
 ---
 
-# Security and Governance
+# Security Exceptions
 
-Security and governance require special attention.
+Not every issue has equal severity.
 
-A numerical result alone may not determine whether a security issue is acceptable.
+When evaluating security or governance:
 
-Consider:
+* Consider the impact.
+* Consider whether the issue is reversible.
+* Consider whether confidential information could be exposed.
+* Consider whether authorization was bypassed.
+* Consider whether the issue affects the intended release stage.
 
-* Severity.
-* Scope.
-* Data exposure.
-* User impact.
-* Authorization.
-* Privacy.
-* Compliance.
-* Ability to contain the issue.
-* Risk of recurrence.
-
-A single serious security or privacy failure may require immediate escalation even when a numerical KPI framework suggests otherwise.
+Critical security or authorization failures require action regardless of otherwise strong product performance.
 
 ---
 
 # Executive Communication
 
-When answering executive questions, prioritize:
+Executive recommendations should be:
 
-**Recommendation → Evidence → Risk → Action → Success Measure**
-
-Executives generally need the decision and its implications more than a detailed technical explanation.
-
-Your response should be:
-
-* Concise.
 * Clear.
 * Evidence-based.
-* Business-oriented.
-* Actionable.
+* Decision-oriented.
+* Focused on business impact.
+* Focused on significant risks.
+* Specific about the requested action.
 
-Avoid unnecessary technical detail unless it is necessary to explain the decision or risk.
+Avoid lengthy technical explanations unless they are necessary to support the decision.
+
+A strong executive recommendation answers:
+
+**What is happening? → Why does it matter? → What does the evidence show? → What do you recommend?**
 
 ---
 
-# Final PM Challenge
+# End-to-End AI PM Thinking
 
-Question 14 requires you to manage a new AI product from initiation through continuous improvement.
-
-Do not answer it as an unrelated list of activities.
-
-Show how one stage informs the next.
+The strongest responses connect the entire lifecycle.
 
 For example:
 
 **Business Problem**
 
-↓ informs
+↓
 
 **Requirements**
 
-↓ informs
+↓
 
-**Scope and MVP**
+**MVP / Scope**
 
-↓ informs
+↓
 
 **AI Solution**
 
-↓ creates
+↓
 
-**Data and Technical Dependencies**
+**Data / Retrieval**
 
-↓ creates
+↓
 
-**Risk and Evaluation Needs**
+**Evaluation**
 
-↓ produces
+↓
 
-**Testing and Release Evidence**
+**Security / Governance**
 
-↓ informs
+↓
 
-**Release Decision**
+**Testing / UAT**
 
-↓ leads to
+↓
+
+**Release**
+
+↓
+
+**Deployment**
+
+↓
 
 **KPI Monitoring**
 
-↓ informs
+↓
+
+**Business Outcome**
+
+↓
 
 **Continuous Improvement**
 
-This is the lifecycle thinking the assessment is designed to validate.
+A decision made in one area can affect another.
+
+For example:
+
+Poor data quality can affect retrieval.
+
+Poor retrieval can affect grounding.
+
+Poor grounding can affect response accuracy.
+
+Poor response accuracy can affect business trust.
+
+That is why AI PM decisions must consider the full product chain.
 
 ---
 
-# Final Reflection
+# Question 14: End-to-End AI PM Challenge
 
-Question 15 asks you to reflect on how your approach to AI Project Management has developed.
+The final scenario requires you to think across the complete lifecycle.
 
-Focus on practical lessons you can carry into future projects.
+When answering, demonstrate that you can move from:
 
-Strong reflections may address:
+**Problem → Requirements → Scope → AI Solution → Data → Evaluation → Security → Testing → Release → Monitoring → Improvement**
 
-* Starting with the business problem.
-* Using measurable outcomes.
-* Controlling scope.
-* Establishing ownership.
-* Treating data authority as a governance concern.
-* Managing AI-specific risk.
-* Evaluating before releasing.
-* Including users in acceptance decisions.
-* Monitoring after deployment.
-* Using evidence for continuous improvement.
+Do not focus only on the technical implementation.
 
-There is no single correct personal reflection.
-
-Your response should demonstrate thoughtful application of the course principles.
+Focus on the PM decisions required at each stage.
 
 ---
 
-# Final Submission Requirements
+# Question 15: Reflection
 
-Before submitting your assessment:
+Your reflection should demonstrate what you learned about managing AI products.
 
-### Confirm all questions are answered
+Consider:
 
-All **15 questions** must contain substantive responses.
+* What changed in your understanding of AI PM?
+* What concept became most important to you?
+* What risk would you pay more attention to now?
+* What PM skill do you want to strengthen?
+* How would you approach an AI project differently after completing this course?
 
-### Explain your reasoning
-
-Scenario-based questions should explain why you made your decision.
-
-### Use evidence
-
-Use the evidence provided in the question or your documented project evidence where applicable.
-
-### Identify actions
-
-Where a problem or risk exists, explain what the PM should do next.
-
-### Identify accountability
-
-Where appropriate, identify who should own the action.
-
-### Identify success measures
-
-Where appropriate, explain how you would determine whether the action worked.
-
-### Protect information
-
-Do not submit confidential, proprietary, personally identifiable, credential, or restricted information.
+Use specific examples where possible.
 
 ---
 
-# Submission Package
+# Final Assessment Deliverable
 
-Your Final Assessment submission should contain:
+Submit your completed:
 
-1. **Completed Final Assessment**
-2. Any required supporting evidence specifically requested by the assessment or course instructions
+**Final Assessment**
 
-Your M12 Capstone and Portfolio materials are separate deliverables and should not be submitted again unless specifically requested.
+Make sure all 15 questions are answered.
 
----
+Your answers should demonstrate:
 
-# Final Submission Standard
-
-Before submitting, confirm that your assessment demonstrates:
-
-* Business alignment.
-* Evidence-based decision-making.
-* AI product understanding.
-* Risk awareness.
-* Governance awareness.
-* Product and project judgment.
-* Lifecycle thinking.
+* Understanding.
+* Application.
+* Evidence-based reasoning.
+* PM judgment.
 * Clear communication.
-* Action-oriented recommendations.
 
-For scenario-based questions, your reasoning should be visible.
+Where a scenario provides numerical evidence, use the numbers in your reasoning.
 
-For quantitative questions, use the targets and thresholds provided in the scenario.
-
-For AI product questions, distinguish retrieval, response quality, security, governance, and user acceptance where appropriate.
-
-For release questions, consider the complete readiness picture rather than one successful test.
+Where evidence is missing, identify the gap rather than inventing information.
 
 ---
 
-# Final Completion Standard
+# Final PM Challenge
 
-The Final Assessment is complete only when **all 15 questions are answered** and the required passing standard is achieved.
+Before submitting, ask yourself:
 
-To pass, you must:
+> **If I were responsible for this AI product, could I defend my decisions to an executive, business owner, technical team, or governance authority?**
 
-### 1. Complete all 15 questions
+Your answers should demonstrate that you can do more than identify what is wrong.
 
-Every question must contain a substantive response.
+You should be able to explain:
 
-Blank or unanswered questions do not meet the completion requirement.
+**Why it matters → What evidence supports the concern → What decision is appropriate → What action should happen next**
 
-### 2. Earn at least 80 out of 100 points
+---
 
-A score of 80 or higher is required for a passing result.
+# Final Submission Checklist
 
-### 3. Demonstrate competent reasoning in the critical areas
+Before submitting:
 
-You must demonstrate acceptable PM judgment in:
+* [ ] All 15 questions are answered.
+* [ ] Scenario questions are supported by evidence.
+* [ ] Numerical evidence is used where provided.
+* [ ] Missing information is identified rather than invented.
+* [ ] AI evaluation concepts are applied correctly.
+* [ ] Data and retrieval are distinguished from response quality.
+* [ ] Security and authorization risks are treated appropriately.
+* [ ] UAT is distinguished from technical testing.
+* [ ] Release decisions use GO / CONDITIONAL GO / HOLD / NO-GO.
+* [ ] Deployment decisions use DEPLOY / HOLD DEPLOYMENT / ROLLBACK.
+* [ ] Release authority is considered where applicable.
+* [ ] KPI analysis connects target, actual, trend, threshold, and action.
+* [ ] Recommendations are evidence-based.
+* [ ] Answers reflect your own understanding.
+* [ ] The assessment does not copy the Instructor Answer Key.
 
+---
+
+# Reassessment
+
+If you do not meet the passing standard, review the areas where points were lost.
+
+Focus on the underlying competency rather than memorizing the correct answer.
+
+You may need to demonstrate stronger understanding of:
+
+* Requirements.
 * AI evaluation.
 * Data governance.
-* Security.
+* Security and authorization.
 * UAT.
 * Release readiness.
-* KPI-based decision-making.
+* KPI interpretation.
+* PM decision-making.
 
-### 4. Demonstrate evidence-based PM judgment
-
-Your conclusions should be supported by available evidence, relevant frameworks, or clearly stated assumptions when evidence is unavailable.
-
----
-
-# Reassessment Standard
-
-If you do not achieve the passing standard:
-
-1. Review the instructor feedback.
-2. Identify the concepts or decision areas requiring improvement.
-3. Revisit the relevant course milestone.
-4. Reassess the missed concepts.
-5. Correct the reasoning, not simply the answer.
-
-A reassessment should demonstrate improved PM judgment.
-
-Changing an answer without improving the reasoning does not demonstrate mastery.
+The goal of reassessment is demonstrated competency.
 
 ---
 
 # Final Course Completion
 
-Milestone 13 is the final milestone of the Student Build-Along.
+You have completed the course when you have:
 
-Successfully completing the Final Assessment demonstrates that you have completed the course's AI Project Management learning lifecycle:
+1. Completed the required PM Track.
+2. Completed the required course assessments.
+3. Completed the M12 Capstone Submission.
+4. Completed the Portfolio Package.
+5. Passed the Final Assessment.
 
-**Understand → Define → Design → Evaluate → Secure → Test → Release → Measure → Demonstrate**
-
-Your final assessment should show that you can connect those stages into one coherent PM approach.
-
----
-
-# Final PM Checkpoint
-
-Before submitting, ask yourself:
-
-> **If I were the AI Project Manager responsible for this product, could I explain what is happening, why it matters, what decision should be made, who owns the next action, and how we will know whether the action worked?**
-
-You should be able to answer those questions using evidence.
+The optional AI Build-Along provides additional hands-on experience but does not replace the required PM learning or assessment.
 
 ---
 
-# Final Principle
+# Final PM Perspective
 
-An effective AI Project Manager does not manage AI based on assumptions.
+AI Project Management is not simply about managing an AI implementation.
 
-The PM manages the product through:
+It is about managing the decisions surrounding AI.
 
-**Evidence → Decisions → Accountability → Outcomes**
+A strong AI Project Manager can:
 
-The complete course lifecycle is:
+**Define the right problem.**
+
+**Build the right product.**
+
+**Use the right evidence.**
+
+**Manage the right risks.**
+
+**Test the right outcomes.**
+
+**Make the right readiness decision.**
+
+**Measure the right results.**
+
+**Improve the product based on evidence.**
+
+The final question is not:
+
+> **Did the AI work?**
+
+The stronger question is:
+
+> **Did the product create sufficient value, meet its requirements, manage its risks, and generate enough evidence to justify the next decision?**
+
+That is the standard of evidence-based AI Project Management.
 
 **Problem → Evidence → Decision → Action → Outcome**
-
-That is the standard this final assessment is designed to validate.

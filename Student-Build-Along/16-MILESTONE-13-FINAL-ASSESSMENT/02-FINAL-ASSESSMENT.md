@@ -2,41 +2,33 @@
 
 ## Instructions
 
-Complete this assessment independently.
+Answer all **15 questions**.
 
-Answer each question using the principles, frameworks, and decision-making methods covered throughout the course.
+Use the concepts, frameworks, evidence, and PM practices taught throughout the course.
 
-For scenario-based questions, explain your reasoning. Do not simply provide a one-word answer.
+For scenario-based questions, explain your reasoning rather than providing only a conclusion.
 
-Your answers should demonstrate:
+Where numerical evidence is provided, use it in your analysis.
 
-* Business alignment
-* Evidence-based decision-making
-* AI product understanding
-* Risk awareness
-* Governance awareness
-* Project and product judgment
-* Lifecycle thinking
-
-You are being assessed on **AI Project Management**, not advanced software engineering.
+Where evidence is incomplete, identify the gap rather than inventing information.
 
 ---
 
-# Part 1 — AI Project Management Knowledge
+# Section 1 — AI Project Management Knowledge
 
-## Question 1 — AI Project Manager
+## Question 1 — AI Project Management
 
-What is the primary responsibility of an AI Project Manager?
+What is the primary role of a Project Manager (PM) when managing an Artificial Intelligence (AI) product?
 
-Explain how this responsibility differs from simply managing a project schedule.
+Explain how managing an AI product differs from managing a traditional technology project.
 
 ---
 
 ## Question 2 — Business Problem
 
-Why should an AI project begin with a clearly defined business problem rather than immediately selecting an AI technology?
+Why should an AI project begin with a clearly defined business problem rather than the AI technology itself?
 
-Explain the risk of building an AI solution without validating the underlying business need.
+Provide an example of how a poorly defined business problem could lead to an unsuccessful AI product.
 
 ---
 
@@ -44,278 +36,363 @@ Explain the risk of building an AI solution without validating the underlying bu
 
 What is a **Minimum Viable Product (MVP)**?
 
-Explain how defining an MVP helps control scope and support early validation.
+Explain why an MVP is useful when developing an AI product.
+
+How is MVP scope different from the scope of a later release?
 
 ---
 
 ## Question 4 — RACI
 
-What is the purpose of a **Responsible, Accountable, Consulted, and Informed (RACI)** matrix?
+What is a **Responsible, Accountable, Consulted, and Informed (RACI)** matrix?
 
-Explain why clear ownership is important on an AI project.
-
----
-
-## Question 5 — Authoritative Information
-
-Why is identifying the authoritative source of information important when building an AI product that answers questions from organizational documents?
-
-Explain what could happen if outdated, duplicate, or unauthorized information is used.
+Explain how a PM could use it to clarify ownership on an AI project.
 
 ---
 
-# Part 2 — Scenario-Based PM Decisions
+## Question 5 — Source of Truth
+
+Why is it important for an AI product such as PolicyAssist to identify authoritative information?
+
+Explain why the **Large Language Model (LLM)** should not automatically be treated as the source of truth.
+
+---
+
+# Section 2 — Scenario-Based PM Judgment
 
 ## Question 6 — Scope Change
 
-Your AI product team is developing an MVP.
+During development, a stakeholder asks to add a new AI capability that was not included in the approved scope.
 
-A stakeholder requests three additional features that were not included in the approved scope.
+The feature could provide value, but adding it would increase delivery time and introduce additional security and testing requirements.
 
-The stakeholder argues that the features are important and should be added immediately.
+What should the PM do?
 
-What should you do as the Project Manager?
+Explain your recommendation, including:
 
-Explain:
-
-1. How you would evaluate the request.
-2. What information you would gather.
-3. How you would determine its impact.
-4. Whether the request belongs in the MVP.
-5. How you would communicate the decision.
+* Scope impact.
+* Business value.
+* Risk.
+* Dependencies.
+* Impact to the MVP or release.
+* Decision-making and approval.
 
 ---
 
 ## Question 7 — AI Evaluation
 
-During evaluation, the AI product achieves:
+PolicyAssist produces the following results:
 
-* Retrieval Accuracy: 92%
-* Answer Accuracy: 89%
-* Hallucination Rate: 2.5%
-* Citation Correctness: 100%
+| Metric                                   |      Target |    Actual |
+| ---------------------------------------- | ----------: | --------: |
+| Retrieval Accuracy                       |        ≥90% |       92% |
+| Answer Accuracy                          |        ≥90% |       89% |
+| Unsupported / Hallucinated Response Rate |         <2% |      2.5% |
+| Citation Correctness                     |        100% |      100% |
+| Response Time                            | ≤10 seconds | 8 seconds |
 
-The project target for Answer Accuracy is at least 90%, and the hallucination target is below 2%.
+What do these results tell you?
 
-What does this evidence tell you?
+Which issue should receive the greatest attention and why?
 
-What should the Project Manager do next?
+Should the PM recommend proceeding without changes?
+
+Explain your reasoning.
 
 ---
 
 ## Question 8 — Data Governance
 
-Your team discovers that several policy documents have different versions.
+Two policy documents contain different answers to the same employee question.
 
-Some documents do not contain required metadata, and the team cannot immediately determine which version is authoritative.
+Document A is an approved policy, Version 2.0, effective January 1, 2026.
 
-The development team wants to continue using all documents so that the AI system has more information.
+Document B is an older employee-created document with no approval information.
 
-What should you recommend?
+PolicyAssist retrieves both.
 
-Explain the relationship between:
+What should the PM expect the product to do?
 
-**Data Quality → Authority → Governance → AI Reliability**
+Explain how authority, version, effective date, and governance should influence the result.
 
 ---
 
-## Question 9 — Security
+## Question 9 — Security & Authorization
 
-During testing, a user is able to retrieve information that they should not have access to based on their role.
+An employee asks PolicyAssist a question about information that belongs to a restricted department.
 
-The development team says the issue is unlikely to affect most users.
+The system retrieves and displays the restricted information even though the employee is not authorized to access it.
 
-Should the product proceed toward release?
+What should the PM do?
 
-Explain your decision and the actions you would require before release.
+Explain:
+
+* Why the issue matters.
+* Whether the issue should block release.
+* What immediate action is required.
+* What control should prevent the problem.
+* What additional testing should be performed.
 
 ---
 
 ## Question 10 — User Acceptance Testing
 
-During **User Acceptance Testing (UAT)**, users report that the AI responses are technically correct but difficult to understand.
+PolicyAssist passes technical testing.
 
-The system passes its technical accuracy targets.
+The application responds correctly, retrieves the expected policy, and produces a technically accurate answer.
 
-What should the Project Manager do?
+However, User Acceptance Testing (UAT) participants report that the responses are difficult to understand and do not clearly explain what the employee should do next.
 
-Explain why technical performance alone may not be sufficient for UAT acceptance.
+Should UAT be considered successful?
 
----
+Explain why or why not.
 
-# Part 3 — Release Decision
-
-## Question 11 — Go / Conditional Go / No-Go
-
-You are preparing an AI product for production release.
-
-The current evidence is:
-
-| Area                        | Result    |
-| --------------------------- | --------- |
-| Requirements                | Complete  |
-| Critical Defects            | 0         |
-| UAT                         | Passed    |
-| Retrieval Accuracy          | 92%       |
-| Answer Accuracy             | 89%       |
-| Hallucination Rate          | 2.5%      |
-| Citation Correctness        | 100%      |
-| Response Latency            | 8 seconds |
-| User Satisfaction           | 82%       |
-| Critical Security Incidents | 0         |
-| Release Plan                | Complete  |
-| Rollback Plan               | Complete  |
-
-Targets include:
-
-* Retrieval Accuracy ≥90%
-* Answer Accuracy ≥90%
-* Hallucination Rate <2%
-* Citation Correctness = 100%
-* Response Latency ≤10 seconds
-* User Satisfaction ≥85%
-* Critical Security Incidents = 0
-
-What release recommendation would you make?
-
-Choose one:
-
-**Go / Conditional Go / No-Go**
-
-Explain your recommendation using the evidence.
-
-Identify the conditions or actions required before or during release.
+What should the PM recommend?
 
 ---
 
-# Part 4 — KPI Decision
+# Section 3 — Release Decision
 
-## Question 12 — Monitoring and Performance
+## Question 11 — Release Readiness
 
-After release, the following results are reported:
+PolicyAssist has the following results:
 
-| KPI                          |  Target | Actual |
-| ---------------------------- | ------: | -----: |
-| Policy Search-Time Reduction |    ≥50% |    58% |
-| Retrieval Accuracy           |    ≥90% |    92% |
-| Answer Accuracy              |    ≥90% |    89% |
-| Hallucination Rate           |     <2% |   2.5% |
-| Citation Correctness         |    100% |   100% |
-| Unsupported-Question Refusal |    100% |    95% |
-| Response Latency             | ≤10 sec |  8 sec |
-| User Satisfaction            |    ≥85% |    82% |
-| Critical Security Incidents  |       0 |      0 |
+| Area                                     | Result    |
+| ---------------------------------------- | --------- |
+| Requirements                             | Complete  |
+| Critical Defects                         | 0         |
+| UAT                                      | Passed    |
+| Retrieval Accuracy                       | 92%       |
+| Answer Accuracy                          | 89%       |
+| Unsupported / Hallucinated Response Rate | 2.5%      |
+| Citation Correctness                     | 100%      |
+| Response Time                            | 8 seconds |
+| User Satisfaction                        | 82%       |
+| Critical Security Incidents              | 0         |
+| Release Plan                             | Complete  |
+| Rollback Plan                            | Complete  |
 
-Which KPIs require attention?
+Targets are:
 
-Which issue would you investigate first, and why?
+* Retrieval Accuracy: ≥90%
+* Answer Accuracy: ≥90%
+* Unsupported / Hallucinated Response Rate: <2%
+* Citation Correctness: 100%
+* Response Time: ≤10 seconds
+* User Satisfaction: ≥85%
+* Critical Security Incidents: 0
 
-What action would you recommend?
+### Select the strongest release recommendation:
 
----
+**A. GO**
 
-# Part 5 — Executive Communication
+**B. CONDITIONAL GO**
 
-## Question 13 — Executive Recommendation
+**C. HOLD**
 
-An executive asks:
+**D. NO-GO**
 
-> "Is the AI product ready, and should we continue investing in it?"
-
-Provide an executive-level response based on the evidence from Question 11.
-
-Your response should:
-
-* State the recommendation.
-* Summarize the most important evidence.
-* Identify the primary risks.
-* Explain the required action.
-* Explain how success will be measured.
-
-Keep your response concise and suitable for an executive audience.
-
----
-
-# Part 6 — Final PM Challenge
-
-## Question 14 — End-to-End AI PM Challenge
-
-You are assigned to manage a new AI product.
-
-The business wants to use Artificial Intelligence to reduce the time employees spend searching internal information.
-
-You are given no requirements, no defined users, no confirmed data sources, and no approved scope.
-
-Describe how you would manage the project from initiation through continuous improvement.
+Explain your decision.
 
 Your response should address:
 
+* Which targets were met.
+* Which targets were missed.
+* The severity of the failures.
+* Business or user impact.
+* Risk.
+* Whether the product can reasonably proceed to the intended release stage.
+* Conditions that would be required, if applicable.
+
+Remember:
+
+**GO = Proceed**
+
+**CONDITIONAL GO = Proceed under defined conditions**
+
+**HOLD = Do not proceed yet because required evidence, remediation, validation, or readiness work is incomplete**
+
+**NO-GO = Do not release the current version**
+
+A strong answer may select a different option when the reasoning is well supported by the evidence.
+
+---
+
+# Section 4 — KPI Analysis
+
+## Question 12 — KPI Decision
+
+After release, PolicyAssist reports:
+
+| KPI                                       |      Target |    Actual |
+| ----------------------------------------- | ----------: | --------: |
+| Policy Search-Time Reduction              |         50% |       58% |
+| Retrieval Accuracy                        |         90% |       92% |
+| Answer Accuracy                           |         90% |       89% |
+| Unsupported / Hallucinated Response Rate  |         <2% |      2.5% |
+| Citation Correctness                      |        100% |      100% |
+| Unsupported-Question Refusal / Escalation |        100% |       95% |
+| Response Latency                          | ≤10 seconds | 8 seconds |
+| User Satisfaction                         |         85% |       82% |
+| Critical Security Incidents               |           0 |         0 |
+
+Which KPI should receive the highest priority for PM action?
+
+Explain:
+
+* Why you selected it.
+* What risk it creates.
+* What action you would recommend.
+* What other metrics should be considered alongside it.
+
+Use:
+
+**KPI → Target → Actual → Trend / Threshold → Action**
+
+---
+
+# Section 5 — Executive Recommendation
+
+## Question 13 — Executive Communication
+
+Your executive sponsor asks:
+
+> "Is PolicyAssist ready, and what should we do next?"
+
+Prepare a concise executive recommendation.
+
+Your response should include:
+
+* Current product status.
+* Strongest evidence.
+* Most significant risk.
+* Business value.
+* Recommended action.
+* What needs to happen next.
+
+Communicate the decision without unnecessary technical detail.
+
+---
+
+# Section 6 — End-to-End AI PM Challenge
+
+## Question 14 — End-to-End AI Project
+
+Imagine you are assigned to manage a new AI product.
+
+The organization has identified a business problem, but the product has not yet been defined.
+
+Describe how you would manage the initiative from initiation through continuous improvement.
+
+Your response should cover:
+
 1. Business problem.
-2. Stakeholders.
-3. Users.
-4. Requirements.
-5. Scope.
-6. MVP.
-7. AI solution.
-8. Data and knowledge management.
-9. AI evaluation.
-10. Risk and governance.
-11. Security.
-12. Testing.
-13. UAT.
-14. Release readiness.
-15. Go/No-Go decision.
-16. KPIs.
-17. Monitoring.
-18. Continuous improvement.
+2. Users and stakeholders.
+3. Requirements.
+4. Scope and MVP.
+5. AI solution.
+6. Data and knowledge.
+7. AI evaluation.
+8. Security and governance.
+9. Testing and UAT.
+10. Release readiness.
+11. Deployment.
+12. KPI monitoring.
+13. Business outcomes.
+14. Continuous improvement.
 
-Do not simply list activities.
-
-Explain how the outputs from one stage inform the decisions in the next stage.
+Explain the major PM decisions you would make throughout the lifecycle.
 
 ---
 
-# Final Reflection
+# Section 7 — Reflection
 
-## Question 15 — Your AI PM Approach
+## Question 15 — PM Reflection
 
-Reflect on what you learned throughout the course.
+Reflect on what you learned from managing an AI product.
 
-Answer the following:
+Address:
 
-### A. What is the most important principle you learned about managing AI projects?
+* What concept became most important to you?
+* What AI-specific risk would you pay more attention to now?
+* What PM skill did you strengthen?
+* What would you approach differently on your next AI project?
+* How has your understanding of AI Project Management changed?
 
-### B. What AI concept do you now understand well enough to discuss with a technical team?
-
-### C. What PM skill do you believe is most important when managing an AI product?
-
-### D. What would you do differently if you managed your next AI project?
-
----
-
-# Final Completion Check
-
-Before submitting, verify that you have:
-
-* Answered all 15 questions.
-* Explained your reasoning for scenario-based decisions.
-* Used evidence where evidence was provided.
-* Distinguished business, product, technical, and governance concerns.
-* Applied appropriate PM frameworks.
-* Considered risk and stakeholder impact.
-* Used KPI targets when making performance decisions.
-* Considered security and governance before release.
-* Connected testing and UAT to release readiness.
-* Considered monitoring after deployment.
-* Included continuous improvement in your lifecycle.
-* Provided actionable recommendations rather than observations alone.
+Use specific examples where possible.
 
 ---
 
-# Final Question
+# Final Assessment Reminder
 
-Before you submit your assessment, ask yourself:
+Strong answers demonstrate:
 
-> **If I were the AI Project Manager responsible for this product, could I explain what is happening, why it matters, what decision should be made, who owns the next action, and how we will know whether the action worked?**
+**Understanding → Application → Evidence → PM Judgment**
 
-If you can consistently answer those questions using evidence, you are applying the core discipline of AI Project Management.
+Do not focus only on whether an AI system technically works.
+
+Consider:
+
+**Business Value → Product Quality → Risk → Governance → Readiness → Outcome**
+
+When evidence is incomplete, say what is missing.
+
+When a risk is significant, explain its impact.
+
+When a metric misses target, explain what the miss means.
+
+When making a release recommendation, distinguish:
+
+**PM Recommendation**
+
+from:
+
+**Authorized Release Decision**
+
+When considering deployment, distinguish:
+
+**Release Decision**
+
+from:
+
+**Deployment Decision**
+
+---
+
+# Final Decision Framework
+
+Use these terms consistently throughout your assessment.
+
+## Release Decision
+
+**GO / CONDITIONAL GO / HOLD / NO-GO**
+
+## Deployment Decision
+
+**DEPLOY / HOLD DEPLOYMENT / ROLLBACK**
+
+## Monitoring Decision
+
+**CONTINUE / IMPROVE / ESCALATE / REASSESS**
+
+## Final PM Recommendation
+
+**CONTINUE / IMPROVE / ESCALATE / REASSESS / SCALE**
+
+---
+
+# Final Submission Checklist
+
+* [ ] All 15 questions answered.
+* [ ] Scenario responses include reasoning.
+* [ ] Numerical evidence is used where provided.
+* [ ] AI evaluation concepts are applied correctly.
+* [ ] Data and retrieval are distinguished from response quality.
+* [ ] Security and authorization risks are treated appropriately.
+* [ ] UAT is distinguished from technical testing.
+* [ ] Release terminology is used correctly.
+* [ ] Deployment terminology is used correctly.
+* [ ] KPI analysis connects targets to action.
+* [ ] Recommendations are supported by evidence.
+* [ ] Missing evidence is identified rather than invented.
+* [ ] Answers reflect your own understanding.

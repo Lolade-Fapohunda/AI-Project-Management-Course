@@ -1,96 +1,196 @@
-# Portfolio Package Template
+# Milestone 12 — Portfolio Package Template
 
-## AI Project Management Portfolio Case Study
+## Purpose
 
-Use this template to transform your completed AI Project Management capstone into a professional portfolio case study.
+Use this template to turn your completed Artificial Intelligence (AI) Project Management (PM) capstone into a professional portfolio case study.
 
-The portfolio should demonstrate **how you managed an AI product**, not simply that an AI application was built.
+Your portfolio should communicate the project clearly to someone who did not complete the course.
 
-Your case study should tell a clear story:
+It should demonstrate:
 
-**Problem → Users → PM Strategy → AI Solution → Risk → Evaluation → Testing → Release → Outcomes → Continuous Improvement**
+**Business Problem → PM Strategy → AI Solution → Evidence → Decisions → Outcomes → Lessons**
+
+Focus on your individual PM contribution.
+
+Do not claim technical work you did not personally perform.
+
+Your portfolio should accurately represent the actual maturity of your project.
 
 ---
 
-# 1. Portfolio Cover
+# How to Complete Your Portfolio
 
-**Project Name:**
-[Enter project name]
+Complete your Portfolio Package **after you finish your Capstone Submission**.
 
-**Product Name:**
+Your goal is to turn your capstone work into a professional case study that clearly demonstrates your AI PM experience.
+
+## Step 1 — Complete Your Capstone
+
+Finish your Capstone Submission first.
+
+Make sure your capstone contains the evidence needed to support your project story, decisions, results, and recommendations.
+
+## Step 2 — Select Your Strongest Evidence
+
+Review the work you completed throughout the course.
+
+Select the artifacts that best demonstrate your:
+
+* PM decisions.
+* AI product understanding.
+* Risk management.
+* Evaluation approach.
+* Testing and User Acceptance Testing (UAT).
+* Release readiness.
+* Key Performance Indicators (KPIs) and performance management.
+* Business outcomes.
+
+You do not need to include every artifact.
+
+## Step 3 — Build Your Project Story
+
+Organize your portfolio around this progression:
+
+**Problem → Strategy → AI Solution → Evidence → Risk → Testing → Release → Outcomes → Improvement**
+
+Make sure each section helps explain what happened and why it mattered.
+
+## Step 4 — Show Your PM Contribution
+
+Clearly identify what **you** managed, decided, coordinated, evaluated, communicated, or governed.
+
+Use specific examples.
+
+Instead of:
+
+> "I participated in the project."
+
+Write:
+
+> "I defined the evaluation criteria, reviewed AI performance against targets, and recommended corrective actions before release."
+
+Do not claim technical work you did not personally perform.
+
+## Step 5 — Add Supporting Visuals
+
+Add visuals that make the project easier to understand.
+
+Examples include:
+
+* Product screenshots.
+* Architecture diagrams.
+* Evaluation charts.
+* KPI dashboards.
+* Workflow diagrams.
+* Release-readiness evidence.
+
+Choose visuals that strengthen the story rather than simply filling space.
+
+## Step 6 — Present Results Accurately
+
+Clearly distinguish between:
+
+**Measured Results**
+
+What your evidence demonstrates.
+
+and
+
+**Expected Results**
+
+What you expect or project but have not yet validated.
+
+Do not present projected benefits as achieved results.
+
+Do not present prototype or MVP evidence as proof of production readiness.
+
+## Step 7 — Protect Sensitive Information
+
+Before publishing your portfolio, remove or redact:
+
+* Confidential information.
+* Personally identifiable information.
+* Credentials.
+* Application Programming Interface (API) keys or secrets.
+* Restricted security information.
+* Proprietary business information.
+
+For fictional or synthetic projects, clearly identify them as such where appropriate.
+
+## Step 8 — Complete Your Final Review
+
+Review your portfolio using the **Public Portfolio Checklist** and **Final Portfolio Review**.
+
+Make sure someone unfamiliar with your project can quickly understand:
+
+**What problem existed → What you managed → What decisions you made → What evidence you produced → What results were achieved → What should happen next**
+
+## Completion Standard
+
+Your finished portfolio should demonstrate more than an AI application.
+
+It should demonstrate your ability to:
+
+**Understand the problem → Define the product → Manage AI risks → Evaluate evidence → Govern readiness → Measure performance → Communicate outcomes**
+
+Your portfolio should make your PM contribution clear and supported by evidence.
+
+---
+
+# 1. Portfolio Title
+
+**Project Title:**
+[Enter project title]
+
+**AI Product / Solution:**
 [Enter product name]
 
-**Role:**
-[Example: AI Project Manager / Technical Project Manager / Product Manager]
+**Organization:**
+[Enter organization or indicate fictional/synthetic]
 
-**Project Type:**
-[AI Product / Internal Tool / Customer-Facing Product / Other]
+**Your Role:**
+[Enter role]
 
-**Project Status:**
-[Prototype / MVP / Pilot / Released / Other]
+**Project Stage:**
+[Prototype / MVP / Pilot / Release Candidate / Released / Other]
 
 **Project Duration:**
-[Enter duration]
-
-**Tools & Technologies:**
-[List relevant tools and technologies.]
+[Enter]
 
 ---
 
 # 2. Executive Summary
 
-Write a concise overview that a recruiter, hiring manager, executive, or stakeholder can understand in less than one minute.
+Write a concise overview of the project.
 
 Include:
 
 * The business problem.
-* The users.
 * The AI solution.
-* Your PM responsibilities.
-* Key risks.
-* Evaluation results.
-* Release decision.
-* Business or user outcome.
-* Recommended next step.
+* Your PM role.
+* The most important evidence or result.
+* The primary risk or challenge.
+* The current release/deployment status.
+* The recommended next step.
 
-### Executive Summary
-
-[Write 150–250 words.]
+**Executive Summary:**
+[Enter]
 
 ---
 
-# 3. The Business Problem
+# 3. Business Problem
 
-## Problem
+## The Problem
 
-[Describe the problem.]
+[Describe the business problem.]
 
-## Current-State Challenge
+## Why It Mattered
 
-[Explain what users or the organization were experiencing before the proposed solution.]
+[Explain the operational, financial, employee, customer, compliance, strategic, or risk impact.]
 
-## Business Impact
+## Opportunity
 
-Explain the impact in measurable terms where possible.
-
-Examples:
-
-* Time.
-* Cost.
-* Productivity.
-* Quality.
-* Risk.
-* Compliance.
-* User experience.
-* Revenue.
-
-## Why AI?
-
-Explain why Artificial Intelligence was appropriate for the problem.
-
-Do not simply state that AI was used.
-
-Explain what AI enabled that traditional approaches could not accomplish as effectively.
+[Explain what could improve through the proposed solution.]
 
 ---
 
@@ -98,95 +198,60 @@ Explain what AI enabled that traditional approaches could not accomplish as effe
 
 ## Primary Users
 
-[List primary users.]
+[Identify the people who would use or benefit from the product.]
 
-## Stakeholders
+## Key Stakeholders
 
-| Stakeholder   | Role   | Interest   | Influence | PM Approach |
-| ------------- | ------ | ---------- | --------- | ----------- |
-| [Stakeholder] | [Role] | [Interest] | [H/M/L]   | [Approach]  |
+[Identify the most important stakeholders and their interests.]
 
 ## Stakeholder Challenge
 
-Describe one significant stakeholder challenge and how it was managed.
+[Describe the most important competing need, concern, or trade-off.]
 
-### PM Takeaway
+## PM Contribution
 
-[What did this demonstrate about your stakeholder-management ability?]
-
----
-
-# 5. Project Scope
-
-## In Scope
-
-* [Item]
-* [Item]
-* [Item]
-
-## Out of Scope
-
-* [Item]
-* [Item]
-* [Item]
-
-## Constraints
-
-* [Constraint]
-* [Constraint]
-
-## Assumptions
-
-* [Assumption]
-* [Assumption]
-
-### Scope Decision
-
-Describe one important scope decision.
-
-**Decision:**
-[Decision]
-
-**Reason:**
-[Reason]
-
-**Impact:**
-[Impact]
+[Explain how you aligned users, stakeholders, and business priorities.]
 
 ---
 
-# 6. Product Strategy & MVP
+# 5. Product Strategy
 
-## Product Vision
+## Product Goal
 
-[Describe the intended product outcome.]
+[Describe what the product needed to accomplish.]
 
-## Minimum Viable Product (MVP)
+## Minimum Viable Product
 
-[Describe what was included in the MVP.]
+[Describe the smallest useful version of the product.]
 
-## Prioritization
+## Release Scope
 
-Explain how features were prioritized.
+[Describe what was included in the specific release being assessed.]
 
-Examples:
+## Key Product Trade-off
 
-* MoSCoW.
-* Business value.
-* Risk.
-* User impact.
-* Technical feasibility.
-* Dependencies.
+[Describe an important scope, priority, or product trade-off.]
 
-## Deferred Features
+## Why This Approach
 
-| Feature   | Reason Deferred | Future Priority |
-| --------- | --------------- | --------------- |
-| [Feature] | [Reason]        | [Priority]      |
+[Explain why the product strategy was appropriate for the problem.]
 
-### PM Takeaway
+---
 
-[Explain what the prioritization demonstrated about your product-management approach.]
+# 6. Requirements & Success Measures
+
+## Key Requirements
+
+| Requirement | Measure / Target | Why It Matters |
+| ----------- | ---------------- | -------------- |
+|             |                  |                |
+|             |                  |                |
+|             |                  |                |
+|             |                  |                |
+
+## Definition of Success
+
+[Explain how the project determined whether the product was successful.]
 
 ---
 
@@ -194,599 +259,490 @@ Examples:
 
 ## AI Use Case
 
-[Describe what the AI does.]
+[Explain why AI was used and what role it performs.]
 
 ## Solution Overview
 
-Explain the solution in business-friendly language.
+[Describe the solution without unnecessary technical detail.]
 
-### Architecture
+## End-to-End Flow
 
-Describe the major components.
+**User → Interface → Data / Knowledge → Processing → Retrieval → AI → Response → Evidence / Citation → User**
 
-**Example:**
-
-**Policy Documents → Processing → Embeddings → Vector Database → Retrieval → Large Language Model (LLM) → Grounded Response → Citation → User**
-
-## PM Role in Technical Decisions
-
-Explain the technical decisions you managed or influenced.
-
-Examples:
-
-* Model selection.
-* Retrieval approach.
-* Data strategy.
-* Integration approach.
-* Security controls.
-* Performance requirements.
-* Deployment approach.
-
-Do not claim to have personally engineered components you did not build.
-
-Focus on:
-
-**Decision → Reason → Tradeoff → Outcome**
-
----
-
-# 8. Data & Knowledge Management
-
-## Data Sources
-
-[List relevant data sources.]
-
-## Data Quality
-
-[Explain how data quality was addressed.]
-
-## Authority & Versioning
-
-[Explain how authoritative information was identified and maintained.]
-
-## Data Risks
-
-[Describe significant data risks and mitigations.]
-
-### PM Takeaway
-
-[Explain what this demonstrates about managing AI data dependencies.]
-
----
-
-# 9. AI Risk & Governance
-
-## Major AI Risks
-
-| Risk   | Impact   | Mitigation   | Owner   | Status   |
-| ------ | -------- | ------------ | ------- | -------- |
-| [Risk] | [Impact] | [Mitigation] | [Owner] | [Status] |
-
-## Governance Approach
-
-Explain how the project addressed:
-
-* AI hallucination.
-* Incorrect or unsupported answers.
-* Data quality.
-* Access control.
-* Security.
-* Privacy.
-* Human escalation.
-* Authoritative information.
-* Model limitations.
-
-### Key Governance Decision
+## Important Technical Decision
 
 **Decision:**
-[Decision]
+[Enter]
 
 **Reason:**
-[Reason]
+[Enter]
 
-**Impact:**
-[Impact]
+**Trade-off:**
+[Enter]
+
+**PM Contribution:**
+[Explain how you managed, evaluated, coordinated, or governed the decision.]
+
+---
+
+# 8. Data & Knowledge
+
+## Data / Knowledge Sources
+
+[Describe the information the AI relies on.]
+
+## Source of Truth
+
+[Explain how authoritative information was identified.]
+
+## Data / Retrieval Challenge
+
+[Describe the most significant data-quality or retrieval challenge.]
+
+## How It Was Addressed
+
+[Describe the control, process, or mitigation.]
+
+## PM Contribution
+
+[Explain your role in managing the data or knowledge risk.]
+
+---
+
+# 9. AI Risk, Security & Governance
+
+Identify the most important AI-specific risks.
+
+| Risk | Potential Impact | Control / Mitigation | Status |
+| ---- | ---------------- | -------------------- | ------ |
+|      |                  |                      |        |
+|      |                  |                      |        |
+|      |                  |                      |        |
+
+## Key Security / Governance Consideration
+
+[Describe the most important security, authorization, privacy, governance, or human-escalation consideration.]
+
+## PM Contribution
+
+[Explain how you managed or governed the risk.]
 
 ---
 
 # 10. AI Evaluation
 
-Explain how the team determined whether the AI product was performing acceptably.
+## Evaluation Approach
 
-## Evaluation Metrics
+[Explain how the AI product was evaluated.]
 
-| KPI / Metric |   Target |   Actual | Status   |
-| ------------ | -------: | -------: | -------- |
-| [Metric]     | [Target] | [Actual] | [Status] |
+## Key Results
 
-## Evaluation Method
+| Metric | Target | Actual | Status |
+| ------ | -----: | -----: | ------ |
+|        |        |        |        |
+|        |        |        |        |
+|        |        |        |        |
+|        |        |        |        |
 
-[Describe how the product was evaluated.]
+## What the Evidence Showed
 
-## Key Finding
+[Interpret the most important findings.]
 
-[Describe the most important evaluation result.]
+Do not simply list metrics. Explain what they meant for product quality and readiness.
 
-## PM Decision
+## PM Judgment
 
-[Explain what the evidence caused the PM/team to do.]
-
-### Evidence
-
-[Link to evaluation artifact.]
+[Describe the most important decision influenced by the evaluation evidence.]
 
 ---
 
-# 11. Testing & UAT
+# 11. Testing & User Acceptance Testing
 
 ## Testing Approach
 
-[Summarize the testing strategy.]
+[Briefly describe how the product was tested.]
 
-## Test Categories
+## Key Findings
 
-* Functional testing.
-* AI quality testing.
-* Security testing.
-* Performance testing.
-* Regression testing.
-* User Acceptance Testing (UAT).
+[Summarize the most important findings.]
 
-## Key Test Results
+## Significant Issues
 
-| Test Area   | Result   | Key Finding |
-| ----------- | -------- | ----------- |
-| Functional  | [Result] | [Finding]   |
-| AI Quality  | [Result] | [Finding]   |
-| Security    | [Result] | [Finding]   |
-| Performance | [Result] | [Finding]   |
-| UAT         | [Result] | [Finding]   |
+| Issue | Severity | Impact | Resolution / Disposition |
+| ----- | -------- | ------ | ------------------------ |
+|       |          |        |                          |
+|       |          |        |                          |
 
-## Significant Defect
+## User Acceptance Testing
 
-Describe one important defect or failure discovered during testing.
+[Summarize what users tested and what the results demonstrated.]
 
-**Problem:**
-[Problem]
+## PM Contribution
 
-**Impact:**
-[Impact]
-
-**Action:**
-[Action]
-
-**Result:**
-[Result]
-
-### PM Takeaway
-
-[What did this demonstrate about your ability to manage quality and risk?]
+[Explain how you managed test readiness, issue resolution, UAT, or acceptance.]
 
 ---
 
-# 12. Release Decision
+# 12. Release & Deployment
 
 ## Release Readiness
 
-Summarize the final readiness assessment.
+Summarize the evidence used to determine release readiness.
 
-| Area          | Status            | Evidence   |
-| ------------- | ----------------- | ---------- |
-| Requirements  | [Ready/Not Ready] | [Evidence] |
-| Testing       | [Ready/Not Ready] | [Evidence] |
-| UAT           | [Ready/Not Ready] | [Evidence] |
-| AI Evaluation | [Ready/Not Ready] | [Evidence] |
-| Security      | [Ready/Not Ready] | [Evidence] |
-| Monitoring    | [Ready/Not Ready] | [Evidence] |
-| Rollback      | [Ready/Not Ready] | [Evidence] |
+### Release Recommendation
 
-## Go / No-Go Decision
+**GO / CONDITIONAL GO / HOLD / NO-GO**
+
+**Rationale:**
+[Explain why.]
+
+## Authorized Release Decision
 
 **Decision:**
-**GO / CONDITIONAL GO / NO-GO**
+[Enter]
 
-### Why?
+**Decision Authority:**
+[Enter]
 
-[Explain the evidence supporting the decision.]
+## Deployment Decision
 
-### Conditions
+**DEPLOY / HOLD DEPLOYMENT / ROLLBACK**
 
-[Document any conditions for a Conditional Go.]
+**Rationale:**
+[Explain why.]
 
----
+## Important Distinction
 
-# 13. Deployment & Operations
+Release approval and deployment approval are separate decisions.
 
-## Deployment Approach
+Explain any difference between them:
 
-[Describe how the product was deployed.]
-
-## Production Readiness
-
-[Explain how readiness was determined.]
-
-## Rollback
-
-[Describe the rollback approach.]
-
-## Support & Ownership
-
-| Area       | Owner   | Responsibility   |
-| ---------- | ------- | ---------------- |
-| Product    | [Owner] | [Responsibility] |
-| Technical  | [Owner] | [Responsibility] |
-| Support    | [Owner] | [Responsibility] |
-| Governance | [Owner] | [Responsibility] |
+[Enter]
 
 ---
 
-# 14. KPI Dashboard & Monitoring
+# 13. KPIs & Monitoring
 
-## Product KPIs
+Use:
 
-| KPI   |   Target |   Actual | Trend   | Status   |
-| ----- | -------: | -------: | ------- | -------- |
-| [KPI] | [Target] | [Actual] | [Trend] | [Status] |
+**KPI → Target → Actual → Trend → Threshold → Action**
 
-## Product Health
+## Key Performance Indicators
 
-**On Target / Needs Attention / Below Threshold**
+| KPI | Target | Actual | Trend | Status | Action |
+| --- | -----: | -----: | ----- | ------ | ------ |
+|     |        |        |       |        |        |
+|     |        |        |       |        |        |
+|     |        |        |       |        |        |
+|     |        |        |       |        |        |
 
-## What the Data Shows
+## What the Metrics Mean
 
-[Interpret the product's performance.]
+[Explain what the most important metrics indicate about product performance.]
 
-## PM Action
+## Monitoring Approach
 
-**Continue / Improve / Escalate / Reassess**
-
-### Evidence
-
-[Link to dashboard or monitoring artifact.]
+[Describe how performance would be monitored after release.]
 
 ---
 
-# 15. Business Outcomes
+# 14. Business Outcomes
 
-This section is critical.
+## Target
 
-Do not only describe what the product does.
+[What business outcome did the project intend to achieve?]
 
-Explain what changed or was expected to change because of the product.
+## Measured Result
 
-## Intended Outcomes
+[What does the available evidence actually demonstrate?]
 
-[List intended outcomes.]
+## Expected Result
 
-## Measured Outcomes
+[What benefits are projected but not yet validated?]
 
-[List measurable results.]
-
-| Outcome   |   Target |   Actual | Status   |
-| --------- | -------: | -------: | -------- |
-| [Outcome] | [Target] | [Actual] | [Status] |
-
-## Business Impact
-
-[Explain the impact.]
-
-## Outcome Assessment
+## Outcome Status
 
 **Achieved / Partially Achieved / Not Yet Achieved**
 
-Explain the evidence.
+## Business Value
+
+[Explain the value created or expected.]
+
+Clearly distinguish measured outcomes from projections.
 
 ---
 
-# 16. Continuous Improvement
+# 15. Continuous Improvement
 
-## What We Learned
+Identify the most important improvements that should follow from the evidence.
 
-[Describe key findings from monitoring and user feedback.]
+| Improvement | Reason | Business / User Value | Priority | Success Measure |
+| ----------- | ------ | --------------------- | -------- | --------------- |
+|             |        |                       |          |                 |
+|             |        |                       |          |                 |
+|             |        |                       |          |                 |
 
-## Improvement Backlog
+## Next Priority
 
-| Improvement   | Business Value | Priority   | Owner   | Success Measure |
-| ------------- | -------------- | ---------- | ------- | --------------- |
-| [Improvement] | [Value]        | [Priority] | [Owner] | [Measure]       |
-
-## Future Roadmap
-
-### Near Term
-
-[Improvement]
-
-### Medium Term
-
-[Improvement]
-
-### Long Term
-
-[Improvement]
+[Identify the most important improvement and explain why.]
 
 ---
 
-# 17. Lessons Learned
+# 16. Lessons Learned
 
 ## What Worked
 
-[Describe what worked.]
+[Enter]
 
 ## What Did Not Work
 
-[Describe what did not work.]
+[Enter]
 
-## What I Would Do Differently
+## What Would You Do Differently?
 
-[Describe specific changes.]
+[Enter]
 
-## Biggest PM Lesson
+## PM Lesson
 
-[Explain the most important lesson from managing this AI product.]
-
----
-
-# 18. My Role as the AI Project Manager
-
-This section should make your individual contribution clear.
-
-### Responsibilities
-
-Describe the responsibilities you performed.
-
-Examples:
-
-* Stakeholder management.
-* Requirements management.
-* Scope management.
-* Backlog prioritization.
-* Risk management.
-* AI governance.
-* Vendor or technical-team coordination.
-* Testing coordination.
-* UAT coordination.
-* Release management.
-* KPI monitoring.
-* Executive communication.
-
-### Key Decisions I Managed
-
-| Decision   | My Role | Evidence   | Outcome   |
-| ---------- | ------- | ---------- | --------- |
-| [Decision] | [Role]  | [Artifact] | [Outcome] |
-
-### Cross-Functional Collaboration
-
-Describe how you worked with:
-
-* Business stakeholders.
-* Developers.
-* Data professionals.
-* Security.
-* Operations.
-* End users.
-* Leadership.
+[Describe what the project taught you about managing AI products.]
 
 ---
 
-# 19. Portfolio Evidence Index
+# 17. Your PM Contribution
 
-Provide links to supporting artifacts.
+Make your individual contribution unmistakable.
 
-| Artifact             | Purpose                | Owner   | Link   |
-| -------------------- | ---------------------- | ------- | ------ |
-| Project Charter      | Project foundation     | [Owner] | [Link] |
-| Stakeholder Register | Stakeholder management | [Owner] | [Link] |
-| Requirements         | Product requirements   | [Owner] | [Link] |
-| Product Backlog      | Product planning       | [Owner] | [Link] |
-| Risk Register        | Risk management        | [Owner] | [Link] |
-| AI Architecture      | Solution overview      | [Owner] | [Link] |
-| Evaluation Results   | AI quality             | [Owner] | [Link] |
-| Test Results         | Quality validation     | [Owner] | [Link] |
-| UAT Results          | User acceptance        | [Owner] | [Link] |
-| Release Decision     | Release governance     | [Owner] | [Link] |
-| KPI Dashboard        | Product monitoring     | [Owner] | [Link] |
-| Improvement Backlog  | Continuous improvement | [Owner] | [Link] |
+Describe what you personally:
 
-Only include artifacts that are appropriate for public viewing.
+**Managed**
 
-Remove or redact:
+[Enter]
 
-* Confidential information.
-* Proprietary information.
-* Personally identifiable information.
-* Credentials.
-* Internal security details.
-* Restricted business information.
+**Decided**
+
+[Enter]
+
+**Coordinated**
+
+[Enter]
+
+**Evaluated**
+
+[Enter]
+
+**Governed**
+
+[Enter]
+
+**Communicated**
+
+[Enter]
+
+Use specific examples of ownership, judgment, and impact.
+
+Avoid vague statements such as:
+
+> "I was involved in the project."
 
 ---
 
-# 20. Visual Evidence
+# 18. Portfolio Evidence
 
-Add selected visuals that help communicate the project.
+Select the strongest artifacts that support your story.
 
-Recommended visuals:
+| Evidence | Link / Reference | What It Demonstrates |
+| -------- | ---------------- | -------------------- |
+|          |                  |                      |
+|          |                  |                      |
+|          |                  |                      |
+|          |                  |                      |
+|          |                  |                      |
 
-* Product screenshots.
-* Architecture diagram.
-* Product workflow.
-* KPI dashboard.
+Examples include:
+
+* Requirements.
+* Product backlog.
+* MVP definition.
+* AI architecture.
+* Data assessment.
 * Evaluation results.
-* Project roadmap.
-* Before-and-after process.
-* Release-readiness summary.
+* Risk register.
+* Security assessment.
+* Testing results.
+* UAT.
+* Release assessment.
+* KPI dashboard.
+* Other relevant evidence.
 
-Each visual should answer a specific question.
-
-Avoid adding screenshots simply to make the portfolio longer.
-
-### Visual 1
-
-**What does this show?**
-[Description]
-
-**Why does it matter?**
-[Explanation]
-
-### Visual 2
-
-**What does this show?**
-[Description]
-
-**Why does it matter?**
-[Explanation]
+Use only evidence you are permitted to share publicly.
 
 ---
 
-# 21. Interview Talking Points
+# 19. Visual Evidence
 
-Prepare concise answers to the following questions.
+Include selected visuals where they strengthen the case study.
 
-### What problem did you solve?
+Examples include:
 
-[Answer]
+* Product screenshot.
+* Architecture diagram.
+* Evaluation chart.
+* KPI dashboard.
+* Workflow.
+* Release-readiness view.
 
-### Why was AI appropriate?
+For each visual, explain what it demonstrates.
 
-[Answer]
+| Visual | What It Demonstrates |
+| ------ | -------------------- |
+|        |                      |
+|        |                      |
+|        |                      |
 
-### What was your role?
-
-[Answer]
-
-### What was the biggest project risk?
-
-[Answer]
-
-### How did you manage AI hallucination or quality risk?
-
-[Answer]
-
-### How did you determine whether the product was ready?
-
-[Answer]
-
-### What metrics did you monitor?
-
-[Answer]
-
-### Tell me about a difficult stakeholder.
-
-[Answer]
-
-### Tell me about a difficult project decision.
-
-[Answer]
-
-### What would you do differently?
-
-[Answer]
-
-### What business outcome did the project target?
-
-[Answer]
+Do not include visuals containing confidential information, credentials, API keys, personally identifiable information, or restricted internal information.
 
 ---
 
-# 22. Resume Achievement Statements
+# 20. Interview Talking Points
 
-Convert the project into resume-ready accomplishments.
+Use the project to prepare for interviews.
 
-Use the structure:
+## Problem
 
-**Action + Scope + Result**
+[Explain the problem in approximately 30 seconds.]
 
-### Achievement 1
+## Solution
 
-[Write achievement.]
+[Explain the AI product in approximately 30 seconds.]
 
-### Achievement 2
+## Your Role
 
-[Write achievement.]
+[Explain your PM contribution.]
 
-### Achievement 3
+## Biggest Challenge
 
-[Write achievement.]
+[Explain the most difficult issue.]
 
-Avoid claiming results that cannot be supported by project evidence.
+## Most Important Decision
+
+[Explain one significant PM decision.]
+
+## AI Risk
+
+[Explain one significant AI-specific risk.]
+
+## Evidence
+
+[Explain the strongest evidence.]
+
+## Outcome
+
+[Explain the business result or current outcome.]
+
+## What You Would Do Next
+
+[Explain the next improvement or strategic action.]
 
 ---
 
-# 23. LinkedIn / Professional Profile Summary
+# 21. Resume Achievement Statements
 
-Create a short description of the project suitable for a professional profile.
+Create concise achievement statements based on the project.
 
-Focus on:
+### Statement 1
 
-* AI Project Management.
-* Business problem.
-* Product lifecycle.
-* Cross-functional leadership.
-* AI risk and governance.
-* Measurable outcomes.
+[Enter]
 
-### Summary
+### Statement 2
 
-[Write 3–5 sentences.]
+[Enter]
+
+### Statement 3
+
+[Enter]
+
+Use measurable outcomes where supported by evidence.
+
+Do not claim results that were only projected.
 
 ---
 
-# 24. Public Portfolio Checklist
+# 22. LinkedIn / Professional Summary
 
-Before publishing the case study:
+Write a short professional description of the project that highlights your AI PM experience.
 
-* [ ] Business problem is clear.
-* [ ] AI use case is clear.
-* [ ] My PM role is clearly identified.
-* [ ] Project scope is documented.
-* [ ] Key decisions are explained.
-* [ ] Risks are documented.
-* [ ] AI governance is addressed.
-* [ ] Evaluation evidence is included.
-* [ ] Testing evidence is included.
-* [ ] Release decision is explained.
-* [ ] KPI evidence is included.
-* [ ] Business outcomes are explained.
-* [ ] Continuous improvement is included.
-* [ ] Supporting artifacts are linked.
-* [ ] Visual evidence is relevant.
+[Enter]
+
+Focus on relevant areas such as:
+
+* AI product management.
+* Requirements.
+* AI evaluation.
+* Risk and governance.
+* Testing.
+* Release readiness.
+* KPI and performance management.
+* Business outcomes.
+
+---
+
+# 23. Public Portfolio Checklist
+
+Before publishing your case study:
+
+* [ ] Project is clearly identified as fictional/synthetic where applicable.
 * [ ] Confidential information has been removed.
 * [ ] Personally identifiable information has been removed.
-* [ ] No unsupported claims are made.
-* [ ] Portfolio can be understood without the course.
+* [ ] Credentials and API keys have been removed.
+* [ ] Restricted security information has been removed.
+* [ ] Claims are supported by evidence.
+* [ ] Project maturity is accurately represented.
+* [ ] Prototype or MVP evidence is not presented as production evidence.
+* [ ] Measured results are distinguished from projections.
+* [ ] Individual PM contribution is clearly stated.
+* [ ] Technical contributions are represented accurately.
+* [ ] Supporting links are accessible to the intended audience.
 
 ---
 
-# Final Portfolio Test
+# 24. Final Portfolio Review
 
-A recruiter or hiring manager should be able to answer these questions after reviewing the portfolio:
+Before publishing, confirm that someone unfamiliar with the project can answer:
 
-**What problem did this person solve?**
+**What problem did you solve?**
 
-**Can this person manage an AI product?**
+**Why was AI appropriate?**
 
-**Can this person work with technical teams?**
+**Who benefited?**
 
-**Can this person manage AI-specific risks?**
+**What did you manage?**
 
-**Can this person make evidence-based decisions?**
+**What important decisions did you make?**
 
-**Can this person take a product through testing and release?**
+**How did you evaluate the AI?**
 
-**Can this person measure business outcomes?**
+**How did you manage risk?**
 
-**Can this person communicate effectively with executives and stakeholders?**
+**What did testing and UAT demonstrate?**
 
-If the answer to all seven is **yes**, the portfolio is doing its job.
+**What release and deployment decisions were made?**
+
+**What business value was demonstrated?**
+
+**What should happen next?**
 
 ---
 
-# Final Principle
+# Final Portfolio Standard
 
-Your portfolio should not say:
+A strong portfolio case study demonstrates more than an AI application.
 
-> "I built an AI application."
+It demonstrates the ability to:
 
-It should demonstrate:
+**Understand the problem → Define the product → Manage AI risks → Evaluate evidence → Govern readiness → Measure performance → Communicate outcomes**
 
-> **"I managed an AI product from business problem through delivery, governance, evaluation, release, measurement, and continuous improvement."**
+Your portfolio should make clear that your value was not simply building or using AI.
+
+Your value was **managing the product and the decisions around AI**.
+
+**Problem → Strategy → Evidence → Decision → Outcome → Improvement**
