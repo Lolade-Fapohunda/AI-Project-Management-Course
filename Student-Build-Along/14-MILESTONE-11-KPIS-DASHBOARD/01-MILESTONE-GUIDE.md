@@ -54,12 +54,12 @@ A useful KPI should help answer:
 
 For AI products, KPIs can measure:
 
-* Business outcomes.
-* AI quality.
-* User experience.
-* Operational performance.
-* Security.
-* Reliability.
+* Business outcomes
+* AI quality
+* User experience
+* Operational performance
+* Security
+* Reliability
 
 ---
 
@@ -78,6 +78,12 @@ For the Petadel PolicyAssist reference project, the following KPIs are used.
 | Response Latency             | ≤10 seconds | Lower is better  |
 | User Satisfaction            |        ≥85% | Higher is better |
 | Critical Security Incidents  |           0 | Lower is better  |
+
+These measures represent different dimensions of product performance.
+
+Do not assume that one KPI can represent the overall health of the product.
+
+A product can perform well in one area and poorly in another.
 
 ---
 
@@ -103,7 +109,7 @@ That does not automatically mean the product has crossed the escalation threshol
 
 The **decision threshold** identifies when performance has deteriorated far enough to require a stronger PM response.
 
-This creates three decision states:
+This creates three decision states.
 
 ### On Target
 
@@ -172,15 +178,15 @@ Use the same framework throughout your AI product lifecycle:
 
 **Below Threshold → Escalate / Reassess**
 
-This framework helps prevent two common PM mistakes:
+This framework helps prevent two common PM mistakes.
 
-### Mistake 1 — Treating Every Missed Target as a Crisis
+## Mistake 1 — Treating Every Missed Target as a Crisis
 
 A KPI can miss its target without requiring immediate escalation.
 
 The PM should investigate the severity, trend, impact, and decision threshold.
 
-### Mistake 2 — Ignoring a Threshold Breach
+## Mistake 2 — Ignoring a Threshold Breach
 
 A KPI that crosses the unacceptable threshold requires a stronger response.
 
@@ -204,56 +210,68 @@ A single critical security incident may justify immediate escalation even if the
 
 The PM should assess:
 
-* Severity.
-* Scope.
-* User impact.
-* Data exposure.
-* Regulatory or compliance implications.
-* Ability to contain the issue.
-* Risk of recurrence.
+* Severity
+* Scope
+* User impact
+* Data exposure
+* Regulatory or compliance implications
+* Ability to contain the issue
+* Risk of recurrence
 
 ---
 
-# Step 1 — Review KPI Data
+# Part 2 — KPI Dashboard Lab
 
-Review the KPI values provided in the technical dashboard starter.
+The **KPI Dashboard Lab** is the optional technical Build-Along activity for this milestone.
+
+All students complete the PM analysis.
+
+No coding is required to complete the PM portion.
+
+The technical lab allows you to build and interpret a simple AI product KPI dashboard using the provided starter file.
+
+The technical activity follows:
+
+**Watch → Build → Run → Test → Interpret → Document → Decide**
+
+## Step 1 — Review the KPI Data
+
+Open:
+
+`01-DASHBOARD-STARTER.py`
+
+Review the provided KPI names, targets, and actual values.
 
 Consider:
 
 * What does each KPI measure?
 * Is higher or lower performance better?
-* Which KPIs meet their target?
-* Which KPIs miss their target?
-* Which KPIs cross the decision threshold?
-* Which KPI could create the greatest business or product impact?
+* Which KPIs are meeting the target?
+* Which KPIs are missing the target?
 
 ### PM Decision
 
-Identify the KPI you would investigate first.
-
-Explain **why** using measurable evidence.
+Identify the KPI you would investigate first and explain your reasoning.
 
 ---
 
-# Step 2 — KPI Cards
+## Step 2 — KPI Cards
 
-KPI cards provide a quick view of current product performance.
+Review the KPI cards in the starter application.
 
-Review the KPI cards in the starter dashboard.
+The cards provide a quick view of current product performance.
 
 ### PM Question
 
-If you had only 30 seconds to assess product health:
-
-> **What would the KPI cards tell you?**
+If you had only 30 seconds to assess product health, what would the KPI cards tell you?
 
 Do not simply repeat the numbers.
 
-Identify what the numbers mean for product health.
+Explain what they indicate about product health.
 
 ---
 
-# Step 3 — Target vs. Actual
+## Step 3 — Target vs. Actual
 
 Modify the dashboard to add a visual comparison between:
 
@@ -261,29 +279,29 @@ Modify the dashboard to add a visual comparison between:
 
 The purpose of this visualization is to make performance gaps easier to identify.
 
-Consider:
-
-* Which KPIs are performing at or above target?
-* Which KPIs are missing target?
-* Which KPIs have crossed their decision threshold?
-* Which gaps require investigation?
-* Which gaps could affect the business outcome?
-
 ### PM Question
 
-> **Which performance gaps require action, and why?**
+* Which KPIs are performing above target?
+* Which KPIs are performing below target?
+* Which gaps require further investigation?
 
 ---
 
-# Step 4 — Trend
+## Step 4 — Trend
 
 Add performance-over-time data and a trend visualization.
 
-The trend should help you determine whether product performance is:
+The trend should help the PM determine whether product performance is:
 
-* Improving.
-* Declining.
-* Remaining stable.
+* Improving
+* Declining
+* Remaining stable
+
+### PM Question
+
+**Is the product improving, declining, or remaining stable?**
+
+Explain the evidence supporting your conclusion.
 
 A single KPI value provides a snapshot.
 
@@ -291,15 +309,9 @@ A trend provides context.
 
 For example, a KPI that is currently within target may still require investigation if it has deteriorated consistently over several reporting periods.
 
-### PM Question
-
-> **Is the product improving, declining, or remaining stable?**
-
-Explain the evidence supporting your conclusion.
-
 ---
 
-# Step 5 — Status and Decision Threshold Logic
+## Step 5 — Status & Threshold Logic
 
 Add logic that classifies each KPI as:
 
@@ -307,13 +319,13 @@ Add logic that classifies each KPI as:
 * **Needs Attention**
 * **Below Threshold**
 
-Use the **KPI Decision Thresholds** defined in this milestone.
+Use the **KPI Decision Thresholds** defined earlier in this milestone.
 
-Do not create separate thresholds for the technical dashboard.
+Do not create separate thresholds for the technical lab.
 
 The technical dashboard should implement the same PM decision framework used by all students.
 
-### Decision Framework
+### PM Decision Framework
 
 **On Target → Continue**
 
@@ -325,42 +337,42 @@ The technical dashboard should implement the same PM decision framework used by 
 
 Which KPI requires the most immediate attention?
 
-Explain your reasoning using:
+Explain your reasoning using the KPI's:
 
-* Target.
-* Actual performance.
-* Trend.
-* Decision threshold.
-* Business impact.
-* Product impact.
-* Risk.
+* Target
+* Actual performance
+* Trend
+* Threshold
+* Business or product impact
 
 ---
 
-# Step 6 — Run and Test
+## Step 6 — Run and Test
 
 Run the Streamlit dashboard.
 
 Verify that:
 
 * KPI cards display correctly.
-* KPI names are correct.
 * Target values are correct.
 * Actual values are correct.
 * Target vs. Actual visualization works.
 * Trend information displays correctly.
 * Status logic works.
-* Decision threshold conditions are identified correctly.
+* Threshold conditions are identified correctly.
+* The dashboard provides information that supports PM decision-making.
+
+Also verify that:
+
 * Higher-is-better KPIs are evaluated correctly.
 * Lower-is-better KPIs are evaluated correctly.
 * Security conditions are handled appropriately.
-* The dashboard supports PM decision-making.
 
 Document any issues discovered during testing.
 
 ---
 
-# Step 7 — Interpret the Dashboard
+## Step 7 — Interpret the Dashboard
 
 Review the completed dashboard.
 
@@ -368,14 +380,11 @@ Identify:
 
 * KPIs meeting target.
 * KPIs missing target.
-* KPIs in the Needs Attention range.
-* KPIs crossing the Below Threshold boundary.
 * Improving trends.
 * Declining trends.
-* Stable trends.
+* Threshold breaches.
 * Business risks.
 * Product risks.
-* Operational risks.
 
 Use:
 
@@ -387,7 +396,7 @@ Explain what the information means for the product.
 
 ---
 
-# Step 8 — Make the PM Decision
+## Step 8 — Make the PM Decision
 
 Use the dashboard evidence to select the appropriate action:
 
@@ -397,12 +406,68 @@ Document:
 
 1. The evidence.
 2. The business or product impact.
-3. The risk.
-4. The recommended action.
-5. The action owner.
-6. The next review point.
+3. The recommended action.
+4. The action owner.
+5. The next review point.
 
 Your decision should be based on measurable evidence rather than assumptions.
+
+---
+
+# PM Analysis vs. Technical Build
+
+The PM analysis and technical dashboard serve different purposes.
+
+## PM Analysis
+
+You determine:
+
+* What the KPI means.
+* Whether performance meets the target.
+* Whether the KPI requires attention.
+* Whether the decision threshold has been crossed.
+* What action should be taken.
+* Who owns the action.
+* When the result should be reviewed again.
+
+## Technical Dashboard
+
+The dashboard makes that information visible.
+
+It may display:
+
+* KPI cards.
+* Target comparisons.
+* Trends.
+* Status indicators.
+* Threshold conditions.
+* Decision-support information.
+
+The dashboard supports the PM decision.
+
+**The PM decision is the outcome, not the code.**
+
+---
+
+# Part 3 — Interpret Product Performance
+
+After completing the PM analysis and, optionally, the technical dashboard, evaluate the product as a whole.
+
+Use the following logic:
+
+**KPI → Target → Actual → Trend → Threshold → Action**
+
+Consider the difference between:
+
+### Performance Gap
+
+The actual result does not meet the target.
+
+### Decision Threshold Breach
+
+The actual result has crossed the defined unacceptable-performance boundary.
+
+These are not automatically the same condition.
 
 ---
 
@@ -430,85 +495,11 @@ The correct interpretation is:
 
 **Threshold breached → Below Threshold → Escalate / Reassess**
 
-This distinction is important.
+This distinction is important because PM action should reflect the severity of the evidence.
 
 ---
 
-# Optional Technical Build-Along
-
-The technical dashboard activity is optional.
-
-All students complete the PM analysis.
-
-You may also build the dashboard implementation using the provided starter file.
-
-The technical build follows:
-
-**Watch → Build → Run → Test → Interpret → Document → Decide**
-
-The purpose of the technical activity is not to turn you into a software engineer.
-
-It is to help you understand how technical product data can support PM decision-making.
-
----
-
-# KPI Dashboard Lab
-
-If you choose the technical Build-Along, open:
-
-`01-DASHBOARD-STARTER.py`
-
-You will progressively build the dashboard by adding:
-
-* KPI data.
-* KPI cards.
-* Target vs. Actual visualization.
-* Trend visualization.
-* Status logic.
-* Decision threshold logic.
-* PM decision support.
-
-The technical dashboard should use the same KPI targets and decision thresholds defined in this milestone.
-
-Do not invent separate thresholds.
-
----
-
-# PM Analysis vs. Technical Build
-
-The PM analysis and technical dashboard serve different purposes.
-
-### PM Analysis
-
-You determine:
-
-* What the KPI means.
-* Whether performance meets the target.
-* Whether the KPI requires attention.
-* Whether the decision threshold has been crossed.
-* What action should be taken.
-* Who owns the action.
-* When the result should be reviewed again.
-
-### Technical Dashboard
-
-The dashboard makes that information visible.
-
-It may display:
-
-* KPI cards.
-* Charts.
-* Trends.
-* Status indicators.
-* Threshold conditions.
-
-The dashboard supports the PM decision.
-
-**The PM decision is the outcome — not the code.**
-
----
-
-# Monitoring After Release
+# Part 4 — Monitoring After Release
 
 Monitoring does not stop after the initial release.
 
@@ -516,14 +507,16 @@ After deployment, the PM should establish an ongoing monitoring cycle.
 
 A monitoring process should define:
 
-* KPI owner.
-* Data source.
-* Reporting frequency.
-* Target.
-* Decision threshold.
-* Review cadence.
-* Escalation process.
-* Corrective-action process.
+* KPI owner
+* Data source
+* Reporting frequency
+* Target
+* Decision threshold
+* Review cadence
+* Escalation process
+* Corrective-action process
+
+Monitoring should provide enough information for the PM to identify changes before they become larger product or business problems.
 
 ---
 
@@ -546,6 +539,57 @@ The cycle becomes:
 
 **Monitor → Identify → Analyze → Improve → Re-measure**
 
+Continuous improvement should be evidence-driven.
+
+Do not change the product simply because a KPI moved.
+
+Investigate the change, assess the impact, and determine whether action is justified.
+
+---
+
+# Executive Reporting
+
+A PM should be able to translate KPI information into an executive-level message.
+
+An effective executive summary should answer:
+
+**What is the current product health?**
+
+**What changed?**
+
+**What is the most significant risk?**
+
+**What requires action?**
+
+**Who owns the action?**
+
+**When will the issue be reviewed again?**
+
+A strong executive summary does not repeat every dashboard value.
+
+It highlights the information needed for a decision.
+
+---
+
+# PM Decision Record
+
+Document your final interpretation using:
+
+| Decision Element        | Your Assessment |
+| ----------------------- | --------------- |
+| KPI                     |                 |
+| Target                  |                 |
+| Actual                  |                 |
+| Trend                   |                 |
+| Decision Status         |                 |
+| Business/Product Impact |                 |
+| Risk                    |                 |
+| Recommended Action      |                 |
+| Action Owner            |                 |
+| Next Review Point       |                 |
+
+Your recommendation should connect measurable evidence to a clear PM action.
+
 ---
 
 # Final PM Checkpoint
@@ -564,6 +608,23 @@ Make a PM decision.
 
 ---
 
+# Milestone Deliverable
+
+Complete a **KPI and Monitoring Decision Record** containing:
+
+* PolicyAssist KPI analysis.
+* Target versus actual assessment.
+* Decision-threshold assessment.
+* Trend interpretation.
+* Key business, product, and operational risks.
+* Recommended action.
+* Action owner.
+* Next review point.
+* Executive-level summary.
+* Evidence from the dashboard lab, when the optional technical Build-Along is completed.
+
+---
+
 # Milestone Completion Criteria
 
 ## PM Portion
@@ -575,30 +636,33 @@ The PM portion is complete when you can:
 * Compare actual performance against the target.
 * Distinguish a missed target from a threshold breach.
 * Identify meaningful trends.
-* Recognize decision threshold breaches.
+* Recognize decision-threshold breaches.
 * Explain associated business and product risks.
 * Recommend an evidence-based action.
 * Identify an action owner.
 * Establish a follow-up review point.
 * Explain how monitoring supports continuous improvement.
+* Translate KPI results into an executive-level PM message.
 
-## Technical Build-Along
+## Optional Technical Build-Along
 
-The optional technical dashboard is complete when it includes:
+The technical dashboard activity is complete when it includes:
 
 * KPI data.
 * KPI cards.
 * Target vs. Actual visualization.
 * Trend visualization.
 * Status logic.
-* Decision threshold logic.
+* Decision-threshold logic.
 * PM decision support.
 
 ---
 
 # Key Takeaways
 
-Remember:
+### KPI
+
+**What measurable evidence tells us how the product is performing?**
 
 ### Target
 
@@ -608,13 +672,13 @@ Remember:
 
 **When does performance become unacceptable enough to require escalation or reassessment?**
 
-### KPI
-
-**What measurable evidence tells us how the product is performing?**
-
 ### Dashboard
 
 **How do we make that evidence visible and actionable?**
+
+### Monitoring
+
+**How do we continue evaluating the product after release?**
 
 ### PM Decision
 

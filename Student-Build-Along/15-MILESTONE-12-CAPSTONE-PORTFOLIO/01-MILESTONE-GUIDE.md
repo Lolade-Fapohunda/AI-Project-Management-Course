@@ -2,15 +2,50 @@
 
 ## Objective
 
-Integrate the Project Management (PM) work completed throughout the course into a complete Artificial Intelligence (AI) project capstone and professional portfolio package.
+In this milestone, you will integrate the Project Management (PM) work completed throughout the course into a complete Artificial Intelligence (AI) project capstone and professional portfolio package.
 
-This milestone demonstrates that you can manage an AI product from:
+You will demonstrate that you can manage an AI product through its lifecycle:
 
 **Problem → Stakeholders → Requirements → Planning → AI Design → Data → Evaluation → Governance → Testing → Release → Monitoring → Continuous Improvement**
 
-The goal is not simply to show that you built something.
+The goal is not simply to show that an AI application was built.
 
-The goal is to demonstrate that you can **manage an AI product through its complete lifecycle and make evidence-based decisions.**
+The goal is to demonstrate that you can:
+
+**Define the problem → Make informed decisions → Manage risk → Evaluate evidence → Determine readiness → Measure outcomes → Recommend what happens next**
+
+---
+
+# How M12 Works
+
+Milestone 12 brings together the work completed in Milestones 1–11.
+
+You are not expected to recreate every artifact inside this guide.
+
+Instead, you will:
+
+1. Review the work completed throughout the course.
+2. Confirm that the major decisions and evidence are documented.
+3. Assemble the work into the **Capstone Submission Template**.
+4. Create a professional **Portfolio Package** using the Portfolio Package Template.
+5. Compare your work against the completed Petadel PolicyAssist reference example.
+6. Make a final evidence-based PM recommendation.
+
+### Your M12 Files
+
+Use the four files provided for this milestone:
+
+**Milestone 12 Guide**
+Explains what to do and how to evaluate your capstone.
+
+**Capstone Submission Template**
+Your working document for assembling the complete capstone.
+
+**Portfolio Package Template**
+Your professional case-study format for presenting the project publicly.
+
+**Completed Capstone Example**
+The Petadel PolicyAssist reference showing the expected standard.
 
 ---
 
@@ -18,44 +53,48 @@ The goal is to demonstrate that you can **manage an AI product through its compl
 
 You may complete the capstone using one of two approaches.
 
-### Option A — Petadel PolicyAssist
+## Option A — Petadel PolicyAssist
 
 Use the Petadel PolicyAssist AI project as the reference implementation provided throughout this course.
 
 You will assemble the PM artifacts and evidence developed throughout the course into a complete project package.
 
-### Option B — Your Own AI Product
+## Option B — Your Own AI Product
 
 Apply the same Project Management process to your own AI product, use case, or business problem.
 
-You do not need to recreate the technical PolicyAssist application.
+You do not need to recreate the PolicyAssist technical application.
 
-Your project should demonstrate the same PM lifecycle and decision-making process.
+Your project should demonstrate the same PM lifecycle and evidence-based decision-making.
 
 ---
 
 # Capstone Completion Model
 
-The capstone brings together the work from all previous milestones.
+Your completed project should demonstrate evidence across the full lifecycle.
 
-| Area                    | Evidence                                                 |
-| ----------------------- | -------------------------------------------------------- |
-| Problem                 | Problem statement and business need                      |
-| Stakeholders            | Stakeholder analysis and engagement approach             |
-| Requirements            | Business and functional requirements                     |
-| Scope                   | In-scope, out-of-scope, assumptions, constraints         |
-| Product Planning        | Backlog, prioritization, Minimum Viable Product (MVP)    |
-| AI Design               | AI architecture and technology decisions                 |
-| Data                    | Data sources, quality, retrieval/knowledge approach      |
-| Evaluation              | Evaluation framework and results                         |
-| Risk                    | Risk register and mitigation strategies                  |
-| Security                | Access, security, privacy, and governance controls       |
-| Testing                 | Test strategy, results, defects                          |
-| User Acceptance Testing | UAT scenarios and acceptance results                     |
-| Release                 | Release readiness and deployment plan                    |
-| Monitoring              | Key Performance Indicators (KPIs), dashboard, monitoring |
-| Continuous Improvement  | Improvement actions and future roadmap                   |
-| Business Outcome        | Evidence of product value                                |
+| Area                          | Evidence                                                     |
+| ----------------------------- | ------------------------------------------------------------ |
+| Problem                       | Problem statement and business need                          |
+| Stakeholders                  | Stakeholder analysis and engagement approach                 |
+| Requirements                  | Business, functional, and non-functional requirements        |
+| Scope                         | In-scope, out-of-scope, assumptions, and constraints         |
+| Product Planning              | Backlog, prioritization, and Minimum Viable Product (MVP)    |
+| AI Design                     | Architecture and technology decisions                        |
+| Data                          | Data sources, quality, authority, and retrieval approach     |
+| Evaluation                    | AI evaluation framework and results                          |
+| Risk                          | Risk register and mitigation                                 |
+| Security & Governance         | Access, security, privacy, and governance controls           |
+| Testing                       | Test strategy, results, and defects                          |
+| User Acceptance Testing (UAT) | User scenarios and acceptance results                        |
+| Release                       | Release readiness and deployment approach                    |
+| Monitoring                    | Key Performance Indicators (KPIs), dashboard, and monitoring |
+| Continuous Improvement        | Improvement actions and future roadmap                       |
+| Business Outcome              | Evidence of product value                                    |
+
+The evidence should tell one connected story.
+
+**Problem → Decision → Action → Evidence → Outcome**
 
 ---
 
@@ -63,445 +102,642 @@ The capstone brings together the work from all previous milestones.
 
 Review your work from Milestones 1–11.
 
-Do not simply place the artifacts into a folder.
+Do not simply place the files into a folder.
 
 Create a logical project story.
 
-Your project should answer:
+Your capstone should answer:
 
 1. What problem were we solving?
 2. Who experienced the problem?
 3. Why did the problem matter?
 4. What solution did we propose?
-5. What were the requirements?
+5. What requirements defined success?
 6. What did we decide to build?
-7. Why did we make those technical and product decisions?
+7. Why did we make those product and technical decisions?
 8. What risks did we identify?
 9. How did we evaluate the AI?
 10. How did we test the product?
-11. Was the product ready for release?
-12. How did we measure success after release?
-13. What should happen next?
+11. What did UAT tell us?
+12. Was the product ready for release?
+13. How did we measure product performance?
+14. What business outcome did the product target?
+15. What should happen next?
+
+### PM Standard
+
+Do not describe activities without explaining their purpose.
+
+For example:
+
+**Weak:**
+"We created a risk register."
+
+**Stronger:**
+"We identified hallucination and authorization as high-impact AI risks and assigned mitigation actions before release."
+
+The second statement demonstrates PM judgment.
 
 ---
 
-# Part 2 — Executive Project Summary
+# Part 2 — Review Requirements, Scope & MVP
 
-Create a one-page executive summary.
+Review the work completed in Milestones 3 and 4.
 
-Include:
+Confirm that your final capstone clearly shows:
 
-### Problem
-
-What business or user problem did the AI product address?
-
-### Users
-
-Who would use or be affected by the product?
-
-### Solution
-
-What AI-enabled solution was proposed?
-
-### Business Value
-
-What measurable improvement was expected?
-
-### Scope
-
-What was included in the project?
-
-### Key Risks
-
-What were the most significant risks?
-
-### Results
-
-What did testing, evaluation, and KPI evidence show?
-
-### Recommendation
-
-Should the organization:
-
-**Continue → Improve → Release → Scale → Reassess**
-
-Explain why.
-
----
-
-# Part 3 — Scope & Requirements Review
-
-Review the original project scope.
-
-Confirm:
-
-* Business requirements were addressed.
-* Functional requirements were addressed.
-* Non-functional requirements were addressed.
-* MVP scope was delivered.
-* Out-of-scope items remain documented.
-* Assumptions and constraints are documented.
-
-Identify any requirements that:
-
-* Were completed.
-* Were partially completed.
-* Were deferred.
-* Were rejected.
+* Business requirements.
+* Functional requirements.
+* Non-functional requirements.
+* AI-specific requirements.
+* Security and access requirements.
+* Acceptance criteria.
+* In-scope capabilities.
+* Out-of-scope capabilities.
+* MVP scope.
+* Deferred or rejected capabilities.
+* Major assumptions and constraints.
 
 ### PM Decision
 
-Is the delivered product aligned with the approved scope?
+Answer:
 
-Explain the evidence.
+> **Is the delivered or proposed product aligned with the approved scope and MVP?**
+
+Identify any item that was:
+
+* Completed
+* Partially completed
+* Deferred
+* Rejected
+
+Support your conclusion with evidence from your requirements, backlog, and MVP artifacts.
 
 ---
 
-# Part 4 — Risk & Governance Review
+# Part 3 — Review the AI Solution
 
-Review the project's risk and governance artifacts.
+Review the architecture and technical decisions developed in Milestone 5.
 
-Confirm that major risks have:
+Your capstone should demonstrate that you understand the AI solution at a PM level.
 
-* An owner.
-* A mitigation strategy.
-* A status.
-* An appropriate escalation path.
+You should be able to explain:
 
-Review AI-specific risks including:
+* What the major components do.
+* How information moves through the system.
+* Where AI is used.
+* Where data enters the process.
+* How retrieval supports the AI response.
+* Where grounding occurs.
+* How citations or evidence are produced.
+* What dependencies exist.
+* What major technical risks were identified.
 
-* Hallucination.
-* Incorrect retrieval.
-* Data quality.
-* Unauthorized access.
-* Privacy.
-* Security.
-* Bias or inappropriate outputs.
-* Outdated information.
-* Model limitations.
-* Human escalation requirements.
+For PolicyAssist, the core flow is:
+
+**Policy Documents → Processing → Embeddings → Vector Database → Retrieval → Large Language Model (LLM) → Grounded Response → Citation → User**
 
 ### PM Decision
 
-Identify the top three remaining project or product risks.
-
-For each risk, document:
-
-1. Risk.
-2. Impact.
-3. Likelihood.
-4. Mitigation.
-5. Owner.
-6. Next review point.
-
----
-
-# Part 5 — AI Evaluation Review
-
-Review the evaluation evidence.
-
-For PolicyAssist, this includes measures such as:
-
-* Retrieval accuracy.
-* Answer accuracy.
-* Hallucination rate.
-* Citation correctness.
-* Unsupported-question refusal.
-* Response latency.
-
-Compare actual performance with the approved targets and thresholds.
-
-Do not report metrics without interpreting them.
+Identify at least one important technical or architecture decision.
 
 Explain:
 
-**Metric → Target → Actual → Risk → Decision**
+**Decision → Reason → Tradeoff → Risk**
 
-### PM Decision
+You do not need to claim that you personally engineered technical components you did not build.
 
-Does the evaluation evidence support continued use or release of the product?
-
-Explain why.
+Your role is to demonstrate that you can manage and communicate technical decisions.
 
 ---
 
-# Part 6 — Testing & UAT Review
+# Part 4 — Review Data & Knowledge Management
 
-Review the testing and User Acceptance Testing (UAT) evidence.
+Review Milestone 6.
 
-Confirm:
+Your capstone should explain how the project manages the data or knowledge required by the AI product.
 
-* Functional testing was completed.
-* AI-specific testing was completed.
-* Security testing was considered.
-* Unauthorized-access scenarios were tested where applicable.
-* Critical defects were addressed or formally accepted.
-* UAT acceptance criteria were evaluated.
-* Outstanding defects are documented.
+Address:
+
+* Data or knowledge sources.
+* Data quality.
+* Authority.
+* Versioning.
+* Duplicates.
+* Outdated information.
+* Conflicting information.
+* Metadata.
+* Access considerations.
+* Retrieval quality.
+
+For PolicyAssist, remember:
+
+**The LLM is not the source of truth.**
+
+The authoritative source must be identified before the AI relies on the information.
 
 ### PM Decision
 
-Are the remaining defects acceptable for release?
+Identify the most important data or knowledge risk and explain:
+
+**Risk → Impact → Control → Evidence**
+
+---
+
+# Part 5 — Review AI Evaluation
+
+Review Milestone 7.
+
+Do not combine retrieval quality and generated-response quality into one general score.
+
+Your capstone should demonstrate that you evaluated the appropriate dimensions separately.
+
+For example:
+
+* Retrieval accuracy.
+* Response accuracy.
+* Grounded response rate.
+* Unsupported response rate.
+* Citation presence.
+* Citation accuracy.
+* Citation support.
+* Response time.
+* Appropriate refusal or escalation.
+
+Compare actual performance against the approved targets and thresholds.
 
 Use:
 
-**Go → Conditional Go → No-Go**
+**Metric → Target → Actual → Status → Interpretation → Decision**
 
-Explain the decision.
+### PM Decision
 
----
+Answer:
 
-# Part 7 — Release Readiness
+> **Does the evaluation evidence support continued use, improvement, or additional validation?**
 
-Complete a final release-readiness review.
+Do not simply report the numbers.
 
-Evaluate:
-
-### Product
-
-* Requirements complete.
-* Acceptance criteria satisfied.
-* Critical defects resolved.
-
-### AI
-
-* Evaluation targets reviewed.
-* Hallucination controls reviewed.
-* Grounding and citation behavior reviewed.
-* Unsupported questions handled appropriately.
-
-### Security & Governance
-
-* Access controls reviewed.
-* Security testing reviewed.
-* Governance requirements reviewed.
-* Escalation process documented.
-
-### Operations
-
-* Deployment plan completed.
-* Monitoring available.
-* KPIs defined.
-* Rollback plan documented.
-* Support ownership identified.
+Explain what they mean for the product.
 
 ---
 
-# Release Decision
+# Part 6 — Review Security & Governance
 
-Select one:
+Review Milestone 8.
 
-**GO**
+Your capstone should distinguish between:
 
-The product is ready for release.
+**Controls that were actually tested**
 
-**CONDITIONAL GO**
+and
 
-The product may proceed with defined conditions, risks, or remediation actions.
+**Production controls that remain requirements or future work.**
 
-**NO-GO**
+Address applicable areas such as:
 
-The product should not proceed until identified issues are resolved.
+* Authentication.
+* Authorization.
+* Role-based access.
+* Confidential data protection.
+* Privacy.
+* Logging.
+* Auditability.
+* Policy authority and versioning.
+* Governance ownership.
+* Human escalation.
+* Production security testing.
 
-Document:
+Do not claim that a control passed if it was not implemented or tested.
 
-1. Decision.
-2. Evidence.
-3. Conditions or risks.
-4. Decision owner.
-5. Next review date.
+### PM Decision
+
+Identify the most significant remaining security or governance risk.
+
+Explain:
+
+**Risk → Impact → Control → Evidence → Decision**
 
 ---
 
-# Part 8 — KPI & Monitoring Review
+# Part 7 — Review Testing & UAT
 
-Use the KPI dashboard developed in Milestone 11.
+Review Milestone 9.
+
+Your capstone should demonstrate that the product was evaluated as a complete product, not merely as a functioning application.
+
+Review evidence for:
+
+* Functional testing.
+* Integration behavior.
+* AI behavior.
+* Citation or evidence behavior.
+* Unsupported-question handling.
+* User experience.
+* Business or operational expectations.
+* User Acceptance Testing (UAT).
+* Defects and issues.
+
+Carry forward relevant evidence rather than unnecessarily repeating earlier tests.
+
+### Testing Decision
+
+Determine whether the remaining issues are:
+
+**Acceptable → Can Defer → Must Fix**
+
+Explain the release impact.
+
+### UAT Decision
+
+Determine whether the product was:
+
+**Accepted → Accepted with Conditions → Not Accepted**
+
+Support the decision with UAT evidence.
+
+---
+
+# Part 8 — Review Release & Deployment
+
+Review Milestone 10.
+
+Keep two decisions separate:
+
+### Release Decision
+
+Should the product be approved for release?
+
+**Go → Hold → No-Go**
+
+### Deployment Decision
+
+Can the approved release actually be deployed into the intended environment?
+
+**Deploy → Hold Deployment → Rollback**
+
+Your capstone should demonstrate that release approval does not automatically mean production deployment is appropriate.
 
 Review:
 
+* Release criteria.
+* Open defects.
+* UAT.
+* AI quality.
+* Security conditions.
+* Deployment readiness.
+* Environment and configuration requirements.
+* Support ownership.
+* Monitoring.
+* Rollback.
+
+### PM Decision
+
+Document your final release position and explain the evidence behind it.
+
+---
+
+# Part 9 — Review KPI & Monitoring
+
+Review Milestone 11.
+
+Use the established framework:
+
 **KPI → Target → Actual → Trend → Threshold → Action**
 
-Identify:
+Your capstone should identify:
 
 * KPIs on target.
 * KPIs needing attention.
 * KPIs below threshold.
 * Improving trends.
 * Declining trends.
-* Business risks.
 * Product risks.
+* Business risks.
+* Recommended actions.
+
+Do not treat a dashboard as the decision itself.
+
+The dashboard provides evidence.
+
+The PM interprets the evidence and determines what should happen next.
 
 ### PM Decision
-
-What should the product team do next?
 
 Select the appropriate action:
 
 **Continue → Improve → Escalate → Reassess**
 
+Explain why.
+
 ---
 
-# Part 9 — Continuous Improvement
+# Part 10 — Business Outcome
+
+Connect product performance to the business problem.
+
+Your capstone should answer:
+
+> **Did the product create or demonstrate the intended value?**
+
+Consider outcomes such as:
+
+* Reduced search time.
+* Reduced repetitive support questions.
+* Improved accuracy.
+* Improved confidence.
+* Reduced operational effort.
+* Reduced risk.
+* Improved user experience.
+
+Distinguish clearly between:
+
+**Target Outcome**
+
+What the project intended to achieve.
+
+**Measured Outcome**
+
+What the available evidence demonstrates.
+
+**Expected Outcome**
+
+What is projected but has not yet been validated.
+
+Do not present expected results as proven results.
+
+### PM Decision
+
+Classify the outcome:
+
+**Achieved → Partially Achieved → Not Yet Achieved**
+
+Explain the evidence.
+
+---
+
+# Part 11 — Continuous Improvement
+
+Review the evidence collected throughout the lifecycle.
 
 Create a post-release improvement backlog.
 
-Identify improvements in categories such as:
+Potential improvement categories include:
 
 * Product.
 * AI performance.
 * Data.
+* Retrieval.
 * User experience.
 * Security.
 * Governance.
 * Operations.
 * Business value.
 
-Prioritize each improvement using an appropriate prioritization method.
+Prioritize improvements using an appropriate method such as:
 
-For each major improvement document:
-
-* Problem.
-* Proposed improvement.
 * Business value.
-* Priority.
-* Owner.
+* User impact.
+* Risk.
+* Feasibility.
 * Dependencies.
-* Success measure.
+* MoSCoW.
+
+For major improvements, identify:
+
+**Problem → Improvement → Value → Priority → Owner → Success Measure**
+
+### PM Decision
+
+Identify the first improvement that should receive attention and explain why.
 
 ---
 
-# Part 10 — Lessons Learned
+# Part 12 — Lessons Learned
 
-Document lessons learned from the project.
+Document lessons from the project.
 
-Include:
+## What Worked
 
-### What Worked
+Identify decisions, processes, or practices that contributed to success.
 
-What decisions, processes, or practices contributed to success?
+## What Did Not Work
 
-### What Did Not Work
+Identify delays, defects, weak assumptions, unclear requirements, retrieval problems, governance gaps, or other challenges.
 
-What caused delays, defects, confusion, or risk?
-
-### What Would You Do Differently?
+## What Would You Do Differently?
 
 Identify specific changes you would make on the next AI project.
 
-### PM Lesson
+## Key PM Lesson
 
-What did this project teach you about managing AI products?
+Explain what the project taught you about managing AI products.
 
----
-
-# Part 11 — Portfolio Package
-
-Convert the project into a professional portfolio case study.
-
-Your portfolio should demonstrate:
-
-**Business Problem → PM Approach → AI Solution → Evidence → Outcome**
-
-Include:
-
-1. Project overview.
-2. Business problem.
-3. Stakeholders.
-4. Requirements.
-5. Product scope.
-6. MVP.
-7. AI architecture overview.
-8. Risk and governance approach.
-9. Evaluation approach.
-10. Testing/UAT.
-11. Release decision.
-12. KPI dashboard.
-13. Results.
-14. Lessons learned.
-15. Future roadmap.
-
-Do not include confidential, proprietary, or personally identifiable information.
+Your answer should demonstrate growth in PM judgment, not simply summarize activities.
 
 ---
 
-# Part 12 — Interview Translation
+# Part 13 — Assemble the Capstone Submission
 
-Prepare three interview stories from the capstone.
+Open the:
 
-### Story 1 — AI Project Challenge
+**Capstone Submission Template**
 
-Describe a significant challenge and how you managed it.
+Use it to assemble your complete capstone.
 
-### Story 2 — AI Risk or Quality Decision
+Do not simply copy every previous milestone into the document.
 
-Describe a situation where evidence, risk, or testing changed your project decision.
+Select the evidence that best demonstrates:
 
-### Story 3 — Business Outcome
+* The problem.
+* The decisions.
+* The risks.
+* The evidence.
+* The outcomes.
 
-Explain how the AI product was expected to create measurable business or user value.
+Use artifact links where appropriate.
 
-Use the:
-
-**Situation → Task → Action → Result**
-
-structure.
+The final submission should be understandable without requiring the reviewer to open every course file.
 
 ---
 
-# Final Capstone PM Checkpoint
+# Part 14 — Build the Portfolio Package
+
+After completing the capstone submission, use the:
+
+**Portfolio Package Template**
+
+The portfolio is different from the capstone submission.
+
+The capstone demonstrates that you completed the project lifecycle.
+
+The portfolio demonstrates that you can communicate that experience professionally.
+
+Your portfolio story should follow:
+
+**Problem → Users → PM Strategy → AI Solution → Risk → Evaluation → Testing → Release → Outcomes → Continuous Improvement**
+
+Focus on your individual PM contribution.
+
+Clearly distinguish:
+
+**What the project did**
+
+from
+
+**What you personally managed, influenced, decided, coordinated, or evaluated.**
+
+Do not claim technical work you did not perform.
+
+---
+
+# Part 15 — Use the Completed Example
+
+Review:
+
+**Petadel PolicyAssist AI — Completed Capstone Example**
+
+Use the example to understand the expected standard.
+
+Do not copy it as though it were your own project.
+
+Instead, examine how the example connects:
+
+**Problem → Evidence → Decision → Action → Outcome**
+
+Look especially for:
+
+* Measurable requirements.
+* PM-level technical understanding.
+* Explicit AI risks.
+* Separate evaluation dimensions.
+* Governance controls.
+* Release reasoning.
+* KPI interpretation.
+* Corrective actions.
+* Business outcomes.
+
+### PM Question
+
+Ask yourself:
+
+> **Does my capstone demonstrate the same level of PM thinking, even if my project is different?**
+
+---
+
+# Part 16 — Final Executive Review
+
+Imagine you are presenting the project to an executive steering committee.
+
+You have limited time.
+
+Be prepared to answer:
+
+### What problem did we solve?
+
+### Who benefits?
+
+### What did we build?
+
+### Why did we make these decisions?
+
+### What risks remain?
+
+### What does the evidence show?
+
+### Is the product ready?
+
+### What business value has been demonstrated?
+
+### What should happen next?
+
+Your presentation should focus on decisions and evidence, not a chronological list of tasks.
+
+---
+
+# Final PM Recommendation
+
+Make a final recommendation for the product.
+
+Select the action that best reflects the evidence:
+
+**Continue**
+
+Continue the current direction because performance and risk remain acceptable.
+
+**Improve**
+
+Continue while addressing identified performance or product gaps.
+
+**Escalate**
+
+A significant issue requires leadership attention or stronger intervention.
+
+**Reassess**
+
+The product, scope, assumptions, or business case should be reconsidered.
+
+**Scale**
+
+Evidence supports expanding the product to additional users, departments, or environments.
+
+Your recommendation should include:
+
+1. Business value.
+2. Strongest evidence.
+3. Most significant risk.
+4. Recommended action.
+5. Action owner.
+6. Next review point.
+
+---
+
+# Final Capstone Checkpoint
 
 Answer:
 
-> If you were presenting this AI product to an executive steering committee today, would you recommend moving forward?
+> **Would you recommend moving this AI product forward today?**
 
-Your answer must include:
+Your answer must connect:
 
 **Business Value → Evidence → Risk → Recommendation**
 
 Do not answer based on whether the technology is interesting.
 
-Answer based on whether the product is:
+Evaluate whether the product is:
 
 * Valuable.
 * Feasible.
 * Safe.
 * Governable.
 * Testable.
-* Ready.
 * Measurable.
-
----
-
-# Build-Along Final Checkpoint
-
-Students completing the optional technical Build-Along should verify that their implementation supports the PM artifacts they created.
-
-The technical implementation should demonstrate the concepts covered throughout the course.
-
-Students do **not** need to reproduce the instructor's implementation exactly.
-
-The technical build exists to reinforce PM understanding.
+* Ready for its intended stage.
 
 ---
 
 # Definition of Done
 
-The capstone is complete when the student can:
+The capstone is complete when you can:
 
 * Explain the business problem.
 * Identify the users and stakeholders.
-* Explain the product scope.
-* Connect requirements to the delivered solution.
-* Explain the AI approach at a PM level.
-* Identify major AI risks.
+* Connect stakeholder needs to requirements.
+* Explain scope and MVP decisions.
+* Explain the AI architecture at a PM level.
+* Explain the data and retrieval approach.
+* Identify major AI-specific risks.
 * Explain evaluation results.
 * Explain testing and UAT results.
-* Make a Go/Conditional Go/No-Go decision.
+* Explain release and deployment decisions.
 * Interpret KPI performance.
-* Recommend corrective actions.
+* Connect technical performance to business outcomes.
+* Recommend evidence-based corrective actions.
 * Explain continuous-improvement priorities.
-* Present the project as a professional portfolio case study.
-* Explain the project confidently in an interview.
+* Assemble a complete capstone submission.
+* Transform the capstone into a professional portfolio case study.
+* Explain your individual PM contribution.
+* Present the project confidently to executives or interviewers.
 
 ---
 
@@ -509,20 +745,22 @@ The capstone is complete when the student can:
 
 A successful AI Project Manager does not simply ask:
 
-> "Did we build the AI?"
+> **Did we build the AI?**
 
-The better questions are:
+The stronger questions are:
 
-> "Did we solve the right problem?"
+> **Did we solve the right problem?**
 
-> "Did we build the right product?"
+> **Did we build the right product?**
 
-> "Is it safe and governable?"
+> **Did we manage the right risks?**
 
-> "Does the evidence support release?"
+> **Does the evidence support the current release decision?**
 
-> "Is it creating the intended outcome?"
+> **Is the product creating the intended value?**
 
-> "What should we improve next?"
+> **What should we improve next?**
 
-The capstone demonstrates the ability to answer those questions using structured Project Management practices and measurable evidence.
+The capstone demonstrates the ability to answer those questions using structured Project Management practices, AI-specific risk management, measurable evidence, and sound PM judgment.
+
+**Problem → Evidence → Decision → Action → Outcome**
