@@ -32,7 +32,7 @@ By the end of this course, you should be able to:
 
 8. **Plan and coordinate testing** by developing functional, negative, edge-case, security, regression, User Acceptance Testing (UAT), and pilot strategies.
 
-9. **Assess production readiness** by evaluating release criteria, deployment dependencies, rollback plans, user readiness, and GO / CONDITIONAL GO / HOLD / NO-GO release decisions and deployment readiness decisions.
+9. **Assess production readiness** by evaluating release criteria, deployment dependencies, rollback plans, user readiness, and **GO / CONDITIONAL GO / HOLD / NO-GO** release decisions.
 
 10. **Manage AI products in production** by defining monitoring metrics and thresholds, responding to incidents, analyzing root causes, and prioritizing continuous improvement.
 
@@ -46,21 +46,21 @@ By the end of this course, you should be able to:
 
 The course contains **13 modules**.
 
-| Module | Title                                      | Primary Focus                           |
-| ------ | ------------------------------------------ | --------------------------------------- |
-| 1      | AI Project Management Foundations          | AI PM role and lifecycle                |
-| 2      | Problem Discovery & Stakeholder Engagement | Business problem and stakeholders       |
-| 3      | Business Analysis & Requirements           | Requirements and traceability           |
-| 4      | Agile Product Planning                     | Backlog, prioritization, and releases   |
-| 5      | AI Technology Fundamentals                 | AI concepts and architecture            |
-| 6      | AI Data & Knowledge Management             | Data readiness and knowledge governance |
-| 7      | AI Evaluation & Quality                    | AI quality and evaluation               |
-| 8      | AI Risk, Security & Governance             | Risk, security, and governance          |
-| 9      | Testing, UAT & Pilot                       | Testing and user acceptance             |
-| 10     | Release & Deployment Management            | Production readiness and release        |
-| 11     | Monitoring & Continuous Improvement        | Production monitoring and improvement   |
-| 12     | Capstone & Portfolio                       | End-to-end AI project                   |
-| 13     | Final Assessment                           | AI Project Management competency        |
+| Module | Title                                      | Primary Focus                                  |
+| -----: | ------------------------------------------ | ---------------------------------------------- |
+|      1 | AI Project Management Foundations          | AI PM role and lifecycle                       |
+|      2 | Problem Discovery & Stakeholder Engagement | Business problem and stakeholders              |
+|      3 | Business Analysis & Requirements           | Requirements and traceability                  |
+|      4 | Agile Product Planning                     | Backlog, prioritization, and releases          |
+|      5 | AI Technology Fundamentals                 | AI concepts and architecture                   |
+|      6 | AI Data & Knowledge Management             | Data readiness and knowledge governance        |
+|      7 | AI Evaluation & Quality                    | AI quality and evaluation                      |
+|      8 | AI Risk, Security & Governance             | Risk, security, and governance                 |
+|      9 | Testing, UAT & Pilot                       | Testing and user acceptance                    |
+|     10 | Release & Deployment Management            | Production readiness and release               |
+|     11 | KPIs & Dashboard                           | KPI management and performance decision-making |
+|     12 | Capstone & Portfolio                       | End-to-end AI project                          |
+|     13 | Final Assessment                           | AI Project Management competency               |
 
 ---
 
@@ -431,41 +431,40 @@ Develop a release and deployment plan and make a production-readiness decision.
 
 ---
 
-# Module 11: Monitoring & Continuous Improvement
+# Module 11: KPIs & Dashboard
 
 ## Focus
 
-Managing an AI product after production release.
+Using Key Performance Indicators (KPIs) and dashboards to determine whether the project and AI product are performing as intended.
 
 ## Key Topics
 
-* Production monitoring
-* Monitoring vs. evaluation
-* Monitoring categories
-* Key production metrics
-* Monitoring thresholds
-* Alerts
-* AI drift
-* Data drift
-* Knowledge changes
-* Model changes
-* User feedback
-* Incident management
-* Root-cause analysis
+* Key Performance Indicators (KPIs)
+* KPI definitions
+* Targets
+* Actual performance
+* Baselines
+* Trends
+* Thresholds
+* KPI status
+* Project / Delivery KPIs
+* AI Product Performance KPIs
+* Dashboard design
+* Executive reporting
+* Monitoring
+* Business outcomes
+* Corrective action
 * Continuous improvement
-* Backlog prioritization
-* Technical debt
-* Performance monitoring
-* Cost monitoring
-* Business outcome monitoring
 
 ## Practical Application
 
-Create an AI monitoring and continuous improvement plan.
+Build a Project / Delivery Dashboard and an AI Product Performance Dashboard.
+
+Define KPI targets, review actual performance, interpret trends and thresholds, and make evidence-based Project Management decisions.
 
 ## Primary PM Capability
 
-**AI Product Operations**
+**KPI Management & Performance Decision-Making**
 
 ---
 
@@ -473,7 +472,7 @@ Create an AI monitoring and continuous improvement plan.
 
 ## Focus
 
-Integrating the complete course into one end-to-end AI Project Management project.
+Integrating the complete course into one end-to-end AI Project Management capstone and professional portfolio.
 
 ## Capstone
 
@@ -483,39 +482,30 @@ Integrating the complete course into one end-to-end AI Project Management projec
 
 ## Capstone Objective
 
-Develop and manage an AI-powered policy assistance solution that helps employees retrieve authoritative company policy information.
+Bring together the strongest evidence from Modules 1–11 to demonstrate how an AI product was defined, planned, evaluated, governed, tested, assessed for release readiness, measured, and improved.
 
 Petadel PolicyAssist AI is the course reference project. You may use the reference project or apply the same Project Management process to your own AI product or use case.
 
 ## Capstone Lifecycle
 
-**Initiation → Discovery → Requirements → Planning → Architecture → Build → Evaluation → Security & Governance → UAT → Release → Monitoring → Continuous Improvement**
+**Problem → Requirements → Product → AI Solution → Evidence → Risk → Testing → Release → Deployment → Measurement → Improvement → Recommendation**
 
-## Capstone Components
+## Required Deliverables
 
 You will develop:
 
-1. Project Charter
-2. Discovery & Stakeholder Analysis
-3. Requirements Specification
-4. Product Backlog & Release Plan
-5. AI Architecture & Technology Assessment
-6. Data Readiness & Knowledge Governance Assessment
-7. AI Evaluation & Quality Report
-8. AI Risk, Security & Governance Plan
-9. Testing, UAT & Pilot Plan
-10. Release & Deployment Plan
-11. AI Monitoring & Continuous Improvement Plan
-12. Decision Log
-13. Risk Register
-14. Requirements Traceability
-15. Executive Summary
-16. Final Go/Hold/No-Go Recommendation
-17. Final Presentation
+1. **Capstone Submission**
+2. **Portfolio Package**
+
+The Capstone Submission integrates evidence from Modules 1–11 into one connected project story.
+
+The Portfolio Package transforms the strongest evidence into a professional case study.
+
+The optional technical Build-Along provides supporting evidence only and does not replace either required deliverable.
 
 ## Primary PM Capability
 
-**End-to-End AI Project Leadership**
+**End-to-End AI Project Leadership & Portfolio Development**
 
 ---
 
@@ -604,7 +594,7 @@ TESTING & UAT
      ↓
 RELEASE
      ↓
-MONITORING
+KPIs & DASHBOARD
      ↓
 CAPSTONE
      ↓
@@ -619,20 +609,22 @@ You should be able to lead an AI project from initial business problem through p
 
 You should be able to:
 
-* Ask the right questions
-* Challenge unsupported technical claims
-* Translate business needs into requirements
-* Manage scope and priorities
-* Understand AI architecture
-* Evaluate data readiness
-* Define measurable AI quality
-* Manage AI risk and governance
-* Coordinate testing and UAT
-* Determine release readiness
-* Establish production monitoring
-* Manage continuous improvement
-* Make evidence-based Go, Hold, and No-Go decisions
+* Ask the right questions.
+* Challenge unsupported technical claims.
+* Translate business needs into requirements.
+* Manage scope and priorities.
+* Understand AI architecture.
+* Evaluate data readiness.
+* Define measurable AI quality.
+* Manage AI risk and governance.
+* Coordinate testing and UAT.
+* Determine release readiness.
+* Establish KPI-based monitoring.
+* Manage continuous improvement.
+* Make evidence-based **GO / CONDITIONAL GO / HOLD / NO-GO** release decisions.
+* Communicate AI project information effectively to technical and business stakeholders.
+* Produce professional Project Management artifacts and portfolio evidence.
 
 The final objective is not simply to understand AI.
 
-It is to demonstrate the ability to **manage AI projects responsibly, practically, and strategically.**
+It is to demonstrate the ability to **manage AI projects responsibly, practically, and strategically**.
