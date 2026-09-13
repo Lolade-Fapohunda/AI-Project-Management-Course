@@ -118,10 +118,10 @@ Your capstone should answer:
 * What risks did you identify?
 * How did you evaluate the AI?
 * How did you test the product?
-* What did UAT demonstrate?
+* What did User Acceptance Testing (UAT) demonstrate?
 * What release decision did the evidence support?
 * Was the product ready for deployment?
-* What did the KPIs show?
+* What did the Key Performance Indicators (KPIs) show?
 * What business outcome was demonstrated?
 * What should happen next?
 
@@ -141,7 +141,7 @@ Your capstone should show:
 * Scope.
 * Assumptions.
 * Constraints.
-* MVP.
+* Minimum Viable Product (MVP).
 * Deferred items.
 * Later-release capabilities.
 * Out-of-scope items.
@@ -195,7 +195,7 @@ Explain:
 
 Remember:
 
-**The LLM is not the source of truth.**
+**The Large Language Model (LLM) is not the source of truth.**
 
 The authoritative information is the source of truth.
 
