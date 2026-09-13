@@ -9,7 +9,7 @@
 
 # How to Use This Example
 
-Use this completed example to see what a strong AI Project Management (PM) capstone can look like.
+Use this completed example to see what a strong Artificial Intelligence (AI) Project Management (PM) capstone can look like.
 
 Pay attention to how the project connects:
 
@@ -55,6 +55,10 @@ The product was not approved for unrestricted production deployment.
 Because production-specific authorization controls still required implementation and validation, the deployment decision was:
 
 **DEPLOYMENT DECISION: HOLD DEPLOYMENT**
+
+The appropriate ongoing monitoring decision was:
+
+**MONITORING DECISION: IMPROVE**
 
 The overall PM recommendation was:
 
@@ -295,9 +299,17 @@ Testing recorded:
 
 **0 critical security incidents**
 
-However, this does not prove complete production security readiness.
+However, zero recorded incidents does not by itself prove complete production security readiness.
 
 Production authorization controls still required implementation and validation.
+
+This distinction is important:
+
+**Security Incidents = 0**
+
+does not necessarily mean:
+
+**Authorization Controls = Fully Production Ready**
 
 ## Governance Principle
 
@@ -375,7 +387,7 @@ Release readiness was assessed using:
 ## Gaps
 
 * Answer accuracy remained below target.
-* Unsupported response rate exceeded target.
+* Unsupported response rate exceeded target and crossed the defined threshold.
 * Refusal / escalation performance remained below target.
 * User satisfaction remained below target.
 * Production authorization controls required additional implementation and validation.
@@ -408,6 +420,7 @@ This did not represent unrestricted production approval.
 **CONDITIONAL GO**
 
 **Decision Authority:**
+
 Designated Product / Business authority.
 
 The PM provided the readiness assessment and recommendation. The formally designated authority made or confirmed the release decision.
@@ -460,6 +473,8 @@ The project used:
 
 The unsupported-response rate was the highest-priority performance concern because inaccurate policy guidance could directly affect employee decisions and trust.
 
+Production authorization also remained a critical readiness concern.
+
 ---
 
 # 13. Business Outcomes
@@ -491,6 +506,7 @@ This exceeded the target.
 * Unsupported response rate above target.
 * Refusal / escalation below target.
 * User satisfaction below target.
+* Production authorization controls not yet fully validated.
 
 ## Outcome Status
 
@@ -517,6 +533,8 @@ The priority improvement backlog was:
 **Reduce unsupported AI responses.**
 
 This was prioritized because unsupported policy guidance creates direct employee and organizational risk.
+
+Production authorization controls remain a critical release and deployment requirement.
 
 ---
 
@@ -629,7 +647,7 @@ Continue the product direction while addressing the remaining quality and produc
 
 ## Strongest Evidence
 
-**58% policy search-time reduction vs. 50% target**
+**58% reduction in policy search time vs. 50% target**
 
 **92% retrieval accuracy vs. 90% target**
 
