@@ -28,7 +28,7 @@ The Final Assessment evaluates your ability to:
 * Manage AI risk, security, and governance.
 * Plan and evaluate testing and User Acceptance Testing (UAT).
 * Assess release readiness.
-* Make evidence-based Go, Conditional Go, Hold, or No-Go recommendations where appropriate.
+* Make evidence-based GO, CONDITIONAL GO, HOLD, or NO-GO recommendations where appropriate.
 * Interpret Key Performance Indicators (KPIs).
 * Use evidence to drive corrective action.
 * Communicate recommendations to technical and business stakeholders.
@@ -183,7 +183,7 @@ A non-blocking issue may be deferred when the associated risk is understood and 
 
 # Assessment Structure
 
-The Final Assessment contains **15 questions** across six areas.
+The Final Assessment contains **15 questions across seven assessment areas**.
 
 ## Part 1 — AI Project Management Knowledge
 
@@ -215,7 +215,7 @@ These questions evaluate your ability to apply PM judgment to realistic situatio
 
 This question evaluates your ability to assess complete release evidence and make a:
 
-**Go / Conditional Go / No-Go**
+**GO / CONDITIONAL GO / HOLD / NO-GO**
 
 recommendation.
 
@@ -238,13 +238,19 @@ This question evaluates your ability to communicate a concise, evidence-based re
 
 ## Part 6 — Final PM Challenge
 
-**Questions 14–15**
+**Question 14**
 
-These questions evaluate your ability to:
+This question evaluates your ability to:
 
 * Apply the complete AI PM lifecycle.
 * Explain how lifecycle stages connect.
-* Reflect on your development as an AI Project Manager.
+* Demonstrate end-to-end PM judgment.
+
+## Part 7 — Final Reflection
+
+**Question 15**
+
+This question evaluates your ability to reflect on your development as an AI Project Manager and identify lessons you can apply to future projects.
 
 ---
 
@@ -589,39 +595,39 @@ For example:
 
 **Business Problem**
 
-↓ informs
+↓
 
 **Requirements**
 
-↓ informs
+↓
 
 **Scope and MVP**
 
-↓ informs
+↓
 
 **AI Solution**
 
-↓ creates
+↓
 
 **Data and Technical Dependencies**
 
-↓ creates
+↓
 
 **Risk and Evaluation Needs**
 
-↓ produces
+↓
 
 **Testing and Release Evidence**
 
-↓ informs
+↓
 
 **Release Decision**
 
-↓ leads to
+↓
 
 **KPI Monitoring**
 
-↓ informs
+↓
 
 **Continuous Improvement**
 
