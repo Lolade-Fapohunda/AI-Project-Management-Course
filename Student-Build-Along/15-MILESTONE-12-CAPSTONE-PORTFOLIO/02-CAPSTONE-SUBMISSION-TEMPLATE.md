@@ -57,9 +57,11 @@ Use these terms consistently:
 Distinguish between:
 
 **Measured Results**
+
 What the evidence demonstrates.
 
 **Expected Results**
+
 What is projected but has not yet been validated.
 
 Do not present prototype or MVP evidence as production evidence.
@@ -124,24 +126,31 @@ Do not create evidence simply to fill this table.
 # 2. Project Overview
 
 **Project Name:**
+
 [Enter project name]
 
 **AI Product / Solution:**
+
 [Enter product name]
 
 **Organization:**
+
 [Enter organization or indicate fictional/synthetic]
 
 **Project Manager:**
+
 [Enter name]
 
 **Current Project Stage:**
+
 [Prototype / MVP / Pilot / Release Candidate / Released / Other]
 
 **Project Objective:**
+
 [Describe the objective.]
 
 **Primary Business Outcome Target:**
+
 [State the measurable outcome.]
 
 ---
@@ -189,17 +198,21 @@ Do not create evidence simply to fill this table.
 ## Scope
 
 **In Scope:**
+
 [Enter]
 
 **Out of Scope:**
+
 [Enter]
 
 **Major Assumptions / Constraints:**
+
 [Enter]
 
 ## Minimum Viable Product
 
 **MVP:**
+
 [Describe the smallest useful version needed to provide core value and generate meaningful validation evidence.]
 
 ## Release Scope
@@ -237,15 +250,19 @@ Do not create evidence simply to fill this table.
 ## Major Technical / Architecture Decision
 
 **Decision:**
+
 [Enter]
 
 **Reason:**
+
 [Enter]
 
 **Trade-off / Risk:**
+
 [Enter]
 
 **Result / Evidence:**
+
 [Enter]
 
 ---
@@ -284,15 +301,19 @@ Address applicable areas:
 ## Key Data Risk
 
 **Risk:**
+
 [Enter]
 
 **Impact:**
+
 [Enter]
 
 **Control / Mitigation:**
+
 [Enter]
 
 **Evidence / Result:**
+
 [Enter]
 
 ---
@@ -428,21 +449,27 @@ Address applicable areas:
 Select one:
 
 **GO**
+
 Proceed with release.
 
 **CONDITIONAL GO**
+
 Proceed only under defined conditions.
 
 **HOLD**
+
 Do not proceed yet because required evidence, remediation, validation, or readiness work is incomplete.
 
 **NO-GO**
+
 Do not release the current version.
 
 **PM Recommendation:**
+
 [GO / CONDITIONAL GO / HOLD / NO-GO]
 
 **Rationale:**
+
 [Explain the evidence supporting the recommendation.]
 
 ## Release Conditions
@@ -457,15 +484,19 @@ Complete when applicable.
 ## Authorized Release Decision
 
 **Authorized Decision:**
+
 [GO / CONDITIONAL GO / HOLD / NO-GO]
 
 **Decision Authority:**
+
 [Product Owner / Executive Sponsor / Business Owner / Steering Committee / Other]
 
 **Decision Date:**
+
 [Enter]
 
 **Conditions / Follow-Up:**
+
 [Enter]
 
 The PM provides the readiness assessment and recommendation. The formally designated authority makes or confirms the authorized release decision.
@@ -487,9 +518,11 @@ The release may be approved, but a deployment-specific condition remains unresol
 The deployment created an unacceptable condition requiring recovery to a previous known-good state.
 
 **Deployment Decision:**
+
 [DEPLOY / HOLD DEPLOYMENT / ROLLBACK]
 
 **Rationale:**
+
 [Explain the deployment-readiness assessment.]
 
 ---
@@ -509,6 +542,7 @@ Complete this section when the product has been deployed.
 If the product was not deployed:
 
 **Reason:**
+
 [Explain what prevented deployment.]
 
 ---
@@ -532,12 +566,15 @@ Use:
 ## Performance Interpretation
 
 **On Target:**
+
 [Identify KPIs meeting target.]
 
 **Attention Required:**
+
 [Identify KPIs approaching or entering the attention range.]
 
 **Below Threshold:**
+
 [Identify KPIs requiring action.]
 
 ## Monitoring Decision
@@ -545,23 +582,29 @@ Use:
 **CONTINUE / IMPROVE / ESCALATE / REASSESS**
 
 **Rationale:**
+
 [Explain the performance evidence that drove the decision.]
 
 ## Business Outcome
 
 **Target Outcome:**
+
 [What was the project intended to achieve?]
 
 **Measured Outcome:**
+
 [What does the available evidence demonstrate?]
 
 **Expected Outcome:**
+
 [What benefit is projected but not yet validated?]
 
 **Outcome Status:**
+
 **Achieved / Partially Achieved / Not Yet Achieved**
 
 **Business Value:**
+
 [Explain the value created or expected.]
 
 Clearly distinguish proven results from projected results.
@@ -581,9 +624,11 @@ Clearly distinguish proven results from projected results.
 ## Priority Improvement
 
 **What should happen first?**
+
 [Enter]
 
 **Why?**
+
 [Enter]
 
 ## Lessons Learned
@@ -710,6 +755,27 @@ Bring the evidence together into one final recommendation.
 
 ---
 
+# Final PM Decision Record
+
+Use this table to provide a consolidated view of the major decisions and conclusions from your capstone.
+
+| Decision Element            | Assessment |
+| --------------------------- | ---------- |
+| Business Outcome            |            |
+| Strongest Evidence          |            |
+| Primary Product Risk        |            |
+| Primary Business Risk       |            |
+| PM Recommendation           |            |
+| Release Recommendation      |            |
+| Authorized Release Decision |            |
+| Release Decision Authority  |            |
+| Deployment Decision         |            |
+| Immediate Action            |            |
+| Action Owner                |            |
+| Next Review Point           |            |
+
+---
+
 # 17. Final Submission Checklist
 
 ## Required Capstone
@@ -735,6 +801,7 @@ Bring the evidence together into one final recommendation.
 * [ ] Lessons learned documented.
 * [ ] Supporting evidence referenced.
 * [ ] Final PM recommendation completed.
+* [ ] Final PM Decision Record completed.
 
 ## Portfolio
 
