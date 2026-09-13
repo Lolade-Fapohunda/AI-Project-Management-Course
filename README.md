@@ -23,7 +23,7 @@ The course includes both:
 
 ### PM Track
 
-Project Management concepts, decisions, frameworks, requirements, planning, governance, risk, testing, release, and monitoring.
+Project Management concepts, decisions, frameworks, requirements, planning, governance, risk, testing, release, and performance management.
 
 ### Build Track
 
@@ -61,13 +61,13 @@ The project addresses:
 * Monitoring
 * Continuous improvement
 
-The capstone is introduced during the course and fully executed in Module 12.
+The capstone is introduced throughout the course and fully integrated in **Module 12**.
 
 ## Capstone Lifecycle
 
 The project follows the complete project lifecycle:
 
-**Initiation → Discovery → Requirements → Planning → Architecture → Build → Evaluation → Security and Governance → UAT → Release → Monitoring → Continuous Improvement**
+**Initiation → Discovery → Requirements → Planning → Architecture → Build → Evaluation → Security and Governance → UAT → Release → Deployment → Monitoring → Continuous Improvement**
 
 This lifecycle connects the concepts taught throughout the course.
 
@@ -268,7 +268,7 @@ The application is connected directly to the Project Management concepts taught 
 | Security and governance      | Module 8                |
 | Testing and UAT              | Module 9                |
 | Release and deployment       | Module 10               |
-| Monitoring and KPIs          | Module 11               |
+| KPIs and dashboard           | Module 11               |
 | Capstone and portfolio       | Module 12               |
 | Final competency assessment  | Module 13               |
 
@@ -290,9 +290,9 @@ By completing the course, you should be able to:
 * Address security and access requirements.
 * Plan testing and UAT.
 * Manage release readiness.
-* Establish monitoring.
+* Define KPI-based monitoring.
 * Manage continuous improvement.
-* Make evidence-based Go, Hold, or No-Go decisions.
+* Make evidence-based **GO / CONDITIONAL GO / HOLD / NO-GO** release decisions.
 * Communicate AI project information to technical and business stakeholders.
 
 ## Capstone Portfolio
@@ -324,3 +324,9 @@ A Project Manager must evaluate:
 * Evidence
 
 The final project decision should be based on evidence rather than assumptions.
+
+## Public PolicyAssist Application
+
+The live PolicyAssist application:
+
+**https://policyassistai.streamlit.app/**
