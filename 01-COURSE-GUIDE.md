@@ -103,7 +103,7 @@ You are not required to become an AI engineer or software developer.
 
 Follow the course in order:
 
-**Foundations → Problem Discovery → Requirements → Agile Planning → AI Technology → Data & Knowledge → AI Evaluation → Risk & Governance → Testing & UAT → Release → Monitoring → Capstone → Final Assessment**
+**Foundations → Problem Discovery → Requirements → Agile Planning → AI Technology → Data & Knowledge → AI Evaluation → Risk & Governance → Testing & UAT → Release → KPIs & Dashboard → Capstone → Final Assessment**
 
 Each module builds on the previous module.
 
@@ -250,7 +250,7 @@ When evaluating an AI project, ask:
 
 Your recommended actions may include:
 
-**Continue → Improve → Escalate → Reassess**
+**CONTINUE → IMPROVE → ESCALATE → REASSESS**
 
 ---
 
@@ -294,9 +294,9 @@ To complete the course, you must:
 1. Complete Modules 1–13.
 2. Complete the required practical exercises.
 3. Use the Project Management templates as directed.
-4. Complete the Module 12 Capstone & Portfolio activities.
+4. Complete the **Module 12 Capstone & Portfolio** activities.
 5. Prepare your portfolio evidence.
-6. Complete the Module 13 Final Assessment.
+6. Complete the **Module 13 Final Assessment**.
 7. Achieve a final assessment score of **80% or higher**.
 
 Complete the capstone in Module 12 using **Petadel PolicyAssist AI or your own AI product or use case**.
@@ -324,7 +324,7 @@ By completing this course, you should be able to:
 * Evaluate pilot results.
 * Determine release readiness.
 * Develop monitoring and continuous improvement plans.
-* Make evidence-based Go, Hold, and No-Go decisions.
+* Make evidence-based **GO / CONDITIONAL GO / HOLD / NO-GO** release decisions.
 * Communicate AI project information effectively to technical and business stakeholders.
 * Produce professional Project Management artifacts and portfolio evidence.
 
