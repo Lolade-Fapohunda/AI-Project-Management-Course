@@ -1,4 +1,4 @@
-# Module 11: Monitoring & Continuous Improvement
+# Module 11: AI Product Monitoring & Continuous Improvement
 
 ## Purpose
 
