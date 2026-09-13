@@ -1,701 +1,734 @@
-# Milestone 11 — KPIs, Dashboard & Monitoring
+# Milestone 11 — KPIs & Dashboard
 
-## Objective
+## PM Objective
 
-In this milestone, you will learn how to use **Key Performance Indicators (KPIs)** and dashboards to monitor an Artificial Intelligence (AI) product after release.
+Use Key Performance Indicators (KPIs) and dashboards to determine whether an AI project is being delivered effectively and whether the AI product is achieving its intended business, user, and performance outcomes.
 
-You will use measurable evidence to:
+## Hands-On Objective
 
-* Assess product health.
-* Identify performance gaps.
-* Recognize trends.
-* Identify risks.
-* Determine when action is required.
-* Recommend corrective action.
-* Support continuous improvement.
+Design a practical KPI framework for PolicyAssist that connects measurable performance to Project Management (PM) decisions.
 
-The goal is not simply to read a dashboard.
+You will learn how to move from:
 
-The goal is to use product evidence to make a **Project Management (PM) decision**.
+**KPI → Target → Actual → Trend → Threshold → Action**
+
+You will create two views:
+
+1. **Project / Delivery Dashboard**
+2. **AI Product Performance Dashboard**
+
+You do not need to build a technically sophisticated dashboard to complete this milestone.
+
+The goal is to demonstrate that you can define meaningful KPIs, interpret performance, identify issues, and recommend actions.
 
 ---
 
-# Why KPI Monitoring Matters
+# Section 1: Understand What a KPI Does
 
-An AI product can meet its initial release requirements and still experience performance problems after deployment.
+A Key Performance Indicator (KPI) is a measurable indicator used to understand whether an important objective is being achieved.
+
+A good KPI should help answer a meaningful management question.
 
 For example:
 
-* Users may become less satisfied.
-* Answer accuracy may decline.
-* Hallucinations may increase.
-* Response times may increase.
-* Retrieval quality may deteriorate.
-* Security incidents may occur.
-* The product may fail to deliver the expected business outcome.
+> **Are employees finding policy information faster?**
 
-A PM needs a structured way to detect these conditions and determine what to do next.
+A KPI might measure:
 
-The monitoring lifecycle is:
+> **Average Policy Search Time**
 
-**Measure → Analyze → Decide → Act → Monitor Again**
+The KPI alone is not enough.
 
----
+You also need:
 
-# Part 1 — KPI Analysis
+**Target:** What level of performance do we expect?
 
-## What Is a KPI?
+**Actual:** What performance did we observe?
 
-A **Key Performance Indicator (KPI)** is a measurable value used to evaluate whether a product, project, process, or business outcome is performing as expected.
+**Trend:** Is performance improving, declining, or remaining stable?
 
-A useful KPI should help answer:
+**Threshold:** When does the result require attention or action?
 
-> **How do we know whether the product is working?**
-
-For AI products, KPIs can measure:
-
-* Business outcomes
-* AI quality
-* User experience
-* Operational performance
-* Security
-* Reliability
+**Action:** What should the PM or team do in response?
 
 ---
 
-# PolicyAssist KPI Framework
+# Section 2: Build the KPI Logic
 
-For the Petadel PolicyAssist reference project, the following KPIs are used.
+Use the following model throughout this milestone:
 
-| KPI                          |      Target | Direction        |
-| ---------------------------- | ----------: | ---------------- |
-| Policy Search-Time Reduction |        ≥50% | Higher is better |
-| Retrieval Accuracy           |        ≥90% | Higher is better |
-| Answer Accuracy              |        ≥90% | Higher is better |
-| Hallucination Rate           |         <2% | Lower is better  |
-| Citation Correctness         |        100% | Higher is better |
-| Unsupported-Question Refusal |        100% | Higher is better |
-| Response Latency             | ≤10 seconds | Lower is better  |
-| User Satisfaction            |        ≥85% | Higher is better |
-| Critical Security Incidents  |           0 | Lower is better  |
+**KPI → Target → Actual → Trend → Threshold → Action**
 
-These measures represent different dimensions of product performance.
+### Example
 
-Do not assume that one KPI can represent the overall health of the product.
+**KPI:** Average Policy Response Time
 
-A product can perform well in one area and poorly in another.
+**Target:** ≤ 10 seconds
 
----
+**Actual:** 8.7 seconds
 
-# Target vs. Decision Threshold
+**Trend:** Improving
 
-Do not treat the KPI target and the decision threshold as the same thing.
+**Threshold:** > 10 seconds
 
-## Target
+**Action:** Investigate performance and determine whether corrective action is required.
 
-The **target** is the required performance goal.
+The value of the KPI is not simply the number.
 
-Example:
-
-**Answer Accuracy ≥90%**
-
-An actual result of 89% means the KPI has **missed its target**.
-
-That does not automatically mean the product has crossed the escalation threshold.
+The value comes from what the number tells you and what decision it supports.
 
 ---
 
-## Decision Threshold
+# Section 3: Separate Delivery KPIs from Product KPIs
 
-The **decision threshold** identifies when performance has deteriorated far enough to require a stronger PM response.
+A Project / Delivery Dashboard and an AI Product Performance Dashboard answer different questions.
 
-This creates three decision states.
+## Project / Delivery Dashboard
 
-### On Target
+This dashboard answers:
 
-The KPI meets the required target.
+> **Are we delivering the project effectively?**
 
-**PM Action: Continue**
+Examples include:
 
----
+* Milestone completion.
+* Schedule performance.
+* Requirements completion.
+* Open defects.
+* Risk status.
+* UAT completion.
+* Release readiness.
+* Planned versus actual work.
+* Delivery dependencies.
 
-### Needs Attention
+## AI Product Performance Dashboard
 
-The KPI has missed the target but remains within the defined attention range.
+This dashboard answers:
 
-**PM Action: Improve**
+> **Is the AI product performing as intended?**
 
----
+Examples include:
 
-### Below Threshold
+* Response accuracy.
+* Retrieval accuracy.
+* Unsupported response rate.
+* Citation performance.
+* Response time.
+* User satisfaction.
+* Escalation rate.
+* Usage or adoption.
+* Policy search time reduction.
 
-The KPI has crossed the defined unacceptable-performance threshold.
+Do not combine project delivery and AI product performance into one score.
 
-**PM Action: Escalate / Reassess**
-
----
-
-# KPI Decision Thresholds
-
-Use the following framework throughout the course.
-
-| KPI                          |      Target | On Target | Needs Attention | Below Threshold |
-| ---------------------------- | ----------: | --------: | --------------: | --------------: |
-| Policy Search-Time Reduction |        ≥50% |      ≥50% |       45%–49.9% |            <45% |
-| Retrieval Accuracy           |        ≥90% |      ≥90% |       81%–89.9% |            <81% |
-| Answer Accuracy              |        ≥90% |      ≥90% |       81%–89.9% |            <81% |
-| Hallucination Rate           |         <2% |       <2% |        2%–2.49% |           ≥2.5% |
-| Citation Correctness         |        100% |      100% |       90%–99.9% |            <90% |
-| Unsupported-Question Refusal |        100% |      100% |       90%–99.9% |            <90% |
-| Response Latency             | ≤10 seconds |   ≤10 sec |    >10–12.5 sec |       >12.5 sec |
-| User Satisfaction            |        ≥85% |      ≥85% |     76.5%–84.9% |          <76.5% |
-| Critical Security Incidents  |           0 |         0 |               1 |              ≥2 |
-
-### Important
-
-The direction of the KPI matters.
-
-For **higher-is-better** KPIs, performance deteriorates as the number decreases.
-
-For **lower-is-better** KPIs, performance deteriorates as the number increases.
-
-For example:
-
-* Answer Accuracy of 89% → misses target.
-* Hallucination Rate of 2.5% → crosses the unacceptable threshold.
-* Response Latency of 11 seconds → misses target but remains within the attention range.
-* Response Latency of 13 seconds → crosses the unacceptable threshold.
+They measure different aspects of success.
 
 ---
 
-# PM Decision Framework
+# Section 4: Start With Business Outcomes
 
-Use the same framework throughout your AI product lifecycle:
+Return to the business outcomes established earlier in the Build-Along.
 
-**On Target → Continue**
+For PolicyAssist, consider outcomes such as:
 
-**Needs Attention → Improve**
+* Reduce employee time spent searching for policy information.
+* Reduce repetitive policy questions directed to Human Resources (HR).
+* Improve access to accurate, current, authoritative policy information.
+* Improve employee confidence in policy answers.
 
-**Below Threshold → Escalate / Reassess**
+Ask:
 
-This framework helps prevent two common PM mistakes.
+> **What evidence would show that the product is actually creating these outcomes?**
 
-## Mistake 1 — Treating Every Missed Target as a Crisis
+Complete:
 
-A KPI can miss its target without requiring immediate escalation.
-
-The PM should investigate the severity, trend, impact, and decision threshold.
-
-## Mistake 2 — Ignoring a Threshold Breach
-
-A KPI that crosses the unacceptable threshold requires a stronger response.
-
-The PM should not simply record the result and continue normal operations.
-
----
-
-# Security Exception
-
-Security, safety, privacy, and governance decisions require more than numerical analysis.
-
-For **Critical Security Incidents**:
-
-* **0 incidents** → On Target → Continue monitoring.
-* **1 incident** → Needs Attention → Immediate investigation and corrective action.
-* **2 or more incidents** → Below Threshold → Escalate / Reassess.
-
-However, severity matters.
-
-A single critical security incident may justify immediate escalation even if the numerical threshold framework would otherwise classify it as Needs Attention.
-
-The PM should assess:
-
-* Severity
-* Scope
-* User impact
-* Data exposure
-* Regulatory or compliance implications
-* Ability to contain the issue
-* Risk of recurrence
+| Business Outcome               | What Should Change? | Possible KPI | Why It Matters |
+| ------------------------------ | ------------------- | ------------ | -------------- |
+| Reduce policy search time      |                     |              |                |
+| Reduce repetitive HR questions |                     |              |                |
+| Improve answer quality         |                     |              |                |
+| Improve employee confidence    |                     |              |                |
 
 ---
 
-# Part 2 — KPI Dashboard Lab
+# Section 5: Define AI Product KPIs
 
-The **KPI Dashboard Lab** is the optional technical Build-Along activity for this milestone.
+Create at least **six AI Product KPIs**.
 
-All students complete the PM analysis.
-
-No coding is required to complete the PM portion.
-
-The technical lab allows you to build and interpret a simple AI product KPI dashboard using the provided starter file.
-
-The technical activity follows:
-
-**Watch → Build → Run → Test → Interpret → Document → Decide**
-
-## Step 1 — Review the KPI Data
-
-Open:
-
-`01-DASHBOARD-STARTER.py`
-
-Review the provided KPI names, targets, and actual values.
+Use the evidence and requirements from earlier milestones where possible.
 
 Consider:
 
-* What does each KPI measure?
-* Is higher or lower performance better?
-* Which KPIs are meeting the target?
-* Which KPIs are missing the target?
+* Response accuracy.
+* Retrieval accuracy.
+* Unsupported response rate.
+* Citation accuracy.
+* Citation support.
+* Response time.
+* User satisfaction.
+* Escalation rate.
+* Policy search time.
+* HR question reduction.
 
-### PM Decision
+For each KPI, define:
 
-Identify the KPI you would investigate first and explain your reasoning.
+| KPI | Definition | Target | Data Source | Frequency | Decision Supported |
+| --- | ---------- | -----: | ----------- | --------- | ------------------ |
+|     |            |        |             |           |                    |
+|     |            |        |             |           |                    |
+|     |            |        |             |           |                    |
+|     |            |        |             |           |                    |
+|     |            |        |             |           |                    |
+|     |            |        |             |           |                    |
 
----
+A KPI should have a clear definition.
 
-## Step 2 — KPI Cards
+Avoid vague KPIs such as:
 
-Review the KPI cards in the starter application.
+* "AI quality"
+* "Good user experience"
+* "System works well"
 
-The cards provide a quick view of current product performance.
-
-### PM Question
-
-If you had only 30 seconds to assess product health, what would the KPI cards tell you?
-
-Do not simply repeat the numbers.
-
-Explain what they indicate about product health.
-
----
-
-## Step 3 — Target vs. Actual
-
-Modify the dashboard to add a visual comparison between:
-
-**Target vs. Actual**
-
-The purpose of this visualization is to make performance gaps easier to identify.
-
-### PM Question
-
-* Which KPIs are performing above target?
-* Which KPIs are performing below target?
-* Which gaps require further investigation?
+Define exactly what is being measured.
 
 ---
 
-## Step 4 — Trend
+# Section 6: Use Existing PolicyAssist Targets
 
-Add performance-over-time data and a trend visualization.
+Use the targets established earlier in the Build-Along where they apply.
 
-The trend should help the PM determine whether product performance is:
+Examples include:
 
-* Improving
-* Declining
-* Remaining stable
+| KPI                        | PolicyAssist Target |
+| -------------------------- | ------------------: |
+| Response Accuracy          |               ≥ 90% |
+| Retrieval Accuracy         |               ≥ 90% |
+| Unsupported Response Rate  |                < 2% |
+| Response Time              |        ≤ 10 seconds |
+| Citation Presence          |                100% |
+| Citation Accuracy          |               ≥ 95% |
+| Citation Support           |               ≥ 95% |
+| Authorization Issues       |                   0 |
+| Confidential Data Exposure |                   0 |
 
-### PM Question
+Use the relevant target for each KPI.
 
-**Is the product improving, declining, or remaining stable?**
+Do not create a target simply because a number is easy to measure.
 
-Explain the evidence supporting your conclusion.
-
-A single KPI value provides a snapshot.
-
-A trend provides context.
-
-For example, a KPI that is currently within target may still require investigation if it has deteriorated consistently over several reporting periods.
-
----
-
-## Step 5 — Status & Threshold Logic
-
-Add logic that classifies each KPI as:
-
-* **On Target**
-* **Needs Attention**
-* **Below Threshold**
-
-Use the **KPI Decision Thresholds** defined earlier in this milestone.
-
-Do not create separate thresholds for the technical lab.
-
-The technical dashboard should implement the same PM decision framework used by all students.
-
-### PM Decision Framework
-
-**On Target → Continue**
-
-**Needs Attention → Improve**
-
-**Below Threshold → Escalate / Reassess**
-
-### PM Question
-
-Which KPI requires the most immediate attention?
-
-Explain your reasoning using the KPI's:
-
-* Target
-* Actual performance
-* Trend
-* Threshold
-* Business or product impact
+A target should connect to a business requirement, user expectation, risk tolerance, or agreed quality standard.
 
 ---
 
-## Step 6 — Run and Test
+# Section 7: Establish Baselines
 
-Run the Streamlit dashboard.
+A target describes where you want to be.
 
-Verify that:
+A baseline describes where you are starting.
 
-* KPI cards display correctly.
-* Target values are correct.
-* Actual values are correct.
-* Target vs. Actual visualization works.
-* Trend information displays correctly.
-* Status logic works.
-* Threshold conditions are identified correctly.
-* The dashboard provides information that supports PM decision-making.
+Ask:
 
-Also verify that:
+> **What was the performance before improvement?**
 
-* Higher-is-better KPIs are evaluated correctly.
-* Lower-is-better KPIs are evaluated correctly.
-* Security conditions are handled appropriately.
+For each KPI, determine whether a baseline is available.
 
-Document any issues discovered during testing.
+| KPI | Baseline Available? | Baseline | Target | Gap |
+| --- | ------------------- | -------: | -----: | --: |
+|     |                     |          |        |     |
+|     |                     |          |        |     |
+|     |                     |          |        |     |
+|     |                     |          |        |     |
+
+### Important
+
+Do not invent a baseline.
+
+If a real baseline is unavailable:
+
+* Record that the baseline is unavailable.
+* Identify how it should be collected.
+* Do not present an invented value as actual performance.
+
+For example, if the goal is to reduce employee policy search time by 50 percent but no pre-PolicyAssist search-time data exists, identify the required baseline measurement rather than making up a starting number.
 
 ---
 
-## Step 7 — Interpret the Dashboard
+# Section 8: Define Actual Performance
 
-Review the completed dashboard.
+Use actual evidence from the Build-Along where appropriate.
 
-Identify:
+Examples may include:
 
-* KPIs meeting target.
-* KPIs missing target.
-* Improving trends.
-* Declining trends.
-* Threshold breaches.
-* Business risks.
-* Product risks.
+* Milestone 6 retrieval test results.
+* Milestone 7 AI evaluation results.
+* Milestone 8 security findings.
+* Milestone 9 UAT results.
+* Milestone 10 deployment validation results.
+
+Record:
+
+| KPI | Target | Actual | Source of Actual | Date / Period | Status |
+| --- | -----: | -----: | ---------------- | ------------- | ------ |
+|     |        |        |                  |               |        |
+|     |        |        |                  |               |        |
+|     |        |        |                  |               |        |
+|     |        |        |                  |               |        |
+|     |        |        |                  |               |        |
+|     |        |        |                  |               |        |
+
+### Important
+
+Clearly label whether the actual is:
+
+**Prototype / Test Result**
+
+or
+
+**Production / Operational Result**
+
+Do not present a small prototype test as though it were enterprise-wide production performance.
+
+---
+
+# Section 9: Analyze Trends
+
+A single KPI value is only a snapshot.
+
+A trend shows how performance changes over time or across repeated measurements.
 
 Use:
 
-**KPI → Target → Actual → Trend → Threshold → Action**
+* Improving.
+* Stable.
+* Declining.
+* Not Enough Data.
 
-Do not simply describe what the dashboard shows.
+For each KPI, identify the trend.
 
-Explain what the information means for the product.
+| KPI | Previous Result | Current Result | Trend | Interpretation |
+| --- | --------------: | -------------: | ----- | -------------- |
+|     |                 |                |       |                |
+|     |                 |                |       |                |
+|     |                 |                |       |                |
+|     |                 |                |       |                |
 
----
+Ask:
 
-## Step 8 — Make the PM Decision
+> **Is performance moving toward or away from the target?**
 
-Use the dashboard evidence to select the appropriate action:
-
-**Continue → Improve → Escalate → Reassess**
-
-Document:
-
-1. The evidence.
-2. The business or product impact.
-3. The recommended action.
-4. The action owner.
-5. The next review point.
-
-Your decision should be based on measurable evidence rather than assumptions.
+Do not label a result as improving or declining when there is insufficient evidence.
 
 ---
 
-# PM Analysis vs. Technical Build
+# Section 10: Define Thresholds
 
-The PM analysis and technical dashboard serve different purposes.
+A threshold identifies when a KPI requires attention.
 
-## PM Analysis
+A threshold may represent:
 
-You determine:
+* Warning level.
+* Critical level.
+* Required intervention point.
 
-* What the KPI means.
-* Whether performance meets the target.
-* Whether the KPI requires attention.
-* Whether the decision threshold has been crossed.
-* What action should be taken.
-* Who owns the action.
-* When the result should be reviewed again.
+For example:
 
-## Technical Dashboard
+**Target:** Response time ≤ 10 seconds
 
-The dashboard makes that information visible.
+**Warning:** > 8 seconds
 
-It may display:
+**Critical:** > 10 seconds
 
-* KPI cards.
-* Target comparisons.
+The threshold should lead to a defined action.
+
+Create thresholds for at least **four important KPIs**.
+
+| KPI | Target | Warning Threshold | Critical Threshold | Required Action |
+| --- | -----: | ----------------: | -----------------: | --------------- |
+|     |        |                   |                    |                 |
+|     |        |                   |                    |                 |
+|     |        |                   |                    |                 |
+|     |        |                   |                    |                 |
+
+A threshold is useful only when someone knows what to do when it is crossed.
+
+---
+
+# Section 11: PolicyAssist Decision Thresholds
+
+Use the following PolicyAssist decision thresholds for the KPI dashboard where applicable.
+
+| KPI                                       |   Target | Attention Range | Below Threshold / Critical |
+| ----------------------------------------- | -------: | --------------: | -------------------------: |
+| Policy Search-Time Reduction              |     ≥50% |        45–49.9% |                       <45% |
+| Retrieval Accuracy                        |     ≥90% |        81–89.9% |                       <81% |
+| Answer Accuracy                           |     ≥90% |        81–89.9% |                       <81% |
+| Unsupported / Hallucinated Response Rate  |      <2% |         2–2.49% |                      ≥2.5% |
+| Citation Correctness                      |     100% |        90–99.9% |                       <90% |
+| Unsupported-Question Refusal / Escalation |     100% |        90–99.9% |                       <90% |
+| Response Latency                          | ≤10 sec. |   >10–12.5 sec. |                 >12.5 sec. |
+| User Satisfaction                         |     ≥85% |      76.5–84.9% |                     <76.5% |
+| Critical Security Incidents               |        0 |               1 |                         ≥2 |
+
+For security metrics, consider severity and the nature of the incident in addition to the numerical result.
+
+A serious security or authorization failure may require immediate escalation even when other KPIs are performing well.
+
+---
+
+# Section 12: Connect KPI Results to Actions
+
+A dashboard should support decisions, not simply display numbers.
+
+Choose at least **three KPI conditions** and define the PM action.
+
+Examples:
+
+### Condition
+
+Response accuracy falls below target.
+
+### PM Action
+
+Review failed scenarios, determine whether the issue relates to data, retrieval, prompting, or another product factor, and initiate corrective action.
+
+Complete:
+
+| KPI Condition | What Does It Tell You? | PM Action | Owner | Expected Outcome |
+| ------------- | ---------------------- | --------- | ----- | ---------------- |
+|               |                        |           |       |                  |
+|               |                        |           |       |                  |
+|               |                        |           |       |                  |
+
+---
+
+# Section 13: Build the Project / Delivery Dashboard
+
+Create a **Project / Delivery Dashboard** containing at least **five delivery KPIs**.
+
+Consider:
+
+* Milestone completion.
+* Schedule status.
+* Requirements completion.
+* Open defects.
+* High-priority risks.
+* UAT status.
+* Release readiness.
+* Outstanding dependencies.
+
+Use:
+
+| KPI | Target | Actual | Trend | Threshold | Action |
+| --- | -----: | -----: | ----- | --------- | ------ |
+|     |        |        |       |           |        |
+|     |        |        |       |           |        |
+|     |        |        |       |           |        |
+|     |        |        |       |           |        |
+|     |        |        |       |           |        |
+
+The dashboard should allow a PM or stakeholder to quickly understand:
+
+> **Are we on track?**
+
+---
+
+# Section 14: Build the AI Product Performance Dashboard
+
+Create an **AI Product Performance Dashboard** containing at least **six product KPIs**.
+
+Consider:
+
+* Response Accuracy.
+* Retrieval Accuracy.
+* Unsupported Response Rate.
+* Citation Accuracy.
+* Citation Support.
+* Response Time.
+* User Satisfaction.
+* Escalation Rate.
+* Policy Search Time.
+
+Use:
+
+| KPI                       |    Target | Actual | Trend | Threshold | Action |
+| ------------------------- | --------: | -----: | ----- | --------- | ------ |
+| Response Accuracy         |     ≥ 90% |        |       |           |        |
+| Retrieval Accuracy        |     ≥ 90% |        |       |           |        |
+| Unsupported Response Rate |      < 2% |        |       |           |        |
+| Citation Accuracy         |     ≥ 95% |        |       |           |        |
+| Citation Support          |     ≥ 95% |        |       |           |        |
+| Response Time             | ≤ 10 sec. |        |       |           |        |
+
+Add other KPIs when they provide meaningful value.
+
+The dashboard should allow a PM or product stakeholder to quickly understand:
+
+> **Is the AI product performing as intended?**
+
+---
+
+# Section 15: Interpret the Dashboard
+
+Review both dashboards together.
+
+Ask:
+
+## Project Performance
+
+Is the project being delivered as planned?
+
+## Product Performance
+
+Is the AI product performing as intended?
+
+## Business Outcome
+
+Is the product creating the expected value?
+
+A project can be on schedule while the AI product is underperforming.
+
+An AI product can perform well technically while the overall project is behind schedule.
+
+Strong performance in one dashboard does not automatically mean overall success.
+
+Record your interpretation:
+
+| Area               | Finding | Evidence | PM Implication |
+| ------------------ | ------- | -------- | -------------- |
+| Project / Delivery |         |          |                |
+| AI Product         |         |          |                |
+| Business Outcome   |         |          |                |
+
+---
+
+# Section 16: Prepare an Executive Performance Summary
+
+A dashboard should support communication with leadership and stakeholders.
+
+Create a short executive summary containing:
+
+**Overall Status:**
+
+[Your assessment]
+
+**Top Positive Result:**
+
+[Most important success]
+
+**Top Concern:**
+
+[Most important issue]
+
+**Business Impact:**
+
+[Why it matters]
+
+**Recommended Action:**
+
+[What should happen next]
+
+**Decision Needed:**
+
+[Decision or support required from leadership]
+
+Keep the summary focused on decisions and business implications rather than technical details.
+
+---
+
+# Section 17: Define Monitoring and Continuous Improvement
+
+KPI monitoring should continue after release.
+
+Identify at least **three KPIs that should be monitored on an ongoing basis**.
+
+For each KPI, define:
+
+* Owner.
+* Review frequency.
+* Threshold.
+* Required action.
+* Escalation path.
+
+Use:
+
+| KPI | Owner | Review Frequency | Threshold | Action | Escalation |
+| --- | ----- | ---------------- | --------- | ------ | ---------- |
+|     |       |                  |           |        |            |
+|     |       |                  |           |        |            |
+|     |       |                  |           |        |            |
+
+Then answer:
+
+> **What should happen when a KPI repeatedly misses its target?**
+
+Consider:
+
+* Root Cause Analysis (RCA).
+* Corrective action.
+* Backlog prioritization.
+* Additional testing.
+* Process change.
+* Product improvement.
+* Governance review.
+
+---
+
+# Section 18: Make PM Decisions From the Dashboard
+
+Use the dashboard results to make at least **three PM decisions**.
+
+Your decisions should be based on evidence.
+
+Examples:
+
+* Continue current approach.
+* Investigate declining performance.
+* Prioritize a corrective action.
+* Add a backlog item.
+* Increase testing.
+* Change a threshold.
+* Reassess a target.
+* Escalate a risk.
+* Hold a release or enhancement.
+* Increase monitoring.
+
+Record:
+
+| PM Decision | KPI Evidence | Business Reason | Risk / Opportunity | Action |
+| ----------- | ------------ | --------------- | ------------------ | ------ |
+|             |              |                 |                    |        |
+|             |              |                 |                    |        |
+|             |              |                 |                    |        |
+
+---
+
+# Section 19: Technical Dashboard Implementation
+
+If you are following the PolicyAssist technical Build-Along, you may implement your dashboards using the tools available to you.
+
+Your technical dashboard may display:
+
+* KPI values.
+* Targets.
+* Actuals.
 * Trends.
+* Thresholds.
 * Status indicators.
-* Threshold conditions.
-* Decision-support information.
+* Actions or recommendations.
 
-The dashboard supports the PM decision.
+Technical implementation is optional for understanding the PM concepts.
 
-**The PM decision is the outcome, not the code.**
+Your dashboard should not display invented production results.
 
----
-
-# Part 3 — Interpret Product Performance
-
-After completing the PM analysis and, optionally, the technical dashboard, evaluate the product as a whole.
-
-Use the following logic:
-
-**KPI → Target → Actual → Trend → Threshold → Action**
-
-Consider the difference between:
-
-### Performance Gap
-
-The actual result does not meet the target.
-
-### Decision Threshold Breach
-
-The actual result has crossed the defined unacceptable-performance boundary.
-
-These are not automatically the same condition.
+When using prototype or test data, clearly label the data source and context.
 
 ---
 
-# PM Decision Example
+# Deliverable: KPI & Dashboard Package
 
-Suppose:
+Create a **KPI & Dashboard Package** containing:
 
-* Answer Accuracy target = ≥90%.
-* Actual Answer Accuracy = 89%.
-* Below Threshold = <81%.
+## Project / Delivery Dashboard
 
-The correct interpretation is:
+At least five delivery KPIs showing:
 
-**Target missed → Needs Attention → Improve**
+* KPI.
+* Definition.
+* Target.
+* Actual.
+* Trend.
+* Threshold.
+* Action.
 
-The KPI has not crossed the Below Threshold boundary.
+## AI Product Performance Dashboard
 
-Now suppose:
+At least six AI product KPIs showing:
 
-* Hallucination target = <2%.
-* Actual Hallucination Rate = 2.5%.
-* Below Threshold = ≥2.5%.
+* KPI.
+* Definition.
+* Target.
+* Actual.
+* Trend.
+* Threshold.
+* Action.
 
-The correct interpretation is:
+## Supporting KPI Framework
 
-**Threshold breached → Below Threshold → Escalate / Reassess**
+Include:
 
-This distinction is important because PM action should reflect the severity of the evidence.
+* Business outcomes.
+* KPI definitions.
+* Data sources.
+* Baselines where available.
+* Monitoring frequency.
+* KPI owners.
+* Thresholds.
+* PM actions.
 
----
+## Executive Performance Summary
 
-# Part 4 — Monitoring After Release
+Include:
 
-Monitoring does not stop after the initial release.
-
-After deployment, the PM should establish an ongoing monitoring cycle.
-
-A monitoring process should define:
-
-* KPI owner
-* Data source
-* Reporting frequency
-* Target
-* Decision threshold
-* Review cadence
-* Escalation process
-* Corrective-action process
-
-Monitoring should provide enough information for the PM to identify changes before they become larger product or business problems.
-
----
-
-# Continuous Improvement
-
-Monitoring should lead to action.
-
-When performance changes, the PM should determine:
-
-1. What changed?
-2. Why did it change?
-3. How significant is the change?
-4. What is the business or product impact?
-5. Does the issue require corrective action?
-6. Who owns the action?
-7. When will the result be reviewed?
-8. Did the corrective action improve the KPI?
-
-The cycle becomes:
-
-**Monitor → Identify → Analyze → Improve → Re-measure**
-
-Continuous improvement should be evidence-driven.
-
-Do not change the product simply because a KPI moved.
-
-Investigate the change, assess the impact, and determine whether action is justified.
-
----
-
-# Executive Reporting
-
-A PM should be able to translate KPI information into an executive-level message.
-
-An effective executive summary should answer:
-
-**What is the current product health?**
-
-**What changed?**
-
-**What is the most significant risk?**
-
-**What requires action?**
-
-**Who owns the action?**
-
-**When will the issue be reviewed again?**
-
-A strong executive summary does not repeat every dashboard value.
-
-It highlights the information needed for a decision.
-
----
-
-# PM Decision Record
-
-Document your final interpretation using:
-
-| Decision Element        | Your Assessment |
-| ----------------------- | --------------- |
-| KPI                     |                 |
-| Target                  |                 |
-| Actual                  |                 |
-| Trend                   |                 |
-| Decision Status         |                 |
-| Business/Product Impact |                 |
-| Risk                    |                 |
-| Recommended Action      |                 |
-| Action Owner            |                 |
-| Next Review Point       |                 |
-
-Your recommendation should connect measurable evidence to a clear PM action.
-
----
-
-# Final PM Checkpoint
-
-Answer:
-
-> **What is the product telling us through its KPIs, and what should the PM do about it?**
-
-Your answer should connect:
-
-**Performance → Risk → Action → Outcome**
-
-Do not answer with a list of KPI values.
-
-Make a PM decision.
-
----
-
-# Milestone Deliverable
-
-Complete a **KPI and Monitoring Decision Record** containing:
-
-* PolicyAssist KPI analysis.
-* Target versus actual assessment.
-* Decision-threshold assessment.
-* Trend interpretation.
-* Key business, product, and operational risks.
+* Overall status.
+* Top positive result.
+* Top concern.
+* Business impact.
 * Recommended action.
-* Action owner.
-* Next review point.
-* Executive-level summary.
-* Evidence from the dashboard lab, when the optional technical Build-Along is completed.
+* Decision needed.
+
+## PM Decisions
+
+Include at least three evidence-based decisions supported by KPI results.
 
 ---
 
-# Milestone Completion Criteria
+# PM Checkpoint
 
-## PM Portion
+Before moving forward, you should be able to answer:
 
-The PM portion is complete when you can:
+> **Are we delivering the project effectively, is the AI product performing as intended, and what should the PM do about the results?**
 
-* Explain the purpose of each KPI.
-* Identify whether higher or lower performance is better.
-* Compare actual performance against the target.
-* Distinguish a missed target from a threshold breach.
-* Identify meaningful trends.
-* Recognize decision-threshold breaches.
-* Explain associated business and product risks.
-* Recommend an evidence-based action.
-* Identify an action owner.
-* Establish a follow-up review point.
-* Explain how monitoring supports continuous improvement.
-* Translate KPI results into an executive-level PM message.
+You should also be able to explain:
 
-## Optional Technical Build-Along
-
-The technical dashboard activity is complete when it includes:
-
-* KPI data.
-* KPI cards.
-* Target vs. Actual visualization.
-* Trend visualization.
-* Status logic.
-* Decision-threshold logic.
-* PM decision support.
+* What makes a KPI meaningful.
+* The difference between a KPI, target, actual, trend, threshold, and action.
+* The difference between a Project / Delivery KPI and an AI Product KPI.
+* How to establish and use a baseline.
+* Why actual results must be supported by evidence.
+* How to interpret trends.
+* How thresholds trigger action.
+* Why dashboards should support decisions rather than simply display numbers.
+* How AI product performance differs from project delivery performance.
+* How KPI monitoring supports continuous improvement.
+* How to communicate performance to executives and stakeholders.
 
 ---
 
-# Key Takeaways
+# PM Perspective
 
-### KPI
+**A dashboard is not a collection of numbers. It is a decision-making tool.**
 
-**What measurable evidence tells us how the product is performing?**
+The PM's job is not simply to report performance.
 
-### Target
+The PM must understand:
 
-**What performance are we trying to achieve?**
+**What is the target?**
 
-### Decision Threshold
+**What is the actual result?**
 
-**When does performance become unacceptable enough to require escalation or reassessment?**
+**What is the trend?**
 
-### Dashboard
+**Has a threshold been crossed?**
 
-**How do we make that evidence visible and actionable?**
+**Why is performance changing?**
 
-### Monitoring
+**What action is required?**
 
-**How do we continue evaluating the product after release?**
+**Who needs to know or decide?**
 
-### PM Decision
+The progression is:
 
-**What should we do based on the evidence?**
+**KPI → Target → Actual → Trend → Threshold → Action → PM Decision**
 
----
+You have now moved from building and validating the AI product to measuring whether the project and product are actually delivering value.
 
-# Final Principle
-
-A dashboard is not the decision.
-
-A KPI is not the action.
-
-A PM uses evidence to understand product health, identify risk, determine the appropriate response, and drive the next action.
-
-**Measure → Analyze → Decide → Act → Monitor Again**
-
-The objective is not simply to know whether an AI product is performing.
-
-The objective is to know **what the evidence means and what the PM should do about it.**
+The next milestone will focus on **Milestone 12: Capstone & Portfolio**, where you will bring your work together into a professional demonstration of your AI Project Management capabilities.
