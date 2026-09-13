@@ -32,7 +32,7 @@ By the end of this course, you should be able to:
 
 8. **Plan and coordinate testing** by developing functional, negative, edge-case, security, regression, User Acceptance Testing (UAT), and pilot strategies.
 
-9. **Assess production readiness** by evaluating release criteria, deployment dependencies, rollback plans, user readiness, and Go/Hold/No-Go decisions.
+9. **Assess production readiness** by evaluating release criteria, deployment dependencies, rollback plans, user readiness, and GO / CONDITIONAL GO / HOLD / NO-GO release decisions and deployment readiness decisions.
 
 10. **Manage AI products in production** by defining monitoring metrics and thresholds, responding to incidents, analyzing root causes, and prioritizing continuous improvement.
 
